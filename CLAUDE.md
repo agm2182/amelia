@@ -85,11 +85,13 @@ Located in `skills/`:
 - `cherri-shopify-seo` - Storefront SEO audits
 - `cherri-content-brief` - Content brief generation
 
-## Third-Party Plugins/Skills to Explore
+## Third-Party Plugins (Verified Jan 2026)
 
-From ChatGPT research - not yet installed or verified:
+### Recommended: wshobson/agents ⭐
+**Stars:** 25,300 | **Status:** Verified, highly recommended
 
-### wshobson/agents (Verified exists)
+The most popular Claude Code plugin marketplace. Has dedicated SEO plugins.
+
 ```bash
 /plugin marketplace add wshobson/agents
 /plugin install seo-content-creation
@@ -97,59 +99,43 @@ From ChatGPT research - not yet installed or verified:
 /plugin install seo-analysis-monitoring
 /plugin install content-marketing
 ```
-- SEO content writing/planning + quality auditing
-- Meta tags, schema, structure, featured snippets
-- Freshness/cannibalization/authority analysis
-- Strategy + web research + synthesis
+
+**SEO Plugins:**
+- `seo-content-creation` - Content writing with E-E-A-T optimization
+- `seo-technical-optimization` - Meta tags, keywords, structure, featured snippets
+- `seo-analysis-monitoring` - Freshness analysis, cannibalization detection
+- `content-marketing` - Strategy, research, synthesis
 
 **Docs:** https://github.com/wshobson/agents
 
-### alirezarezvani/claude-skills (Unverified)
+### Alternative: alirezarezvani/claude-skills
+**Stars:** 583 | **Status:** Verified
+
+Includes Content Creator with built-in SEO Optimizer CLI tool.
+
 ```bash
 npx ai-agent-skills install alirezarezvani/claude-skills --agent claude
 ```
-- Content Creator with SEO optimizer
+
+**Relevant Skills:**
+- Content Creator (with SEO Optimizer)
 - Social Media Analyzer (multi-platform)
-- Instagram + TikTok optimization guides
+- Marketing Strategy & Product Marketing
 
-**Claimed repo:** https://github.com/alirezarezvani/claude-skills
+**Docs:** https://github.com/alirezarezvani/claude-skills
 
-### henkisdabro/wookstar-claude-plugins (Unverified)
-```bash
-/plugin marketplace add henkisdabro/wookstar-claude-plugins
-/plugin install marketing@wookstar
-/plugin install shopify-developer@wookstar
-```
-- GTM + GA4 + Google Ads Scripts
-- Shopify development bundle
+### Not Recommended (Verified Non-Existent or Irrelevant)
 
-**Claimed repo:** https://github.com/henkisdabro/claudecode-marketplace
+| Repo | Status | Reason |
+|------|--------|--------|
+| henkisdabro/wookstar-claude-plugins | ❌ Not found | Does not exist |
+| jeffallan/claude-skills | ❌ Not found | Does not exist |
+| m2ai-portfolio/claude-skills | ❌ Not found | Does not exist |
+| kudosx/claude-skill-browser-use | ❌ Not found | Does not exist |
+| secondsky/claude-skills | ✅ Exists | Dev-focused only (Cloudflare, React), no SEO |
+| netresearch/claude-code-marketplace | ✅ Exists | TYPO3/dev focused, no marketing |
 
-### jeffallan/claude-skills (Unverified)
-```bash
-/plugin marketplace add jeffallan/claude-skills
-/plugin install fullstack-dev-skills@jeffallan
-```
-- Shopify Expert skill
-- Platform specialist skills
-
-**Claimed repo:** https://github.com/Jeffallan/claude-skills
-
-### m2ai-portfolio/claude-skills (Unverified)
-- Instagram Caption Generator
-- Blog Post Outline Creator (SEO-optimized)
-- Meta Description Generator
-- Product Description Writer
-
-**Claimed repo:** https://github.com/m2ai-portfolio/claude-skills
-
-### kudosx/claude-skill-browser-use (Unverified)
-- TikTok trend scanning
-- Browser automation for social platforms
-
-**Claimed repo:** https://github.com/kudosx/claude-skill-browser-use
-
-**Note:** "Unverified" means the repo couldn't be confirmed to exist when checked. Try installing and see if they work.
+*Investigation completed Jan 13, 2026. Several repos from ChatGPT research were fabricated.*
 
 ## Context7 Library IDs
 
