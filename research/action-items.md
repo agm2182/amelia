@@ -1,39 +1,39 @@
 # Cherri SEO Action Items
 
-Running list of fixes and improvements identified during research.
+Running list of **free** fixes and improvements identified during research.
 
 ---
 
 ## Quick Fixes (Do This Week)
 
-### Analytics & Tracking
-- [ ] **Enable Shopify bot filtering** - Add "Human or bot session" filter to Shopify Analytics reports to get clean conversion data
+### Analytics & Tracking (Free - Built into Shopify/GA4)
+- [ ] **Enable Shopify bot filtering** - Add "Human or bot session" filter to Shopify Analytics reports
   - Go to: Admin → Analytics → Add dimension → "Human or bot session"
   - Filter to "Human" for accurate metrics
   - Note: Only works for data from Oct 7, 2025 onward
 
-- [ ] **Create GA4 bot exclusion segment** - Filter out high-bounce product pages from GA4 reports
-  - Exclude sessions landing on pages with 98%+ bounce rate
-  - Or create segment: Device = Mobile only (desktop is 96.5% bots)
+- [ ] **Create GA4 bot exclusion segment** - Filter out high-bounce product pages
+  - Option A: Exclude sessions landing on pages with 98%+ bounce rate
+  - Option B: Create segment for Device = Mobile only (desktop is 96.5% bots)
 
-### Product Schema (Critical for Rich Snippets)
+### Product Schema (Free - Theme code changes)
 - [ ] **Fix brand field** - Currently malformed, needs to be Organization object
 - [ ] **Add priceValidUntil** - Missing on all product variants
 - [ ] **Add shippingDetails** - Required for Merchant Listings
 - [ ] **Add hasMerchantReturnPolicy** - Required for Merchant Listings
-- [ ] **Integrate reviews app** - Needed for `review` and `aggregateRating` fields
+- [ ] **Add review/rating schema** - If using a free reviews app or have existing reviews
 
 ---
 
 ## High Priority (This Month)
 
-### SEO Optimization
+### SEO Optimization (Free - Shopify Admin)
 - [ ] **Wait for GSC data** - Re-check search analytics Jan 15-16 for keyword data
 - [ ] **Optimize /collections/panties** - Add SEO title and description targeting "women's underwear" keywords
 - [ ] **Optimize /collections/thong** - High engagement (83%), good SEO target
 - [ ] **Optimize /collections/swimwear** - Getting organic traffic but 0 conversions
 
-### Content
+### Content (Free - Just time)
 - [ ] **Create first blog post** - Use cherri-content-brief skill
 - [ ] **Expand "underwear pocket" article** - Already ranking, has 45% bounce (good engagement)
 
@@ -41,7 +41,7 @@ Running list of fixes and improvements identified during research.
 
 ## Medium Priority (This Quarter)
 
-### Content Strategy
+### Content Strategy (Free - Just time)
 - [ ] **Build content calendar** - Target 1-2 posts per week
 - [ ] **Topic ideas:**
   - Underwear fabric guide (cotton vs modal vs bamboo)
@@ -51,7 +51,7 @@ Running list of fixes and improvements identified during research.
   - Best underwear for working out
   - What to look for in comfortable underwear
 
-### Technical SEO
+### Technical SEO (Free - Theme/Admin changes)
 - [ ] **Add breadcrumbs** - Check if theme has them, enable if not
 - [ ] **Internal linking audit** - Link blog posts to collections
 - [ ] **Image alt text audit** - Ensure product images have keyword-rich alt text
