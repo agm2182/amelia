@@ -1,0 +1,14 @@
+{
+  "marketplaces": [
+    {
+      "name": "wshobson",
+      "source": "github.com/wshobson/agents"
+    }
+  ],
+  "plugins": [
+    "seo-content-creation@wshobson",
+    "seo-technical-optimization@wshobson",
+    "seo-analysis-monitoring@wshobson",
+    "content-marketing@wshobson"
+  ]
+}
