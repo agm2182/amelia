@@ -40,6 +40,33 @@ skills/            # Custom Claude skills
 CLAUDE.md          # Detailed tool documentation
 ```
 
+## Common Tasks
+
+**Run an SEO audit:**
+```
+"Audit the current SEO status using GSC and GA4 data"
+```
+
+**Find keyword opportunities:**
+```
+"Find striking distance keywords (positions 4-20) with high impressions"
+```
+
+**Generate a content brief:**
+```
+"Create a content brief for 'best underwear for working out'"
+```
+
+**Check indexing status:**
+```
+"Check if shopcherri.com/collections/panties is indexed"
+```
+
+**Analyze traffic:**
+```
+"Show top organic landing pages from GA4 for the last 30 days"
+```
+
 ## Current Status
 
 - **Domain:** shopcherri.com
