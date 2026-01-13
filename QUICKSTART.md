@@ -47,6 +47,11 @@ The MCP servers are already configured in `.claude.json` and will use this file 
 - Google Search Console: `sc-domain:shopcherri.com`
 - Google Analytics 4: `386275004`
 
+**File locations:**
+- Credentials: `~/.config/cherri/` (outside git repo)
+- Raw data exports: `data/` (gitignored)
+- Research outputs: `research/` subdirectories
+
 ## Step 4: Verify Setup
 
 Test that everything works:
