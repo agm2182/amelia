@@ -6,15 +6,8 @@ credentials.json
 *-credentials.json
 service-account*.json
 
-# Data exports (may contain sensitive info)
-data/*.csv
-data/*.json
-data/*.xlsx
+# Keep data/.gitkeep for empty directory
 !data/.gitkeep
-
-# Research outputs with PII
-research/**/*.csv
-research/**/*.json
 
 # OS files
 .DS_Store
