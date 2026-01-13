@@ -1,14 +1,16 @@
 {
-  "marketplaces": [
-    {
-      "name": "wshobson",
-      "source": "github.com/wshobson/agents"
+  "extraKnownMarketplaces": {
+    "wshobson": {
+      "source": {
+        "source": "github",
+        "repo": "wshobson/agents"
+      }
     }
-  ],
-  "plugins": [
-    "seo-content-creation@wshobson",
-    "seo-technical-optimization@wshobson",
-    "seo-analysis-monitoring@wshobson",
-    "content-marketing@wshobson"
-  ]
+  },
+  "enabledPlugins": {
+    "seo-content-creation@wshobson": true,
+    "seo-technical-optimization@wshobson": true,
+    "seo-analysis-monitoring@wshobson": true,
+    "content-marketing@wshobson": true
+  }
 }
