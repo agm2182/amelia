@@ -32,12 +32,17 @@ See **[QUICKSTART.md](QUICKSTART.md)** for full setup instructions.
 ## Project Structure
 
 ```
-research/          # All research outputs
-  ├── audits/      # SEO audit reports
-  ├── action-items.md  # Running TODO list
-skills/            # Custom Claude skills
-.claude/           # Plugin configuration
-CLAUDE.md          # Detailed tool documentation
+research/              # All research outputs
+  ├── audits/          # SEO audit reports
+  ├── keywords/        # Keyword research exports
+  ├── competitors/     # Competitor analysis
+  ├── content-briefs/  # Content brief documents
+  └── action-items.md  # Running TODO list
+.claude/
+  ├── skills/          # Installed Claude skills
+  └── settings.json    # Plugin configuration
+skills/                # Skills requiring setup (see README)
+CLAUDE.md              # Detailed tool documentation
 ```
 
 ## Common Tasks

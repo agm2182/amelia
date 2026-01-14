@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "gsc": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/gsc-mcp"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${HOME}/.config/cherri/cherri-seo-credentials.json"
+      }
+    },
+    "ga4": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/ga4-mcp"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${HOME}/.config/cherri/cherri-seo-credentials.json"
+      }
+    },
+    "meta-ads": {
+      "command": "npx",
+      "args": ["-y", "@pipeboard/meta-ads-mcp"],
+      "env": {
+        "META_ACCESS_TOKEN": "${META_ACCESS_TOKEN}",
+        "META_AD_ACCOUNT_ID": "${META_AD_ACCOUNT_ID}"
+      }
+    },
+    "tiktok-ads": {
+      "command": "npx",
+      "args": ["-y", "tiktok-ads-mcp"],
+      "env": {
+        "TIKTOK_ACCESS_TOKEN": "${TIKTOK_ACCESS_TOKEN}",
+        "TIKTOK_ADVERTISER_ID": "${TIKTOK_ADVERTISER_ID}"
+      }
+    }
+  }
+}

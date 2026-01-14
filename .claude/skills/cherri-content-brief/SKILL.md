@@ -1,9 +1,9 @@
 ---
 name: cherri-content-brief
-description: Use for generating SEO content briefs for Cherri. Creates detailed briefs for blog posts, collection pages, and product descriptions with keyword targeting, competitor analysis, content outlines, and brand voice guidelines.
+description: Generate SEO content briefs for Cherri underwear brand. Use when creating blog posts, collection pages, product descriptions, or landing pages. Includes keyword targeting, competitor analysis, content outlines, and Cherri brand voice guidelines.
 ---
 
-<purpose>
+# Cherri Content Brief Generator
 
 Generate comprehensive content briefs for Cherri that include:
 - **Keyword strategy**: Primary and secondary keywords with intent analysis
@@ -12,11 +12,7 @@ Generate comprehensive content briefs for Cherri that include:
 - **Brand voice guidelines**: Cherri's tone and messaging
 - **Technical specs**: Word count, internal links, CTAs
 
-</purpose>
-
-<cherri_brand_voice>
-
-## Cherri Brand Voice Guidelines
+## Cherri Brand Voice
 
 **Tone:** Confident, inclusive, playful yet sophisticated
 
@@ -43,9 +39,7 @@ Generate comprehensive content briefs for Cherri that include:
 - "Underwear that works as hard as you do."
 - "Soft on your skin. Gentle on the planet."
 
-</cherri_brand_voice>
-
-<intake>
+## Intake Questions
 
 **What type of content brief do you need?**
 
@@ -55,20 +49,14 @@ Generate comprehensive content briefs for Cherri that include:
 4. **Landing page brief** - Campaign or seasonal page
 5. **FAQ/Help content brief** - Customer support content
 
-**Provide:**
+**Required info:**
 - Target keyword or topic
 - Content type (see above)
 - Target audience segment (if specific)
 - Any competitor content to reference
 - Specific products to feature (if applicable)
 
-</intake>
-
-<workflow_blog_brief>
-
-## Blog Post Brief
-
-**Goal:** Create comprehensive brief for SEO-optimized blog content.
+## Workflow: Blog Post Brief
 
 ### Step 1: Keyword Research
 
@@ -88,7 +76,6 @@ Long-tail: sustainable underwear for women, best sustainable underwear brands 20
 
 ### Step 2: Search Intent Analysis
 
-Determine intent:
 | Intent | Signals | Content Approach |
 |--------|---------|------------------|
 | Informational | "what is", "how to", "guide" | Educational, comprehensive |
@@ -104,9 +91,9 @@ For top 3-5 ranking articles:
 - Unique angles
 - Gaps/weaknesses
 
-### Step 4: Content Outline
+### Step 4: Generate Brief
 
-**Brief Template:**
+Use this template:
 
 ```markdown
 # [Blog Post Title - Include Primary Keyword]
@@ -155,33 +142,13 @@ For top 3-5 ranking articles:
 - [ ] Image alt text includes keyword variation
 ```
 
-### Step 5: Output
+### Step 5: Save Output
 
 Save brief to: `research/content-briefs/blog-[slug]-YYYY-MM-DD.md`
 
-</workflow_blog_brief>
+## Workflow: Collection Page Brief
 
-<workflow_collection_brief>
-
-## Collection Page Brief
-
-**Goal:** Optimize category page for search and conversion.
-
-### Step 1: Keyword Mapping
-
-For the collection:
-- Primary keyword (category term)
-- Secondary keywords (modifiers)
-- Product-specific keywords (included products)
-
-**Example for "Cotton Underwear" collection:**
-```
-Primary: cotton underwear
-Secondary: women's cotton underwear, organic cotton underwear, cotton panties
-Products: cotton brief, cotton thong, cotton bikini
-```
-
-### Step 2: Collection Page Structure
+### Structure
 
 ```markdown
 # Collection: [Collection Name]
@@ -222,34 +189,13 @@ Products: cotton brief, cotton thong, cotton bikini
 ## Internal Links
 - Link to: [related collection]
 - Link to: [relevant blog post]
-
-## Schema Markup
-- CollectionPage schema
-- BreadcrumbList schema
 ```
-
-### Step 3: Output
 
 Save to: `research/content-briefs/collection-[handle]-YYYY-MM-DD.md`
 
-</workflow_collection_brief>
+## Workflow: Product Description Brief
 
-<workflow_product_brief>
-
-## Product Description Brief
-
-**Goal:** Write compelling, SEO-optimized product copy.
-
-### Step 1: Product Research
-
-Gather:
-- Product name and SKU
-- Key features (materials, sizing, colors)
-- Benefits (comfort, sustainability, etc.)
-- Target keywords
-- Competitor product descriptions
-
-### Step 2: Product Description Structure
+### Structure
 
 ```markdown
 # Product: [Product Name]
@@ -301,13 +247,7 @@ Shop [product name]. [Key benefit]. [Material/feature]. Available in sizes XS-3X
 - Image 2: [Product name] - [angle/detail]
 ```
 
-### Step 3: Output
-
 Save to: `research/content-briefs/product-[handle]-YYYY-MM-DD.md`
-
-</workflow_product_brief>
-
-<content_formulas>
 
 ## Content Formulas
 
@@ -329,11 +269,7 @@ Save to: `research/content-briefs/product-[handle]-YYYY-MM-DD.md`
 - "Discover sustainable comfort"
 - "Get yours today"
 
-</content_formulas>
-
-<quality_checklist>
-
-## Content Quality Checklist
+## Quality Checklist
 
 Before finalizing any brief:
 
@@ -360,26 +296,3 @@ Before finalizing any brief:
 - [ ] Provides unique value vs competitors
 - [ ] Actionable takeaways
 - [ ] Accurate product/brand information
-
-</quality_checklist>
-
-<quick_commands>
-
-## Quick Commands
-
-**Blog brief:**
-"Create a content brief for a blog post about sustainable underwear"
-
-**Collection brief:**
-"Write a brief for the Cotton Underwear collection page"
-
-**Product brief:**
-"Generate product description brief for the cotton brief"
-
-**Competitor analysis:**
-"Analyze top 3 ranking articles for 'best sustainable underwear'"
-
-**Outline only:**
-"Just give me an H2 outline for 'how to choose underwear fabric'"
-
-</quick_commands>
