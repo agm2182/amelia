@@ -1,0 +1,51 @@
+# Cherri Brand DNA
+# Source: Google Labs Pomelli
+# Archived: 2026-01-13
+
+name: Cherri
+url: https://shopcherri.com/
+
+tagline: "UNDIES MADE WITH WIDER GUSSETS. goodbye lip-slips."
+
+colors:
+  primary: "#E93C3B"    # Cherry red
+  secondary: "#000000"  # Black
+  tertiary: "#FFFFFF"   # White
+  accent: "#F0EAD6"     # Cream/Eggshell
+
+fonts:
+  primary: Poppins
+
+brand_values:
+  - Authenticity
+  - Inclusivity
+  - Humor
+  - Empowerment
+  - Quality
+
+brand_aesthetic:
+  - modern
+  - body-positive
+  - cheeky
+  - warm
+  - inclusive
+  - sophisticated
+
+brand_tone_of_voice:
+  - Witty
+  - Empowering
+  - Candid
+  - Casual
+  - Body-positive
+
+business_overview: |
+  Cherri sells size-inclusive underwear and loungewear designed with wider
+  gussets to ensure comfort and prevent 'lip-slips.' The brand is committed
+  to body positivity, ethical production, and a mission to help people feel
+  confident about their vulvas.
+
+# Note: Pomelli generated 59 business DNA images
+# These are AI-generated mood board images, not stored here
+images:
+  count: 59
+  note: "AI-generated mood board from Pomelli, not archived"
