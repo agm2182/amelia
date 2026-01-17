@@ -226,19 +226,32 @@ echo
 # TikTok Ads
 # -----------------------------------------------------------------------------
 echo "TikTok Ads"
+# Support both TIKTOK_ADVERTISER_ID (singular) and TIKTOK_ADVERTISER_IDS (plural, comma-separated)
+TIKTOK_ADV_ID="${TIKTOK_ADVERTISER_ID:-}"
+if [[ -z "$TIKTOK_ADV_ID" ]] && [[ -n "${TIKTOK_ADVERTISER_IDS:-}" ]]; then
+    # Use first ID from comma-separated list
+    TIKTOK_ADV_ID="${TIKTOK_ADVERTISER_IDS%%,*}"
+fi
+
 if [[ -z "${TIKTOK_ACCESS_TOKEN:-}" ]]; then
     skip "API" "Missing TIKTOK_ACCESS_TOKEN in $CONFIG_DIR/.env"
-elif [[ -z "${TIKTOK_ADVERTISER_ID:-}" ]]; then
-    skip "API" "Missing TIKTOK_ADVERTISER_ID in $CONFIG_DIR/.env"
+elif [[ -z "$TIKTOK_ADV_ID" ]]; then
+    skip "API" "Missing TIKTOK_ADVERTISER_ID or TIKTOK_ADVERTISER_IDS in $CONFIG_DIR/.env"
 else
-    response=$(curl -s -m 15 \
+    response=$(curl -s -g -m 15 \
         -H "Access-Token: ${TIKTOK_ACCESS_TOKEN}" \
-        "https://business-api.tiktok.com/open_api/v1.3/advertiser/info/?advertiser_ids=[\"${TIKTOK_ADVERTISER_ID}\"]" 2>&1 || echo "CURL_FAILED")
+        "https://business-api.tiktok.com/open_api/v1.3/advertiser/info/?advertiser_ids=[\"${TIKTOK_ADV_ID}\"]" 2>&1 || echo "CURL_FAILED")
 
     if [[ "$response" == *'"code":0'* ]] || [[ "$response" == *'"code": 0'* ]]; then
-        pass "Advertiser info" "API responding"
-    elif [[ "$response" == *'token'* ]] && [[ "$response" == *'null'* || "$response" == *'invalid'* ]]; then
-        fail "Advertiser info" "Invalid or expired token"
+        # Handle JSON with or without spaces after colons
+        adv_name=$(echo "$response" | grep -oE '"name":[[:space:]]*"[^"]*"' | head -1 | sed 's/.*"\([^"]*\)"$/\1/')
+        if [[ -n "$adv_name" ]]; then
+            pass "Advertiser info" "Account: $adv_name"
+        else
+            pass "Advertiser info" "API responding"
+        fi
+    elif [[ "$response" == *'40105'* ]] || [[ "$response" == *'token'* && "$response" == *'invalid'* ]]; then
+        fail "Advertiser info" "Token expired - see CLAUDE.md for refresh steps"
     elif [[ "$response" == *'CURL_FAILED'* ]]; then
         fail "Advertiser info" "Connection failed"
     else
@@ -269,7 +282,7 @@ if [[ -z "${SHOPIFY_ACCESS_TOKEN:-}" ]]; then
 else
     response=$(curl -s -m 15 \
         -H "X-Shopify-Access-Token: ${SHOPIFY_ACCESS_TOKEN}" \
-        "https://${SHOPIFY_STORE_DOMAIN}/admin/api/2024-10/shop.json" 2>&1 || echo "CURL_FAILED")
+        "https://${SHOPIFY_STORE_DOMAIN}/admin/api/2025-01/shop.json" 2>&1 || echo "CURL_FAILED")
 
     if [[ "$response" == *'"shop"'* ]]; then
         shop_name=$(echo "$response" | grep -o '"name":"[^"]*"' | head -1 | cut -d'"' -f4)
@@ -280,6 +293,41 @@ else
         fail "Shop info" "Connection failed"
     else
         fail "Shop info" "$(echo "$response" | head -c 80)"
+    fi
+fi
+echo
+
+# -----------------------------------------------------------------------------
+# Gmail
+# -----------------------------------------------------------------------------
+echo "Gmail"
+GMAIL_CREDS_FILE="$HOME/.gmail-mcp/credentials.json"
+
+if [[ ! -f "$GMAIL_CREDS_FILE" ]]; then
+    skip "API" "No credentials found. Gmail MCP will prompt for OAuth on first use."
+else
+    # Extract access token from Gmail MCP credentials
+    GMAIL_ACCESS_TOKEN=$(grep -o '"access_token":"[^"]*"' "$GMAIL_CREDS_FILE" | cut -d'"' -f4)
+
+    if [[ -z "$GMAIL_ACCESS_TOKEN" ]]; then
+        skip "API" "No access token in credentials file"
+    else
+        response=$(curl -s -m 15 \
+            -H "Authorization: Bearer $GMAIL_ACCESS_TOKEN" \
+            "https://gmail.googleapis.com/gmail/v1/users/me/profile" 2>&1 || echo "CURL_FAILED")
+
+        if [[ "$response" == *'"emailAddress"'* ]]; then
+            # Handle JSON with or without whitespace
+            email=$(echo "$response" | tr -d '\n ' | grep -o '"emailAddress":"[^"]*"' | cut -d'"' -f4)
+            pass "Profile" "Account: $email"
+        elif [[ "$response" == *'401'* ]] || [[ "$response" == *'UNAUTHENTICATED'* ]]; then
+            # Token expired, but refresh token may still work - MCP will auto-refresh
+            skip "Profile" "Token expired (MCP will auto-refresh on next use)"
+        elif [[ "$response" == *'CURL_FAILED'* ]]; then
+            fail "Profile" "Connection failed"
+        else
+            fail "Profile" "$(echo "$response" | head -c 80)"
+        fi
     fi
 fi
 echo

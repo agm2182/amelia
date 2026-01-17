@@ -30,6 +30,13 @@
     "context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "shopify": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "export SHOPIFY_STORE_DOMAIN=$(jq -r '.myshopify_domain' ~/.config/cherri/shopify-credentials.json) && export SHOPIFY_ACCESS_TOKEN=$(jq -r '.access_token' ~/.config/cherri/shopify-credentials.json) && exec npx -y @ajackus/shopify-mcp-server"
+      ]
     }
   }
 }

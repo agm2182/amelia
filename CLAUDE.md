@@ -14,9 +14,9 @@ Run `bin/check-integrations` to verify API credentials are working.
 |------|--------|---------|-------|
 | Google Search Console | Ready | `mcp-server-gsc` (npm) | Uses `GOOGLE_APPLICATION_CREDENTIALS` |
 | Google Analytics 4 | Ready | `analytics-mcp` (uvx, official Google) | Uses `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_PROJECT_ID` |
-| Gmail | Ready | `@gongrzhe/server-gmail-autoauth-mcp` | OAuth auto-auth |
+| Gmail | Ready | `@gongrzhe/server-gmail-autoauth-mcp` | OAuth tokens in `~/.gmail-mcp/credentials.json` |
 | Meta Ads | Ready | `meta-ads-mcp` (npm) | Uses `META_ACCESS_TOKEN` from `.env` |
-| TikTok Ads | Ready | `tiktok-ads-mcp` (uvx) | Uses `TIKTOK_APP_ID`, `TIKTOK_SECRET`, `TIKTOK_ACCESS_TOKEN` |
+| TikTok Ads | Ready | `tiktok-ads-mcp` (uvx) | Uses `TIKTOK_ACCESS_TOKEN`, `TIKTOK_ADVERTISER_IDS` from `.env` |
 | Shopify Dev MCP | Ready | N/A | No auth needed. Use for API docs and GraphQL schema. |
 | Shopify Admin API | Ready | `@ajackus/shopify-mcp-server` (npm) | Token in `~/.config/cherri/shopify-credentials.json` |
 | Semrush | No API | N/A | Start plan lacks API. Use Chrome MCP. |

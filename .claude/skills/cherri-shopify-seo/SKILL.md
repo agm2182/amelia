@@ -1,238 +1,364 @@
 ---
 name: cherri-shopify-seo
-description: Audit Cherri's Shopify storefront SEO. Use for checking meta tags, schema markup, page speed, and technical SEO issues. Generates audit reports and change recommendations. Audits work via Chrome MCP; applying changes requires manual Shopify Admin access.
+description: Full Shopify SEO management via Admin GraphQL API. Audit AND apply meta tags, schema markup, and SEO fields programmatically.
 ---
 
-# Cherri Shopify SEO Auditor
+# Cherri Shopify SEO
 
-Audit Cherri's Shopify store for SEO issues:
-- **Meta tag audit**: Check titles, descriptions, OG tags
-- **Schema markup**: Validate Product, Organization, BreadcrumbList schemas
-- **Page speed**: Audit Core Web Vitals via PageSpeed Insights
-- **Technical SEO**: Check canonicals, robots, sitemap, redirects
+Full Shopify SEO management with read/write capabilities:
+- **Audit SEO fields**: Pull current meta tags, descriptions across all products/collections
+- **Batch updates**: Apply SEO changes via GraphQL mutations
+- **Schema validation**: Check and fix structured data
+- **Change management**: Generate change-sets, review, then apply
 
-## Tool Availability
+## Configuration
 
-| Capability | Status | Method |
-|------------|--------|--------|
-| View pages & meta tags | Works | Chrome MCP |
-| Check schema markup | Works | Chrome MCP + JSON-LD inspection |
-| PageSpeed Insights | Works | Public API (no auth needed) |
-| Check robots.txt/sitemap | Works | Direct URL fetch |
-| **Apply SEO changes** | Manual | User must edit in Shopify Admin |
+Shopify Admin API is configured via MCP server (`@ajackus/shopify-mcp-server`).
 
-**Note:** Shopify Admin API auth is not configured. All change recommendations are generated as CSVs for manual application.
-
-## Intake Questions
-
-**What Shopify SEO work do you need?**
-
-1. **Full technical audit** - Comprehensive SEO health check
-2. **Meta tag audit** - Check/optimize titles and descriptions
-3. **Schema markup audit** - Validate structured data
-4. **Page speed audit** - Core Web Vitals analysis
-5. **Generate change recommendations** - Create batch update CSV
-
-**Provide:**
-- Specific pages to audit (optional, defaults to key pages)
-- Target keywords for optimization (optional)
+- Credentials: `~/.config/cherri/shopify-credentials.json`
+- Token refresh: Run `bin/refresh-shopify-token` (tokens expire every 24h)
 
 ## Workflow: Full Technical Audit
 
-### Step 1: Crawl Key Pages via Chrome MCP
+### Step 1: Pull All Product SEO Data
 
-Navigate to and audit:
-- Homepage: https://shopcherri.com
-- Top product pages (by traffic from GA4)
-- Top collection pages
-- Blog landing page
-- About/FAQ pages
-
-### Step 2: Meta Tag Check
-
-For each page, verify:
-
-| Element | Check | Good Example |
-|---------|-------|--------------|
-| Title | 50-60 chars, keyword included, unique | "Women's Cotton Underwear | Cherri" |
-| Meta description | 150-160 chars, CTA, keyword | "Shop comfortable cotton underwear..." |
-| H1 | One per page, keyword included | "Cotton Underwear for Women" |
-| OG title | Same as title or customized | - |
-| OG description | Same as meta or customized | - |
-| OG image | 1200x630, product/lifestyle image | - |
-
-**How to check via Chrome MCP:**
-1. Navigate to page
-2. Use `read_page` to get DOM
-3. Or use `javascript_tool` to extract:
-```javascript
-({
-  title: document.title,
-  metaDesc: document.querySelector('meta[name="description"]')?.content,
-  h1: document.querySelector('h1')?.textContent,
-  ogTitle: document.querySelector('meta[property="og:title"]')?.content,
-  ogDesc: document.querySelector('meta[property="og:description"]')?.content,
-  canonical: document.querySelector('link[rel="canonical"]')?.href
-})
-```
-
-### Step 3: Schema Markup Check
-
-Validate required schemas by extracting JSON-LD:
-
-```javascript
-Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-  .map(s => JSON.parse(s.textContent))
-```
-
-**Product pages need:**
-```json
-{
-  "@type": "Product",
-  "name": "Product name",
-  "image": "URL",
-  "description": "Description",
-  "sku": "SKU",
-  "offers": {
-    "@type": "Offer",
-    "price": "XX.XX",
-    "priceCurrency": "USD",
-    "availability": "InStock/OutOfStock"
+```graphql
+query getProductsSEO($first: Int!, $after: String) {
+  products(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        handle
+        title
+        descriptionHtml
+        seo {
+          title
+          description
+        }
+        featuredImage {
+          url
+          altText
+        }
+        onlineStoreUrl
+      }
+    }
   }
 }
 ```
 
-**Homepage needs:**
-```json
-{
-  "@type": "Organization",
-  "name": "Cherri",
-  "url": "https://shopcherri.com",
-  "logo": "URL",
-  "sameAs": ["social URLs"]
+Paginate through all products (use `first: 50`, follow `endCursor`).
+
+### Step 2: Pull All Collection SEO Data
+
+```graphql
+query getCollectionsSEO($first: Int!, $after: String) {
+  collections(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    edges {
+      node {
+        id
+        handle
+        title
+        descriptionHtml
+        seo {
+          title
+          description
+        }
+        image {
+          url
+          altText
+        }
+      }
+    }
+  }
 }
 ```
 
-**All pages need:**
-```json
-{
-  "@type": "BreadcrumbList",
-  "itemListElement": [...]
+### Step 3: Pull Page SEO Data
+
+```graphql
+query getPagesSEO($first: Int!) {
+  pages(first: $first) {
+    edges {
+      node {
+        id
+        handle
+        title
+        bodySummary
+        seo {
+          title
+          description
+        }
+      }
+    }
+  }
 }
 ```
 
-### Step 4: Technical Checks
+### Step 4: Analyze SEO Issues
 
-| Check | Expected | How to Test |
-|-------|----------|-------------|
-| Canonical tags | Self-referencing, correct | Check `<link rel="canonical">` |
-| Robots meta | index,follow (unless intentional) | Check `<meta name="robots">` |
-| Sitemap | Present, all pages included | Fetch /sitemap.xml |
-| Robots.txt | Not blocking important pages | Fetch /robots.txt |
-| HTTPS | All pages secure | No mixed content warnings |
+For each item, check:
 
-### Step 5: Page Speed Check
+| Element | Rule | Flag If |
+|---------|------|---------|
+| SEO Title | 50-60 chars, has keyword | Empty, too long, missing keyword |
+| SEO Description | 150-160 chars, has CTA | Empty, too long, no action words |
+| Image Alt Text | Descriptive, has keyword | Empty or generic |
+| Handle/URL | Lowercase, hyphenated, has keyword | Contains underscores or numbers |
 
-Use PageSpeed Insights API (public, no auth):
+### Step 5: Generate Audit Report
 
-```
-https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://shopcherri.com&strategy=mobile
-```
-
-Key metrics:
-
-| Metric | Good | Needs Improvement | Poor |
-|--------|------|-------------------|------|
-| LCP | <2.5s | 2.5-4s | >4s |
-| FID | <100ms | 100-300ms | >300ms |
-| CLS | <0.1 | 0.1-0.25 | >0.25 |
-| TTFB | <800ms | 800ms-1.8s | >1.8s |
-
-### Step 6: Generate Report
-
-Create audit report with:
-- Overall SEO health score
-- Critical issues (must fix)
-- Warnings (should fix)
-- Opportunities (nice to have)
-- Page-by-page breakdown
-
-Save to: `research/audits/technical-audit-YYYY-MM-DD.md`
-
-## Workflow: Meta Tag Optimization
-
-### Step 1: Pull Current Meta Tags
-
-For each target page, extract current values via Chrome MCP.
-
-### Step 2: Analyze Issues
-
-Common problems:
-- Title too long (truncated in SERP)
-- Title too short (missing opportunity)
-- Description missing CTA
-- Keyword not in title
-- Duplicate titles/descriptions
-
-### Step 3: Generate Recommendations
-
-For each page, propose:
-
-```
-Page: /products/cotton-brief
-Current Title: Cotton Brief - Cherri
-Proposed Title: Women's Cotton Brief Underwear | Comfortable & Sustainable | Cherri
-Target Keyword: cotton brief underwear
-
-Current Description: [empty]
-Proposed Description: Shop our bestselling cotton brief underwear. Soft, breathable, and sustainably made. Available in sizes XS-3XL. Free shipping on orders $50+.
-```
-
-### Step 4: Create Change-Set CSV
-
-Generate CSV for manual application:
+Output CSV with all SEO fields:
 
 ```csv
-page_handle,current_seo_title,proposed_seo_title,current_seo_description,proposed_seo_description,target_keyword
-cotton-brief,"Cotton Brief","Women's Cotton Brief | Cherri","","Shop soft cotton briefs...",cotton brief underwear
+type,id,handle,current_seo_title,title_length,current_seo_description,desc_length,has_image_alt,issues
+product,gid://shopify/Product/123,cotton-brief,"Cotton Brief",12,"",0,false,"Missing description, no image alt"
 ```
 
-Save to: `research/audits/meta-changes-YYYY-MM-DD.csv`
+Save to: `research/audits/shopify-seo-audit-YYYY-MM-DD.csv`
 
-### Step 5: Apply Changes (Manual)
+## Workflow: Batch SEO Updates
 
-User applies changes in Shopify Admin:
-1. Go to https://admin.shopify.com/store/shop-cherri/products
-2. Edit each product
-3. Scroll to "Search engine listing"
-4. Update title and description
-5. Save
+### Step 1: Generate Change-Set
 
-## Page Speed Opportunities
+Create proposed changes CSV:
 
-Common Shopify issues to flag:
+```csv
+type,id,handle,current_seo_title,proposed_seo_title,current_seo_description,proposed_seo_description,approved
+product,gid://shopify/Product/123,cotton-brief,"Cotton Brief","Women's Cotton Brief | Cherri","","Shop soft, sustainable cotton briefs...",
+```
 
-| Issue | Impact | Effort | Priority |
-|-------|--------|--------|----------|
-| Large images | High | Low | P1 |
-| Remove unused apps | High | Low | P1 |
-| Lazy load below-fold | Medium | Low | P2 |
-| Defer non-critical JS | Medium | Medium | P2 |
-| Critical CSS inlining | Medium | High | P3 |
+Save to: `research/audits/seo-changes-YYYY-MM-DD.csv`
+
+### Step 2: Review Changes
+
+Present changes to user for approval. User marks `approved` column as `true` or `yes`.
+
+### Step 3: Apply Product SEO Updates
+
+For each approved product change:
+
+```graphql
+mutation updateProductSEO($input: ProductInput!) {
+  productUpdate(input: $input) {
+    product {
+      id
+      handle
+      seo {
+        title
+        description
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
+
+Variables:
+```json
+{
+  "input": {
+    "id": "gid://shopify/Product/123",
+    "seo": {
+      "title": "Women's Cotton Brief | Cherri",
+      "description": "Shop soft, sustainable cotton briefs..."
+    }
+  }
+}
+```
+
+### Step 4: Apply Collection SEO Updates
+
+```graphql
+mutation updateCollectionSEO($input: CollectionInput!) {
+  collectionUpdate(input: $input) {
+    collection {
+      id
+      handle
+      seo {
+        title
+        description
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
+
+### Step 5: Apply Page SEO Updates
+
+```graphql
+mutation updatePageSEO($id: ID!, $page: PageUpdateInput!) {
+  pageUpdate(id: $id, page: $page) {
+    page {
+      id
+      handle
+      seo {
+        title
+        description
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
+
+### Step 6: Verify Changes
+
+Re-query updated items to confirm changes applied. Generate verification report.
+
+Save to: `research/audits/seo-changes-applied-YYYY-MM-DD.csv`
+
+## Workflow: Image Alt Text Updates
+
+### Step 1: Find Missing Alt Text
+
+```graphql
+query getProductImages($first: Int!) {
+  products(first: $first) {
+    edges {
+      node {
+        id
+        handle
+        title
+        images(first: 10) {
+          edges {
+            node {
+              id
+              url
+              altText
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Filter for images where `altText` is null or empty.
+
+### Step 2: Generate Alt Text Recommendations
+
+For each image, propose alt text based on:
+- Product title
+- Image position (main, lifestyle, detail)
+- Color/variant if visible
+
+Format: `[Product Name] in [Color] - [View Type]`
+
+Example: "Cotton Brief in Blush - Front View"
+
+### Step 3: Apply Alt Text Updates
+
+```graphql
+mutation updateProductImage($productId: ID!, $image: ImageInput!) {
+  productImageUpdate(productId: $productId, image: $image) {
+    image {
+      id
+      altText
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
+
+## Workflow: URL/Handle Optimization
+
+### Step 1: Audit Handles
+
+Check all product/collection handles for:
+- Underscores (should be hyphens)
+- Random numbers
+- Missing keywords
+- Too long (>60 chars)
+
+### Step 2: Generate Redirect Plan
+
+**WARNING:** Changing handles breaks existing URLs. Must create redirects.
+
+```csv
+type,old_handle,new_handle,old_url,new_url,redirect_needed
+product,cotton_brief_01,cotton-brief,/products/cotton_brief_01,/products/cotton-brief,true
+```
+
+### Step 3: Apply Handle Change + Redirect
+
+```graphql
+mutation updateProductHandle($input: ProductInput!) {
+  productUpdate(input: $input) {
+    product {
+      id
+      handle
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
+
+Then create redirect:
+
+```graphql
+mutation createRedirect($urlRedirect: UrlRedirectInput!) {
+  urlRedirectCreate(urlRedirect: $urlRedirect) {
+    urlRedirect {
+      id
+      path
+      target
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}
+```
+
+## Rate Limits
+
+Shopify GraphQL Admin API has rate limits based on calculated query cost.
+
+**Best practices:**
+- Batch queries where possible
+- Use pagination (50 items per request)
+- Add delays between mutations (100ms)
+- Monitor `X-Shopify-Shop-Api-Call-Limit` header
 
 ## Quick Commands
 
-**Quick audit:**
-"Run a quick SEO check on Cherri's homepage"
+**Full audit:**
+"Pull all product and collection SEO data and generate audit report"
 
-**Meta check:**
-"Check meta tags for the top 10 product pages"
+**Update product SEO:**
+"Update SEO title and description for the cotton-brief product"
 
-**Schema validation:**
-"Validate Product schema on shopcherri.com/products/cotton-brief"
+**Batch update:**
+"Apply all approved changes from the change-set CSV"
 
-**Speed check:**
-"Run PageSpeed Insights on the homepage"
+**Fix alt text:**
+"Find all products with missing image alt text and generate recommendations"
 
-**Generate change-set:**
-"Create meta tag improvements for all collection pages"
+**Check handles:**
+"Audit all product handles for SEO issues"
