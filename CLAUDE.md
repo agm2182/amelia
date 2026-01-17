@@ -6,11 +6,13 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 
 ## Tool Status
 
+Run `bin/check-integrations` to verify all API credentials are working.
+
 | Tool | Status | Notes |
 |------|--------|-------|
 | Google Search Console | Ready | MCP configured in `.mcp.json` |
 | Google Analytics 4 | Ready | MCP configured in `.mcp.json` |
-| Meta Ads MCP | Ready | Credentials in `~/.config/cherri/.env` |
+| Meta Ads MCP | Token expired | Needs new token from developers.facebook.com |
 | TikTok Ads MCP | Setup needed | Configured in `.mcp.json`, needs access token |
 | Shopify Dev MCP | Ready | No auth needed. Use for API docs and GraphQL schema. |
 | Shopify Admin API | Setup needed | Needs Custom App token. See `skills/README.md` |

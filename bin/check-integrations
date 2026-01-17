@@ -1,0 +1,230 @@
+#!/usr/bin/env bash
+#
+# Verify all Cherri SEO integrations are working
+# Usage: bin/check-integrations
+#
+
+set -uo pipefail
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+PASSED=0
+FAILED=0
+SKIPPED=0
+
+# Config directory
+CONFIG_DIR="$HOME/.config/cherri"
+
+# Load environment variables if present
+if [[ -f "$CONFIG_DIR/.env" ]]; then
+    # shellcheck source=/dev/null
+    source "$CONFIG_DIR/.env"
+fi
+
+pass() {
+    echo -e "${GREEN}✓${NC} $1"
+    [[ -n "${2:-}" ]] && echo "  $2"
+    ((PASSED++))
+}
+
+fail() {
+    echo -e "${RED}✗${NC} $1"
+    [[ -n "${2:-}" ]] && echo "  $2"
+    ((FAILED++))
+}
+
+skip() {
+    echo -e "${YELLOW}○${NC} $1 (skipped)"
+    [[ -n "${2:-}" ]] && echo "  $2"
+    ((SKIPPED++))
+}
+
+# Generate Google OAuth token from service account
+get_google_token() {
+    local scope="$1"
+    local creds_file="$CONFIG_DIR/cherri-seo-credentials.json"
+
+    if [[ ! -f "$creds_file" ]]; then
+        echo ""
+        return
+    fi
+
+    node --input-type=module << ENDJS
+import { readFileSync } from 'fs';
+import { createSign } from 'crypto';
+
+const creds = JSON.parse(readFileSync('$creds_file'));
+const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
+const now = Math.floor(Date.now() / 1000);
+const payload = Buffer.from(JSON.stringify({
+    iss: creds.client_email,
+    scope: '$scope',
+    aud: 'https://oauth2.googleapis.com/token',
+    iat: now,
+    exp: now + 3600
+})).toString('base64url');
+
+const sign = createSign('RSA-SHA256');
+sign.update(header + '.' + payload);
+const signature = sign.sign(creds.private_key, 'base64url');
+const jwt = header + '.' + payload + '.' + signature;
+
+const resp = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: 'grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=' + jwt
+});
+const data = await resp.json();
+console.log(data.access_token || '');
+ENDJS
+}
+
+echo "Checking Cherri SEO integrations..."
+echo
+
+# -----------------------------------------------------------------------------
+# Google Search Console
+# -----------------------------------------------------------------------------
+echo "Google Search Console"
+CREDS_FILE="$CONFIG_DIR/cherri-seo-credentials.json"
+if [[ ! -f "$CREDS_FILE" ]]; then
+    skip "API" "Missing $CREDS_FILE"
+else
+    GSC_TOKEN=$(get_google_token "https://www.googleapis.com/auth/webmasters.readonly" 2>/dev/null)
+    if [[ -z "$GSC_TOKEN" ]]; then
+        fail "Auth" "Failed to get access token"
+    else
+        response=$(curl -s -m 15 \
+            -H "Authorization: Bearer $GSC_TOKEN" \
+            "https://www.googleapis.com/webmasters/v3/sites" 2>&1 || echo "CURL_FAILED")
+
+        if [[ "$response" == *'"siteEntry"'* ]] || [[ "$response" == *'"siteUrl"'* ]]; then
+            site_count=$(echo "$response" | grep -o '"siteUrl"' | wc -l | tr -d ' ')
+            pass "List sites" "$site_count site(s) accessible"
+        elif [[ "$response" == *'CURL_FAILED'* ]]; then
+            fail "List sites" "Connection failed"
+        else
+            fail "List sites" "$(echo "$response" | head -c 80)"
+        fi
+    fi
+fi
+echo
+
+# -----------------------------------------------------------------------------
+# Google Analytics 4
+# -----------------------------------------------------------------------------
+echo "Google Analytics 4"
+GA4_PROPERTY_ID="386275004"
+if [[ ! -f "$CREDS_FILE" ]]; then
+    skip "API" "Missing $CREDS_FILE"
+else
+    GA4_TOKEN=$(get_google_token "https://www.googleapis.com/auth/analytics.readonly" 2>/dev/null)
+    if [[ -z "$GA4_TOKEN" ]]; then
+        fail "Auth" "Failed to get access token"
+    else
+        response=$(curl -s -m 15 \
+            -H "Authorization: Bearer $GA4_TOKEN" \
+            "https://analyticsdata.googleapis.com/v1beta/properties/${GA4_PROPERTY_ID}/metadata" 2>&1 || echo "CURL_FAILED")
+
+        if [[ "$response" == *'"dimensions"'* ]]; then
+            pass "Property access" "Property $GA4_PROPERTY_ID accessible"
+        elif [[ "$response" == *'PERMISSION_DENIED'* ]]; then
+            fail "Property access" "Permission denied - add service account to GA4 property"
+        elif [[ "$response" == *'CURL_FAILED'* ]]; then
+            fail "Property access" "Connection failed"
+        else
+            fail "Property access" "$(echo "$response" | head -c 80)"
+        fi
+    fi
+fi
+echo
+
+# -----------------------------------------------------------------------------
+# Meta Ads (Instagram/Facebook)
+# -----------------------------------------------------------------------------
+echo "Meta Ads (Instagram/Facebook)"
+if [[ -z "${META_ACCESS_TOKEN:-}" ]]; then
+    skip "API" "Missing META_ACCESS_TOKEN in $CONFIG_DIR/.env"
+elif [[ -z "${META_AD_ACCOUNT_ID:-}" ]]; then
+    skip "API" "Missing META_AD_ACCOUNT_ID in $CONFIG_DIR/.env"
+else
+    response=$(curl -s -m 15 \
+        "https://graph.facebook.com/v21.0/${META_AD_ACCOUNT_ID}?fields=name,account_status&access_token=${META_ACCESS_TOKEN}" 2>&1 || echo "CURL_FAILED")
+
+    if [[ "$response" == *'"name"'* ]]; then
+        account_name=$(echo "$response" | grep -o '"name":"[^"]*"' | cut -d'"' -f4)
+        pass "Ad account" "Account: $account_name"
+    elif [[ "$response" == *'OAuthException'* ]] || [[ "$response" == *'access token'* ]]; then
+        fail "Ad account" "Token expired - generate new token at developers.facebook.com"
+    elif [[ "$response" == *'does not exist'* ]]; then
+        fail "Ad account" "Invalid account ID or missing permissions"
+    elif [[ "$response" == *'CURL_FAILED'* ]]; then
+        fail "Ad account" "Connection failed"
+    else
+        fail "Ad account" "$(echo "$response" | head -c 80)"
+    fi
+fi
+echo
+
+# -----------------------------------------------------------------------------
+# TikTok Ads
+# -----------------------------------------------------------------------------
+echo "TikTok Ads"
+if [[ -z "${TIKTOK_ACCESS_TOKEN:-}" ]]; then
+    skip "API" "Missing TIKTOK_ACCESS_TOKEN in $CONFIG_DIR/.env"
+elif [[ -z "${TIKTOK_ADVERTISER_ID:-}" ]]; then
+    skip "API" "Missing TIKTOK_ADVERTISER_ID in $CONFIG_DIR/.env"
+else
+    response=$(curl -s -m 15 \
+        -H "Access-Token: ${TIKTOK_ACCESS_TOKEN}" \
+        "https://business-api.tiktok.com/open_api/v1.3/advertiser/info/?advertiser_ids=[\"${TIKTOK_ADVERTISER_ID}\"]" 2>&1 || echo "CURL_FAILED")
+
+    if [[ "$response" == *'"code":0'* ]] || [[ "$response" == *'"code": 0'* ]]; then
+        pass "Advertiser info" "API responding"
+    elif [[ "$response" == *'token'* ]] && [[ "$response" == *'null'* || "$response" == *'invalid'* ]]; then
+        fail "Advertiser info" "Invalid or expired token"
+    elif [[ "$response" == *'CURL_FAILED'* ]]; then
+        fail "Advertiser info" "Connection failed"
+    else
+        fail "Advertiser info" "$(echo "$response" | head -c 80)"
+    fi
+fi
+echo
+
+# -----------------------------------------------------------------------------
+# Shopify Admin API
+# -----------------------------------------------------------------------------
+echo "Shopify Admin API"
+SHOPIFY_STORE_DOMAIN="shop-cherri.myshopify.com"
+if [[ -z "${SHOPIFY_ACCESS_TOKEN:-}" ]]; then
+    skip "API" "Missing SHOPIFY_ACCESS_TOKEN in $CONFIG_DIR/.env"
+else
+    response=$(curl -s -m 15 \
+        -H "X-Shopify-Access-Token: ${SHOPIFY_ACCESS_TOKEN}" \
+        "https://${SHOPIFY_STORE_DOMAIN}/admin/api/2024-10/shop.json" 2>&1 || echo "CURL_FAILED")
+
+    if [[ "$response" == *'"shop"'* ]]; then
+        shop_name=$(echo "$response" | grep -o '"name":"[^"]*"' | head -1 | cut -d'"' -f4)
+        pass "Shop info" "Store: $shop_name"
+    elif [[ "$response" == *'401'* ]] || [[ "$response" == *'Unauthorized'* ]]; then
+        fail "Shop info" "Invalid access token"
+    elif [[ "$response" == *'CURL_FAILED'* ]]; then
+        fail "Shop info" "Connection failed"
+    else
+        fail "Shop info" "$(echo "$response" | head -c 80)"
+    fi
+fi
+echo
+
+# -----------------------------------------------------------------------------
+# Summary
+# -----------------------------------------------------------------------------
+echo "----------------------------------------"
+echo -e "Results: ${GREEN}${PASSED} passed${NC}, ${RED}${FAILED} failed${NC}, ${YELLOW}${SKIPPED} skipped${NC}"
+
+[[ $FAILED -gt 0 ]] && exit 1
+exit 0

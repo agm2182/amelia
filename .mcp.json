@@ -15,12 +15,8 @@
       }
     },
     "meta-ads": {
-      "command": "npx",
-      "args": ["-y", "@pipeboard/meta-ads-mcp"],
-      "env": {
-        "META_ACCESS_TOKEN": "${META_ACCESS_TOKEN}",
-        "META_AD_ACCOUNT_ID": "${META_AD_ACCOUNT_ID}"
-      }
+      "command": "bash",
+      "args": ["-c", "source ~/.config/cherri/.env && exec npx -y @pipeboard/meta-ads-mcp"]
     },
     "tiktok-ads": {
       "command": "npx",

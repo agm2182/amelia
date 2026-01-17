@@ -18,13 +18,19 @@ claude
 
 ## Step 2: Install SEO Plugins
 
-When you first open the project, you'll be prompted to install the wshobson/agents marketplace. Accept it, then install the SEO plugins:
+First, add the wshobson/agents marketplace (registered as `claude-code-workflows`):
 
 ```
-/plugin install seo-content-creation
-/plugin install seo-technical-optimization
-/plugin install seo-analysis-monitoring
-/plugin install content-marketing
+/plugin marketplace add wshobson/agents
+```
+
+Then install the SEO plugins:
+
+```
+/plugin install seo-content-creation@claude-code-workflows
+/plugin install seo-technical-optimization@claude-code-workflows
+/plugin install seo-analysis-monitoring@claude-code-workflows
+/plugin install content-marketing@claude-code-workflows
 ```
 
 These provide:
@@ -54,7 +60,15 @@ The MCP servers are already configured in `.claude.json` and will use this file 
 
 ## Step 4: Verify Setup
 
-Test that everything works:
+Run the integration check script:
+
+```bash
+bin/check-integrations
+```
+
+This tests all configured APIs (GSC, GA4, Meta Ads, TikTok Ads, Shopify) and reports which are working.
+
+You can also test interactively:
 
 ```
 "Show me the top organic landing pages from GA4 for the last 7 days"
