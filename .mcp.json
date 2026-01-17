@@ -2,29 +2,34 @@
   "mcpServers": {
     "gsc": {
       "command": "npx",
-      "args": ["-y", "@anthropic/gsc-mcp"],
+      "args": ["-y", "mcp-server-gsc"],
       "env": {
         "GOOGLE_APPLICATION_CREDENTIALS": "${HOME}/.config/cherri/cherri-seo-credentials.json"
       }
     },
     "ga4": {
-      "command": "npx",
-      "args": ["-y", "@anthropic/ga4-mcp"],
+      "command": "/Users/gabriellascaringe/.local/bin/uvx",
+      "args": ["--python", "3.13", "analytics-mcp"],
       "env": {
-        "GOOGLE_APPLICATION_CREDENTIALS": "${HOME}/.config/cherri/cherri-seo-credentials.json"
+        "GOOGLE_APPLICATION_CREDENTIALS": "${HOME}/.config/cherri/cherri-seo-credentials.json",
+        "GOOGLE_PROJECT_ID": "cherri-seo-research"
       }
     },
     "meta-ads": {
       "command": "bash",
-      "args": ["-c", "source ~/.config/cherri/.env && exec npx -y @pipeboard/meta-ads-mcp"]
+      "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec npx -y meta-ads-mcp"]
     },
     "tiktok-ads": {
+      "command": "bash",
+      "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec /Users/gabriellascaringe/.local/bin/uvx --python 3.13 tiktok-ads-mcp"]
+    },
+    "gmail": {
       "command": "npx",
-      "args": ["-y", "tiktok-ads-mcp"],
-      "env": {
-        "TIKTOK_ACCESS_TOKEN": "${TIKTOK_ACCESS_TOKEN}",
-        "TIKTOK_ADVERTISER_ID": "${TIKTOK_ADVERTISER_ID}"
-      }
+      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
     }
   }
 }
