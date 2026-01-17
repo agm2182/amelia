@@ -3,6 +3,7 @@
 # Verify all Cherri SEO integrations are working
 # Usage: bin/check-integrations
 #
+# Dependencies: bash, curl, openssl, base64
 
 set -uo pipefail
 
@@ -43,44 +44,95 @@ skip() {
     ((SKIPPED++))
 }
 
-# Generate Google OAuth token from service account
+# Base64url encode (RFC 4648)
+base64url_encode() {
+    openssl base64 -e -A | tr '+/' '-_' | tr -d '='
+}
+
+# Extract JSON field value (simple parser for well-formed JSON)
+json_field() {
+    local json="$1"
+    local field="$2"
+    # Handle multi-line values (like private_key with \n)
+    echo "$json" | sed -n 's/.*"'"$field"'"[[:space:]]*:[[:space:]]*"\(.*\)".*/\1/p' | head -1
+}
+
+# Extract private key from JSON (handles escaped newlines)
+extract_private_key() {
+    local creds_file="$1"
+    # Use awk to extract the private_key field and convert \n to actual newlines
+    awk -F'"' '/"private_key"/ {for(i=1;i<=NF;i++) if($i=="private_key") print $(i+2)}' "$creds_file" | sed 's/\\n/\n/g'
+}
+
+# Extract client_email from JSON
+extract_client_email() {
+    local creds_file="$1"
+    awk -F'"' '/"client_email"/ {for(i=1;i<=NF;i++) if($i=="client_email") print $(i+2)}' "$creds_file"
+}
+
+# Generate Google OAuth token from service account using openssl
 get_google_token() {
     local scope="$1"
     local creds_file="$CONFIG_DIR/cherri-seo-credentials.json"
 
     if [[ ! -f "$creds_file" ]]; then
         echo ""
-        return
+        return 1
     fi
 
-    node --input-type=module << ENDJS
-import { readFileSync } from 'fs';
-import { createSign } from 'crypto';
+    # Extract credentials
+    local client_email
+    client_email=$(extract_client_email "$creds_file")
+    if [[ -z "$client_email" ]]; then
+        echo ""
+        return 1
+    fi
 
-const creds = JSON.parse(readFileSync('$creds_file'));
-const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
-const now = Math.floor(Date.now() / 1000);
-const payload = Buffer.from(JSON.stringify({
-    iss: creds.client_email,
-    scope: '$scope',
-    aud: 'https://oauth2.googleapis.com/token',
-    iat: now,
-    exp: now + 3600
-})).toString('base64url');
+    # Create JWT header
+    local header='{"alg":"RS256","typ":"JWT"}'
+    local header_b64
+    header_b64=$(echo -n "$header" | base64url_encode)
 
-const sign = createSign('RSA-SHA256');
-sign.update(header + '.' + payload);
-const signature = sign.sign(creds.private_key, 'base64url');
-const jwt = header + '.' + payload + '.' + signature;
+    # Create JWT payload
+    local now
+    now=$(date +%s)
+    local exp=$((now + 3600))
+    local payload="{\"iss\":\"$client_email\",\"scope\":\"$scope\",\"aud\":\"https://oauth2.googleapis.com/token\",\"iat\":$now,\"exp\":$exp}"
+    local payload_b64
+    payload_b64=$(echo -n "$payload" | base64url_encode)
 
-const resp = await fetch('https://oauth2.googleapis.com/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: 'grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=' + jwt
-});
-const data = await resp.json();
-console.log(data.access_token || '');
-ENDJS
+    # Create unsigned token
+    local unsigned="$header_b64.$payload_b64"
+
+    # Extract private key to temp file
+    local keyfile
+    keyfile=$(mktemp)
+    extract_private_key "$creds_file" > "$keyfile"
+
+    # Sign with openssl
+    local signature
+    signature=$(echo -n "$unsigned" | openssl dgst -sha256 -sign "$keyfile" 2>/dev/null | base64url_encode)
+    rm -f "$keyfile"
+
+    if [[ -z "$signature" ]]; then
+        echo ""
+        return 1
+    fi
+
+    # Create complete JWT
+    local jwt="$unsigned.$signature"
+
+    # Exchange JWT for access token
+    local response
+    response=$(curl -s -m 15 -X POST \
+        -H "Content-Type: application/x-www-form-urlencoded" \
+        -d "grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=$jwt" \
+        "https://oauth2.googleapis.com/token" 2>&1)
+
+    # Extract access token from response
+    local token
+    token=$(echo "$response" | grep -o '"access_token"[[:space:]]*:[[:space:]]*"[^"]*"' | cut -d'"' -f4)
+    echo "$token"
 }
 
 echo "Checking Cherri SEO integrations..."
@@ -199,9 +251,21 @@ echo
 # Shopify Admin API
 # -----------------------------------------------------------------------------
 echo "Shopify Admin API"
+SHOPIFY_CREDS_FILE="$CONFIG_DIR/shopify-credentials.json"
 SHOPIFY_STORE_DOMAIN="shop-cherri.myshopify.com"
+
+# Try to get token from JSON file first, then fall back to env var
+if [[ -f "$SHOPIFY_CREDS_FILE" ]]; then
+    if command -v jq &> /dev/null; then
+        SHOPIFY_ACCESS_TOKEN=$(jq -r '.access_token // empty' "$SHOPIFY_CREDS_FILE" 2>/dev/null)
+    else
+        # Fallback without jq
+        SHOPIFY_ACCESS_TOKEN=$(grep -o '"access_token"[[:space:]]*:[[:space:]]*"[^"]*"' "$SHOPIFY_CREDS_FILE" | cut -d'"' -f4)
+    fi
+fi
+
 if [[ -z "${SHOPIFY_ACCESS_TOKEN:-}" ]]; then
-    skip "API" "Missing SHOPIFY_ACCESS_TOKEN in $CONFIG_DIR/.env"
+    skip "API" "Missing access token. Run bin/refresh-shopify-token"
 else
     response=$(curl -s -m 15 \
         -H "X-Shopify-Access-Token: ${SHOPIFY_ACCESS_TOKEN}" \
@@ -211,7 +275,7 @@ else
         shop_name=$(echo "$response" | grep -o '"name":"[^"]*"' | head -1 | cut -d'"' -f4)
         pass "Shop info" "Store: $shop_name"
     elif [[ "$response" == *'401'* ]] || [[ "$response" == *'Unauthorized'* ]]; then
-        fail "Shop info" "Invalid access token"
+        fail "Shop info" "Token expired. Run bin/refresh-shopify-token"
     elif [[ "$response" == *'CURL_FAILED'* ]]; then
         fail "Shop info" "Connection failed"
     else
