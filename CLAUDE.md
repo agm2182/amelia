@@ -183,4 +183,4 @@ Use these with `use context7` for up-to-date documentation:
 - **Meta Ad Account ID:** act_2026819017404527
 - **TikTok App ID:** 7595068986274938881
 - **TikTok Advertiser IDs:** 6872850369307738114, 6872851292415328257
-- **Primary competitors:** Parade, Tommy John, MeUndies, Cuup, ThirdLove
+- **Competitor Intel:** See `research/competitors.md` for detailed competitive analysis

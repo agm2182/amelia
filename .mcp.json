@@ -8,7 +8,7 @@
       }
     },
     "ga4": {
-      "command": "/Users/gabriellascaringe/.local/bin/uvx",
+      "command": "uvx",
       "args": ["--python", "3.13", "analytics-mcp"],
       "env": {
         "GOOGLE_APPLICATION_CREDENTIALS": "${HOME}/.config/cherri/cherri-seo-credentials.json",
@@ -21,7 +21,7 @@
     },
     "tiktok-ads": {
       "command": "bash",
-      "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec /Users/gabriellascaringe/.local/bin/uvx --python 3.13 tiktok-ads-mcp"]
+      "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec uvx --python 3.13 tiktok-ads-mcp"]
     },
     "gmail": {
       "command": "npx",

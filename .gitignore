@@ -40,3 +40,7 @@ npm-debug.log*
 *.tmp
 *.temp
 .cache/
+
+# Survey raw data (contains PII)
+data/surveys/*.csv
+data/surveys/*.xlsx
