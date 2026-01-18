@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a wide gusset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The gusset is the fabric panel at the crotch of your underwear. A wide gusset provides extra coverage to prevent shifting, bunching, and \"lip slip.\" Most brands make narrow gussets to save on materials—Cherri's wide gusset design offers 2x the coverage of standard underwear."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did Cherri design wide gusset underwear?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We surveyed over 5,000 people and found that 97% said underwear gussets are too small, and 92% have experienced discomfort from underwear not fitting their anatomy. Our wide gusset design is based on actual body measurement data from 860+ people—not industry standards that ignore body diversity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sizes does Cherri wide gusset underwear come in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cherri wide gusset underwear is available in sizes XS through 4X. Our sizing is based on real body measurements, not arbitrary industry standards, so every body can find underwear that actually fits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is wide gusset underwear better for people with an outie vulva?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our research found that nearly half of people have an \"outie\" vulva, yet most underwear brands design as if everyone has an \"innie.\" Cherri's wide gusset provides the extra coverage and support that outie vulvas need, without shifting or causing discomfort."
+      }
+    }
+  ]
+}
