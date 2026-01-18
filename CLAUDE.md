@@ -19,6 +19,7 @@ Run `bin/check-integrations` to verify API credentials are working.
 | TikTok Ads | Ready | `tiktok-ads-mcp` (uvx) | Uses `TIKTOK_ACCESS_TOKEN`, `TIKTOK_ADVERTISER_IDS` from `.env` |
 | Shopify Dev MCP | Ready | N/A | No auth needed. Use for API docs and GraphQL schema. |
 | Shopify Admin API | Ready | `@ajackus/shopify-mcp-server` (npm) | Token in `~/.config/cherri/shopify-credentials.json` |
+| Canva | Ready | `mcp-remote` → `https://mcp.canva.com/mcp` | Browser OAuth on first use |
 | Semrush | No API | N/A | Start plan lacks API. Use Chrome MCP. |
 | Ahrefs | No API | N/A | Free account. Use Chrome MCP. |
 | Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
