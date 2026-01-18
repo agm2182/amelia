@@ -71,7 +71,54 @@ TikTok tokens expire periodically. To regenerate:
 
 ### Meta Access Token
 
-Generate at https://developers.facebook.com/tools/explorer/ with `ads_read` and `ads_management` permissions.
+Generate at https://developers.facebook.com/tools/explorer/
+
+**Current scopes:**
+- `ads_management`, `ads_read` - Meta Ads API
+- `business_management` - Business account access
+- `instagram_manage_comments` - Read/reply/delete Instagram comments
+- `pages_show_list`, `pages_read_engagement` - Facebook Page access
+
+**Missing scopes (requires App Review):**
+- `instagram_basic` - List Instagram media posts (needed to discover media IDs)
+
+**Token expiry:** ~60 days (check with `mcp__meta-ads__get_token_info`)
+
+**App Dashboard:** https://developers.facebook.com/apps/878302508435072/
+
+## Instagram Graph API (Direct Usage)
+
+The Meta Ads MCP doesn't cover Instagram comment management. Use the Graph API directly with curl.
+
+**Account IDs:**
+- Instagram Account: `17841403097399699` (@shopcherri)
+- Facebook Page: `773863439614388` (Cherri)
+- Business ID: `1174640472693824`
+
+**Get page access token:**
+```bash
+export $(grep META_ACCESS_TOKEN ~/.config/cherri/.env | xargs)
+curl -s "https://graph.facebook.com/v21.0/773863439614388?fields=access_token&access_token=$META_ACCESS_TOKEN" | jq -r .access_token
+```
+
+**API endpoints (require media ID):**
+```bash
+# List comments on a media post
+GET /{media-id}/comments?fields=id,text,username,timestamp
+
+# Reply to a comment
+POST /{comment-id}/replies?message=Thank+you!
+
+# Delete/hide a comment
+DELETE /{comment-id}
+
+# Like a comment (if supported)
+POST /{comment-id}/likes
+```
+
+**Current limitation:** Cannot list media posts without `instagram_basic` scope. Must know media ID in advance or use Chrome MCP to browse Meta Business Suite.
+
+**Context7 docs:** Use `/websites/developers_facebook_instagram-platform` for API reference.
 
 ### Shopify Access Token
 
