@@ -185,6 +185,7 @@ Custom Claude skills are installed in `.claude/skills/`:
 | Skill | Description |
 |-------|-------------|
 | `cherri-content-brief` | Generate SEO content briefs with Cherri brand voice |
+| `cherri-returns-exchange` | Handle customer returns/exchanges via Shopify lookup |
 | `cherri-shopify-seo` | Audit Shopify SEO (meta tags, schema, page speed) |
 | `cherri-social-commerce` | Instagram/TikTok Shop optimization, ad performance |
 
