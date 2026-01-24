@@ -1,0 +1,158 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What size am I?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check out our sizing chart to see what size you are. You can also find the size chart and product specs under each individual product listing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I checked the size chart but I am in between sizes. Which size should I choose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While there is no one size fits all approach to clothing, we want to find the best fit for you. Take a look at the size chart and see what sizes your waist and hip measurements align with. Choose the size that best fits your waist for high waisted styles like the High Cut Thong and High Cut Brief. Choose the size that best fits your hips for lower waist styles like the Bikini Brief and G-String. Contact us at hi@shopcherri.com if you need additional assistance with sizing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will Cherri undies fit my bits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! All products are designed with expanded gussets for your comfort in mind. Cherri fits all bits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I am plus size. Will Cherri fit me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We sell our undies up to 4X and have designed each style by testing them on a variety of sizes and body types, ensuring a good fit and positive experience for our plus size customers. You deserve to feel comfy in the clothes you wear!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I have long and/or larger labia and have a hard time finding underwear that fits me. Which products do you recommend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Cherri products are vulva-approved! Feel confident shopping all of our styles without worrying about lip-slips."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the length / width of the gusset on Cherri undies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can find all of the specific product measurements like the length of the gusset, width of the gusset, waistband circumference, etc. under each product listing. Above the size selections, click on 'Size Chart + Product Specs' to see the point of measurements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a gusset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 'pocket' in women's underwear, aka the gusset, is a piece of fabric layered in the crotch area. Because the crotch is a high-wear area with lots of friction and moisture, it helps reinforce the structure of the garment and prevent infections by keeping the area dry and ventilated. However, if the gusset is not wide or long enough to cover the crotch, or isn't made of breathable materials, it loses its purpose. That's why Cherri's signature wide-gusset undies are designed with gussets wider, longer, softer, and more breathable than most other brands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to get my products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Orders are fulfilled within 2-3 business days. Domestic shipping can take up to 5 business days to arrive. Foreign shipping could take up to 14 business days to arrive. Due to global supply chain challenges, shipping times could be longer than usual."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does shipping cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard domestic shipping on orders under $80 is $8.99. International shipping rates can vary depending on your region and are calculated at checkout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there free shipping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Free domestic shipping is on all orders $80+ and free international shipping is on all orders $150+."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you ship internationally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Cherri ships EVERYWHERE. Shipping will be calculated at checkout and includes any duties, taxes, or fees. Free shipping for domestic orders on purchases $80 USD+ and free shipping for international orders on purchases $150 USD+."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer refunds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We do not offer full refunds, unless the item is damaged. We only accept exchanges or store credit. Sale items are final sale, but can be exchanged for a different size if needed. Shipping cost is non-refundable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I exchange an item?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fill out the contact form on our Returns page to get started!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays the shipping costs in the case of an exchange?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We do! Exchanges are always free for the customer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer warranty for your products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! At Cherri, we stand behind the quality and craftsmanship of our products. We offer a one-year warranty on all items sold through our website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are Cherri products made?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cherri ethically sources materials from all around the US and makes everything in New York. Even our cotton fibers are grown right here in the USA! Our swimwear is made in a woman-owned factory in Colombia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What fabric are Cherri undies made of?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cherri's core cotton collection is made from a unique blend of organic Supima Cotton and Lenzing Modal formulated to be the most comfortable and breathable for your intimate areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Cherri undies eco-friendly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Ethical business practices are at the core of Cherri's values. We focus on eco-conscious initiatives including using 100% recycled packaging materials, working with OEKO-TEX certified factories, using eco-friendly dyes, producing in small batches, and using only organic forms of cotton."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are Cherries so expensive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Since we use high quality materials and ethical labor, it costs more than typical underwear. We value transparency and believe it is an important part of consumer education. We actively work on decreasing our costs to sell Cherries at a more accessible price point while doing it in an ethical way."
+      }
+    }
+  ]
+}

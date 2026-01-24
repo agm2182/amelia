@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://shopcherri.com/#organization",
+  "name": "Cherri",
+  "url": "https://shopcherri.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://shopcherri.com/cdn/shop/files/cherri-logo-black_1_606x.png?v=1658607963",
+    "width": 606,
+    "height": 606
+  },
+  "description": "Wide gusset organic underwear designed from real body data. No lip slip, sizes XS-4X.",
+  "foundingDate": "2020",
+  "founder": {
+    "@type": "Person",
+    "name": "Gabriella Scaringe"
+  },
+  "sameAs": [
+    "https://www.instagram.com/shopcherri",
+    "https://tiktok.com/@shopcherri",
+    "https://www.facebook.com/cherriintimates",
+    "https://www.youtube.com/@shopcherri"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hi@shopcherri.com",
+    "contactType": "customer service"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  }
+}
