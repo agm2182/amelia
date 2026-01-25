@@ -27,22 +27,15 @@ Run `bin/check-integrations` to verify API credentials are working.
 
 **MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
 
-## Python Environment
+## Browser Automation
 
-Python is managed via [uv](https://docs.astral.sh/uv/) (installed at `~/.local/bin/uv`).
+**Prefer `/agent-browser` skill** for all web browsing tasks (Semrush, Ahrefs, Google Ads, Shopify Admin, etc.). It provides:
+- Scriptable CLI commands
+- Video recording for demos
+- Parallel sessions
+- Better reliability than Chrome MCP
 
-```bash
-# List installed Python versions
-uv python list --only-installed
-
-# Install a new Python version
-uv python install 3.13
-
-# Run a Python package (like pipx run)
-uvx --python 3.13 <package>
-```
-
-The GA4 MCP uses `uvx --python 3.13 analytics-mcp`.
+Use Chrome MCP only when you need visual inspection with Claude's image analysis.
 
 ## Token Refresh
 
@@ -137,42 +130,30 @@ This updates `~/.config/cherri/shopify-credentials.json` with a new token.
 - Scopes in "Optional scopes" won't be requested during OAuth installation
 - After releasing a new version, reinstall the app to grant the new scopes
 
-## Workarounds
+## Web UI URLs (No API)
 
-### Semrush (No API Access)
+### Semrush
 
-Use Chrome MCP to browse Semrush web interface.
-
-**Key URLs:**
 - Keyword Overview: https://www.semrush.com/analytics/keywordoverview/
 - Domain Overview: https://www.semrush.com/analytics/overview/
 - Keyword Magic Tool: https://www.semrush.com/analytics/keywordmagic/
 - Position Tracking: https://www.semrush.com/position-tracking/
 
-### Ahrefs (Free Account, No API)
+### Ahrefs
 
-Use Chrome MCP to browse Ahrefs web interface.
-
-**Key URLs:**
 - Site Explorer: https://app.ahrefs.com/site-explorer
 - Keywords Explorer: https://app.ahrefs.com/keywords-explorer
 - Content Explorer: https://app.ahrefs.com/content-explorer
 - Rank Tracker: https://app.ahrefs.com/rank-tracker
 
-### Google Ads (Web UI)
+### Google Ads
 
-Use Chrome MCP to browse Google Ads interface.
-
-**Key URLs:**
 - Keyword Planner: https://ads.google.com/aw/keywordplanner/home
 - Campaign Dashboard: https://ads.google.com/aw/campaigns
 - Performance Reports: https://ads.google.com/aw/reporting/reporteditor
 
-### Shopify Admin (Web UI)
+### Shopify Admin
 
-Use Chrome MCP for visual tasks or when API doesn't expose needed data.
-
-**Key URLs:**
 - Products: https://admin.shopify.com/store/shop-cherri/products
 - Pages: https://admin.shopify.com/store/shop-cherri/pages
 - Blog Posts: https://admin.shopify.com/store/shop-cherri/articles
@@ -185,16 +166,15 @@ Custom Claude skills are installed in `.claude/skills/`:
 
 | Skill | Description |
 |-------|-------------|
+| `agent-browser` | Web browsing automation (preferred for Semrush, Ahrefs, etc.) |
 | `cherri-content-brief` | Generate SEO content briefs with Cherri brand voice |
 | `cherri-returns-exchange` | Handle customer returns/exchanges via Shopify lookup |
 | `cherri-shopify-seo` | Audit Shopify SEO (meta tags, schema, page speed) |
 | `cherri-social-commerce` | Instagram/TikTok Shop optimization, ad performance |
 
-Skills requiring additional setup are documented in `skills/README.md`.
-
 ## Third-Party Plugins
 
-This project uses [wshobson/agents](https://github.com/wshobson/agents) for SEO plugins. See [QUICKSTART.md](QUICKSTART.md) for installation.
+This project uses [wshobson/agents](https://github.com/wshobson/agents) for SEO plugins. See [docs/QUICKSTART.md](docs/QUICKSTART.md) for installation.
 
 ## Context7 Library IDs
 
@@ -222,6 +202,10 @@ Use these with `use context7` for up-to-date documentation:
 "How do I create an Instagram ad campaign? use context7"
 "How do I list products in TikTok Shop? use context7"
 ```
+
+## File Conventions
+
+- **Audits:** Files in `research/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
 
 ## Cherri Info
 

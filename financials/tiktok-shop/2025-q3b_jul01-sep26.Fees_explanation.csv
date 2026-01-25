@@ -1,0 +1,114 @@
+Fee explanation,Unnamed: 1
+Name,Explanation
+Statement Date,Time of settlement
+Statement ID,Statement ID
+Payment ID,Payment ID
+Status,"Statement status, including pending, processing, paid, and failed."
+Currency,USD
+Type ,Order/adjustment types
+Order/adjustment ID  ,Transaction ID
+SKU ID,Transaction SKU ID
+Quantity,Quantity
+Product name,Product name
+SKU name,SKU name
+Order created date,Creation time of the order.
+Order delivery date,Delivery time of the order.
+Total settlement amount,"The total after net sales, fees, adjustments amount are combined."
+Gross sales,The total revenue before any discounts from the seller or TikTok Shop have been deducted.
+Gross sales refund,The subtotal for refunded SKUs before seller discounts
+Seller discount,"Seller discounts are promotions funded by the seller, such as coupons or product discounts"
+Seller discount refund,The discount refunded to the seller
+Transaction fee,"Transaction Fee is a service fee charged for processing successful orders in TikTok Shop. It is non-refundable, and is charged at $0.3 plus a percentage of the customer paid price per transaction."
+Referral fee,The referral fee is an amount charged for each successful order made on TikTok Shop. 
+Refund administration fee,Refunds or returns will incur a 20% refund administration fee deduction from the total refunded referral fee amount.
+Affiliate Commission,"(Product price (excl. tax) - Seller discount) * Commission rate. If refunds occur after order settlement, affiliate commission will not be refunded."
+Affiliate partner commission,"(Product price (excl. tax) - Seller discount) * Affiliate partner commission rate. If refunds occur after order settlement, affiliate partner commission will not be refunded."
+Affiliate Shop Ads commission,"(Product price (excl. tax) - Seller discount) * Ads commission rate. If refunds occur after order settlement, affiliate Shop Ads commission will not be refunded."
+TikTok Shop Partner commission,"Partner commission = (Product price excluding tax – Seller discount) × Commission rate
+
+TikTok Shop Partner commission is not refundable once it's settled, even if the order is later refunded."
+Co-funded promotion (seller-funded),Your portion of the funds combined with platform funds to provide promotions to customers
+Smart Promotion fee tax,Sales tax for the Smart Promotion fee
+Co-funded creator bonus,The cost of your co-funded bonus for the creator in the campaign you’ve joined. 
+Affiliate commission deposit,The amount reserved for creator commissions after an order is paid. Applies only to commissions tied to order volume and is based on the highest earning rate.
+Affiliate commission refund,The commission deposit refunded to you after order settlement. Applies only to commissions tied to order volume.
+Affiliate Partner shop ads commission,"The advertising commission cost a seller pays to
+TikTok Shop Affiliate Partner (TAP)"
+Campaign service fee,Fee charged to sellers participating in platform campaigns
+Campaign resource fee,Amount of campaign resource fee from program seller joining in
+Sales tax on referral fees,"Some U.S. states consider referral fees taxable. To comply with state tax laws, TikTok Inc. collects and remits applicable sales tax when a taxable fee is charged."
+Smart Promotion fee,This fee includes funds from TikTok Shop to help provide promotions to customers
+TikTok Shop shipping fee,The shipping fee incurred by the seller for using TikTok shipping. 
+Fulfilled by TikTok Shop shipping fee,The shipping fee incurred by the seller for orders fulfilled by TikTok. 
+Signature confirmation service fee,The fee incurred for packages requiring  signature confirmation services
+Shipping insurance fee,The shipping insurance fee incurred by the seller for purchasing additional TikTok shipping insurance services. 
+Customer-paid shipping fee,The shipping fee incurred by the customer based on the product weight you uploaded.
+Customer-paid shipping fee refund,The amount deducted from your account to refund the shipping fee incurred by the customer.
+TikTok Shop shipping incentive,The shipping fee incentive provided by TikTok Shop.
+TikTok Shop shipping incentive refund,The shipping fee incentive amount deducted from your account for refunded orders due to a seller fault.
+Shipping fee subsidy,The shipping fee subsidy provided by TikTok Shop for orders fulfilled by seller themselves.
+Return shipping fee,The shipping fee paid by the seller for the delivery of returns.
+FBT fulfillment fee,The shipping and warehouse fulfillment fee incurred by sellers for orders Fulfilled by TikTok (FBT). 
+Customer shipping fee offset,"This fee is typically used to offset either TikTok Shop's shipping incentive or customer-paid shipping fees, resulting in a net charge of $0 to you. However, if you've chosen the seller-funded shipping option for FBT-fulfilled products, you'll be charged a fee to cover the buyer's shipping cost. "
+Shipping fee discount,"This includes various platform-funded or co-funded discounts, such as 1) Fulfilled by TikTok subsidy, and 2) Fulfilled by TikTok SIOC Discount.
+
+Negative amounts indicate subsidy clawbacks for cancellations or returns."
+Return shipping label fee,The fee customers pay to cover the cost of the return shipping labels you provide. TikTok Shop collects this fee on your behalf and pays it to you based on the agreed terms.
+FBT fulfillment fee reimbursement,A reimbursement from TikTok Shop for Fulfilled by TikTok (FBT) orders that don't qualify for free shipping
+Return shipping fee (paid by customers),Reimbursement for the shipping fees paid by customers to return packages
+Return shipping fee reimbursement,"Reimbursement for the platform-funded portion of return shipping fees, as part of the free returns offered to customers."
+Adjustment amount,The adjustment amount.
+Adjustment reason,Reason of the adjustment.
+Related order ID  ,"Orders related to the adjustments, if any."
+Different types of adjustments:,Explanation
+Logistics adjustment,"The adjustment resulting from a difference between the required shipping fee and the amount paid by the seller or the mistake in the shipping fee paid by the seller, such as a change in weight or dimensions."
+Logistics reimbursement,The reimbursement paid by TikTok Shop for losses due to logistics-related issues or for the seller's participation in the platform campaign.
+Logistics deduction,The shipping fee incurred by the seller for using TikTok shipping services.
+TikTok Shop reimbursement,The reimbursement paid by TikTok Shop for losses due to the return/refund request rules or other issues.
+Violation fee （settlement fee）,The deduction to cover the cost of buyer's losses for the unpleasant experience of the buyer due to an issue that is the seller's responsibility.
+TikTok fees adjustment,Adjustment when there is a difference between the required TikTok fees and the amount paid by the seller.
+Promotion adjustment,Adjustment when there is a difference between the required fee for marketing activities and the amount paid by the seller.
+Adjustment from settlement account ,An amount was deducted from your settlement account to cover a policy violation deduction as you have a negative shop balance. 
+Chargeback,A chargeback is a fund reversal when the customer disputes a transaction and requests a refund directly from their financial institution or card issuer. Sellers are liable for the chargeback loss and any related fees if they receive chargeback claims due to suspicious activities. You can dispute a chargeback claim with supporting documents.
+Other adjustment,Adjustments for other reasons.
+Top up ads balance using GMV payments,"The settlement amount will be used to pay for your advertisement if you open 'auto pay ads with shop GMV' or use ""GMV Pay"" for TikTok promote orders"
+FBT warehouse service fee,"This fee covers all in-warehouse expenses incurred in the Fulfilled by TikTok service, such as storage and handling costs."
+Co-funded creator activity,"This is for sellers that have joined the co-funded program providing rewards for creator activity, and the relevant fee that is charged to sellers. "
+Violation fee （credit card）,"The amount owed to TikTok Shop from previous transactions, charged to your primary credit card."
+Seller mission reward,Platform provided cash reward for seller mission completion.
+Campaign Package,Amount of campaign package fee from program seller joining in
+Additional Campaign Package,Amount of additional campaign package fee from program seller joining in
+Bill payment （negative balance）,"The amount you owe TikTok Shop, charged to your primary credit card."
+Activity adjustment,This is a reimbursement or clawback for a campaign or promotion.
+Sales proceed（negative balance）,Sales proceed that is ready to pay for negeative balance.
+Bill deduction for negative balance,Deduction for the amount you owe TikTok Shop after all platform fees are deducted from your net earnings.
+FBT warehouse service fee using GMV payments,This fee covers FBT (Fulfilled by TikTok) warehouse services for your goods. This amount may include adjustments for service refunds and platform incentives.
+FBT warehouse compensation,Compensation for FBT warehouse damage
+Additional supporting information:,
+Customer payment,The total amount paid by the customer.
+Customer refund,The exact amount refunded to the customer.
+Seller co-funded voucher discount,Seller's portion of a co-funded voucher discount during the seller's participation in co-funding campaigns.
+Seller co-funded voucher discount refund,The discount amount refunded to the seller derived from the seller's portion of a co-funded voucher during the seller's participation in co-funding campaigns.
+Platform discounts,"Platform discounts are the total amount of discounts funded by the platform (TikTok Shop). These include:
+
+i) Discounts funded by the platform through Platform's Direct Subsidy, Platform Flash Deal, Platform Buy More Save More and Platform Voucher.
+ii) The platform's portion of a co-funded voucher discount during co-funding campaigns."
+Platform discounts refund,"The discount amount returned to the platform. This includes:
+
+i) Discounts funded by the platform through Platform's Direct Subsidy, Platform Flash Deal, Platform Buy More Save More and Platform Voucher.
+ii) The platform's portion of a co-funded Voucher discount during co-funding Campaigns."
+Platform co-funded voucher discounts,The platform's portion of a co-funded voucher discount during co-funding campaigns.
+Platform co-funded voucher discounts refund,The discount amount refunded to the platform derived from the platform's portion of a co-funded voucher during co-funding campaigns.
+Sales tax payment,The sales tax collected from the buyer for the product and delivery.
+Sales tax refund,"If the purchase is refunded, the sales tax that was applied will be returned to the buyer."
+Retail delivery fee payment,The retail delivery fee is collected and remitted by the TikTok Shop. It applies to all deliveries by motor vehicle to a location in Colorado with at least one item of tangible personal property that is subject to state sales or use tax.
+Retail delivery fee refund,"If the purchase is refunded, the retail delivery fee that was applied will be returned to the buyer."
+Customer-paid shipping fee before discounts,Order's original shipping fee the customer needs to paid.
+Seller shipping fee discount,The shipping fee discount provided by sellers.
+TikTok Shop shipping fee discount to customer,Shipping fee discount provided by TikTok Shop to customers.
+Estimated chargeable package weight,Product weight uploaded by the seller.
+Chargeable package weight,Weight measured by the platform logistics provider.
+Collection methods,"Package collection method selected by the seller, including pick-up and drop-off."
+Delivery option,"Package delivery option selected by the seller, including standard, economy, and express."
+Signature confirmation service fee type,The type of signature confirmation service the seller chose. Includes standard and adult.
+Rebate,A discount on referral fees offered by TikTok Shop to eligible sellers.
