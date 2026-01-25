@@ -44,3 +44,4 @@ npm-debug.log*
 # Survey raw data (contains PII)
 data/surveys/*.csv
 data/surveys/*.xlsx
+cherri-credentials.zip

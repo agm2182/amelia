@@ -41,6 +41,10 @@
     "canva": {
       "command": "npx",
       "args": ["-y", "mcp-remote@latest", "https://mcp.canva.com/mcp"]
+    },
+    "exa": {
+      "command": "bash",
+      "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec npx -y exa-mcp-server"]
     }
   }
 }

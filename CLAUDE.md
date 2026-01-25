@@ -22,6 +22,7 @@ Run `bin/check-integrations` to verify API credentials are working.
 | Canva | Ready | `mcp-remote` → `https://mcp.canva.com/mcp` | Browser OAuth on first use |
 | Semrush | No API | N/A | Start plan lacks API. Use Chrome MCP. |
 | Ahrefs | No API | N/A | Free account. Use Chrome MCP. |
+| Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
 | Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
 
 **MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
@@ -231,4 +232,4 @@ Use these with `use context7` for up-to-date documentation:
 - **Meta Ad Account ID:** act_2026819017404527
 - **TikTok App ID:** 7595068986274938881
 - **TikTok Advertiser IDs:** 6872850369307738114, 6872851292415328257
-- **Competitor Intel:** See `research/competitors.md` for detailed competitive analysis
+- **Competitor Intel:** See `research/competitors/` for detailed competitive analysis
