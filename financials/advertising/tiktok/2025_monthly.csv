@@ -1,0 +1,13 @@
+month,spend,impressions,clicks,source,notes
+2025-01,0.00,,,chase_card,
+2025-02,0.00,,,chase_card,
+2025-03,0.00,,,chase_card,
+2025-04,538.47,57089,1885,tiktok_ads_api,API data preferred over Chase
+2025-05,0.00,,,chase_card,
+2025-06,20.00,,,chase_card,
+2025-07,1688.25,,,chase_card,
+2025-08,0.00,,,chase_card,
+2025-09,346.16,,,chase_card,
+2025-10,472.74,100307,713,tiktok_ads_api,API data has impressions/clicks
+2025-11,2174.92,30959,200,combined,Chase spend higher; API has metrics
+2025-12,991.64,,,chase_card,

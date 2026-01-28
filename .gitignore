@@ -45,3 +45,5 @@ npm-debug.log*
 data/surveys/*.csv
 data/surveys/*.xlsx
 cherri-credentials.zip
+financials/loans/shopify/browser-state.json
+.claude/browser-states/

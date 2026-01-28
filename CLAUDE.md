@@ -1,10 +1,65 @@
-# Cherri SEO Research - Project Notes
-
-## Project Context
+# Cherri - Project Guide
 
 SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 
-## Tool Status
+## Quick Reference
+
+### Identifiers
+
+| Service | ID |
+|---------|-----|
+| Domain | shopcherri.com |
+| Myshopify domain | shop-cherri.myshopify.com |
+| GSC Property | sc-domain:shopcherri.com |
+| GA4 Property ID | 386275004 |
+| Meta Ad Account ID | act_2026819017404527 |
+| TikTok App ID | 7595068986274938881 |
+| TikTok Advertiser IDs | 6872850369307738114, 6872851292415328257 |
+| Instagram Account | 17841403097399699 (@shopcherri) |
+| Facebook Page | 773863439614388 (Cherri) |
+| Meta Business ID | 1174640472693824 |
+
+### Web UI URLs (No API)
+
+**Semrush**
+- Keyword Overview: https://www.semrush.com/analytics/keywordoverview/
+- Domain Overview: https://www.semrush.com/analytics/overview/
+- Keyword Magic Tool: https://www.semrush.com/analytics/keywordmagic/
+- Position Tracking: https://www.semrush.com/position-tracking/
+
+**Ahrefs**
+- Site Explorer: https://app.ahrefs.com/site-explorer
+- Keywords Explorer: https://app.ahrefs.com/keywords-explorer
+- Content Explorer: https://app.ahrefs.com/content-explorer
+- Rank Tracker: https://app.ahrefs.com/rank-tracker
+
+**Google Ads**
+- Keyword Planner: https://ads.google.com/aw/keywordplanner/home
+- Campaign Dashboard: https://ads.google.com/aw/campaigns
+- Performance Reports: https://ads.google.com/aw/reporting/reporteditor
+
+**Shopify Admin**
+- Products: https://admin.shopify.com/store/shop-cherri/products
+- Pages: https://admin.shopify.com/store/shop-cherri/pages
+- Blog Posts: https://admin.shopify.com/store/shop-cherri/articles
+- Navigation: https://admin.shopify.com/store/shop-cherri/menus
+- Themes: https://admin.shopify.com/store/shop-cherri/themes
+
+## About Cherri
+
+### Founder
+
+**Gabriella (Gaby) Scaringe** is the founder and CEO of Cherri. She's a NYC-based designer, TikTok content creator (@gabygabss, 410k+ followers), and self-described "coochie connoisseur." She founded Cherri in 2018, self-funding and running it as a one-woman operation. The brand focuses on organic, eco-friendly underwear with a vulva-positive, body-empowering message. She's also a TikTok consultant for other brands.
+
+- **TikTok:** [@gabygabss](https://tiktok.com/@gabygabss)
+- **LinkedIn:** [Gabriella Scaringe](https://linkedin.com/in/gabriella-scaringe-266239123)
+- **About page:** [shopcherri.com/pages/about-our-founder](https://shopcherri.com/pages/about-our-founder)
+
+### Competitor Intel
+
+See `research/competitors/` for detailed competitive analysis.
+
+## Tools & Integrations
 
 Run `bin/check-integrations` to verify API credentials are working.
 
@@ -20,26 +75,16 @@ Run `bin/check-integrations` to verify API credentials are working.
 | Shopify Dev MCP | Ready | N/A | No auth needed. Use for API docs and GraphQL schema. |
 | Shopify Admin API | Ready | `@ajackus/shopify-mcp-server` (npm) | Token in `~/.config/cherri/shopify-credentials.json` |
 | Canva | Ready | `mcp-remote` → `https://mcp.canva.com/mcp` | Browser OAuth on first use |
-| Semrush | No API | N/A | Start plan lacks API. Use Chrome MCP. |
-| Ahrefs | No API | N/A | Free account. Use Chrome MCP. |
+| Semrush | No API | N/A | Start plan lacks API. Use `/agent-browser`. |
+| Ahrefs | No API | N/A | Free account. Use `/agent-browser`. |
 | Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
 | Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
 
 **MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
 
-## Browser Automation
+### Token Refresh
 
-**Prefer `/agent-browser` skill** for all web browsing tasks (Semrush, Ahrefs, Google Ads, Shopify Admin, etc.). It provides:
-- Scriptable CLI commands
-- Video recording for demos
-- Parallel sessions
-- Better reliability than Chrome MCP
-
-Use Chrome MCP only when you need visual inspection with Claude's image analysis.
-
-## Token Refresh
-
-### TikTok Access Token
+#### TikTok Access Token
 
 TikTok tokens expire periodically. To regenerate:
 
@@ -63,7 +108,7 @@ TikTok tokens expire periodically. To regenerate:
 
 4. Update `TIKTOK_ACCESS_TOKEN` in `~/.config/cherri/.env`
 
-### Meta Access Token
+#### Meta Access Token
 
 Generate at https://developers.facebook.com/tools/explorer/
 
@@ -80,14 +125,25 @@ Generate at https://developers.facebook.com/tools/explorer/
 
 **App Dashboard:** https://developers.facebook.com/apps/878302508435072/
 
-## Instagram Graph API (Direct Usage)
+#### Shopify Access Token
+
+Shopify tokens expire every **24 hours**. To refresh:
+
+```bash
+bin/refresh-shopify-token
+```
+
+This updates `~/.config/cherri/shopify-credentials.json` with a new token.
+
+**Dev Dashboard App Setup (if recreating):**
+- App: "Cherri Admin API" at https://dev.shopify.com/dashboard/13948484/apps/312719212545
+- When creating versions, add scopes to **"Scopes" (required)**, NOT "Optional scopes"
+- Scopes in "Optional scopes" won't be requested during OAuth installation
+- After releasing a new version, reinstall the app to grant the new scopes
+
+### Instagram Graph API (Direct Usage)
 
 The Meta Ads MCP doesn't cover Instagram comment management. Use the Graph API directly with curl.
-
-**Account IDs:**
-- Instagram Account: `17841403097399699` (@shopcherri)
-- Facebook Page: `773863439614388` (Cherri)
-- Business ID: `1174640472693824`
 
 **Get page access token:**
 ```bash
@@ -114,53 +170,87 @@ POST /{comment-id}/likes
 
 **Context7 docs:** Use `/websites/developers_facebook_instagram-platform` for API reference.
 
-### Shopify Access Token
+### Browser Automation
 
-Shopify tokens expire every **24 hours**. To refresh:
+**Always use `/agent-browser` skill** for web browsing tasks (Semrush, Ahrefs, Google Ads, Shopify Admin, etc.). Reference the skill at `.claude/skills/agent-browser/SKILL.md` for full command documentation.
+
+**Why agent-browser over Chrome MCP:**
+- Scriptable CLI commands
+- Parallel sessions
+- Better reliability
+
+Use Chrome MCP only when you need visual inspection with Claude's image analysis capabilities.
+
+**Saved browser states:** `.claude/browser-states/`
+
+| Site | State File |
+|------|------------|
+| Shopify Admin | `shopify-admin.json` |
+| OnRamp Funds | `onramp.json` |
+| Clearco | `clearco.json` |
+
+#### Loading Saved State
+
+**CRITICAL: Use absolute paths with `--state` flag.** The `--state` flag must be on the FIRST command (when daemon launches). Relative paths resolve from current working directory, not project root.
 
 ```bash
-bin/refresh-shopify-token
+# CORRECT - absolute path on first command
+agent-browser --headed --state /Users/user/Documents/cc/cherri/.claude/browser-states/shopify-admin.json open https://admin.shopify.com/store/shop-cherri
+
+# WRONG - relative path (will fail silently if you're in a subdirectory)
+agent-browser --state .claude/browser-states/shopify-admin.json open https://...
 ```
 
-This updates `~/.config/cherri/shopify-credentials.json` with a new token.
+**Verify the state file exists before using:**
+```bash
+ls -la /Users/user/Documents/cc/cherri/.claude/browser-states/shopify-admin.json
+```
 
-**Dev Dashboard App Setup (if recreating):**
-- App: "Cherri Admin API" at https://dev.shopify.com/dashboard/13948484/apps/312719212545
-- When creating versions, add scopes to **"Scopes" (required)**, NOT "Optional scopes"
-- Scopes in "Optional scopes" won't be requested during OAuth installation
-- After releasing a new version, reinstall the app to grant the new scopes
+#### Saving State After Login
 
-## Web UI URLs (No API)
+```bash
+agent-browser state save /Users/user/Documents/cc/cherri/.claude/browser-states/<site-name>.json
+```
 
-### Semrush
+#### Troubleshooting agent-browser
 
-- Keyword Overview: https://www.semrush.com/analytics/keywordoverview/
-- Domain Overview: https://www.semrush.com/analytics/overview/
-- Keyword Magic Tool: https://www.semrush.com/analytics/keywordmagic/
-- Position Tracking: https://www.semrush.com/position-tracking/
+**Symptom:** `"Browser not launched. Call launch first"` error
 
-### Ahrefs
+**Cause:** This cryptic error usually means one of:
+1. The `--state` file path doesn't exist (most common)
+2. Orphaned daemon processes from a previous failed launch
+3. Stale PID/socket files in `~/.agent-browser/`
 
-- Site Explorer: https://app.ahrefs.com/site-explorer
-- Keywords Explorer: https://app.ahrefs.com/keywords-explorer
-- Content Explorer: https://app.ahrefs.com/content-explorer
-- Rank Tracker: https://app.ahrefs.com/rank-tracker
+**Fix:**
+```bash
+# 1. Kill any orphaned daemon processes
+pkill -9 -f "daemon.js"
 
-### Google Ads
+# 2. Clean up stale files
+rm -rf ~/.agent-browser/*
 
-- Keyword Planner: https://ads.google.com/aw/keywordplanner/home
-- Campaign Dashboard: https://ads.google.com/aw/campaigns
-- Performance Reports: https://ads.google.com/aw/reporting/reporteditor
+# 3. Verify state file exists (if using --state)
+ls -la /path/to/state.json
 
-### Shopify Admin
+# 4. Try again with absolute path
+agent-browser --headed --state /absolute/path/to/state.json open https://...
+```
 
-- Products: https://admin.shopify.com/store/shop-cherri/products
-- Pages: https://admin.shopify.com/store/shop-cherri/pages
-- Blog Posts: https://admin.shopify.com/store/shop-cherri/articles
-- Navigation: https://admin.shopify.com/store/shop-cherri/menus
-- Themes: https://admin.shopify.com/store/shop-cherri/themes
+**Symptom:** `"--state ignored: daemon already running"`
 
-## Skills
+**Cause:** The `--state` flag only works on the FIRST command when the daemon starts. If a daemon is already running, it ignores the flag.
+
+**Fix:** Close the browser and kill the daemon first:
+```bash
+agent-browser close
+pkill -9 -f "daemon.js"
+rm -rf ~/.agent-browser/*
+# Now --state will work on next command
+```
+
+## Skills & Resources
+
+### Custom Skills
 
 Custom Claude skills are installed in `.claude/skills/`:
 
@@ -172,11 +262,11 @@ Custom Claude skills are installed in `.claude/skills/`:
 | `cherri-shopify-seo` | Audit Shopify SEO (meta tags, schema, page speed) |
 | `cherri-social-commerce` | Instagram/TikTok Shop optimization, ad performance |
 
-## Third-Party Plugins
+### Third-Party Plugins
 
 This project uses [wshobson/agents](https://github.com/wshobson/agents) for SEO plugins. See [docs/QUICKSTART.md](docs/QUICKSTART.md) for installation.
 
-## Context7 Library IDs
+### Context7 Library IDs
 
 Use these with `use context7` for up-to-date documentation:
 
@@ -203,17 +293,23 @@ Use these with `use context7` for up-to-date documentation:
 "How do I list products in TikTok Shop? use context7"
 ```
 
-## File Conventions
+## Project Files
+
+### Conventions
 
 - **Audits:** Files in `research/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
 
-## Cherri Info
+### Financial Data
 
-- **Domain:** shopcherri.com
-- **Myshopify domain:** shop-cherri.myshopify.com
-- **GSC Property:** sc-domain:shopcherri.com
-- **GA4 Property ID:** 386275004
-- **Meta Ad Account ID:** act_2026819017404527
-- **TikTok App ID:** 7595068986274938881
-- **TikTok Advertiser IDs:** 6872850369307738114, 6872851292415328257
-- **Competitor Intel:** See `research/competitors/` for detailed competitive analysis
+2025 financial records are in `financials/`. See `financials/README.md` for file reference and `financials/DATA_DICTIONARY.md` for schema documentation.
+
+**2025 Key Metrics:**
+
+| Metric | Value |
+|--------|-------|
+| Total Revenue | $205.2K (Shopify $166.6K + TikTok Shop $38.6K) |
+| Total Ad Spend | $82.6K (Meta $77.4K + TikTok $5.2K) |
+| Shopify Orders | 2,993 (avg $55.68/order) |
+| Current Debt | $12.9K (Capital $4.5K + Credit $8.4K) |
+| Best Month | Nov 2025: 570 orders, $25K revenue |
+| Worst Month | May 2025: 45 orders, $3K revenue |

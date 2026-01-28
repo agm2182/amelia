@@ -1,0 +1,120 @@
+date,id,type,vendor,amount,status
+2025-09-08,91C05,Invoice Funding,MadeCo LLC,131.12,Success
+2025-09-01,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-08-25,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-08-18,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-08-11,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-08-04,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-08-04,1D2E1,Invoice Funding,MadeCo LLC,142.97,Success
+2025-07-28,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-07-28,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-07-21,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-07-21,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-07-14,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-07-14,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-07-07,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-07-07,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-07-03,B45F3,Invoice Funding,MadeCo LLC,125.76,Success
+2025-06-30,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-06-30,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-06-26,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-06-23,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-06-23,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-06-19,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-06-16,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-06-16,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-06-12,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-06-09,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-06-09,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-06-05,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-06-02,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-06-02,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-05-29,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-05-26,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-05-26,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-05-22,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-05-19,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-05-19,91C05,Invoice Funding,MadeCo LLC,131.18,Success
+2025-05-15,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-05-12,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-05-08,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-05-05,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-05-01,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-04-28,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-04-24,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-04-21,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-04-17,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-04-14,1D2E1,Invoice Funding,MadeCo LLC,143.06,Success
+2025-04-10,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-04-03,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-03-27,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-03-20,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-03-13,B45F3,Invoice Funding,MadeCo LLC,125.89,Success
+2025-03-02,1B39B,Invoice Funding,ITB Fulfillment,243.18,Success
+2025-02-23,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-02-16,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-02-09,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-02-02,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-01-26,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-01-19,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-01-12,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2025-01-05,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-12-29,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-12-22,4D1E8,Invoice Funding,MadeCo LLC,134.08,Success
+2024-12-22,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-12-15,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-12-15,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-12-08,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-12-08,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-12-01,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-12-01,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-11-24,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-11-24,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-11-17,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-11-17,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-11-13,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.01,Success
+2024-11-10,1B39B,Invoice Funding,ITB Fulfillment,243.34,Success
+2024-11-10,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-11-06,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-11-03,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-10-31,C8B3C,Invoice Funding,MadeCo LLC,170.77,Success
+2024-10-30,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-10-27,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-10-24,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-10-23,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-10-20,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-10-17,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-10-16,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-10-13,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-10-10,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-10-09,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-10-06,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-10-03,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-10-02,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-09-29,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-09-26,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-09-25,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-09-22,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-09-19,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-09-18,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-09-15,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-09-12,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-09-11,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-09-08,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-09-05,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-09-04,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-09-01,4D1E8,Invoice Funding,MadeCo LLC,134.12,Success
+2024-08-29,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-08-28,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-08-22,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-08-21,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-08-15,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-08-14,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-08-08,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-08-07,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-08-01,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-07-31,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-07-25,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-07-24,1F8F9,Invoice Funding,Stellar Fashion Consulting,162.14,Success
+2024-07-18,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success
+2024-07-11,C8B3C,Invoice Funding,MadeCo LLC,170.78,Success

@@ -1,0 +1,330 @@
+    - text: "Statement Date 11/30/2025 Payment Date 12/03/2025 Statement Amount $477.23 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,401.82":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $407.89":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $69.34":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $69.34":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $477.23":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $477.23":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 11/23/2025 Payment Date 11/26/2025 Statement Amount $1,372.56 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $6,900.76":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $1,173.13":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $199.43":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $199.43":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $1,372.56":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $1,372.56":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 11/16/2025 Payment Date 11/19/2025 Statement Amount $531.55 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,672.45":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $454.32":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $77.23":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $77.23":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $531.55":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $531.55":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 11/09/2025 Payment Date 11/12/2025 Statement Amount $521.13 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,620.07":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $445.41":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $75.72":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $75.72":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $521.13":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $521.13":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 11/02/2025 Payment Date 11/05/2025 Statement Amount $669.47 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $3,365.89":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $572.20":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $97.27":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $97.27":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $669.47":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $669.47":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 10/26/2025 Payment Date 10/29/2025 Statement Amount $543.15 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,730.75":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $464.23":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $78.92":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $78.92":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $543.15":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $543.15":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 10/19/2025 Payment Date 10/22/2025 Statement Amount $405.31 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,037.76":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $346.42":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $58.89":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $58.89":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $405.31":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $405.31":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 10/12/2025 Payment Date 10/15/2025 Statement Amount $490.09 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,463.99":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $418.88":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $71.21":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $71.21":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $490.09":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $490.09":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 10/05/2025 Payment Date 10/08/2025 Statement Amount $607.76 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $3,055.56":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $519.45":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $88.31":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $88.31":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $607.76":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $607.76":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 09/28/2025 Payment Date 10/01/2025 Statement Amount $776.34 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $3,903.18":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $663.54":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $112.80":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $112.80":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $776.34":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $776.34":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 09/21/2025 Payment Date 09/24/2025 Statement Amount $283.07 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $1,423.15":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $241.94":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $41.13":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $41.13":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $283.07":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $283.07":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 09/14/2025 Payment Date 09/17/2025 Statement Amount $93.38 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $469.47":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $79.81":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $13.57":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $13.57":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $93.38":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $93.38":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 09/07/2025 Payment Date 09/10/2025 Statement Amount $211.20 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $1,061.85":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $180.51":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $30.69":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $30.69":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $211.20":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $211.20":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 08/31/2025 Payment Date 09/03/2025 Statement Amount $169.40 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $851.71":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $144.79":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $24.61":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $24.61":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $169.40":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $169.40":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---
+    - text: "Statement Date 08/24/2025 Payment Date 08/27/2025 Statement Amount $453.35 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
+        - row "Description % of Eligible Sales Amount":
+          - columnheader "% of Eligible Sales" [ref=e4]
+        - row "Eligible Sales info_outlined $2,279.29":
+          - cell "Eligible Sales info_outlined" [ref=e6]
+        - row "Principal Due 17% $387.48":
+          - cell "Principal Due" [ref=e8]
+        - row "Fees Due $65.87":
+          - cell "Fees Due" [ref=e11]
+        - row "Fee (2.89% of retail sales) 2.9% $65.87":
+          - cell "Fee (2.89% of retail sales)" [ref=e13]
+        - row "Credits $0.00":
+          - cell "Credits" [ref=e16]
+        - row "Total $453.35":
+          - cell "Total" [ref=e18]
+        - row "Amount Paid $453.35":
+          - cell "Amount Paid" [ref=e20]
+        - row "Amount Due $0.00":
+          - cell "Amount Due" [ref=e22]
+        - row "Description Payment Date Amount":
+          - columnheader "Payment Date" [ref=e25]
+---

@@ -4,5 +4,18 @@
     "seo-technical-optimization@claude-code-workflows": true,
     "seo-analysis-monitoring@claude-code-workflows": true,
     "content-marketing@claude-code-workflows": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -qE 'rm[[:space:]]+-[^[:space:]]*r[^[:space:]]*f|rm[[:space:]]+-[^[:space:]]*f[^[:space:]]*r'; then echo 'BLOCKED: Use trash instead of rm -rf' >&2; exit 2; fi"
+          }
+        ]
+      }
+    ]
   }
 }

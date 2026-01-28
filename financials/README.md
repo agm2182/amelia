@@ -1,50 +1,175 @@
-# Financials
+# Cherri Financial Data
 
-Financial records for Cherri.
+Financial records for Cherri, organized for quick analysis.
+
+## 2025 Summary
+
+| Metric | Value |
+|--------|-------|
+| **Shopify Revenue** | $166,637.68 |
+| **TikTok Shop Settlement** | $38,568.21 |
+| **Total E-commerce Revenue** | $205,205.89 |
+| | |
+| **Meta Ads Spend** | $77,362.49 |
+| **TikTok Ads Spend** | $7,652.84 |
+| **Total Ad Spend** | $85,015.33 |
+| | |
+| **Shopify Orders** | 2,993 |
+
+*TikTok Ads includes $5,220.97 (Chase) + $2,431.87 (Shopify Credit)*
 
 ## Folder Structure
 
 ```
 financials/
-├── bank-statements/
-│   ├── Capital One Checking Account Statements/  # Monthly PDFs
-│   ├── Capital One Credit Card/                  # Monthly PDFs
-│   └── Chase Credit Card/                        # Transaction CSV
-└── tiktok-shop/
-    ├── originals/                # Archived XLSX exports (16 files)
-    ├── 2025-q{N}_{dates}.*.csv   # Quarterly data by sheet type
-    ├── tiktok_2025_combined.csv  # All order details merged
-    └── tiktok_2025_summary.csv   # Monthly revenue summary
+├── summary/                        # Quick-access aggregated data
+│   ├── 2025_monthly.csv           # Master monthly metrics (all channels)
+│   ├── 2025_quarterly.csv         # Quarterly rollup
+│   └── 2025_pl_summary.md         # Full P&L analysis
+│
+├── revenue/                        # Revenue by channel
+│   ├── shopify/
+│   │   ├── 2025_orders.csv        # All 2,993 orders
+│   │   ├── 2025_monthly.csv       # Monthly aggregation
+│   │   ├── all_payouts.csv        # Bank transfer history (2019-2026)
+│   │   └── all_payment_transactions.csv  # Transaction-level with fees
+│   └── tiktok-shop/
+│       ├── 2025_orders.csv        # Deduplicated order details
+│       ├── 2025_monthly.csv       # Monthly aggregation (estimated)
+│       ├── 2025_quarterly.csv     # Quarterly with fee breakdowns
+│       └── 2025_statements.csv    # Settlement statements
+│
+├── advertising/                    # Ad spend by platform
+│   ├── meta/
+│   │   └── 2025_monthly.csv       # Meta Ads metrics
+│   └── tiktok/
+│       └── 2025_monthly.csv       # TikTok Ads spend
+│
+├── expenses/                       # Operating expenses
+│   ├── 2025_chase_categorized.csv # Categorized Chase transactions
+│   ├── 2025_expense_summary.csv   # Monthly expense totals by category
+│   └── bank-statements/           # Original PDFs (25 files)
+│       ├── capital-one-checking/
+│       └── capital-one-credit/
+│
+├── loans/                          # Financing & credit products
+│   ├── all_financing_history.csv  # Combined history (all sources)
+│   ├── README.md                  # Loan status overview
+│   ├── shopify/
+│   │   ├── capital_history.csv    # 12 loans/advances
+│   │   ├── credit_purchases.csv   # Credit card transactions
+│   │   ├── credit_statements/     # Monthly PDFs (12 files)
+│   │   └── README.md
+│   ├── clearco/
+│   │   ├── payment_history.csv    # Invoice funding payments
+│   │   └── README.md
+│   └── onramp/
+│       ├── 2025_statements.csv    # Revenue advance statements
+│       └── README.md
+│
+├── screenshots/                    # Reference screenshots (28 images)
+│
+├── archive/                        # Raw exports (69 files)
+│   ├── tiktok-shop-raw/           # Superseded quarterly exports
+│   └── originals/                  # Original XLSX files
+│
+├── DATA_DICTIONARY.md             # Schema definitions for all CSVs
+└── README.md                      # This file
 ```
 
-## TikTok Shop Data
+## Quick Reference: Which File to Use
 
-Each TikTok Shop income export contains 6 sheets, converted to separate CSVs:
+| Question | Use This File |
+|----------|---------------|
+| **Full P&L analysis** | `summary/2025_pl_summary.md` |
+| Monthly revenue summary | `summary/2025_monthly.csv` |
+| Quarterly P&L | `summary/2025_quarterly.csv` |
+| Shopify order details | `revenue/shopify/2025_orders.csv` |
+| Shopify payouts (bank transfers) | `revenue/shopify/all_payouts.csv` |
+| Shopify transaction fees | `revenue/shopify/all_payment_transactions.csv` |
+| TikTok Shop revenue | `revenue/tiktok-shop/2025_quarterly.csv` |
+| Meta ad performance | `advertising/meta/2025_monthly.csv` |
+| TikTok ad spend | `advertising/tiktok/2025_monthly.csv` |
+| Operating expenses | `expenses/2025_expense_summary.csv` |
+| Expense details | `expenses/2025_chase_categorized.csv` |
+| All loan/financing history | `loans/all_financing_history.csv` |
+| Loan status overview | `loans/README.md` |
+| Shopify Credit purchases | `loans/shopify/credit_purchases.csv` |
+| Schema definitions | `DATA_DICTIONARY.md` |
 
-| Sheet | Description |
-|-------|-------------|
-| `Fees_explanation` | Breakdown of TikTok Shop fees |
-| `Order_details` | Line-item transaction data |
-| `Payments` | Payment settlement records |
-| `Reports` | Summary report data |
-| `Reserve_details` | Held/reserve fund details |
-| `Statements` | Account statements |
+## Data Sources
 
-Original XLSX files are archived in `tiktok-shop/originals/`.
+### Shopify (via Admin GraphQL API)
+- Full order export with financial/fulfillment status
+- **Coverage:** Jan 1 - Dec 31, 2025
 
-### Quarterly Data Files
+### Meta Ads (via Meta Ads API)
+- Monthly performance metrics: spend, impressions, clicks, reach
+- **Coverage:** Jan - Oct 2025 (ads paused Nov-Dec)
 
-Files are named `2025-q{N}_{start}-{end}.{sheet}.csv` where N indicates the quarter and sub-period:
+### TikTok Shop (manual export)
+- Quarterly exports from TikTok Shop Seller Center
+- Includes fees, orders, payments, settlements
+- **Coverage:** Jan 1 - Dec 31, 2025
 
-| File Prefix | Date Range | Notes |
-|-------------|------------|-------|
-| `2025-q1_jan01-mar29` | Jan 1 - Mar 29 | Full Q1 |
-| `2025-q2a_apr01-jun27` | Apr 1 - Jun 27 | Q2 early export |
-| `2025-q2b_apr01-jun29` | Apr 1 - Jun 29 | Q2 extended |
-| `2025-q3a_jun30-sep26` | Jun 30 - Sep 26 | Q3 early export |
-| `2025-q3b_jul01-sep26` | Jul 1 - Sep 26 | Q3 alternate start |
-| `2025-q4a_sep29-dec26` | Sep 29 - Dec 26 | Q4 early export |
-| `2025-q4b_oct02-dec27` | Oct 2 - Dec 27 | Q4 alternate start |
-| `2025-q4c_dec27-dec31` | Dec 27 - Dec 31 | Q4 year-end |
+### TikTok Ads
+- Combined from Chase card transactions and TikTok Ads API
+- API has engagement metrics for Apr, Oct, Nov only
+- **Coverage:** Jan - Dec 2025
 
-Multiple files per quarter exist due to overlapping export dates from TikTok Shop.
+### Chase Credit Card
+- Categorized transaction-level data
+- Categories: advertising, inventory, software, fees
+- **Coverage:** Jan - Dec 2025
+
+## Expense Categories
+
+| Category | Vendor/Description |
+|----------|-------------------|
+| `advertising/tiktok` | TikTok Ads charges |
+| `advertising/meta` | Facebook/Instagram ads |
+| `inventory` | Resource Fashion (manufacturer) |
+| `software` | Mailchimp (email marketing) |
+| `fees/interest` | Credit card interest charges |
+| `fees/late` | Late payment fees |
+
+## Known Data Limitations
+
+1. **TikTok Shop monthly values** are quarterly totals ÷ 3 (approximation)
+2. **TikTok Ads API gaps** - Chase captures spend, API has metrics for limited months
+3. **Meta Ads Nov-Dec** shows $0 - ads were paused, not missing data
+4. **Shopify order breakdowns missing** - subtotal/shipping/tax/discounts columns are 0; only total populated
+5. **Refund amounts not captured** - `refunded` column shows $0 even for REFUNDED orders
+
+## Resolved Data Questions
+
+### 301 Shopify orders with $0 total (RESOLVED)
+These are two types of orders:
+- **TikTok Shop synced orders** - Tagged `["free", "tiktok"]` with `@scs.tiktokw.us` email. Payment via TikTok, synced to Shopify for fulfillment only.
+- **Free exchanges/replacements** - Tagged `["exchange", "free"]` or `["damage", "exchange", "free"]`. Customer service replacements at no charge.
+
+### Meta Ads billing source (RESOLVED)
+The $77.4K Meta spend (per API) is billed across two payment methods:
+- **Shopify Credit**: $22,646.59 in 2025 (see `loans/shopify/credit_purchases.csv`)
+- **Unknown**: ~$54.7K remaining - likely direct credit card not in our data
+
+### May 2025 revenue drop (RESOLVED)
+Shopify had a **23-day gap** (May 8 - June 1) with zero orders:
+- All 45 May orders occurred May 1-8
+- TikTok Shop continued normally during this period
+- Meta Ads kept spending $10.8K with no Shopify conversions
+- This was a Shopify-specific issue (checkout/maintenance/payment/inventory)
+
+### Shopify Credit purchases (RESOLVED)
+Scraped 168 purchase transactions from Shopify Admin → Finance → Credit → Purchases tab.
+**2025 totals**: TikTok Ads $2,431.87 + Meta Ads $22,646.59 = $25,078.46
+See `loans/shopify/credit_purchases.csv`
+
+## Data Gaps to Fill
+
+| Missing Data | Where to Get It | Impact |
+|--------------|-----------------|--------|
+| COGS/inventory costs | Resource Fashion invoices, other suppliers | Needed for true profit calculation |
+| Shipping/fulfillment costs | 3PL invoices, USPS/UPS statements | Major expense currently untracked |
+
+See `DATA_DICTIONARY.md` for complete schema documentation.
