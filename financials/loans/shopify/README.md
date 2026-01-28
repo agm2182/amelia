@@ -150,22 +150,6 @@ Payment processing fees (~2.9% + $0.30 per transaction).
   - 2025: `shopify_credit_statement_2025-01.pdf` through `shopify_credit_statement_2025-12.pdf`
 - `browser-state.json` - Saved browser session for re-authentication (gitignored)
 
-## Screenshots
-
-Screenshots are stored in `../../screenshots/`:
-
-| File | Description |
-|------|-------------|
-| `shopify-capital-overview.png` | Capital funding history page |
-| `shopify-capital-current-loan.png` | Current loan (#12) details |
-| `shopify-credit-overview.png` | Credit account with balance and transactions |
-| `shopify-credit-settings.png` | Credit terms and fees |
-| `shopify-credit-statements.png` | Available statement list |
-| `shopify-credit-purchases.png` | Credit card purchases (TikTok Ads) |
-| `shopify-payouts.png` | Payout history |
-| `shopify-order-transactions.png` | Transaction fees breakdown |
-| `shopify-balance.png` | Balance account (inactive) |
-
 ## What's Still Missing
 
 The following data would complete the financial picture:

@@ -73,18 +73,6 @@ The January 2022 advance document indicates an original capital advance that has
 | `payment_history.csv` | All 119 invoice funding payments |
 | `browser-state.json` | Saved browser session (gitignored) |
 
-## Screenshots
-
-Located in `../../screenshots/`:
-
-| File | Description |
-|------|-------------|
-| `clearco-dashboard.png` | Main dashboard |
-| `clearco-home-full.png` | Home page with funding capacity |
-| `clearco-payment-history.png` | Payment history table |
-| `clearco-signed-contracts.png` | List of signed documents |
-| `clearco-documents.png` | Documents overview |
-
 ## Browser Session
 
 To restore authenticated session:

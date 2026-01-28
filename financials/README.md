@@ -67,8 +67,6 @@ financials/
 │       ├── 2025_statements.csv    # Revenue advance statements
 │       └── README.md
 │
-├── screenshots/                    # Reference screenshots (28 images)
-│
 ├── archive/                        # Raw exports (69 files)
 │   ├── tiktok-shop-raw/           # Superseded quarterly exports
 │   └── originals/                  # Original XLSX files
