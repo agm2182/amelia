@@ -140,30 +140,9 @@ financials/
 3. **Meta Ads Nov-Dec** shows $0 - ads were paused, not missing data
 4. **Shopify order breakdowns missing** - subtotal/shipping/tax/discounts columns are 0; only total populated
 5. **Refund amounts not captured** - `refunded` column shows $0 even for REFUNDED orders
-
-## Resolved Data Questions
-
-### 301 Shopify orders with $0 total (RESOLVED)
-These are two types of orders:
-- **TikTok Shop synced orders** - Tagged `["free", "tiktok"]` with `@scs.tiktokw.us` email. Payment via TikTok, synced to Shopify for fulfillment only.
-- **Free exchanges/replacements** - Tagged `["exchange", "free"]` or `["damage", "exchange", "free"]`. Customer service replacements at no charge.
-
-### Meta Ads billing source (RESOLVED)
-The $77.4K Meta spend (per API) is billed across two payment methods:
-- **Shopify Credit**: $22,646.59 in 2025 (see `loans/shopify/credit_purchases.csv`)
-- **Unknown**: ~$54.7K remaining - likely direct credit card not in our data
-
-### May 2025 revenue drop (RESOLVED)
-Shopify had a **23-day gap** (May 8 - June 1) with zero orders:
-- All 45 May orders occurred May 1-8
-- TikTok Shop continued normally during this period
-- Meta Ads kept spending $10.8K with no Shopify conversions
-- This was a Shopify-specific issue (checkout/maintenance/payment/inventory)
-
-### Shopify Credit purchases (RESOLVED)
-Scraped 168 purchase transactions from Shopify Admin → Finance → Credit → Purchases tab.
-**2025 totals**: TikTok Ads $2,431.87 + Meta Ads $22,646.59 = $25,078.46
-See `loans/shopify/credit_purchases.csv`
+6. **Shopify $0 orders** - 301 orders have $0 total for two reasons:
+   - TikTok Shop synced orders (tagged `["free", "tiktok"]`, email `@scs.tiktokw.us`) - payment via TikTok, synced for fulfillment only
+   - Free exchanges/replacements (tagged `["exchange", "free"]` or `["damage", "exchange", "free"]`)
 
 ## Data Gaps to Fill
 

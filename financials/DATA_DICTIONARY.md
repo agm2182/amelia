@@ -2,8 +2,6 @@
 
 Schema definitions for all CSV files in the financials folder. Use this to understand data structure before analysis.
 
----
-
 ## Summary Files
 
 ### `summary/2025_monthly.csv`
@@ -20,8 +18,6 @@ Master monthly metrics combining all channels.
 
 **Source:** Aggregated from Shopify Admin API, Meta Ads API, TikTok Ads API, TikTok Shop Finance Center
 **Coverage:** 2025-01 to 2025-12
-
----
 
 ### `summary/2025_quarterly.csv`
 Quarterly rollup of revenue, ad spend, and profitability.
@@ -42,8 +38,6 @@ Quarterly rollup of revenue, ad spend, and profitability.
 **Source:** Derived from summary/2025_monthly.csv, revenue/shopify/all_payment_transactions.csv
 **Coverage:** Q1-Q4 2025
 
----
-
 ### `summary/2025_pl_summary.md`
 Comprehensive P&L analysis for 2025.
 
@@ -57,8 +51,6 @@ Includes:
 
 **Source:** Aggregated from all financials data sources
 **Coverage:** Full year 2025
-
----
 
 ## Revenue Files
 
@@ -82,8 +74,6 @@ All Shopify orders for 2025.
 **Coverage:** 2025-01-01 to 2025-12-31
 **Records:** 2,993 orders
 
----
-
 ### `revenue/shopify/2025_monthly.csv`
 Monthly Shopify revenue aggregation.
 
@@ -95,8 +85,6 @@ Monthly Shopify revenue aggregation.
 
 **Source:** Aggregated from 2025_orders.csv
 **Coverage:** 2025-01 to 2025-12
-
----
 
 ### `revenue/shopify/all_payment_transactions.csv`
 Complete Shopify payment transaction history with fees.
@@ -125,8 +113,6 @@ Complete Shopify payment transaction history with fees.
 **Coverage:** July 2019 to January 2026
 **Records:** 10,961 transactions
 
----
-
 ### `revenue/shopify/all_payouts.csv`
 Complete Shopify payout history (bank transfers).
 
@@ -149,8 +135,6 @@ Complete Shopify payout history (bank transfers).
 **Source:** Shopify Admin → Settings → Payments → View payouts → Export
 **Coverage:** July 2019 to January 2026
 **Records:** 2,099 payouts
-
----
 
 ### `revenue/tiktok-shop/2025_orders.csv`
 All TikTok Shop order details for 2025.
@@ -181,8 +165,6 @@ All TikTok Shop order details for 2025.
 **Coverage:** 2025-01-01 to 2025-12-31
 **Records:** ~1,714 line items
 
----
-
 ### `revenue/tiktok-shop/2025_monthly.csv`
 Monthly TikTok Shop revenue (estimated from quarterly data).
 
@@ -199,8 +181,6 @@ Monthly TikTok Shop revenue (estimated from quarterly data).
 **Source:** Derived from tiktok_2025_summary.csv quarterly data
 **Coverage:** 2025-01 to 2025-12
 **Note:** Monthly values are quarterly totals divided by 3 (approximation)
-
----
 
 ### `revenue/tiktok-shop/2025_quarterly.csv`
 Quarterly TikTok Shop summary with fee breakdowns.
@@ -222,8 +202,6 @@ Quarterly TikTok Shop summary with fee breakdowns.
 **Source:** TikTok Shop Finance Center
 **Coverage:** Q1-Q4 2025
 
----
-
 ### `revenue/tiktok-shop/2025_statements.csv`
 TikTok Shop settlement statements.
 
@@ -244,8 +222,6 @@ TikTok Shop settlement statements.
 **Source:** TikTok Shop Finance Center
 **Coverage:** 2025-01 to 2025-12
 
----
-
 ## Advertising Files
 
 ### `advertising/meta/2025_monthly.csv`
@@ -265,8 +241,6 @@ Monthly Meta (Facebook/Instagram) advertising metrics.
 **Coverage:** 2025-01 to 2025-12
 **Note:** Nov-Dec 2025 show $0 spend (ads paused)
 
----
-
 ### `advertising/tiktok/2025_monthly.csv`
 Monthly TikTok advertising spend.
 
@@ -282,8 +256,6 @@ Monthly TikTok advertising spend.
 **Source:** Chase credit card statement + TikTok Ads API
 **Coverage:** 2025-01 to 2025-12
 **Note:** Chase card captures total spend; API has engagement metrics for some months
-
----
 
 ## Expense Files
 
@@ -311,8 +283,6 @@ All Chase credit card transactions with expense categories.
 **Coverage:** 2025-01-02 to 2025-12-12
 **Records:** 175 transactions
 
----
-
 ### `expenses/2025_expense_summary.csv`
 Monthly expense totals by category.
 
@@ -333,8 +303,6 @@ Monthly expense totals by category.
 **Coverage:** 2025-01 to 2025-12
 **Note:** Excludes payments (credit card payments are not expenses)
 
----
-
 ## Bank Statements
 
 ### `expenses/bank-statements/capital-one-checking/`
@@ -349,8 +317,6 @@ Capital One credit card statements (PDF).
 **Files:** Statement_{MMYYYY}_6284.pdf
 **Coverage:** Jan 2025 - Jan 2026
 
----
-
 ## Archive Files
 
 ### `archive/originals/`
@@ -361,8 +327,6 @@ Duplicate/overlapping TikTok Shop quarterly exports:
 - Q2a (apr01-jun27) - superseded by Q2b
 - Q3a (jun30-sep26) - non-standard start date, superseded by Q3b
 - Q4b (oct02-dec27) - covered by Q4a + Q4c
-
----
 
 ## Loans & Financing Files
 
@@ -383,8 +347,6 @@ Combined financing activity from all sources.
 **Source:** Combined from shopify/capital_history.csv, clearco/payment_history.csv, onramp/2025_statements.csv
 **Coverage:** July 2021 to November 2025
 **Records:** 146 entries (12 Shopify, 119 Clearco, 15 OnRamp)
-
----
 
 ### `loans/shopify/capital_history.csv`
 Complete Shopify Capital loan and cash advance history.
@@ -407,8 +369,6 @@ Complete Shopify Capital loan and cash advance history.
 **Coverage:** July 2021 to present
 **Records:** 12 loans/advances
 
----
-
 ### `loans/shopify/credit_purchases.csv`
 Shopify Credit card purchase history (advertising spend).
 
@@ -429,8 +389,6 @@ Shopify Credit card purchase history (advertising spend).
 
 **Note:** This captures ad spend charged to Shopify Credit, separate from Chase card. Meta Ads used Shopify Credit heavily in 2025 ($22.6K), while TikTok Ads was primarily on Chase.
 
----
-
 ### `loans/clearco/payment_history.csv`
 Clear.co invoice funding weekly payments.
 
@@ -446,8 +404,6 @@ Clear.co invoice funding weekly payments.
 **Source:** Clear.co Portal → Payment History
 **Coverage:** July 2024 to September 2025
 **Records:** 119 payments
-
----
 
 ### `loans/onramp/2025_statements.csv`
 OnRamp Funds revenue-based financing statements.
@@ -466,8 +422,6 @@ OnRamp Funds revenue-based financing statements.
 **Source:** OnRamp Funds Portal → Statements
 **Coverage:** August 2025 to November 2025
 **Records:** 15 weekly statements
-
----
 
 ## Data Quality Notes
 

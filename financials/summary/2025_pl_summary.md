@@ -83,10 +83,6 @@ Generated: January 28, 2026
 
 3. **Shopify Capital/Credit repayments** - Daily deductions from payouts not itemized separately. Total fee amounts estimated from loan terms.
 
-4. ~~**TikTok Ads via Shopify Credit**~~ - **RESOLVED**: Scraped 168 transactions from Shopify Credit. 2025 TikTok Ads: $2,431.87, Meta Ads: $22,646.59. Now included in totals above.
-
-5. **May 2025 anomaly** - 23-day Shopify gap (May 8 - June 1) with only 45 orders. Shopify-specific issue (checkout/maintenance/payment/inventory).
-
 ## Source Files
 
 - `summary/2025_monthly.csv` - Monthly revenue and ad spend
