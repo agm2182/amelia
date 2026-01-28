@@ -69,5 +69,4 @@ OnRamp provides revenue-based financing where repayments are automatically deduc
 
 Saved to `.claude/browser-states/onramp.json` for future access.
 
----
 *Archived: 2026-01-28*

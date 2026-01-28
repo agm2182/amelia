@@ -122,7 +122,7 @@ type,id,handle,current_seo_title,title_length,current_seo_description,desc_lengt
 product,gid://shopify/Product/123,cotton-brief,"Cotton Brief",12,"",0,false,"Missing description, no image alt"
 ```
 
-Save to: `research/audits/shopify-seo-audit-YYYY-MM-DD.csv`
+Save to: `seo/audits/shopify-seo-audit-YYYY-MM-DD.csv`
 
 ## Workflow: Batch SEO Updates
 
@@ -135,7 +135,7 @@ type,id,handle,current_seo_title,proposed_seo_title,current_seo_description,prop
 product,gid://shopify/Product/123,cotton-brief,"Cotton Brief","Women's Cotton Brief | Cherri","","Shop soft, sustainable cotton briefs...",
 ```
 
-Save to: `research/audits/seo-changes-YYYY-MM-DD.csv`
+Save to: `seo/audits/seo-changes-YYYY-MM-DD.csv`
 
 ### Step 2: Review Changes
 
@@ -223,7 +223,7 @@ mutation updatePageSEO($id: ID!, $page: PageUpdateInput!) {
 
 Re-query updated items to confirm changes applied. Generate verification report.
 
-Save to: `research/audits/seo-changes-applied-YYYY-MM-DD.csv`
+Save to: `seo/audits/seo-changes-applied-YYYY-MM-DD.csv`
 
 ## Workflow: Image Alt Text Updates
 

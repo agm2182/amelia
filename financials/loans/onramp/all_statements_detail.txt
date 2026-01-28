@@ -19,7 +19,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 11/23/2025 Payment Date 11/26/2025 Statement Amount $1,372.56 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -41,7 +40,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 11/16/2025 Payment Date 11/19/2025 Statement Amount $531.55 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -63,7 +61,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 11/09/2025 Payment Date 11/12/2025 Statement Amount $521.13 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -85,7 +82,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 11/02/2025 Payment Date 11/05/2025 Statement Amount $669.47 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -107,7 +103,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 10/26/2025 Payment Date 10/29/2025 Statement Amount $543.15 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -129,7 +124,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 10/19/2025 Payment Date 10/22/2025 Statement Amount $405.31 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -151,7 +145,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 10/12/2025 Payment Date 10/15/2025 Statement Amount $490.09 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -173,7 +166,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 10/05/2025 Payment Date 10/08/2025 Statement Amount $607.76 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -195,7 +187,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 09/28/2025 Payment Date 10/01/2025 Statement Amount $776.34 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -217,7 +208,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 09/21/2025 Payment Date 09/24/2025 Statement Amount $283.07 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -239,7 +229,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 09/14/2025 Payment Date 09/17/2025 Statement Amount $93.38 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -261,7 +250,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 09/07/2025 Payment Date 09/10/2025 Statement Amount $211.20 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -283,7 +271,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 08/31/2025 Payment Date 09/03/2025 Statement Amount $169.40 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -305,7 +292,6 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----
     - text: "Statement Date 08/24/2025 Payment Date 08/27/2025 Statement Amount $453.35 DISCLAIMER: Includes any eligible sales detected since the start of the advance."
         - row "Description % of Eligible Sales Amount":
           - columnheader "% of Eligible Sales" [ref=e4]
@@ -327,4 +313,3 @@
           - cell "Amount Due" [ref=e22]
         - row "Description Payment Date Amount":
           - columnheader "Payment Date" [ref=e25]
----

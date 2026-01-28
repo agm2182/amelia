@@ -25,8 +25,6 @@ Before implementing schema, understand:
    - Which rich results are you targeting?
    - What's the business value?
 
----
-
 ## Core Principles
 
 ### 1. Accuracy First
@@ -48,8 +46,6 @@ Before implementing schema, understand:
 - Test before deploying
 - Monitor Search Console
 - Fix errors promptly
-
----
 
 ## Common Schema Types
 
@@ -453,8 +449,6 @@ Note: Self-serving reviews (reviewing your own product) are against guidelines. 
 }
 ```
 
----
-
 ## Multiple Schema Types on One Page
 
 You can (and often should) have multiple schema types:
@@ -486,8 +480,6 @@ You can (and often should) have multiple schema types:
 }
 ```
 
----
-
 ## Validation and Testing
 
 ### Tools
@@ -510,8 +502,6 @@ You can (and often should) have multiple schema types:
 - Schema doesn't match visible content
 - Ratings for products without reviews shown
 - Prices that don't match displayed prices
-
----
 
 ## Implementation Patterns
 
@@ -553,8 +543,6 @@ export default function ProductPage({ product }) {
 - Theme modifications
 - Custom fields to structured data
 
----
-
 ## Output Format
 
 ### Schema Implementation
@@ -576,8 +564,6 @@ Where to add the code and how
 - [ ] Matches page content
 - [ ] All required properties included
 
----
-
 ## Questions to Ask
 
 If you need more context:
@@ -586,8 +572,6 @@ If you need more context:
 3. What data is available to populate the schema?
 4. Is there existing schema on the page?
 5. What's your tech stack for implementation?
-
----
 
 ## Related Skills
 

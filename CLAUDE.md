@@ -57,7 +57,7 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 
 ### Competitor Intel
 
-See `research/competitors/` for detailed competitive analysis.
+See `competitors/` for detailed competitive analysis.
 
 ## Tools & Integrations
 
@@ -305,7 +305,7 @@ Use these with `use context7` for up-to-date documentation:
 
 ### Conventions
 
-- **Audits:** Files in `research/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
+- **Audits:** Files in `seo/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
 
 ### Financial Data
 

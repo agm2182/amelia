@@ -34,8 +34,6 @@ Gather this context (ask if not provided):
 - What do visitors already know before arriving?
 - What messaging are they seeing before this page?
 
----
-
 ## Copywriting Principles
 
 ### Clarity Over Cleverness
@@ -61,8 +59,6 @@ Gather this context (ask if not provided):
 - Don't try to say everything everywhere
 - Each section should advance one argument
 - Build a logical flow down the page
-
----
 
 ## Writing Style Rules
 
@@ -93,8 +89,6 @@ Before finalizing, scan for:
 
 For a thorough line-by-line review, run the copy through the **copy-editing** skill's Seven Sweeps framework.
 
----
-
 ## Best Practices
 
 ### Be Direct
@@ -122,8 +116,6 @@ When appropriate, analogies make abstract concepts concrete and memorable.
 
 ### Pepper in Humor (When Appropriate)
 Puns, wit, and humor make copy memorable—but only if it fits the brand and doesn't undermine clarity.
-
----
 
 ## Page Structure Framework
 
@@ -258,8 +250,6 @@ Formats:
 - Add urgency if genuine (deadline, limited availability)
 - Risk reversal (guarantee, free trial, no credit card)
 
----
-
 ## Landing Page Section Variety
 
 A great landing page isn't just a list of features. Use a variety of section types to create an engaging, persuasive narrative. Mix and match from these:
@@ -330,8 +320,6 @@ For a landing page, aim for variety. Don't just stack features:
 10. FAQ
 11. Final CTA with guarantee
 
----
-
 ## CTA Copy Guidelines
 
 **Weak CTAs (avoid):**
@@ -357,8 +345,6 @@ Examples:
 - "Start My Free Trial"
 - "Get the Complete Checklist"
 - "See Pricing for My Team"
-
----
 
 ## Output Format
 
@@ -388,8 +374,6 @@ For headlines and CTAs, provide 2-3 options:
 ### Meta Content (if relevant)
 - Page title (for SEO)
 - Meta description
-
----
 
 ## Page-Specific Guidance
 
@@ -423,8 +407,6 @@ For headlines and CTAs, provide 2-3 options:
 - Build trust through transparency
 - Still include a CTA (it's still a marketing page)
 
----
-
 ## Voice and Tone Considerations
 
 Before writing, establish:
@@ -443,8 +425,6 @@ Maintain consistency throughout, but adjust intensity:
 - Headlines can be bolder
 - Body copy should be clearer
 - CTAs should be action-oriented
-
----
 
 ## Related Skills
 

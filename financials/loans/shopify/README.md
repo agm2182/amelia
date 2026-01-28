@@ -60,8 +60,6 @@ Data captured: January 27, 2026
 - Repayment: 12% of daily sales
 - Repayment starts after current loan ends
 
----
-
 ## Shopify Credit
 
 ### Account Overview
@@ -116,8 +114,6 @@ Monthly statements available from November 2023 through December 2025 (26 months
 
 Admin URL: https://admin.shopify.com/store/shop-cherri/credit/statements
 
----
-
 ## Related Financial Data
 
 The following Shopify data is documented elsewhere but affects loan understanding:
@@ -146,8 +142,6 @@ Payment processing fees (~2.9% + $0.30 per transaction).
 | Current Balance | $0.00 |
 | Earnings Rate | 2.29% APY |
 | Status | Inactive (last activity Jan 2023) |
-
----
 
 ## Data Files
 

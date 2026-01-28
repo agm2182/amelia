@@ -35,8 +35,6 @@ Gather this context (ask if not provided):
 - What's your current funnel conversion rate?
 - Any existing creative assets?
 
----
-
 ## Platform Selection Guide
 
 ### Google Ads
@@ -99,8 +97,6 @@ Gather this context (ask if not provided):
 - Brand awareness is a goal
 - You have creative capacity for video
 
----
-
 ## Campaign Structure Best Practices
 
 ### Account Organization
@@ -140,8 +136,6 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 - Consolidate budget into winning combinations
 - Increase budgets 20-30% at a time
 - Wait 3-5 days between increases for algorithm learning
-
----
 
 ## Ad Copy Frameworks
 
@@ -219,8 +213,6 @@ Example:
 - Offer Ends [Date]
 - Only X Spots Left
 
----
-
 ## Audience Targeting Strategies
 
 ### Google Ads Audiences
@@ -272,8 +264,6 @@ Example:
 - Job function + seniority + company size
 - Industry + job title
 - Company list + decision-maker titles
-
----
 
 ## Creative Best Practices
 
@@ -328,8 +318,6 @@ Example:
 - Need 100+ conversions per variant for significance
 - Kill losers fast (3-5 days with sufficient spend)
 - Iterate on winners
-
----
 
 ## Campaign Optimization
 
@@ -390,8 +378,6 @@ Example:
 3. Switch to automated with targets based on historical data
 4. Monitor and adjust targets based on results
 
----
-
 ## Retargeting Strategies
 
 ### Funnel-Based Retargeting
@@ -427,8 +413,6 @@ Always exclude:
 - Bounced visitors (<10 sec on site)
 - Irrelevant pages (careers, support)
 
----
-
 ## Reporting & Analysis
 
 ### Weekly Review Checklist
@@ -457,8 +441,6 @@ Always exclude:
 - Compare platform data to GA4/analytics
 - Consider incrementality testing for mature accounts
 - Look at blended CAC, not just platform CPA
-
----
 
 ## Platform-Specific Setup Guides
 
@@ -497,8 +479,6 @@ Always exclude:
 - [ ] Audience size validated (not too narrow)
 - [ ] Budget realistic for LinkedIn CPCs ($8-15+)
 
----
-
 ## Common Mistakes to Avoid
 
 ### Strategy Mistakes
@@ -529,8 +509,6 @@ Always exclude:
 - Stopping campaigns during learning phase
 - Weekend/off-hours spend without adjustment
 
----
-
 ## Questions to Ask
 
 If you need more context:
@@ -540,8 +518,6 @@ If you need more context:
 4. Do you have existing creative assets or need to create them?
 5. What landing page will ads point to?
 6. Do you have pixel/conversion tracking set up?
-
----
 
 ## Related Skills
 

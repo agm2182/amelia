@@ -26,8 +26,6 @@ Before auditing, understand:
    - Technical + on-page, or one focus area?
    - Access to Search Console / analytics?
 
----
-
 ## Audit Framework
 
 ### Priority Order
@@ -36,8 +34,6 @@ Before auditing, understand:
 3. **On-Page Optimization** (is content optimized?)
 4. **Content Quality** (does it deserve to rank?)
 5. **Authority & Links** (does it have credibility?)
-
----
 
 ## Technical SEO Audit
 
@@ -134,8 +130,6 @@ Before auditing, understand:
 - Consistent structure
 - No unnecessary parameters
 - Lowercase and hyphen-separated
-
----
 
 ## On-Page SEO Audit
 
@@ -240,8 +234,6 @@ Before auditing, understand:
 - No keyword cannibalization
 - Logical topical clusters
 
----
-
 ## Content Quality Assessment
 
 ### E-E-A-T Signals
@@ -282,8 +274,6 @@ Before auditing, understand:
 - Pages per session
 - Return visits
 
----
-
 ## Common Issues by Site Type
 
 ### SaaS/Product Sites
@@ -314,8 +304,6 @@ Before auditing, understand:
 - Missing location pages
 - No local content
 
----
-
 ## Output Format
 
 ### Audit Report Structure
@@ -345,8 +333,6 @@ Same format as above
 3. Quick wins (easy, immediate benefit)
 4. Long-term recommendations
 
----
-
 ## Tools Referenced
 
 **Free Tools**
@@ -363,8 +349,6 @@ Same format as above
 - Sitebulb
 - ContentKing
 
----
-
 ## Questions to Ask
 
 If you need more context:
@@ -373,8 +357,6 @@ If you need more context:
 3. Any recent changes or migrations?
 4. Who are your top organic competitors?
 5. What's your current organic traffic baseline?
-
----
 
 ## Related Skills
 

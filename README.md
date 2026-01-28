@@ -1,6 +1,6 @@
-# Cherri SEO & Growth Research
+# Cherri
 
-Claude Code-powered SEO research infrastructure for [Cherri](https://shopcherri.com), an underwear e-commerce company.
+Claude Code-powered business operations for [Cherri](https://shopcherri.com), an underwear e-commerce company.
 
 ## Quick Start
 
@@ -14,68 +14,106 @@ See **[CLAUDE.md](CLAUDE.md)** for detailed tool documentation and setup.
 
 ## What This Does
 
-- **SEO Audits** - Analyze site health, indexing, and technical issues
-- **Keyword Research** - Find opportunities from GSC and competitor data
-- **Content Planning** - Generate briefs for blog posts and landing pages
-- **Performance Tracking** - Monitor organic traffic and conversions
+- **E-commerce Operations** - Shopify admin, orders, inventory, returns
+- **Paid Advertising** - Meta and TikTok ad campaigns, performance reports
+- **Marketing & SEO** - Audits, keyword research, content briefs
+- **Financial Tracking** - Revenue, expenses, ad spend, loans
+- **Customer Research** - Surveys, psychographics, competitor analysis
+- **Content & Design** - Copywriting, social content, Canva
 
-## Data Sources
+## Integrations
 
-| Source | Access |
-|--------|--------|
-| Google Search Console | Via MCP (configured) |
-| Google Analytics 4 | Via MCP (configured) |
-| Semrush | Via Chrome (Start plan) |
-| Ahrefs | Via Chrome (Free account) |
-| Shopify Admin | Via MCP (configured) |
+| Service | Purpose |
+|---------|---------|
+| Shopify Admin | Products, orders, inventory, customers |
+| Meta Ads | Facebook/Instagram campaigns |
+| TikTok Ads | TikTok campaigns |
+| Google Analytics 4 | Traffic and conversions |
+| Google Search Console | SEO and indexing |
+| Canva | Design assets |
+| Gmail | Customer communication |
 
 ## Project Structure
 
 ```
-research/              # All research outputs
-  ├── audits/          # SEO audit reports
-  ├── keywords/        # Keyword research exports
-  ├── competitors/     # Competitor analysis
-  └── content-briefs/  # Content brief documents
+.claude/skills/        # Active Claude skills
+.claude/draft-skills/  # Skills in development
+brand/                 # Brand identity, voice, surveys
+competitors/           # Competitor deep-dives and analysis
 financials/            # 2025 financial records
-.claude/
-  ├── skills/          # Installed Claude skills
-  └── browser-states/  # Saved browser sessions
-CLAUDE.md              # Detailed tool documentation
+marketing/             # Content briefs, plans, strategy
+operations/            # Policies (returns, etc.)
+seo/                   # Audits and schema markup
+CLAUDE.md              # Tool documentation and setup
 ```
+
+## Custom Skills
+
+| Skill | Description |
+|-------|-------------|
+| `cherri-returns-exchange` | Handle customer returns via Shopify |
+| `cherri-shopify-seo` | Audit Shopify SEO and schema |
+| `cherri-social-commerce` | Instagram/TikTok Shop optimization |
+| `cherri-content-brief` | Generate SEO content briefs |
+| `paid-ads` | Ad campaign management |
+| `copywriting` | Marketing copy generation |
 
 ## Common Tasks
 
-**Run an SEO audit:**
+Example prompts for common operations:
+
+### SEO & Search
+
 ```
 "Audit the current SEO status using GSC and GA4 data"
-```
-
-**Find keyword opportunities:**
-```
 "Find striking distance keywords (positions 4-20) with high impressions"
-```
-
-**Generate a content brief:**
-```
-"Create a content brief for 'best underwear for working out'"
-```
-
-**Check indexing status:**
-```
 "Check if shopcherri.com/collections/panties is indexed"
+"Show pages with high impressions but low CTR"
 ```
 
-**Analyze traffic:**
+### Analytics
+
 ```
 "Show top organic landing pages from GA4 for the last 30 days"
+"Compare this month's traffic to last month"
+"What's the conversion rate by traffic source?"
+```
+
+### Content
+
+```
+"Create a content brief for 'best underwear for working out'"
+"Write product descriptions for the new thong collection"
+"Generate social captions for a holiday sale"
+```
+
+### Shopify
+
+```
+"Look up order #12345"
+"Check inventory levels for the cheeky style"
+"Find customers who ordered in the last 7 days"
+```
+
+### Advertising
+
+```
+"Show Meta ad performance for the last 30 days"
+"Compare ROAS across active TikTok campaigns"
+"What's our cost per acquisition this month?"
+```
+
+### Customer Service
+
+```
+"Process exchange for order #12345 - customer wants size M instead of S"
+"Draft a response for a customer asking about returns"
 ```
 
 ## Current Status
 
 - **Domain:** shopcherri.com
-- **GSC Property:** sc-domain:shopcherri.com
-- **GA4 Property:** 386275004
-- **Organic Revenue:** ~$4k/month (baseline Jan 2026)
+- **2025 Revenue:** $205K (Shopify $167K + TikTok Shop $39K)
+- **2025 Ad Spend:** $85K (Meta $77K + TikTok $8K)
 
-See `research/audits/` for latest findings.
+See `financials/` for detailed records and `seo/audits/` for findings.

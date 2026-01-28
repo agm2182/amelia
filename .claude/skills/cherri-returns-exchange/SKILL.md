@@ -9,9 +9,7 @@ Handle customer returns and exchanges for Cherri underwear by looking up orders 
 3. **Check eligibility** - Verify against policy (7-day window, flexible)
 4. **Generate response** - Use appropriate template below
 
-**Full policy reference:** [returns-policy.md](../../../operations/returns-policy.md)
-
----
+**Full policy reference:** [returns-policy.md](../../../operations/policies/returns-policy.md)
 
 ## Entry Points
 
@@ -29,8 +27,6 @@ Customer emailed hi@shopcherri.com directly. May need:
 - Size preference for replacement
 
 **Action:** Check if order # is present; if not, use Template A
-
----
 
 ## Shopify Lookup
 
@@ -62,8 +58,6 @@ mcp__shopify__listProducts with query: "PRODUCT_NAME"
 - `customer` → order history count
 - `createdAt` → order date (use delivery date for window, not this)
 
----
-
 ## Eligibility Quick Check
 
 | Check | Pass | Fail |
@@ -77,8 +71,6 @@ mcp__shopify__listProducts with query: "PRODUCT_NAME"
 
 **Exceptions to approve:** Loyal customer, first-time buyer, valid reason, polite tone
 
----
-
 ## Item Condition Actions
 
 | Condition | Replacement | Return Label |
@@ -86,8 +78,6 @@ mcp__shopify__listProducts with query: "PRODUCT_NAME"
 | Unopened | Yes | Yes |
 | Opened/Tried on | Yes | Yes |
 | Worn | Yes | No |
-
----
 
 ## Response Templates
 
@@ -257,8 +247,6 @@ Does that sound good? Let me know and I'll get your exchange started!
 Cherri
 ```
 
----
-
 ## Workflow Checklist
 
 - [ ] Order number obtained
@@ -269,8 +257,6 @@ Cherri
 - [ ] Replacement stock checked
 - [ ] Response email drafted
 - [ ] Return label generated (if needed) from Shopify order page
-
----
 
 ## Quick Commands
 
@@ -286,8 +272,6 @@ Cherri
 **Generate response:**
 > "Draft an exchange approval email for [scenario]"
 
----
-
 ## Post-Approval Steps
 
 After approving an exchange:
@@ -302,8 +286,6 @@ After approving an exchange:
 3. **Update order notes**
    - Add note about exchange: size change, reason, any exceptions made
 
----
-
 ## Escalation
 
 Escalate to team lead when:
@@ -312,8 +294,6 @@ Escalate to team lead when:
 - Multiple items in dispute
 - Customer claims fraud or unauthorized purchase
 - You're genuinely unsure what to do
-
----
 
 ## Brand Voice Reminders
 

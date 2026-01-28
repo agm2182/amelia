@@ -2,8 +2,6 @@
 
 Overview of all loan and credit products used by Cherri.
 
----
-
 ## Quick Scan (Jan 2026)
 
 ### Current Debt Snapshot
@@ -34,8 +32,6 @@ Overview of all loan and credit products used by Cherri.
 | Shopify Credit card details | [`shopify/README.md`](shopify/README.md) |
 | OnRamp repayment history | [`onramp/2025_statements.csv`](onramp/2025_statements.csv) |
 | Clearco payment history | [`clearco/payment_history.csv`](clearco/payment_history.csv) |
-
----
 
 ## Loan Sources
 

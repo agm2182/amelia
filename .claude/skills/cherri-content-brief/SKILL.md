@@ -144,7 +144,7 @@ Use this template:
 
 ### Step 5: Save Output
 
-Save brief to: `research/content-briefs/blog-[slug]-YYYY-MM-DD.md`
+Save brief to: `marketing/content-briefs/blog-[slug]-YYYY-MM-DD.md`
 
 ## Workflow: Collection Page Brief
 
@@ -191,7 +191,7 @@ Save brief to: `research/content-briefs/blog-[slug]-YYYY-MM-DD.md`
 - Link to: [relevant blog post]
 ```
 
-Save to: `research/content-briefs/collection-[handle]-YYYY-MM-DD.md`
+Save to: `marketing/content-briefs/collection-[handle]-YYYY-MM-DD.md`
 
 ## Workflow: Product Description Brief
 
@@ -247,7 +247,7 @@ Shop [product name]. [Key benefit]. [Material/feature]. Available in sizes XS-3X
 - Image 2: [Product name] - [angle/detail]
 ```
 
-Save to: `research/content-briefs/product-[handle]-YYYY-MM-DD.md`
+Save to: `marketing/content-briefs/product-[handle]-YYYY-MM-DD.md`
 
 ## Content Formulas
 
