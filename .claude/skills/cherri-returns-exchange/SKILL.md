@@ -9,7 +9,7 @@ Handle customer returns and exchanges for Cherri underwear by looking up orders 
 3. **Check eligibility** - Verify against policy (7-day window, flexible)
 4. **Generate response** - Use appropriate template below
 
-**Full policy reference:** [cherri-returns-policy.md](../../reference/cherri-returns-policy.md)
+**Full policy reference:** [returns-policy.md](../../../operations/returns-policy.md)
 
 ---
 

@@ -2,8 +2,6 @@
 
 This document contains the official returns and exchange policy for Cherri underwear. It is referenced by customer service skills and can be used by any team member handling customer inquiries.
 
----
-
 ## Policy Overview
 
 | Rule | Details |
@@ -13,8 +11,6 @@ This document contains the official returns and exchange policy for Cherri under
 | **Sale items** | YES - all items eligible for exchange |
 | **Condition** | Items can be unopened, opened/tried on, or worn |
 | **Order Protection** | Covers lost, stolen, damaged items via separate claim process |
-
----
 
 ## Core Rules
 
@@ -37,8 +33,6 @@ Every item is eligible for exchange, including:
 - Sale items
 - Bundles
 - Limited editions
-
----
 
 ## Flexibility Guidelines
 
@@ -64,8 +58,6 @@ The 7-day rule is **not rigid**. Use judgment to approve exceptions for:
 | 3 weeks past, customer was on vacation | **Approve** (with note) |
 | 45 days past, no reason given, demanding tone | **Decline** politely |
 
----
-
 ## Item Condition Categories
 
 ### Unopened
@@ -88,8 +80,6 @@ The 7-day rule is **not rigid**. Use judgment to approve exceptions for:
 
 **Action:** Send replacement, **no return needed** for worn item
 
----
-
 ## Stock Availability
 
 ### Shopify Inventory
@@ -107,8 +97,6 @@ Check Shopify for current stock levels. However, note:
 - Offer same style in different color
 - Offer store credit for future purchase
 - Check if item will be restocked soon
-
----
 
 ## Order Protection Claims
 
@@ -133,8 +121,6 @@ Handle case-by-case:
 - "Doesn't fit as expected"
 
 These are **regular exchanges**, not Order Protection claims.
-
----
 
 ## Decision Tree
 
@@ -174,8 +160,6 @@ Customer requests exchange/return
         └─► Truly unavailable → Offer alternatives or store credit
 ```
 
----
-
 ## Exchange Process
 
 ### Standard Exchange Flow:
@@ -190,8 +174,6 @@ Customer requests exchange/return
 ### Returns Portal vs Direct Email:
 - **Returns Portal:** Usually includes order #, size preference, reason
 - **Direct Email:** May need to ask for order # or size preference
-
----
 
 ## Sizing Guidance
 
@@ -215,8 +197,6 @@ Same cup volume, different band:
 - 32C = 34B = 36A
 - 32D = 34C = 36B
 - etc.
-
----
 
 ## Important Notes
 

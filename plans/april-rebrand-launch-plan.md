@@ -6,8 +6,6 @@
 
 Cherri's April rebrand represents a strategic repositioning: same beloved brand/product, new $18 price point (down from $28), and refreshed  visual identity. With inventory arriving in April and Parade's exit creating market vacuum, this launch has significant upside potential.
 
----
-
 ## 1. Launch Context
 
 ### What's Changing
@@ -29,8 +27,6 @@ Cherri's April rebrand represents a strategic repositioning: same beloved brand/
 2. **Spring Shopping:** April = wardrobe refresh mentality
 3. **Pre-Summer:** Timing before beach/vacation season
 4. **Tax Refund Season:** Discretionary spending window
-
----
 
 ## 2. Pre-Launch Phase (February - March)
 
@@ -119,8 +115,6 @@ Cherri's April rebrand represents a strategic repositioning: same beloved brand/
 
 **When Asked Directly:** Can mention Cherri if contextually relevant
 
----
-
 ## 3. Launch Week Strategy
 
 ### Day -7: Final Teaser
@@ -175,8 +169,6 @@ Cherri's April rebrand represents a strategic repositioning: same beloved brand/
 - Highlight bestsellers
 - Thank early customers publicly
 
----
-
 ## 4. Messaging Framework
 
 ### Primary Message
@@ -208,8 +200,6 @@ Supporting messages:
 2. **Gusset:** "Wide gusset = no more front wedgies"
 3. **Quality:** "Premium supima cotton at an accessible price"
 4. **Female-Founded:** "Built by a woman who was tired of uncomfortable underwear"
-
----
 
 ## 5. Channel Strategy
 
@@ -247,8 +237,6 @@ Supporting messages:
 - Create launch-specific content pointing to basket
 - Pin bestseller in shop
 
----
-
 ## 6. Budget Allocation
 
 ### Pre-Launch (February-March): $400-600
@@ -275,8 +263,6 @@ Supporting messages:
 | Ambassador Program | $100-120 | Product seeding |
 | Top Performer Bonus | $50-60 | Monthly reward |
 | Tools/Misc | $20-30 | Tracking, shipping |
-
----
 
 ## 7. Success Metrics
 
@@ -306,8 +292,6 @@ Supporting messages:
 - Ambassador program ROI
 - Content engagement trends
 
----
-
 ## 8. Risk Mitigation
 
 ### Risk: Launch Falls Flat
@@ -334,8 +318,6 @@ Supporting messages:
 - Volume approach (50-100 contacts)
 - Have ambassador program as backup
 
----
-
 ## 9. Post-Launch Priorities
 
 ### Week 2-4: Optimize
@@ -356,8 +338,6 @@ Supporting messages:
 - Build out loyalty program
 - Plan summer campaign
 
----
-
 ## 10. Timeline Summary
 
 | Timeframe | Focus |
@@ -369,8 +349,6 @@ Supporting messages:
 | **Apr Week 1** | LAUNCH WEEK |
 | **Apr Week 2-4** | Momentum building, optimization |
 | **May+** | Scale and expand |
-
----
 
 ## Quick Reference Checklist
 
@@ -405,8 +383,6 @@ Supporting messages:
 - [ ] Post across all channels
 - [ ] Engage with every comment
 - [ ] Monitor for issues
-
----
 
 ## Appendix: Content Ideas Bank
 

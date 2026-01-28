@@ -264,7 +264,15 @@ Custom Claude skills are installed in `.claude/skills/`:
 
 ### Third-Party Plugins
 
-This project uses [wshobson/agents](https://github.com/wshobson/agents) for SEO plugins. See [docs/QUICKSTART.md](docs/QUICKSTART.md) for installation.
+This project uses [wshobson/agents](https://github.com/wshobson/agents) for SEO plugins:
+
+```bash
+/plugin marketplace add wshobson/agents
+/plugin install seo-content-creation@claude-code-workflows
+/plugin install seo-technical-optimization@claude-code-workflows
+/plugin install seo-analysis-monitoring@claude-code-workflows
+/plugin install content-marketing@claude-code-workflows
+```
 
 ### Context7 Library IDs
 
