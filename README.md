@@ -10,7 +10,7 @@ cd cherri
 claude
 ```
 
-See **[QUICKSTART.md](QUICKSTART.md)** for full setup instructions.
+See **[CLAUDE.md](CLAUDE.md)** for detailed tool documentation and setup.
 
 ## What This Does
 
@@ -27,7 +27,7 @@ See **[QUICKSTART.md](QUICKSTART.md)** for full setup instructions.
 | Google Analytics 4 | Via MCP (configured) |
 | Semrush | Via Chrome (Start plan) |
 | Ahrefs | Via Chrome (Free account) |
-| Shopify Admin | Via Chrome |
+| Shopify Admin | Via MCP (configured) |
 
 ## Project Structure
 
@@ -36,12 +36,11 @@ research/              # All research outputs
   ├── audits/          # SEO audit reports
   ├── keywords/        # Keyword research exports
   ├── competitors/     # Competitor analysis
-  ├── content-briefs/  # Content brief documents
-  └── action-items.md  # Running TODO list
+  └── content-briefs/  # Content brief documents
+financials/            # 2025 financial records
 .claude/
   ├── skills/          # Installed Claude skills
-  └── settings.json    # Plugin configuration
-skills/                # Skills requiring setup (see README)
+  └── browser-states/  # Saved browser sessions
 CLAUDE.md              # Detailed tool documentation
 ```
 
@@ -79,4 +78,4 @@ CLAUDE.md              # Detailed tool documentation
 - **GA4 Property:** 386275004
 - **Organic Revenue:** ~$4k/month (baseline Jan 2026)
 
-See `research/audits/` for latest findings and `research/action-items.md` for priorities.
+See `research/audits/` for latest findings.

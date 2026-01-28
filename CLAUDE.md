@@ -316,7 +316,7 @@ Use these with `use context7` for up-to-date documentation:
 | Metric | Value |
 |--------|-------|
 | Total Revenue | $205.2K (Shopify $166.6K + TikTok Shop $38.6K) |
-| Total Ad Spend | $82.6K (Meta $77.4K + TikTok $5.2K) |
+| Total Ad Spend | $85.0K (Meta $77.4K + TikTok $7.7K) |
 | Shopify Orders | 2,993 (avg $55.68/order) |
 | Current Debt | $12.9K (Capital $4.5K + Credit $8.4K) |
 | Best Month | Nov 2025: 570 orders, $25K revenue |
