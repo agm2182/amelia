@@ -69,7 +69,7 @@ Run `bin/check-integrations` to verify API credentials are working.
 |------|--------|---------|-------|
 | Google Search Console | Ready | `mcp-server-gsc` (npm) | Uses `GOOGLE_APPLICATION_CREDENTIALS` |
 | Google Analytics 4 | Ready | `analytics-mcp` (uvx, official Google) | Uses `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_PROJECT_ID` |
-| Gmail | Ready | `@gongrzhe/server-gmail-autoauth-mcp` | OAuth tokens in `~/.gmail-mcp/credentials.json` |
+| Google Workspace | Ready | `@dguido/google-workspace-mcp` (npm) | OAuth client in `~/.config/cherri/google-workspace-oauth.keys.json`, tokens in `~/.config/google-workspace-mcp/tokens.json` |
 | Meta Ads | Ready | `meta-ads-mcp` (npm) | Uses `META_ACCESS_TOKEN` from `.env` |
 | TikTok Ads | Ready | `tiktok-ads-mcp` (uvx) | Uses `TIKTOK_ACCESS_TOKEN`, `TIKTOK_ADVERTISER_IDS` from `.env` |
 | Shopify Dev MCP | Ready | N/A | No auth needed. Use for API docs and GraphQL schema. |
@@ -80,8 +80,40 @@ Run `bin/check-integrations` to verify API credentials are working.
 | Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
 | QuickBooks | Ready | `quickbooks-online-mcp-server` (local) | CRUD for customers, invoices, bills, vendors, etc. |
 | Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
+| Parakeet | Ready | `parakeet-mlx` (uv tool) | Audio transcription. Requires `ffmpeg` (Homebrew). |
 
 **MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
+
+### Audio Transcription
+
+Transcribe voicemails and audio files using parakeet-mlx (NVIDIA's Parakeet model optimized for Apple Silicon):
+
+```bash
+parakeet-mlx /path/to/audio.m4a
+```
+
+Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
+
+### iMessage Database
+
+Access iMessages via SQLite at `~/Library/Messages/chat.db`. Requires Full Disk Access for terminal.
+
+**Key tables:** `message`, `handle` (contacts), `chat`
+
+**Date conversion:** `date/1000000000 + 978307200` → Unix timestamp
+
+**Text extraction:** The `text` column is often NULL. Use `attributedBody` (NSAttributedString binary). Extract by finding length-prefixed strings in the blob, skipping class names (NS*, IM*, *String, *Attribute).
+
+**Example query:**
+```sql
+SELECT datetime(m.date/1000000000 + 978307200, 'unixepoch', 'localtime') as date,
+       CASE WHEN m.is_from_me = 1 THEN 'Me' ELSE 'Them' END as sender,
+       m.text, m.attributedBody
+FROM message m
+JOIN handle h ON m.handle_id = h.rowid
+WHERE h.id LIKE '%5551234567%'
+ORDER BY m.date DESC;
+```
 
 ### Token Refresh
 
@@ -132,6 +164,24 @@ Re-run OAuth if you get authentication errors:
 ```bash
 cd ~/.config/cherri/mcp-servers/quickbooks && npm run auth
 ```
+
+#### Google Workspace OAuth
+
+The Google Workspace MCP provides access to Gmail, Drive, Docs, Sheets, Slides, Calendar, and Contacts. Tokens expire after 7 days while the OAuth app is in "Testing" status.
+
+**Re-authenticate if tokens expire:**
+```bash
+rm ~/.config/google-workspace-mcp/tokens.json
+npx @dguido/google-workspace-mcp auth
+```
+
+**OAuth credentials location:** `~/.config/cherri/google-workspace-oauth.keys.json`
+
+**To create new OAuth credentials (if needed):**
+1. Go to [GCP Credentials](https://console.cloud.google.com/apis/credentials?project=cherri-seo-research)
+2. Click **+ CREATE CREDENTIALS** > **OAuth client ID**
+3. Select **Desktop app**, name it `Google Workspace MCP`
+4. Download JSON and save to `~/.config/cherri/google-workspace-oauth.keys.json`
 
 #### Shopify Access Token
 

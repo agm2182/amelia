@@ -23,9 +23,13 @@
       "command": "bash",
       "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec uvx --python 3.13 tiktok-ads-mcp"]
     },
-    "gmail": {
+    "google-workspace": {
       "command": "npx",
-      "args": ["-y", "@gongrzhe/server-gmail-autoauth-mcp"]
+      "args": ["-y", "@dguido/google-workspace-mcp"],
+      "env": {
+        "GOOGLE_DRIVE_OAUTH_CREDENTIALS": "${HOME}/.config/cherri/google-workspace-oauth.keys.json",
+        "GOOGLE_WORKSPACE_SERVICES": "gmail,drive,calendar,docs,sheets,slides,contacts"
+      }
     },
     "context7": {
       "command": "npx",
