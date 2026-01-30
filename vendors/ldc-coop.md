@@ -4,22 +4,38 @@
 
 Freelancer cooperative providing tech packs, patterns, and sample making for 5 underwear styles.
 
-## Contact
+## Members
+
+### Caroline Kuhlman (Sample Maker)
 
 | | |
 |---|---|
-| Primary Email | raconteur@carolinekuhlman.com |
-| Phone | 312-515-4107 |
+| Role | Sample Maker, Co-Op Lead |
+| Email | raconteur@carolinekuhlman.com |
 | PayPal | cekkuhlman@gmail.com |
+| Phone | +1 312-515-4107 |
 | Address | 10805 Millington Lane, Richmond, VA 23238 |
 
-## Members
+Primary contact for the co-op. Handles invoicing, sample sewing, and coordination.
 
-| Name | Role | Email |
-|------|------|-------|
-| Leslye Young | Technical Designer (tech packs) | leslye@leslyeyoung.com |
-| Diane Card | Pattern Maker | dll_home@yahoo.com |
-| Caroline Kuhlman | Sample Maker | raconteur@carolinekuhlman.com |
+### Diane Card (Pattern Maker)
+
+| | |
+|---|---|
+| Role | Pattern Maker |
+| Email | dll_home@yahoo.com |
+| Phone | +1 310-908-4265 |
+
+Creates and revises patterns. Handles plotting and sends patterns to Caroline for sewing.
+
+### Leslye Young (Technical Designer)
+
+| | |
+|---|---|
+| Role | Technical Designer |
+| Email | leslye@leslyeyoung.com |
+
+Creates tech packs, records measurements, and documents specs.
 
 ## Contract Summary
 

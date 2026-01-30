@@ -7,10 +7,22 @@
   type: contractor
   category: manufacturing
   status: disputed
-  contact: raconteur@carolinekuhlman.com
   location: Richmond, VA
   started: 2025-10-01
   ends: 2026-01-30
   contract_value: 6700
   paid: 4990  # deposit $1570 + 2 installments $1710 each
   summary: "Tech packs, patterns, and samples for 5 underwear styles - MAJOR QUALITY ISSUES"
+  members:
+    - name: Caroline Kuhlman
+      role: Sample Maker
+      email: raconteur@carolinekuhlman.com
+      paypal: cekkuhlman@gmail.com
+      phone: "+1 312-515-4107"
+    - name: Diane Card
+      role: Pattern Maker
+      email: dll_home@yahoo.com
+      phone: "+1 310-908-4265"
+    - name: Leslye Young
+      role: Technical Designer
+      email: leslye@leslyeyoung.com
