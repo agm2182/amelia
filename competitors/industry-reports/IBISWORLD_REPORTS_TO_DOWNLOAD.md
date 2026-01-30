@@ -4,7 +4,7 @@
 1. Click each link below (you must be logged into IBISWorld)
 2. Click the **Downloads** button (top right corner)
 3. Select **PDF - Full Report**
-4. Save to the `research/` folder with the report code in the filename
+4. Save to the `competitors/industry-reports/` folder with the report code in the filename
 
 ---
 
