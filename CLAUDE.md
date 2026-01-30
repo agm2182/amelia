@@ -78,6 +78,7 @@ Run `bin/check-integrations` to verify API credentials are working.
 | Semrush | No API | N/A | Start plan lacks API. Use `/agent-browser`. |
 | Ahrefs | No API | N/A | Free account. Use `/agent-browser`. |
 | Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
+| QuickBooks | Ready | `quickbooks-online-mcp-server` (local) | CRUD for customers, invoices, bills, vendors, etc. |
 | Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
 
 **MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
@@ -124,6 +125,13 @@ Generate at https://developers.facebook.com/tools/explorer/
 **Token expiry:** ~60 days (check with `mcp__meta-ads__get_token_info`)
 
 **App Dashboard:** https://developers.facebook.com/apps/878302508435072/
+
+#### QuickBooks OAuth
+
+Re-run OAuth if you get authentication errors:
+```bash
+cd ~/.config/cherri/mcp-servers/quickbooks && npm run auth
+```
 
 #### Shopify Access Token
 
@@ -306,6 +314,11 @@ Use these with `use context7` for up-to-date documentation:
 ### Conventions
 
 - **Audits:** Files in `seo/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
+- **Business documents:** Contracts, invoices, and vendor correspondence should be committed to the repo (in `vendors/documents/`). This is a private repo and these records are important to preserve.
+
+### Vendors
+
+Contractor and supplier relationships are tracked in `vendors/`. See `vendors/README.md` for structure and `vendors/index.yaml` for quick lookup.
 
 ### Financial Data
 

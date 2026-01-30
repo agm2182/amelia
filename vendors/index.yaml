@@ -1,0 +1,14 @@
+# Cherri Vendors & Contractors
+# Status: active | inactive | disputed | terminated
+
+- slug: ldc-coop
+  name: "L,D,&C Co-Op"
+  dba: "Leslye, Diane & Caroline: A Co-Op"
+  type: contractor
+  category: manufacturing
+  status: disputed
+  contact: raconteur@carolinekuhlman.com
+  location: Richmond, VA
+  started: 2025-10-01
+  contract_value: 3400
+  summary: "Tech packs, patterns, and samples for 4 underwear styles"
