@@ -1,0 +1,490 @@
+#!/usr/bin/env python3
+"""
+Parse Capital One PDF statements into QuickBooks-importable CSV.
+
+Usage:
+    ./bin/parse-capital-one-statements <pdf_or_directory> [--output <csv_file>]
+
+Examples:
+    # Parse single statement
+    ./bin/parse-capital-one-statements financials/expenses/bank-statements/capital-one-checking/Business_Basic_Checking...2420_JAN_2025.pdf
+
+    # Parse all statements in a directory
+    ./bin/parse-capital-one-statements financials/expenses/bank-statements/capital-one-checking/
+
+    # Output to specific file
+    ./bin/parse-capital-one-statements financials/expenses/bank-statements/capital-one-checking/ --output checking_2025.csv
+"""
+
+import re
+import sys
+import csv
+import subprocess
+from pathlib import Path
+from datetime import datetime
+from typing import Optional
+
+
+def extract_text_from_pdf(pdf_path: str) -> str:
+    """Extract text from PDF using pdfplumber via uvx."""
+    result = subprocess.run(
+        ["uvx", "pdfplumber", pdf_path, "--format", "text"],
+        capture_output=True,
+        text=True
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"pdfplumber failed: {result.stderr}")
+    return result.stdout
+
+
+def extract_statement_period(text: str) -> tuple[int, int]:
+    """Extract the start and end years from the statement period.
+    Returns (start_year, end_year) tuple.
+    """
+    # Credit card format: "Dec 04, 2024 - Jan 03, 2025"
+    cc_match = re.search(r'([A-Z][a-z]{2}\s+\d{1,2},\s*(\d{4}))\s*-\s*([A-Z][a-z]{2}\s+\d{1,2},\s*(\d{4}))', text)
+    if cc_match:
+        start_year = int(cc_match.group(2))
+        end_year = int(cc_match.group(4))
+        return (start_year, end_year)
+
+    # Checking account format: "JANUARY 01, 2025 - JANUARY 31, 2025" or "FOR PERIOD JANUARY 01, 2025"
+    match = re.search(r'FOR PERIOD.*?(\d{4})', text)
+    if match:
+        year = int(match.group(1))
+        return (year, year)
+
+    # Fallback: look for any 4-digit year in first 500 chars
+    match = re.search(r'20\d{2}', text[:500])
+    if match:
+        year = int(match.group(0))
+        return (year, year)
+
+    year = datetime.now().year
+    return (year, year)
+
+
+def extract_statement_year(text: str) -> int:
+    """Extract the primary year from the statement (for backwards compatibility)."""
+    _, end_year = extract_statement_period(text)
+    return end_year
+
+
+def parse_dollar_amount(text: str) -> Optional[float]:
+    """Parse a dollar amount string like '$1,234.56' or '($1,234.56)' into a float."""
+    if not text:
+        return None
+    # Remove whitespace
+    text = text.strip()
+    if not text:
+        return None
+
+    # Check for parentheses (negative) or leading minus
+    negative = text.startswith('(') or text.startswith('-')
+
+    # Extract numeric part
+    match = re.search(r'[\d,]+\.?\d*', text)
+    if not match:
+        return None
+
+    amount = float(match.group(0).replace(',', ''))
+    return -amount if negative else amount
+
+
+def detect_statement_type(text: str) -> str:
+    """Detect if this is a checking or credit card statement."""
+    if 'Trans Date Post Date' in text:
+        return 'credit_card'
+    elif 'ACCOUNT DETAIL' in text:
+        return 'checking'
+    else:
+        return 'unknown'
+
+
+def parse_credit_card_transactions(text: str, year: int) -> list[dict]:
+    """Parse credit card statement transactions.
+
+    Note: 'year' parameter is the end year of the billing period.
+    For year-spanning cycles, we use extract_statement_period() to get both years.
+    """
+    transactions = []
+
+    # Get both start and end years for billing cycles that span years
+    start_year, end_year = extract_statement_period(text)
+
+    # Month abbreviation to number mapping
+    month_map = {
+        'Jan': '01', 'Feb': '02', 'Mar': '03', 'Apr': '04',
+        'May': '05', 'Jun': '06', 'Jul': '07', 'Aug': '08',
+        'Sep': '09', 'Oct': '10', 'Nov': '11', 'Dec': '12'
+    }
+
+    # Credit card transaction pattern: "Dec 19  Dec 20   DESCRIPTION    $99.01"
+    # Or with negative: "Jan 2   Jan 2    PAYMENT              - $1,000.00"
+    txn_pattern = re.compile(
+        r'^\s*([A-Z][a-z]{2})\s+(\d{1,2})\s+[A-Z][a-z]{2}\s+\d{1,2}\s+(.+?)\s+([-]?\s*\$[\d,]+\.\d{2})\s*$'
+    )
+
+    lines = text.split('\n')
+    in_transactions = False
+
+    for line in lines:
+        # Start looking for transactions after the header
+        if 'Trans Date Post Date' in line:
+            in_transactions = True
+            continue
+
+        # Stop at summary lines
+        if 'Total' in line and ('Transactions' in line or 'Fees' in line or 'Interest' in line):
+            continue
+        if 'Interest Charge Calculation' in line:
+            break
+
+        if not in_transactions:
+            continue
+
+        # Skip empty lines and section headers
+        if not line.strip():
+            continue
+        if '#' in line and 'Transactions' in line:
+            continue
+
+        # Try to match transaction line
+        match = txn_pattern.match(line)
+        if match:
+            month_abbr = match.group(1)
+            day = match.group(2).zfill(2)
+            description = match.group(3).strip()
+            amount_str = match.group(4)
+
+            # Determine year based on month
+            # For year-spanning billing cycles (e.g., Dec 2024 - Jan 2025):
+            # - Oct, Nov, Dec transactions use start_year
+            # - Jan, Feb, Mar, etc. transactions use end_year
+            month_num = month_map.get(month_abbr, '01')
+            month_int = int(month_num)
+
+            # If years differ, assign based on month
+            if start_year != end_year:
+                # Late-year months (Oct-Dec) belong to start_year
+                # Early-year months (Jan-Mar) belong to end_year
+                if month_int >= 10:  # Oct, Nov, Dec
+                    txn_year = start_year
+                else:  # Jan through Sep
+                    txn_year = end_year
+            else:
+                txn_year = end_year
+
+            # Parse amount
+            is_negative = '-' in amount_str
+            amount = float(re.sub(r'[^\d.]', '', amount_str))
+            if is_negative:
+                amount = -amount
+
+            # Full date
+            full_date = f"{txn_year}-{month_num}-{day}"
+
+            # For credit cards: negative = payment (deposit), positive = charge (withdrawal)
+            if amount < 0:
+                deposit = abs(amount)
+                withdrawal = None
+            else:
+                deposit = None
+                withdrawal = amount
+
+            transactions.append({
+                'date': full_date,
+                'description': description,
+                'deposit': deposit,
+                'withdrawal': withdrawal,
+                'balance': None,  # Credit card statements don't show running balance
+            })
+
+    return transactions
+
+
+def parse_transactions(text: str, year: int) -> list[dict]:
+    """Parse transaction lines from statement text."""
+    transactions = []
+    current_txn = None
+
+    # Pattern for transaction line: starts with date MM/DD
+    date_pattern = re.compile(r'^\s*(\d{2}/\d{2})\s+(.+)$')
+
+    # Pattern for dollar amounts
+    dollar_pattern = re.compile(r'\$[\d,]+\.\d{2}|\(\$[\d,]+\.\d{2}\)')
+
+    lines = text.split('\n')
+
+    for line in lines:
+        # Skip page headers, footers, empty lines, and summary sections
+        if not line.strip():
+            continue
+        if 'PAGE' in line and 'OF' in line:
+            continue
+        if 'Products and services are offered by Capital One' in line:
+            continue
+        if 'Thank you for banking with us' in line:
+            continue
+        if 'ACCOUNT DETAIL' in line or 'ACCOUNT SUMMARY' in line:
+            continue
+        if line.strip().startswith('Date') and 'Description' in line:
+            continue
+        # Skip summary/total lines
+        if 'Total' in line and ('$' in line or 'Year-to-Date' in line or 'Period' in line):
+            continue
+        if 'Overdraft Fees' in line or 'NSF Fees' in line:
+            continue
+        if 'Service Charge' in line:
+            continue
+        if 'Number of Items' in line or 'Fee per Item' in line:
+            continue
+        # Skip service charge summary section (but not the individual fee transactions)
+        if 'SERVICE CHARGES' in line:
+            continue
+        # Skip lines that are clearly from the summary table
+        if '.....' in line:
+            continue
+        # Skip service charge detail lines that show count and per-item fee
+        # Pattern: "Cash deposit limit exceeded          3         $1.00" (count then per-item fee)
+        if re.search(r'limit exceeded\s+\d+\s+\$', line):
+            continue
+
+        # Check if this is a new transaction line (starts with date)
+        date_match = date_pattern.match(line)
+
+        if date_match:
+            # Save previous transaction
+            if current_txn:
+                transactions.append(current_txn)
+
+            date_str = date_match.group(1)
+            rest_of_line = date_match.group(2)
+
+            # Parse the date with year
+            month, day = date_str.split('/')
+            full_date = f"{year}-{month}-{day}"
+
+            # Find all dollar amounts in the line
+            amounts = dollar_pattern.findall(rest_of_line)
+
+            # Extract description (text before first dollar amount)
+            desc_match = re.match(r'^(.+?)\s+\$', rest_of_line)
+            if desc_match:
+                description = desc_match.group(1).strip()
+            else:
+                # No dollar amount on this line yet, whole thing is description
+                description = rest_of_line.strip()
+
+            # Determine deposit vs withdrawal
+            # The last amount is always the balance
+            # If there are 2 amounts: one is the transaction, one is balance
+            # If there are 3 amounts: deposit, withdrawal (one empty), balance
+            deposit = None
+            withdrawal = None
+            balance = None
+
+            if len(amounts) >= 1:
+                balance = parse_dollar_amount(amounts[-1])
+
+            if len(amounts) >= 2:
+                # Second-to-last is the transaction amount
+                txn_amount = parse_dollar_amount(amounts[-2])
+
+                # Determine if deposit or withdrawal based on description keywords
+                desc_lower = description.lower()
+
+                # Explicit withdrawal keywords (check first - more specific)
+                is_withdrawal = any(word in desc_lower for word in [
+                    'withdrawal', 'payment to', 'purchase', 'debit card',
+                    'mobile debit', 'recur mobile', 'ach payment to',
+                    'overdraft', 'charge', 'fee', 'limit exceeded'
+                ])
+
+                # Explicit deposit keywords
+                is_deposit = any(word in desc_lower for word in [
+                    'deposit', 'transfer received', 'instant transfer received',
+                    'customer deposit', 'atm cash deposit', 'cash deposit'
+                ])
+
+                # For ACH transactions, check more carefully
+                if 'ach' in desc_lower:
+                    if 'withdrawal' in desc_lower:
+                        is_withdrawal = True
+                        is_deposit = False
+                    elif 'deposit' in desc_lower:
+                        is_deposit = True
+                        is_withdrawal = False
+
+                # Shopify/TikTok transfers are usually deposits (incoming sales)
+                if not is_withdrawal and ('shopify transfer' in desc_lower or 'tiktok' in desc_lower):
+                    if 'shopify capital' not in desc_lower and 'shopify credit' not in desc_lower:
+                        is_deposit = True
+
+                # Shopify Capital/Credit payments are withdrawals (loan repayments)
+                if 'shopify capital' in desc_lower or 'shopify credit' in desc_lower:
+                    is_withdrawal = True
+                    is_deposit = False
+
+                if is_withdrawal and not is_deposit:
+                    withdrawal = txn_amount
+                elif is_deposit and not is_withdrawal:
+                    deposit = txn_amount
+                else:
+                    # Fallback: use position heuristic
+                    txn_text = amounts[-2]
+                    txn_pos = rest_of_line.find(txn_text)
+                    if txn_pos < 50:
+                        deposit = txn_amount
+                    else:
+                        withdrawal = txn_amount
+
+            current_txn = {
+                'date': full_date,
+                'description': description,
+                'deposit': deposit,
+                'withdrawal': withdrawal,
+                'balance': balance,
+            }
+
+        elif current_txn:
+            # Continuation line - append to description
+            continuation = line.strip()
+            # Skip boilerplate text
+            skip_patterns = [
+                'CHERRI LLC', 'Capital One', 'FDIC', 'PAGE', 'Thank you for banking',
+                'An Important Message', 'What should I do', 'In case of error',
+                'electronic transfers', 'Customer Service', 'statement or receipt',
+                'small business accounts', 'Electronic Fund Transfer', 'consumer accounts',
+                'Tell us your name', 'Describe the error', 'dollar amount',
+                'investigate your complaint', 'business days', 'PSI:', 'SHC:', 'LOB'
+            ]
+            if continuation and not any(skip in continuation for skip in skip_patterns):
+                # Also skip if line is too long (likely boilerplate)
+                if len(continuation) < 100:
+                    current_txn['description'] += ' ' + continuation
+
+    # Don't forget the last transaction
+    if current_txn:
+        transactions.append(current_txn)
+
+    return transactions
+
+
+def write_quickbooks_csv(transactions: list[dict], output_path: str):
+    """Write transactions to QuickBooks-compatible CSV."""
+    with open(output_path, 'w', newline='') as f:
+        writer = csv.writer(f)
+        # QuickBooks import format
+        writer.writerow(['Date', 'Description', 'Amount'])
+
+        for txn in transactions:
+            # QuickBooks wants positive for deposits, negative for withdrawals
+            if txn['deposit']:
+                amount = txn['deposit']
+            elif txn['withdrawal']:
+                amount = -abs(txn['withdrawal'])
+            else:
+                continue  # Skip if no amount
+
+            writer.writerow([
+                txn['date'],
+                txn['description'],
+                f"{amount:.2f}"
+            ])
+
+
+def write_detailed_csv(transactions: list[dict], output_path: str):
+    """Write transactions to detailed CSV with separate columns."""
+    with open(output_path, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Date', 'Description', 'Deposit', 'Withdrawal', 'Balance'])
+
+        for txn in transactions:
+            writer.writerow([
+                txn['date'],
+                txn['description'],
+                f"{txn['deposit']:.2f}" if txn['deposit'] else '',
+                f"{txn['withdrawal']:.2f}" if txn['withdrawal'] else '',
+                f"{txn['balance']:.2f}" if txn['balance'] else '',
+            ])
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='Parse Capital One PDF statements to CSV')
+    parser.add_argument('input', help='PDF file or directory containing PDFs')
+    parser.add_argument('--output', '-o', help='Output CSV file (default: stdout or <input>_transactions.csv)')
+    parser.add_argument('--detailed', '-d', action='store_true', help='Output detailed CSV with separate deposit/withdrawal/balance columns')
+    args = parser.parse_args()
+
+    input_path = Path(args.input)
+
+    # Collect PDF files
+    if input_path.is_dir():
+        pdf_files = sorted(input_path.glob('*.pdf'))
+    elif input_path.is_file():
+        pdf_files = [input_path]
+    else:
+        print(f"Error: {input_path} not found", file=sys.stderr)
+        sys.exit(1)
+
+    if not pdf_files:
+        print(f"Error: No PDF files found in {input_path}", file=sys.stderr)
+        sys.exit(1)
+
+    # Parse all PDFs
+    all_transactions = []
+    for pdf_file in pdf_files:
+        print(f"Processing {pdf_file.name}...", file=sys.stderr)
+        try:
+            text = extract_text_from_pdf(str(pdf_file))
+            year = extract_statement_year(text)
+            stmt_type = detect_statement_type(text)
+
+            if stmt_type == 'credit_card':
+                transactions = parse_credit_card_transactions(text, year)
+            elif stmt_type == 'checking':
+                transactions = parse_transactions(text, year)
+            else:
+                print(f"  Unknown statement type, skipping", file=sys.stderr)
+                continue
+
+            all_transactions.extend(transactions)
+            print(f"  Found {len(transactions)} transactions ({stmt_type})", file=sys.stderr)
+        except Exception as e:
+            print(f"  Error: {e}", file=sys.stderr)
+
+    # Sort by date
+    all_transactions.sort(key=lambda t: t['date'])
+
+    # Remove duplicates (same date + description + amount)
+    seen = set()
+    unique_transactions = []
+    for txn in all_transactions:
+        key = (txn['date'], txn['description'][:50], txn['deposit'], txn['withdrawal'])
+        if key not in seen:
+            seen.add(key)
+            unique_transactions.append(txn)
+
+    print(f"\nTotal: {len(unique_transactions)} unique transactions", file=sys.stderr)
+
+    # Determine output path
+    if args.output:
+        output_path = args.output
+    elif input_path.is_dir():
+        output_path = str(input_path / 'transactions.csv')
+    else:
+        output_path = str(input_path.with_suffix('.csv'))
+
+    # Write output
+    if args.detailed:
+        write_detailed_csv(unique_transactions, output_path)
+    else:
+        write_quickbooks_csv(unique_transactions, output_path)
+
+    print(f"Written to {output_path}", file=sys.stderr)
+
+
+if __name__ == '__main__':
+    main()

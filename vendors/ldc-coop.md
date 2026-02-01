@@ -1,6 +1,6 @@
 # L,D,&C Co-Op
 
-**Status:** Disputed | **Contract Ends:** Jan 30, 2026 | **Paid:** $4,990 / $6,700
+**Status:** Disputed | **Contract Ends:** Jan 30, 2026 | **Paid:** $6,700 (100%)
 
 > Tech packs, patterns, and samples for 5 underwear styles. Major quality
 > issues discovered Jan 29, 2026. Meeting scheduled Jan 30 to resolve.
@@ -31,15 +31,15 @@
 | Deposit | $1,570 | Oct 2025 | Paid |
 | Installment 2 | $1,710 | Nov 15, 2025 | Paid (Nov 20) |
 | Installment 3 | $1,710 | Dec 15, 2025 | Paid |
-| Installment 4 | $1,710 | Jan 15, 2026 | Status unknown |
+| Installment 4 | $1,710 | Jan 15, 2026 | Paid |
 
 ### Deliverables
 
 | Item | Status |
 |------|--------|
-| Tech Packs (5) | Delivered with quality issues |
-| Patterns (5 styles, all sizes) | Delivered Jan 22 |
-| Samples (17) | Partial - major issues |
+| Tech Packs (5) | Delivered (reference value only) |
+| Patterns (5 styles, all sizes) | Delivered Jan 22 - don't match specs |
+| Samples (17) | Partial - defective |
 
 ### Styles
 

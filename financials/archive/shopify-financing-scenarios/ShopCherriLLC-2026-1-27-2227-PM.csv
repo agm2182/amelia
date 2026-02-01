@@ -1,0 +1,136 @@
+Shop Cherri LLC Financing Scenario
+Agreement Amount: ,"$6,500.00"
+Principal Repayment Rate: ,17.0%
+Fee Repayment Rate: ,2.89%
+Period Start: ,2025-10-27,Period end: ,2025-11-02
+Total Sales in Period,"$3,365.89"
+Principal Payment (17.0% of retail sales),$572.20
+Fee (2.89% of retail sales),$97.27
+""
+Store,Purchased At (UTC),Order Id,Line Item Id,SKU,Product,Net Price,Principal Repayment Rate,Principal Payment
+shop-cherri.myshopify.com,2025-10-26 16:11:18 UTC,gid://shopify/Order/6192582590500,gid://shopify/LineItem/16145332011044,MTBP0213L,"Mid-Rise Thong - 3X/4X / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 17:14:17 UTC,gid://shopify/Order/6192648880164,gid://shopify/LineItem/16145529962532,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 17:14:17 UTC,gid://shopify/Order/6192648880164,gid://shopify/LineItem/16145529929764,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 17:30:12 UTC,gid://shopify/Order/6192673062948,gid://shopify/LineItem/16145625251876,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$21.00,17.0%,$3.57
+shop-cherri.myshopify.com,2025-10-26 19:19:46 UTC,gid://shopify/Order/6192878420004,gid://shopify/LineItem/16146529058852,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$21.00,17.0%,$3.57
+shop-cherri.myshopify.com,2025-10-26 20:13:25 UTC,gid://shopify/Order/6192996581412,gid://shopify/LineItem/16147097223204,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 20:13:25 UTC,gid://shopify/Order/6192996581412,gid://shopify/LineItem/16147097288740,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 20:13:25 UTC,gid://shopify/Order/6192996581412,gid://shopify/LineItem/16147097255972,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 20:13:25 UTC,gid://shopify/Order/6192996581412,gid://shopify/LineItem/16147097321508,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 20:39:40 UTC,gid://shopify/Order/6193054449700,gid://shopify/LineItem/16147371261988,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-10-26 20:39:40 UTC,gid://shopify/Order/6193054449700,gid://shopify/LineItem/16147371294756,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-10-26 20:39:40 UTC,gid://shopify/Order/6193054449700,gid://shopify/LineItem/16147371229220,TIER5,Order Protection - TIER5,$1.75,17.0%,$0.30
+shop-cherri.myshopify.com,2025-10-26 21:44:15 UTC,gid://shopify/Order/6193194598436,gid://shopify/LineItem/16148060176420,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-26 22:19:37 UTC,gid://shopify/Order/6193265115172,gid://shopify/LineItem/16148381171748,MTB0211L,"Mid-Rise Thong - XS/S / Black Licorice,",$8.00,17.0%,$1.36
+shop-cherri.myshopify.com,2025-10-27 01:52:43 UTC,gid://shopify/Order/6193460314148,gid://shopify/LineItem/16149031026724,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-27 01:52:43 UTC,gid://shopify/Order/6193460314148,gid://shopify/LineItem/16149031059492,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-27 03:05:25 UTC,gid://shopify/Order/6193504714788,gid://shopify/LineItem/16149122744356,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$8.00,17.0%,$1.36
+shop-cherri.myshopify.com,2025-10-27 03:19:16 UTC,gid://shopify/Order/6193511563300,gid://shopify/LineItem/16149136179236,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$21.00,17.0%,$3.57
+shop-cherri.myshopify.com,2025-10-27 04:40:56 UTC,gid://shopify/Order/6193549869092,gid://shopify/LineItem/16149210595364,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$21.00,17.0%,$3.57
+shop-cherri.myshopify.com,2025-10-27 05:57:54 UTC,gid://shopify/Order/6193578868772,gid://shopify/LineItem/16149267906596,4273602_12679,Cherri Embroidered Socks - L/XL,$20.40,17.0%,$3.47
+shop-cherri.myshopify.com,2025-10-27 05:57:54 UTC,gid://shopify/Order/6193578868772,gid://shopify/LineItem/16149268004900,LRL02205L,"Bikini Brief - 1X/2X / Black Licorice,",$23.81,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-27 05:57:54 UTC,gid://shopify/Order/6193578868772,gid://shopify/LineItem/16149267939364,7818021_13350,Cherri Recycled Scrunchie,$11.05,17.0%,$1.88
+shop-cherri.myshopify.com,2025-10-27 05:57:54 UTC,gid://shopify/Order/6193578868772,gid://shopify/LineItem/16149267972132,MTBP0211R,"Mid-Rise Thong - 1X/2X / Red Candy Apple,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-27 05:57:54 UTC,gid://shopify/Order/6193578868772,gid://shopify/LineItem/16149267873828,TIER11,Order Protection - TIER11,$2.34,17.0%,$0.40
+shop-cherri.myshopify.com,2025-10-27 19:46:11 UTC,gid://shopify/Order/6194163417124,gid://shopify/LineItem/16150700818468,MTBP0211R,"Mid-Rise Thong - 1X/2X / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-27 20:22:21 UTC,gid://shopify/Order/6194205524004,gid://shopify/LineItem/16150846341156,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-27 20:22:21 UTC,gid://shopify/Order/6194205524004,gid://shopify/LineItem/16150846308388,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-27 22:46:23 UTC,gid://shopify/Order/6194364842020,gid://shopify/LineItem/16151402217508,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-27 23:04:56 UTC,gid://shopify/Order/6194384371748,gid://shopify/LineItem/16151469391908,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$18.81,17.0%,$3.20
+shop-cherri.myshopify.com,2025-10-27 23:04:56 UTC,gid://shopify/Order/6194384371748,gid://shopify/LineItem/16151469424676,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$18.81,17.0%,$3.20
+shop-cherri.myshopify.com,2025-10-28 00:01:36 UTC,gid://shopify/Order/6194445582372,gid://shopify/LineItem/16151692607524,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-10-28 00:01:36 UTC,gid://shopify/Order/6194445582372,gid://shopify/LineItem/16151692640292,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$75.61,17.0%,$12.85
+shop-cherri.myshopify.com,2025-10-28 00:01:36 UTC,gid://shopify/Order/6194445582372,gid://shopify/LineItem/16151692574756,TIER15,Order Protection - TIER15,$3.01,17.0%,$0.51
+shop-cherri.myshopify.com,2025-10-28 01:28:10 UTC,gid://shopify/Order/6194517606436,gid://shopify/LineItem/16151901667364,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-28 01:28:10 UTC,gid://shopify/Order/6194517606436,gid://shopify/LineItem/16151901634596,BASE,Order Protection - BASE,$0.98,17.0%,$0.17
+shop-cherri.myshopify.com,2025-10-28 02:07:27 UTC,gid://shopify/Order/6194541690916,gid://shopify/LineItem/16151951540260,TIER10,Order Protection - TIER10,$2.55,17.0%,$0.43
+shop-cherri.myshopify.com,2025-10-28 02:07:27 UTC,gid://shopify/Order/6194541690916,gid://shopify/LineItem/16151951605796,44692527556910443523,"Vulva Euphemisms Tote Bag - Buttercream / 15"" x 16"",",$60.00,17.0%,$10.20
+shop-cherri.myshopify.com,2025-10-28 02:07:27 UTC,gid://shopify/Order/6194541690916,gid://shopify/LineItem/16151951573028,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-28 03:20:31 UTC,gid://shopify/Order/6194582781988,gid://shopify/LineItem/16152036048932,MTBP0212L,"Mid-Rise Thong - 2X/3X / Black Licorice,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-10-28 03:20:31 UTC,gid://shopify/Order/6194582781988,gid://shopify/LineItem/16152036016164,TIER15,Order Protection - TIER15,$3.35,17.0%,$0.57
+shop-cherri.myshopify.com,2025-10-28 03:20:31 UTC,gid://shopify/Order/6194582781988,gid://shopify/LineItem/16152036081700,MTBP0212R,"Mid-Rise Thong - 2X/3X / Red Candy Apple,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-10-28 03:23:29 UTC,gid://shopify/Order/6194584649764,gid://shopify/LineItem/16152039620644,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-28 03:23:29 UTC,gid://shopify/Order/6194584649764,gid://shopify/LineItem/16152039587876,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-28 10:15:14 UTC,gid://shopify/Order/6194768248868,gid://shopify/LineItem/16152361697316,MTBP0211R,"Mid-Rise Thong - 1X/2X / Red Candy Apple,",$18.41,17.0%,$3.13
+shop-cherri.myshopify.com,2025-10-28 15:40:49 UTC,gid://shopify/Order/6194970656804,gid://shopify/LineItem/16152743051300,MTBP0211R,"Mid-Rise Thong - 1X/2X / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-28 15:40:49 UTC,gid://shopify/Order/6194970656804,gid://shopify/LineItem/16152743084068,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-28 18:14:26 UTC,gid://shopify/Order/6195129024548,gid://shopify/LineItem/16153194561572,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-10-28 18:14:26 UTC,gid://shopify/Order/6195129024548,gid://shopify/LineItem/16153194496036,TIER5,Order Protection - TIER5,$1.75,17.0%,$0.30
+shop-cherri.myshopify.com,2025-10-28 18:14:26 UTC,gid://shopify/Order/6195129024548,gid://shopify/LineItem/16153194528804,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-28 20:23:32 UTC,gid://shopify/Order/6195271270436,gid://shopify/LineItem/16153649315876,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-28 20:23:32 UTC,gid://shopify/Order/6195271270436,gid://shopify/LineItem/16153649283108,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-28 20:23:32 UTC,gid://shopify/Order/6195271270436,gid://shopify/LineItem/16153649348644,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-28 20:40:39 UTC,gid://shopify/Order/6195290046500,gid://shopify/LineItem/16153707970596,TIER3,Order Protection - TIER3,$1.21,17.0%,$0.21
+shop-cherri.myshopify.com,2025-10-28 20:40:39 UTC,gid://shopify/Order/6195290046500,gid://shopify/LineItem/16153708003364,26725302656068410142,"Vulva Euphemisms Tote Bag - Black Licorice / 15"" x 16"",",$18.02,17.0%,$3.06
+shop-cherri.myshopify.com,2025-10-28 23:12:29 UTC,gid://shopify/Order/6195450445860,gid://shopify/LineItem/16154264141860,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$84.00,17.0%,$14.28
+shop-cherri.myshopify.com,2025-10-28 23:12:29 UTC,gid://shopify/Order/6195450445860,gid://shopify/LineItem/16154264109092,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$112.00,17.0%,$19.04
+shop-cherri.myshopify.com,2025-10-28 23:12:29 UTC,gid://shopify/Order/6195450445860,gid://shopify/LineItem/16154264076324,TIER30,Order Protection - TIER30,$5.95,17.0%,$1.01
+shop-cherri.myshopify.com,2025-10-28 23:29:26 UTC,gid://shopify/Order/6195469844516,gid://shopify/LineItem/16154336362532,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$16.68,17.0%,$2.84
+shop-cherri.myshopify.com,2025-10-28 23:29:26 UTC,gid://shopify/Order/6195469844516,gid://shopify/LineItem/16154336329764,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$16.67,17.0%,$2.83
+shop-cherri.myshopify.com,2025-10-29 00:33:08 UTC,gid://shopify/Order/6195535249444,gid://shopify/LineItem/16154547879972,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 00:33:08 UTC,gid://shopify/Order/6195535249444,gid://shopify/LineItem/16154547847204,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 00:36:40 UTC,gid://shopify/Order/6195538788388,gid://shopify/LineItem/16154559938596,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-29 00:58:16 UTC,gid://shopify/Order/6195557367844,gid://shopify/LineItem/16154618462244,TIER10,Order Protection - TIER10,$6.51,17.0%,$1.11
+shop-cherri.myshopify.com,2025-10-29 00:58:16 UTC,gid://shopify/Order/6195557367844,gid://shopify/LineItem/16154618527780,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$119.02,17.0%,$20.23
+shop-cherri.myshopify.com,2025-10-29 00:58:16 UTC,gid://shopify/Order/6195557367844,gid://shopify/LineItem/16154618495012,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$71.41,17.0%,$12.14
+shop-cherri.myshopify.com,2025-10-29 01:50:46 UTC,gid://shopify/Order/6195590955044,gid://shopify/LineItem/16154691633188,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$18.41,17.0%,$3.13
+shop-cherri.myshopify.com,2025-10-29 03:12:56 UTC,gid://shopify/Order/6195637223460,gid://shopify/LineItem/16154783154212,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-29 03:28:48 UTC,gid://shopify/Order/6195644071972,gid://shopify/LineItem/16154796064804,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 03:28:48 UTC,gid://shopify/Order/6195644071972,gid://shopify/LineItem/16154796097572,MTBP0211R,"Mid-Rise Thong - 1X/2X / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 04:03:10 UTC,gid://shopify/Order/6195660292132,gid://shopify/LineItem/16154828046372,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-29 04:03:10 UTC,gid://shopify/Order/6195660292132,gid://shopify/LineItem/16154828013604,TIER5,Order Protection - TIER5,$1.75,17.0%,$0.30
+shop-cherri.myshopify.com,2025-10-29 04:08:19 UTC,gid://shopify/Order/6195663536164,gid://shopify/LineItem/16154833551396,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-29 04:10:40 UTC,gid://shopify/Order/6195664748580,gid://shopify/LineItem/16154835419172,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-29 04:10:40 UTC,gid://shopify/Order/6195664748580,gid://shopify/LineItem/16154835386404,MTBP0213L,"Mid-Rise Thong - 3X/4X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-29 04:22:08 UTC,gid://shopify/Order/6195669139492,gid://shopify/LineItem/16154844364836,MTB0211L,"Mid-Rise Thong - XS/S / Black Licorice,",$4.56,17.0%,$0.78
+shop-cherri.myshopify.com,2025-10-29 04:58:06 UTC,gid://shopify/Order/6195683950628,gid://shopify/LineItem/16154871791652,TIER5,Order Protection - TIER5,$1.58,17.0%,$0.27
+shop-cherri.myshopify.com,2025-10-29 04:58:06 UTC,gid://shopify/Order/6195683950628,gid://shopify/LineItem/16154871857188,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-10-29 04:58:06 UTC,gid://shopify/Order/6195683950628,gid://shopify/LineItem/16154871824420,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-10-29 05:14:55 UTC,gid://shopify/Order/6195692077092,gid://shopify/LineItem/16154887454756,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 05:14:55 UTC,gid://shopify/Order/6195692077092,gid://shopify/LineItem/16154887421988,MTBP0211L,"Mid-Rise Thong - 1X/2X / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 17:58:46 UTC,gid://shopify/Order/6196171636772,gid://shopify/LineItem/16155975155748,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 19:01:36 UTC,gid://shopify/Order/6196247592996,gid://shopify/LineItem/16156228452388,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$0.00,17.0%,$0.00
+shop-cherri.myshopify.com,2025-10-29 21:26:25 UTC,gid://shopify/Order/6196420476964,gid://shopify/LineItem/16156815851556,MTB0211L,"Mid-Rise Thong - XS/S / Black Licorice,",$4.56,17.0%,$0.78
+shop-cherri.myshopify.com,2025-10-29 23:41:31 UTC,gid://shopify/Order/6196583792676,gid://shopify/LineItem/16157399253028,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 23:41:31 UTC,gid://shopify/Order/6196583792676,gid://shopify/LineItem/16157399220260,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 23:41:31 UTC,gid://shopify/Order/6196583792676,gid://shopify/LineItem/16157399285796,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-29 23:56:39 UTC,gid://shopify/Order/6196602241060,gid://shopify/LineItem/16157462593572,MTBP0212L,"Mid-Rise Thong - 2X/3X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-30 00:33:52 UTC,gid://shopify/Order/6196642807844,gid://shopify/LineItem/16157598613540,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-30 02:01:59 UTC,gid://shopify/Order/6196714733604,gid://shopify/LineItem/16157795647524,LRL02205L,"Bikini Brief - 1X/2X / Black Licorice,",$0.00,17.0%,$0.00
+shop-cherri.myshopify.com,2025-10-30 03:14:08 UTC,gid://shopify/Order/6196755890212,gid://shopify/LineItem/16157879205924,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$18.81,17.0%,$3.20
+shop-cherri.myshopify.com,2025-10-30 07:21:32 UTC,gid://shopify/Order/6196869857316,gid://shopify/LineItem/16158090788900,MTBP0213L,"Mid-Rise Thong - 3X/4X / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-30 12:05:57 UTC,gid://shopify/Order/6197001256996,gid://shopify/LineItem/16158333337636,MTBP0211R,"Mid-Rise Thong - 1X/2X / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-30 12:56:33 UTC,gid://shopify/Order/6197037563940,gid://shopify/LineItem/16158398906404,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$16.31,17.0%,$2.77
+shop-cherri.myshopify.com,2025-10-30 12:56:33 UTC,gid://shopify/Order/6197037563940,gid://shopify/LineItem/16158398939172,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$16.31,17.0%,$2.77
+shop-cherri.myshopify.com,2025-10-30 16:29:47 UTC,gid://shopify/Order/6197217263652,gid://shopify/LineItem/16158798905380,TIER20,Order Protection - TIER20,$4.15,17.0%,$0.71
+shop-cherri.myshopify.com,2025-10-30 16:29:47 UTC,gid://shopify/Order/6197217263652,gid://shopify/LineItem/16158798970916,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$84.00,17.0%,$14.28
+shop-cherri.myshopify.com,2025-10-30 16:29:47 UTC,gid://shopify/Order/6197217263652,gid://shopify/LineItem/16158798938148,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-30 16:44:21 UTC,gid://shopify/Order/6197237973028,gid://shopify/LineItem/16158867816484,MTB0213R,"Mid-Rise Thong - M/L / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-30 16:44:21 UTC,gid://shopify/Order/6197237973028,gid://shopify/LineItem/16158867750948,TIER5,Order Protection - TIER5,$1.75,17.0%,$0.30
+shop-cherri.myshopify.com,2025-10-30 16:44:21 UTC,gid://shopify/Order/6197237973028,gid://shopify/LineItem/16158867783716,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-10-30 19:36:19 UTC,gid://shopify/Order/6198117269540,gid://shopify/LineItem/16162890088484,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$21.00,17.0%,$3.57
+shop-cherri.myshopify.com,2025-10-30 20:38:04 UTC,gid://shopify/Order/6198214393892,gid://shopify/LineItem/16163258957860,3PLRL02201SF,"3 Pack Bikini Briefs - Spring Fling - XS/S / Spring Fling,",$48.00,17.0%,$8.16
+shop-cherri.myshopify.com,2025-10-30 20:38:04 UTC,gid://shopify/Order/6198214393892,gid://shopify/LineItem/16163258990628,MTB0211R,"Mid-Rise Thong - XS/S / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-30 20:38:04 UTC,gid://shopify/Order/6198214393892,gid://shopify/LineItem/16163259023396,MTB0211R,"Mid-Rise Thong - XS/S / Red Candy Apple,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-30 22:37:02 UTC,gid://shopify/Order/6198376562724,gid://shopify/LineItem/16163830071332,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-31 02:36:14 UTC,gid://shopify/Order/6198623436836,gid://shopify/LineItem/16164655530020,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-31 02:36:14 UTC,gid://shopify/Order/6198623436836,gid://shopify/LineItem/16164655497252,MTB0214L,"Mid-Rise Thong - L/XL / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-31 03:40:20 UTC,gid://shopify/Order/6198658072612,gid://shopify/LineItem/16164724473892,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$21.00,17.0%,$3.57
+shop-cherri.myshopify.com,2025-10-31 05:02:30 UTC,gid://shopify/Order/6198696345636,gid://shopify/LineItem/16164796661796,TIER5,Order Protection - TIER5,$1.58,17.0%,$0.27
+shop-cherri.myshopify.com,2025-10-31 05:02:30 UTC,gid://shopify/Order/6198696345636,gid://shopify/LineItem/16164796694564,MTB0212R,"Mid-Rise Thong - S/M / Red Candy Apple,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-10-31 05:02:30 UTC,gid://shopify/Order/6198696345636,gid://shopify/LineItem/16164796727332,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$75.61,17.0%,$12.85
+shop-cherri.myshopify.com,2025-10-31 06:11:39 UTC,gid://shopify/Order/6198725050404,gid://shopify/LineItem/16164851318820,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-31 06:11:39 UTC,gid://shopify/Order/6198725050404,gid://shopify/LineItem/16164851351588,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$22.41,17.0%,$3.81
+shop-cherri.myshopify.com,2025-10-31 17:38:15 UTC,gid://shopify/Order/6199236198436,gid://shopify/LineItem/16166087786532,TIER20,Order Protection - TIER20,$4.15,17.0%,$0.71
+shop-cherri.myshopify.com,2025-10-31 17:38:15 UTC,gid://shopify/Order/6199236198436,gid://shopify/LineItem/16166087819300,LRL02204L,"Bikini Brief - L/XL / Black Licorice,",$84.00,17.0%,$14.28
+shop-cherri.myshopify.com,2025-10-31 18:38:24 UTC,gid://shopify/Order/6199336435748,gid://shopify/LineItem/16166441123876,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$23.80,17.0%,$4.05
+shop-cherri.myshopify.com,2025-10-31 19:42:21 UTC,gid://shopify/Order/6199445749796,gid://shopify/LineItem/16166857867300,TIER10,Order Protection - TIER10,$2.55,17.0%,$0.43
+shop-cherri.myshopify.com,2025-10-31 19:42:21 UTC,gid://shopify/Order/6199445749796,gid://shopify/LineItem/16166857900068,MTB0212L,"Mid-Rise Thong - S/M / Black Licorice,",$84.00,17.0%,$14.28
+shop-cherri.myshopify.com,2025-10-31 23:47:21 UTC,gid://shopify/Order/6199812161572,gid://shopify/LineItem/16168085553188,TIER35,Order Protection - TIER35,$6.75,17.0%,$1.15
+shop-cherri.myshopify.com,2025-10-31 23:47:21 UTC,gid://shopify/Order/6199812161572,gid://shopify/LineItem/16168085585956,LRL02203L,"Bikini Brief - M/L / Black Licorice,",$112.00,17.0%,$19.04
+shop-cherri.myshopify.com,2025-11-01 01:10:46 UTC,gid://shopify/Order/6199897358372,gid://shopify/LineItem/16168346746916,MTB0213L,"Mid-Rise Thong - M/L / Black Licorice,",$47.61,17.0%,$8.09
+shop-cherri.myshopify.com,2025-11-01 01:10:46 UTC,gid://shopify/Order/6199897358372,gid://shopify/LineItem/16168346714148,TIER10,Order Protection - TIER10,$2.16,17.0%,$0.37
+shop-cherri.myshopify.com,2025-11-01 01:47:46 UTC,gid://shopify/Order/6199927963684,gid://shopify/LineItem/16168421326884,MTB0214R,"Mid-Rise Thong - L/XL / Red Candy Apple,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-11-01 01:47:46 UTC,gid://shopify/Order/6199927963684,gid://shopify/LineItem/16168421294116,BASE,Order Protection - BASE,$0.98,17.0%,$0.17
+shop-cherri.myshopify.com,2025-11-01 21:50:44 UTC,gid://shopify/Order/6201381879844,gid://shopify/LineItem/16173151354916,TIER5,Order Protection - TIER5,$1.75,17.0%,$0.30
+shop-cherri.myshopify.com,2025-11-01 21:50:44 UTC,gid://shopify/Order/6201381879844,gid://shopify/LineItem/16173151387684,LRL02203L,"Bikini Brief - M/L / Black Licorice,",$84.00,17.0%,$14.28

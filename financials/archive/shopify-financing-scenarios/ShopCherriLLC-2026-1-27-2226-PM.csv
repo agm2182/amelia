@@ -1,0 +1,40 @@
+Shop Cherri LLC Financing Scenario
+Agreement Amount: ,"$6,500.00"
+Principal Repayment Rate: ,17.0%
+Fee Repayment Rate: ,2.89%
+Period Start: ,2025-08-25,Period end: ,2025-08-31
+Total Sales in Period,$851.71
+Principal Payment (17.0% of retail sales),$144.79
+Fee (2.89% of retail sales),$24.61
+""
+Store,Purchased At (UTC),Order Id,Line Item Id,SKU,Product,Net Price,Principal Repayment Rate,Principal Payment
+shop-cherri.myshopify.com,2025-08-24 15:27:07 UTC,gid://shopify/Order/6061226000420,gid://shopify/LineItem/15718145196068,GSP0222S,"G-String - 2X/3X / Strawberry Pink,",$0.00,17.0%,$0.00
+shop-cherri.myshopify.com,2025-08-24 15:27:07 UTC,gid://shopify/Order/6061226000420,gid://shopify/LineItem/15718145130532,GST0223S,"G-String - M/L / Strawberry Pink,",$0.00,17.0%,$0.00
+shop-cherri.myshopify.com,2025-08-24 15:27:07 UTC,gid://shopify/Order/6061226000420,gid://shopify/LineItem/15718145163300,GSP0222R,"G-String - 2X/3X / Red Candy Apple,",$0.00,17.0%,$0.00
+shop-cherri.myshopify.com,2025-08-24 19:04:38 UTC,gid://shopify/Order/6061549649956,gid://shopify/LineItem/15719509262372,MTB0212B,"Mid-Rise Thong - S/M / Blueberry,",$27.99,17.0%,$4.76
+shop-cherri.myshopify.com,2025-08-24 23:41:15 UTC,gid://shopify/Order/6062218510372,gid://shopify/LineItem/15722404479012,GST02304LM,G-String - L/XL / Lemonade,$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-08-24 23:41:15 UTC,gid://shopify/Order/6062218510372,gid://shopify/LineItem/15722404511780,MTB0214G,"Mid-Rise Thong - L/XL / Pink Guava,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-08-25 02:58:46 UTC,gid://shopify/Order/6062346272804,gid://shopify/LineItem/15722719838244,3PLRL02204SF,"3 Pack Bikini Briefs - Spring Fling - L/XL / Spring Fling,",$60.00,17.0%,$10.20
+shop-cherri.myshopify.com,2025-08-25 15:55:13 UTC,gid://shopify/Order/6062776614948,gid://shopify/LineItem/15723576098852,MTB0214G,"Mid-Rise Thong - L/XL / Pink Guava,",$0.00,17.0%,$0.00
+shop-cherri.myshopify.com,2025-08-25 16:23:37 UTC,gid://shopify/Order/6062803386404,gid://shopify/LineItem/15723648909348,3PMTBP0211N,"3 Pack Mid-Rise Thongs - Neapolitan - 1X/2X / Neapolitan,",$59.99,17.0%,$10.20
+shop-cherri.myshopify.com,2025-08-25 19:22:48 UTC,gid://shopify/Order/6063001501732,gid://shopify/LineItem/15724297715748,GSP02301LM,G-String - 1X/2X / Lemonade,$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-08-25 19:22:48 UTC,gid://shopify/Order/6063001501732,gid://shopify/LineItem/15724297650212,TIER16,Order Protection - TIER16,$3.20,17.0%,$0.54
+shop-cherri.myshopify.com,2025-08-25 19:22:48 UTC,gid://shopify/Order/6063001501732,gid://shopify/LineItem/15724297682980,3PMTBP0211N,"3 Pack Mid-Rise Thongs - Neapolitan - 1X/2X / Neapolitan,",$54.00,17.0%,$9.18
+shop-cherri.myshopify.com,2025-08-26 06:52:18 UTC,gid://shopify/Order/6063697821732,gid://shopify/LineItem/15726156709924,MTB0213G,"Mid-Rise Thong - M/L / Pink Guava,",$28.00,17.0%,$4.76
+shop-cherri.myshopify.com,2025-08-26 15:44:38 UTC,gid://shopify/Order/6064016916516,gid://shopify/LineItem/15726756986916,TBS0223CT,"Thong Bodysuit - M/L / Coconut,",$34.21,17.0%,$5.82
+shop-cherri.myshopify.com,2025-08-26 15:44:38 UTC,gid://shopify/Order/6064016916516,gid://shopify/LineItem/15726756921380,MTB0212B,"Mid-Rise Thong - S/M / Blueberry,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-08-26 15:44:38 UTC,gid://shopify/Order/6064016916516,gid://shopify/LineItem/15726756888612,TIER11,Order Protection - TIER11,$2.47,17.0%,$0.42
+shop-cherri.myshopify.com,2025-08-26 15:44:38 UTC,gid://shopify/Order/6064016916516,gid://shopify/LineItem/15726756954148,MTB0213G,"Mid-Rise Thong - M/L / Pink Guava,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-08-26 20:52:23 UTC,gid://shopify/Order/6064338599972,gid://shopify/LineItem/15727809200164,MTB0211B,"Mid-Rise Thong - XS/S / Blueberry,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-08-26 20:52:23 UTC,gid://shopify/Order/6064338599972,gid://shopify/LineItem/15727809232932,MTB0211G,"Mid-Rise Thong - XS/S / Pink Guava,",$56.00,17.0%,$9.52
+shop-cherri.myshopify.com,2025-08-26 20:52:23 UTC,gid://shopify/Order/6064338599972,gid://shopify/LineItem/15727809167396,TIER15,Order Protection - TIER15,$3.35,17.0%,$0.57
+shop-cherri.myshopify.com,2025-08-27 07:49:02 UTC,gid://shopify/Order/6064778870820,gid://shopify/LineItem/15729094230052,3PLRL02206SF,"3 Pack Bikini Briefs - Spring Fling - 2X/3X / Spring Fling,",$60.00,17.0%,$10.20
+shop-cherri.myshopify.com,2025-08-27 19:02:28 UTC,gid://shopify/Order/6065470603300,gid://shopify/LineItem/15730549260324,3PMTBP0211N,"3 Pack Mid-Rise Thongs - Neapolitan - 1X/2X / Neapolitan,",$60.00,17.0%,$10.20
+shop-cherri.myshopify.com,2025-08-28 03:35:58 UTC,gid://shopify/Order/6065986469924,gid://shopify/LineItem/15732272234532,TIER10,Order Protection - TIER10,$2.29,17.0%,$0.39
+shop-cherri.myshopify.com,2025-08-28 03:35:58 UTC,gid://shopify/Order/6065986469924,gid://shopify/LineItem/15732272267300,MTB0214G,"Mid-Rise Thong - L/XL / Pink Guava,",$25.21,17.0%,$4.29
+shop-cherri.myshopify.com,2025-08-29 00:15:15 UTC,gid://shopify/Order/6067345850404,gid://shopify/LineItem/15735784112164,TIER5,Order Protection - TIER5,$1.58,17.0%,$0.27
+shop-cherri.myshopify.com,2025-08-29 00:15:15 UTC,gid://shopify/Order/6067345850404,gid://shopify/LineItem/15735784144932,MTB0212B,"Mid-Rise Thong - S/M / Blueberry,",$50.41,17.0%,$8.57
+shop-cherri.myshopify.com,2025-08-29 00:15:15 UTC,gid://shopify/Order/6067345850404,gid://shopify/LineItem/15735784177700,MTB0212G,"Mid-Rise Thong - S/M / Pink Guava,",$50.42,17.0%,$8.57
+shop-cherri.myshopify.com,2025-08-30 04:57:11 UTC,gid://shopify/Order/6069303509028,gid://shopify/LineItem/15741740908580,3PLRL02204SF,"3 Pack Bikini Briefs - Spring Fling - L/XL / Spring Fling,",$60.00,17.0%,$10.20
+shop-cherri.myshopify.com,2025-08-30 04:57:11 UTC,gid://shopify/Order/6069303509028,gid://shopify/LineItem/15741740875812,TIER10,Order Protection - TIER10,$2.55,17.0%,$0.43
+shop-cherri.myshopify.com,2025-08-31 06:12:47 UTC,gid://shopify/Order/6072363155492,gid://shopify/LineItem/15753002647588,MTB0212G,"Mid-Rise Thong - S/M / Pink Guava,",$27.99,17.0%,$4.76

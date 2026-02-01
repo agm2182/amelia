@@ -94,6 +94,50 @@ parakeet-mlx /path/to/audio.m4a
 
 Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
 
+### Capital One Statement Parsing
+
+**Problem:** Capital One's CSV/QFX transaction export is broken, and QuickBooks bank feeds only pull 90 days of history (bank-imposed limitation). To get full transaction history, download PDF statements from Capital One's website.
+
+**Solution:** Use `bin/parse-capital-one-statements` to extract transactions and generate QuickBooks-importable CSV.
+
+```bash
+# Parse single statement
+./bin/parse-capital-one-statements <pdf_file>
+
+# Parse all statements in directory
+./bin/parse-capital-one-statements financials/expenses/bank-statements/capital-one-checking/
+
+# Output to specific file
+./bin/parse-capital-one-statements <path> --output transactions.csv
+
+# Detailed output with separate deposit/withdrawal/balance columns
+./bin/parse-capital-one-statements <path> --detailed
+```
+
+**Output format (QuickBooks):** `Date,Description,Amount` (positive = deposit, negative = withdrawal)
+
+**Statement locations:**
+- Credit card (x6284): `financials/expenses/bank-statements/capital-one-credit/`
+- Checking (x2420): `financials/expenses/bank-statements/capital-one-checking/`
+
+**Generated imports:**
+- `financials/expenses/bank-statements/capital-one-checking/2025_qb_import.csv` (2,614 transactions)
+- `financials/expenses/bank-statements/capital-one-credit/2025_qb_import.csv` (45 transactions)
+
+**How the parser works:**
+- Uses `pdfplumber` (installed via `uv tool install pdfplumber`) to extract text
+- Auto-detects statement type (checking vs credit card) based on content
+- Handles year-spanning billing cycles (e.g., Dec 2024 - Jan 2025) correctly
+- Classifies deposits vs withdrawals using keyword matching (Shopify transfers = deposits, Shopify Capital/Credit = withdrawals, etc.)
+- Deduplicates transactions when parsing multiple overlapping statements
+
+**Raw text extraction (for debugging):**
+```bash
+uvx pdfplumber /path/to/statement.pdf --format text
+```
+
+**Fallback:** If pdfplumber doesn't extract tables cleanly, use [Mistral OCR API](https://docs.mistral.ai/capabilities/document_ai/basic_ocr) ($2/1000 pages) with `table_format="html"` for complex tables.
+
 ### iMessage Database
 
 Access iMessages via SQLite at `~/Library/Messages/chat.db`. Requires Full Disk Access for terminal.
@@ -358,6 +402,24 @@ Use these with `use context7` for up-to-date documentation:
 "How do I create an Instagram ad campaign? use context7"
 "How do I list products in TikTok Shop? use context7"
 ```
+
+## Development Standards
+
+### Python
+
+- **Package manager:** Use `uv` exclusively. Never use `pip`, `pip3`, or `pipx`.
+  ```bash
+  uv add <package>           # Add dependency to project
+  uv tool install <package>  # Install CLI tool globally
+  uvx <tool>                 # Run tool without installing
+  ```
+- **Type checking:** All Python code must be strongly typed. Use [ty](https://github.com/astral-sh/ty) (Astral's type checker) for validation.
+- **Linting:** Use `ruff` with pedantic rule sets enabled. Check and fix before committing.
+- **Type hints:** Use `from typing import Optional` for compatibility (not `X | None` union syntax which requires Python 3.10+).
+
+### Scripts
+
+Scripts in `bin/` should be executable with a shebang (`#!/usr/bin/env python3`) and follow the Python standards above.
 
 ## Project Files
 

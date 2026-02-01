@@ -66,6 +66,8 @@ Phone: +1 310-908-4265
 >
 > **Diane:** Essentially making sure the leg matches spec after she attaches elastic
 
+**Key admission:** Diane confirms Leslye did not independently measure the samples. She assumed measurements were correct and "copied some of them" instead of verifying against the physical samples.
+
 ### 2025-12-18 - Pattern Revision Direction
 
 > **Diane:** Good morning!! Circling back this morning on yesterday's text.

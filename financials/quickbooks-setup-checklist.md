@@ -87,7 +87,7 @@ Set opening balances as of Jan 1, 2025 (or current date):
 
 | Gap | Action Needed |
 |-----|---------------|
-| Capital One transactions | Export CSV from Capital One online banking |
+| ~~Capital One transactions~~ | ✅ Parsed from PDF statements (see below) |
 | COGS itemization | Request invoices from Resource Fashion |
 | Shipping costs | Pull from Shopify shipping labels or 3PL |
 | TikTok Shop fees | Already in `revenue/tiktok-shop/2025_quarterly.csv` |
@@ -97,6 +97,8 @@ Set opening balances as of Jan 1, 2025 (or current date):
 | Purpose | File |
 |---------|------|
 | Chase expenses | `financials/expenses/2025_chase_categorized.csv` |
+| Capital One checking (QB import) | `financials/expenses/bank-statements/capital-one-checking/2025_qb_import.csv` |
+| Capital One credit (QB import) | `financials/expenses/bank-statements/capital-one-credit/2025_qb_import.csv` |
 | Shopify payouts | `financials/revenue/shopify/all_payouts.csv` |
 | Shopify orders | `financials/revenue/shopify/2025_orders.csv` |
 | TikTok settlements | `financials/revenue/tiktok-shop/2025_statements.csv` |
