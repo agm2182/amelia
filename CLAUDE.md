@@ -47,17 +47,9 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 
 ## About Cherri
 
-### Founder
+See [`company.md`](company.md) for founder info and legal entity details.
 
-**Gabriella (Gaby) Scaringe** is the founder and CEO of Cherri. She's a NYC-based designer, TikTok content creator (@gabygabss, 410k+ followers), and self-described "coochie connoisseur." She founded Cherri in 2018, self-funding and running it as a one-woman operation. The brand focuses on organic, eco-friendly underwear with a vulva-positive, body-empowering message. She's also a TikTok consultant for other brands.
-
-- **TikTok:** [@gabygabss](https://tiktok.com/@gabygabss)
-- **LinkedIn:** [Gabriella Scaringe](https://linkedin.com/in/gabriella-scaringe-266239123)
-- **About page:** [shopcherri.com/pages/about-our-founder](https://shopcherri.com/pages/about-our-founder)
-
-### Competitor Intel
-
-See `competitors/` for detailed competitive analysis.
+See [`competitors/`](competitors/) for competitive analysis.
 
 ## Tools & Integrations
 
