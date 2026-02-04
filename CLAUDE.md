@@ -201,6 +201,18 @@ Re-run OAuth if you get authentication errors:
 cd ~/.config/cherri/mcp-servers/quickbooks && npm run auth
 ```
 
+#### QuickBooks Bank Connections
+
+Connected bank accounts (synced via Intuit's bank feed):
+
+| Account | Last 4 | Type | Notes |
+|---------|--------|------|-------|
+| Capital One Checking | x2420 | Checking | Primary business checking |
+| Capital One Credit Card | x6284 | Credit | Business credit card |
+| Chase (G. Scaringe) | x0982 | Credit | Personal card used for business |
+
+**Shopify Connector** is also integrated - syncs orders, payouts, and fees directly from Shopify. Check `Integrations > Manage integrations` in QuickBooks to review synced transactions.
+
 #### Google Workspace OAuth
 
 The Google Workspace MCP provides access to Gmail, Drive, Docs, Sheets, Slides, Calendar, and Contacts. Tokens expire after 7 days while the OAuth app is in "Testing" status.
