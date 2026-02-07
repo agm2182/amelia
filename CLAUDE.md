@@ -109,12 +109,20 @@ Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
 **Output format (QuickBooks):** `Date,Description,Amount` (positive = deposit, negative = withdrawal)
 
 **Statement locations:**
-- Credit card (x6284): `financials/expenses/bank-statements/capital-one-credit/`
-- Checking (x2420): `financials/expenses/bank-statements/capital-one-checking/`
+- Capital One Checking (x2420): `financials/expenses/bank-statements/capital-one-checking/` (2025), `2024/` subdir for 2024
+- Capital One Credit (x6284): `financials/expenses/bank-statements/capital-one-credit/` (2025), `2024/` subdir for 2024
+- Chase Credit (x0982): `financials/expenses/bank-statements/chase-credit/` (2024 and 2025 subdirs)
+- Shopify Credit (x2450): `financials/expenses/bank-statements/shopify-credit/` (2024 subdir)
 
-**Generated imports:**
-- `financials/expenses/bank-statements/capital-one-checking/2025_qb_import.csv` (2,614 transactions)
-- `financials/expenses/bank-statements/capital-one-credit/2025_qb_import.csv` (45 transactions)
+**Generated QB imports:**
+- `capital-one-checking/2025_qb_import.csv` (2,614 transactions)
+- `capital-one-checking/2024/2024_checking_q{1-4}_qb_import.csv` (2,118 transactions, split quarterly)
+- `capital-one-credit/2025_qb_import.csv` (45 transactions)
+- `capital-one-credit/2024/2024_credit_qb_import.csv` (39 transactions)
+- `chase-credit/2024/2024_chase_qb_import.csv` (31 transactions)
+- `shopify-credit/2024/2024_shopify_credit_qb_import.csv` (115 transactions)
+
+**Note:** Chase 2025 transactions were synced via bank feed (not imported from CSV).
 
 **How the parser works:**
 - Uses `pdfplumber` (installed via `uv tool install pdfplumber`) to extract text
@@ -278,14 +286,14 @@ POST /{comment-id}/likes
 
 ### Browser Automation
 
-**Always use `/agent-browser` skill** for web browsing tasks (Semrush, Ahrefs, Google Ads, Shopify Admin, etc.). Reference the skill at `.claude/skills/agent-browser/SKILL.md` for full command documentation.
+**CRITICAL: Read `.claude/skills/agent-browser/SKILL.md` BEFORE every agent-browser session.** The skill documents essential flags and patterns (like `snapshot -i -C` for QuickBooks and other React SPAs where interactive elements render as styled divs instead of standard buttons). Skipping this causes silent failures where elements appear blank or unclickable. Always use `/agent-browser` for web browsing tasks (Semrush, Ahrefs, Google Ads, Shopify Admin, QuickBooks, etc.).
 
-**Why agent-browser over Chrome MCP:**
-- Scriptable CLI commands
-- Parallel sessions
-- Better reliability
-
-Use Chrome MCP only when you need visual inspection with Claude's image analysis capabilities.
+| Use agent-browser when... | Use Chrome MCP when... |
+|---------------------------|------------------------|
+| Multi-step workflows (faster, scriptable) | Downloading files from authenticated sites |
+| Need parallel sessions or state persistence | User is already logged in and wants to use that session |
+| Repetitive tasks across pages | Collaborative "look at this with me" tasks |
+| Default choice for most browsing | Debugging with console output (`read_console_messages`) |
 
 **Saved browser states:** `.claude/browser-states/`
 

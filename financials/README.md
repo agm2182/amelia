@@ -48,9 +48,16 @@ financials/
 ├── expenses/                       # Operating expenses
 │   ├── 2025_chase_categorized.csv # Categorized Chase transactions
 │   ├── 2025_expense_summary.csv   # Monthly expense totals by category
-│   └── bank-statements/           # Original PDFs (25 files)
-│       ├── capital-one-checking/
-│       └── capital-one-credit/
+│   └── bank-statements/           # Statements, PDFs & QB imports
+│       ├── capital-one-checking/  # 2025 PDFs + QB imports
+│       │   └── 2024/             # 2024 PDFs + quarterly QB imports
+│       ├── capital-one-credit/    # 2025 PDFs + QB import
+│       │   └── 2024/             # 2024 PDFs + QB import
+│       ├── chase-credit/          # Chase x0982 (G. Scaringe)
+│       │   ├── 2024/             # CSV export + QB import
+│       │   └── 2025/             # CSV export (already in QB via bank feed)
+│       └── shopify-credit/        # Shopify Credit x2450
+│           └── 2024/             # CSV export + QB import
 │
 ├── loans/                          # Financing & credit products
 │   ├── all_financing_history.csv  # Combined history (all sources)
@@ -71,6 +78,7 @@ financials/
 │   ├── tiktok-shop-raw/           # Superseded quarterly exports
 │   └── originals/                  # Original XLSX files
 │
+├── bookkeeping-notes.md            # QB categorization rules & vendor decisions
 ├── DATA_DICTIONARY.md             # Schema definitions for all CSVs
 └── README.md                      # This file
 ```
@@ -93,6 +101,7 @@ financials/
 | All loan/financing history | `loans/all_financing_history.csv` |
 | Loan status overview | `loans/README.md` |
 | Shopify Credit purchases | `loans/shopify/credit_purchases.csv` |
+| QB categorization rules | `bookkeeping-notes.md` |
 | Schema definitions | `DATA_DICTIONARY.md` |
 
 ## Data Sources
