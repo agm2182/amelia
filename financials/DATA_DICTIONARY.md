@@ -306,16 +306,35 @@ Monthly expense totals by category.
 ## Bank Statements
 
 ### `expenses/bank-statements/capital-one-checking/`
-Capital One business checking account statements (PDF).
+Capital One business checking account x2420 statements and QB imports.
 
-**Files:** Business_Basic_Checking...2420_{MONTH}_2025.pdf
-**Coverage:** Jan-Dec 2025
+**2025 files:** Business_Basic_Checking...2420_{MONTH}_2025.pdf (12 PDFs), 2025_qb_import.csv + 3 parts
+**2024 files (in `2024/`):** Business_Basic_Checking...2420_{MONTH}_2024.pdf (13 PDFs), quarterly QB imports (4 files) + full import
+**Coverage:** Jan 2024 - Dec 2025
+**QB import:** 2,614 transactions (2025), 2,118 transactions (2024)
 
 ### `expenses/bank-statements/capital-one-credit/`
-Capital One credit card statements (PDF).
+Capital One credit card x6284 statements and QB imports.
 
-**Files:** Statement_{MMYYYY}_6284.pdf
-**Coverage:** Jan 2025 - Jan 2026
+**2025 files:** Statement_{MMYYYY}_6284.pdf (13 PDFs), 2025_qb_import.csv
+**2024 files (in `2024/`):** Statement_{MMYYYY}_6284.pdf (14 PDFs), 2024_credit_qb_import.csv
+**Coverage:** Jan 2024 - Jan 2026
+**QB import:** 45 transactions (2025), 39 transactions (2024)
+
+### `expenses/bank-statements/chase-credit/`
+Chase credit card x0982 (G. Scaringe) CSV exports.
+
+**2024 (in `2024/`):** Chase0982_Activity CSV + 2024_chase_qb_import.csv
+**2025 (in `2025/`):** 2025 Chase Credit Card Transactions.CSV (not imported - already in QB via bank feed)
+**Coverage:** Feb 2024 - Dec 2025
+**QB import:** 31 transactions (2024 only; 2025 synced via bank feed, 174 transactions)
+
+### `expenses/bank-statements/shopify-credit/`
+Shopify Credit card x2450 transaction exports.
+
+**2024 (in `2024/`):** Shopifycredit-transactions CSV + 2024_shopify_credit_qb_import.csv
+**Coverage:** Jan - Dec 2024
+**QB import:** 115 transactions
 
 ## Archive Files
 

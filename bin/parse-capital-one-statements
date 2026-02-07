@@ -101,6 +101,27 @@ def detect_statement_type(text: str) -> str:
         return 'unknown'
 
 
+def clean_description(desc: str) -> str:
+    """Remove PDF boilerplate text that leaked into descriptions."""
+    # Pattern: text followed by ". information." or similar boilerplate
+    garbage_markers = [
+        ' . information.',
+        '. information.',
+        ' the error or problem appeared',
+        ' an error or why you need more',
+        ' the time it takes us',
+    ]
+    for marker in garbage_markers:
+        idx = desc.find(marker)
+        if idx > 0:
+            desc = desc[:idx]
+    # Strip trailing punctuation artifacts
+    desc = desc.strip()
+    while desc.endswith(' .') or desc.endswith('. ') or desc.endswith(' . '):
+        desc = desc.rstrip(' .').strip()
+    return desc
+
+
 def parse_credit_card_transactions(text: str, year: int) -> list[dict]:
     """Parse credit card statement transactions.
 
@@ -256,6 +277,7 @@ def parse_transactions(text: str, year: int) -> list[dict]:
         if date_match:
             # Save previous transaction
             if current_txn:
+                current_txn['description'] = clean_description(current_txn['description'])
                 transactions.append(current_txn)
 
             date_str = date_match.group(1)
@@ -357,7 +379,10 @@ def parse_transactions(text: str, year: int) -> list[dict]:
                 'electronic transfers', 'Customer Service', 'statement or receipt',
                 'small business accounts', 'Electronic Fund Transfer', 'consumer accounts',
                 'Tell us your name', 'Describe the error', 'dollar amount',
-                'investigate your complaint', 'business days', 'PSI:', 'SHC:', 'LOB'
+                'investigate your complaint', 'business days', 'PSI:', 'SHC:', 'LOB',
+                # Additional boilerplate patterns
+                'information.', 'the error or problem', 'why you need more',
+                'time it takes us', 'appeared.', 'investigation.'
             ]
             if continuation and not any(skip in continuation for skip in skip_patterns):
                 # Also skip if line is too long (likely boilerplate)
@@ -366,6 +391,7 @@ def parse_transactions(text: str, year: int) -> list[dict]:
 
     # Don't forget the last transaction
     if current_txn:
+        current_txn['description'] = clean_description(current_txn['description'])
         transactions.append(current_txn)
 
     return transactions
