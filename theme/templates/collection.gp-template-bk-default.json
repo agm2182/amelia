@@ -1,0 +1,167 @@
+{
+  "order": [
+    "hero",
+    "b5058786-b763-4ab8-b375-d96e3dbab791",
+    "8d9a9dcc-b650-4240-8dbe-558bd59ba535",
+    "subcollections",
+    "main"
+  ],
+  "sections": {
+    "8d9a9dcc-b650-4240-8dbe-558bd59ba535": {
+      "block_order": [
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1",
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1"
+      ],
+      "blocks": {
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
+          "settings": {
+            "heading_highlight_type": "italics",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "size": 100,
+            "text": "<p>{{ collection.title }}<\/p>"
+          },
+          "type": "heading"
+        },
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1": {
+          "disabled": true,
+          "settings": {
+            "size": 100,
+            "text": "<p>{{ collection.title }}<\/p>"
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "bg_color_secondary": false,
+        "padding_bottom": 0,
+        "padding_top": 16,
+        "text_color": "text-dark",
+        "text_position": "left",
+        "width": "wrapper--full-padded"
+      },
+      "type": "section-text"
+    },
+    "b5058786-b763-4ab8-b375-d96e3dbab791": {
+      "block_order": [
+        "template--21524360200470__b5058786-b763-4ab8-b375-d96e3dbab791-image-1"
+      ],
+      "blocks": {
+        "template--21524360200470__b5058786-b763-4ab8-b375-d96e3dbab791-image-1": {
+          "disabled": true,
+          "settings": {
+            "button_1_link": "",
+            "button_1_text": "",
+            "button_2_link": "",
+            "button_2_text": "",
+            "image": "{{ collection.image }}",
+            "overlay_opacity": 10,
+            "overlay_text_color": "text-light",
+            "subheading": "",
+            "text": "",
+            "text_position": "center",
+            "title": "",
+            "width": "100"
+          },
+          "type": "image"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "add_gutter": true,
+        "bg_color_secondary": false,
+        "button_1_color": "btn--white",
+        "button_1_size": "btn--small",
+        "button_1_style": "btn--text",
+        "button_2_color": "btn--black",
+        "button_2_size": "btn--small",
+        "button_2_style": "btn--text",
+        "columns_mobile": "1",
+        "desktop_height": "three-fifty-height",
+        "enable_mobile_height": false,
+        "enable_slider_mobile": true,
+        "heading_size": 130,
+        "mobile_height": "four-fifty-height-mobile",
+        "overlay_text": true,
+        "padding_bottom": 0,
+        "padding_top": 0,
+        "width": "wrapper--full-padded"
+      },
+      "type": "section-grid"
+    },
+    "hero": {
+      "disabled": true,
+      "settings": {
+        "banner_height": "one-third-height",
+        "bg_color_secondary": false,
+        "overlay_opacity": 10,
+        "padding_bottom": 0,
+        "padding_top": 0,
+        "show_image": true,
+        "text_color": "text-dark",
+        "text_position": "middle-center"
+      },
+      "type": "collection-image-with-title"
+    },
+    "main": {
+      "block_order": [
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9"
+      ],
+      "blocks": {
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9": {
+          "settings": {
+            "bg_color": "#f5f4f1",
+            "button_color": "btn--secondary",
+            "button_link": "shopify:\/\/pages\/cherri-panty-perks",
+            "button_size": "btn--small",
+            "button_style": "btn--solid-border",
+            "button_text": "Earn points with purchases",
+            "collection": "",
+            "content": "",
+            "heading_highlight_type": "circle",
+            "heading_size": 100,
+            "highlight_color": "#ffd9e1",
+            "highlight_text_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-27_at_11.04.25_PM.png",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "position": 5,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "text_size": 100,
+            "title": "",
+            "width": "half"
+          },
+          "type": "promo"
+        }
+      },
+      "settings": {
+        "bg_color": "",
+        "enable_filters": false,
+        "enable_sorting": false,
+        "filter_mode": "default",
+        "filters_layout": "open",
+        "padding_bottom": 60,
+        "padding_top": 30,
+        "show_breadcrumbs": false,
+        "show_more": true
+      },
+      "type": "collection"
+    },
+    "subcollections": {
+      "settings": {
+        "bg_color": "",
+        "image_aspect_ratio": 0.6,
+        "image_overlay_opacity": 10,
+        "image_source": "collection",
+        "layout": "grid",
+        "limit": 8,
+        "padding_bottom": 14,
+        "padding_top": 30,
+        "subcollections": [],
+        "text_color": "text-light"
+      },
+      "type": "subcollections"
+    }
+  }
+}

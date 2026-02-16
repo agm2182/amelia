@@ -1,0 +1,210 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_newsletter_iHEeGf": {
+      "type": "section-newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "flex_align": "align--middle-left",
+        "text_color": "text-dark",
+        "title": "JOIN THE WAITLIST",
+        "text": "<p>To get notified of new releases and restocks, sign up for our email newsletter below.<\/p>",
+        "extra_fields": "",
+        "button_text": "NOTIFY ME",
+        "bg_color": "",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 16
+      }
+    },
+    "section_multicolumn_j9FMpt": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "text_yG36jd": {
+          "type": "text",
+          "settings": {
+            "column_width": 25,
+            "subheading": "The following",
+            "title": "PRE-ORDERS DROP JAN 2026",
+            "heading_size": 140,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--large",
+            "bg_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "image_QkhzRK": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/1_43ff277c-78e9-4bfe-8cbd-17e02476616e.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "G-String",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/g-string-licorice",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_eXFRMy": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/2_0df76314-fe84-4e2b-b2af-fd56b7d56c8a.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "High Waist Hipster",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/high-waist-hipster",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_jrJeQd": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/3_899adbe8-3626-42a3-b1ad-a5922ea9d3f0.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "High Cut Brief",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/logo-high-cut-brief-lavender",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_nq9nfn": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/38.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Cookie Dough 3-Pack",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/3-pack-g-strings-cookie-dough",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_GmBnD3": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/IMG_8004.jpg",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Neapolitan 3-Pack",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/3-pack-mid-rise-thongs-neapolitan",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_wXxeQL": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/4_07d6d145-0d5e-4fb7-9ec5-02b10a2a695e.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Mid-Rise Thong",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/mid-rise-thong-licorice",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_rgmidG": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/5_85d87aa5-b492-4e5c-863a-588dba647641.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Bikini Brief",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/bikini-brief-guava",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "text_yG36jd",
+        "image_QkhzRK",
+        "image_eXFRMy",
+        "image_jrJeQd",
+        "image_nq9nfn",
+        "image_GmBnD3",
+        "image_wXxeQL",
+        "image_rgmidG"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "text_size": 100,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "bg_color": "",
+        "text_color": "text-dark",
+        "layout_mobile": "stacked",
+        "width": "wrapper--full-padded",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_newsletter_iHEeGf",
+    "section_multicolumn_j9FMpt"
+  ]
+}

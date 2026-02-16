@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false,
+        "bg_color_secondary": false,
+        "padding_top": 52,
+        "padding_bottom": 0
+      }
+    },
+    "1735065235115c5b2b": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_header_pAGMUM": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-landing-page-header\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#000000",
+            "secondary_colour": "#ffffff",
+            "background_image": "shopify:\/\/shop_images\/3_93673c2e-c93d-441e-9698-ed89c3cdb2c4.png",
+            "title_text": "Welcome to Cherri Panty Perks 🍒✨",
+            "description_text": "Earn coochie coins on every purchase. Redeem for discounts on future purchases, free product, and exclusive perks!",
+            "join_button_text": "Join now",
+            "login_button_text": "Log in",
+            "is_previewing_logged_in_state": false,
+            "discover_button_text": "Discover the loyalty program"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_header_pAGMUM"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17350937730bafeae4": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_how_it_works_jbiF9t": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-landing-page-how-it-works\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#000000",
+            "secondary_colour": "#fff",
+            "title_text": "How it works",
+            "step1_heading_text": "Join",
+            "step1_description_text": "Sign up or login to start earning straight away.",
+            "step2_heading_text": "Earn",
+            "step2_description_text": "Earn points for every dollar spent.",
+            "step3_heading_text": "Redeem",
+            "step3_description_text": "Redeem points for discounts on your next purchase."
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_how_it_works_jbiF9t"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1735094013407d92b4": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_earning_rule_highlight_mM7em7": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-landing-page-earning-rule-highlight\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#000000",
+            "secondary_colour": "#ffd9e1",
+            "image": "shopify:\/\/shop_images\/reward_icons_6.png",
+            "title_text": "Earn points for every order placed",
+            "description_text": "The more you spend, the more you save.",
+            "button_text": "Ways to earn"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_earning_rule_highlight_mM7em7"
+      ],
+      "settings": {
+        "bg_color": "#ffd9e1",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1735094017a9f19411": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_redeeming_rule_highlight_jVGyRY": {
+          "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-landing-page-redeeming-rule-highlight\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#000000",
+            "secondary_colour": "#fff",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-27_at_11.04.25_PM.png",
+            "title_text": "Redeem points for rewards",
+            "description_text": "Redeem points on your next purchase, or save them up for higher value rewards.",
+            "button_text": "Ways to redeem"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_redeeming_rule_highlight_jVGyRY"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_marquee_nRJW8U": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_gPCPPL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sign up today and get 25 free coochie coins!<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_n4zpPb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reward_icons_6.png",
+            "link": "",
+            "image_width": 30
+          }
+        }
+      },
+      "block_order": [
+        "text_gPCPPL",
+        "image_n4zpPb"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 160,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#e90000",
+        "gradient": "",
+        "color": "#ffffff",
+        "border_color": "#000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1735065235115c5b2b",
+    "17350937730bafeae4",
+    "1735094013407d92b4",
+    "1735094017a9f19411",
+    "section_marquee_nRJW8U"
+  ]
+}

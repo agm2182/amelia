@@ -1,0 +1,1016 @@
+{
+  "sections": {
+    "section_marquee_cdqq4E": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_3Rq6qm": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>HYGIENE + UNDERWEAR<\/em> DONATED TO SHELTERS WITH EACH PURCHASE <\/p>",
+            "text_color": "",
+            "heading_highlight_type": "highlight-color",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#e90000",
+            "icon_name": "heart",
+            "icon_color": "#e90000",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_6fHH6z": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em>DOUBLE DONATIONS<\/em> TO SHELTERS WITH EACH PURCHASE FOR MENSTRUAL HYGIENE DAY 5\/27 - 5\/29 <\/p>",
+            "text_color": "",
+            "heading_highlight_type": "highlight-color",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#e90000",
+            "icon_name": "fair-trade",
+            "icon_color": "#e90000",
+            "icon_width": 24,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_3Rq6qm",
+        "text_6fHH6z"
+      ],
+      "disabled": true,
+      "name": "Marquee",
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": true,
+        "show_bottom_border": true,
+        "padding": 5,
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 150,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_Ldemrf": {
+      "type": "section-text",
+      "blocks": {
+        "heading_FTRtxL": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>WIDE GUSSET ORGANIC COTTON UNDERWEAR <\/p><p><\/p>",
+            "size": 90,
+            "heading_highlight_type": "highlight",
+            "highlight_color": "#ffd9e1",
+            "highlight_text_color": "#e90000"
+          }
+        },
+        "button_dgNyLG": {
+          "type": "button",
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/products\/mid-rise-thong-licorice",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FTRtxL",
+        "button_dgNyLG"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 22,
+        "padding_bottom": 24
+      }
+    },
+    "section_banner_image_yKrmhY": {
+      "type": "section-banner-image",
+      "blocks": {
+        "heading_CWtMPU": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>for cuties who want comfort<\/p>",
+            "size": 90,
+            "heading_highlight_type": "highlight-color",
+            "highlight_color": "#000000",
+            "highlight_text_color": "#000000"
+          }
+        },
+        "subheading_Cf6xGd": {
+          "type": "subheading",
+          "settings": {
+            "text": "",
+            "size": 100
+          }
+        },
+        "text_WqJU3X": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "size": 100
+          }
+        },
+        "button_qHH9NB": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "stacked_button": false,
+            "button_1_text": "Shop the holiday sale",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CWtMPU",
+        "subheading_Cf6xGd",
+        "text_WqJU3X",
+        "button_qHH9NB"
+      ],
+      "disabled": true,
+      "name": "Banner image",
+      "settings": {
+        "height": "four-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "original-height-mobile",
+        "image": "shopify:\/\/shop_images\/IMG_9231.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/IMG_9231.jpg",
+        "overlay_opacity": 0,
+        "transition": "fade",
+        "enable_zoom_animation": true,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "text_width": "narrow",
+        "text_position": "top-right",
+        "text_alignment": "text-center",
+        "text_color": "text-light",
+        "width": "wrapper--full",
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    },
+    "section_video_7GpWhw": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "five-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "one-half-height-mobile",
+        "text_position": "middle-center",
+        "video_link_bg": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/db9d0350b36843b58e573e1f28b2cf7a.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#e90000",
+        "highlight_text_color": "",
+        "text": "",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--small"
+      }
+    },
+    "section_promotion_row_6JbC93": {
+      "type": "section-promotion-row",
+      "blocks": {
+        "column_xfRt9y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mid-rise_thong_black_edit_1_1fe6e423-3f65-4dad-9d72-36e15d30283e.png",
+            "subheading": "",
+            "subheading_size": 75,
+            "heading": "<p><em>FREE SOCKS<\/em><\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "",
+            "heading_size": 205,
+            "description": "",
+            "description_size": 80,
+            "disclaimer": "* free with every purchase",
+            "disclaimer_size": 75,
+            "button_text": "ADD TO CART TO CLAIM",
+            "button_link": "shopify:\/\/products\/cherri-sock",
+            "button_color": "btn--black",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small",
+            "bg_color": "",
+            "gradient_background": "radial-gradient(rgba(0, 0, 0, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)",
+            "text_color": "#ffffff",
+            "overlay_opacity": 0
+          }
+        },
+        "column_nd48xW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9219.jpg",
+            "subheading": "<p>CYBER WEEKEND SALE<\/p>",
+            "subheading_size": 75,
+            "heading": "<p>30% - 50%  OFF<\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "heading_size": 295,
+            "description": "",
+            "description_size": 100,
+            "disclaimer": "",
+            "disclaimer_size": 75,
+            "button_text": "SHOP SITEWIDE SAVINGS",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "bg_color": "",
+            "gradient_background": "",
+            "text_color": "#ffffff",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "column_xfRt9y",
+        "column_nd48xW"
+      ],
+      "disabled": true,
+      "name": "Promotion row",
+      "settings": {
+        "layout": "1",
+        "count_up_enabled": false,
+        "count_up_duration": 100,
+        "height": "150",
+        "enable_mobile_height": false,
+        "mobile_height": "150",
+        "bg_color": "",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "width": "wrapper--full-padded",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "section_text_Mq9nkU": {
+      "type": "section-text",
+      "blocks": {
+        "heading_MEkfXe": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em>🍒 EARLY ACCESS BLACK FRIDAY🍒<\/em><strong> <\/strong><\/p><p><strong>use code: BCFM25 <\/strong><\/p>",
+            "size": 80,
+            "heading_highlight_type": "squiggle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#0b0b0b"
+          }
+        },
+        "heading_RCHbyE": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em>🍒 BLACK FRIDAY🍒<\/em><strong> <\/strong><\/p><p><strong>use code: BCFM25 <\/strong><\/p>",
+            "size": 80,
+            "heading_highlight_type": "squiggle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#0b0b0b"
+          }
+        },
+        "button_WBAkp3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "SHOP THE SALE",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_color": "btn--primary",
+            "button_style": "btn--outline",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MEkfXe",
+        "heading_RCHbyE",
+        "button_WBAkp3"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 30,
+        "padding_bottom": 0
+      }
+    },
+    "section-marquee-2": {
+      "type": "section-marquee",
+      "blocks": {
+        "section-marquee-2-block-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vulva Approved<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-2-block-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.27_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "section-marquee-2-block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No Lip-Slips<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-2-block-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.40_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_yTwpTE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fits Your Bits<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_3QniNA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.50_PM.png",
+            "link": "",
+            "image_width": 60
+          }
+        },
+        "text_r9jdwi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Soft Supima Cotton<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_QLjFeN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.50.10_PM.png",
+            "link": "",
+            "image_width": 60
+          }
+        }
+      },
+      "block_order": [
+        "section-marquee-2-block-0",
+        "section-marquee-2-block-1",
+        "section-marquee-2-block-2",
+        "section-marquee-2-block-3",
+        "text_yTwpTE",
+        "image_3QniNA",
+        "text_r9jdwi",
+        "image_QLjFeN"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": true,
+        "show_bottom_border": true,
+        "padding": 50,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 200,
+        "letter_spacing": 0,
+        "message_spacing": 5,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_with_text_LgrjK4": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "three-hundred-height",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/product_comparision_2.png",
+        "subheading": "",
+        "title": "<p>NO LIP SLIPS<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 140,
+        "content": "<p>Designed to fix everything you hate about underwear—front wedgies, slippage, awkward adjusting, irritating fabric. Cherri's wide gusset is built using data from 6,000+ women to actually fit your vulva (unlike other brands that design like they've never seen one before). Full coverage that stays put all day, in breathable organic cotton that's ultra-soft on sensitive skin.<\/p>",
+        "text_alignment": "center",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 38
+      }
+    },
+    "section_collection_dLWNn8": {
+      "type": "section-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "gifts-under-50",
+        "products_layout": "grid",
+        "number_of_products": 3,
+        "products_per_row_on_desktop": 3,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Shop Gifts Under $40<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 100,
+        "text": "",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "Shop ALL GIFTS",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "section_video_DQm3ka": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "five-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "one-third-height-mobile",
+        "text_position": "middle-center",
+        "video_link_bg": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8d304dd2ca1e4a298b1644ed040aa728.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--white",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--small"
+      }
+    },
+    "section-testimonials-with-images-0": {
+      "type": "section-testimonials-with-images",
+      "blocks": {
+        "section-testimonials-with-images-0-block-1": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/4925CA2F-B648-4F96-B175-A5D6554C03C6_15902640-1652-4840-9054-4f1073e0ff95.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "Love it!",
+            "text_size": 125,
+            "customer_name": "Anna Kate",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Cooter Cloud",
+            "text_size": 125,
+            "text": "<p>These are the comfiest freaking panties I've ever owned. I'm calling them the \"Cooter Cloud\".<\/p>",
+            "customer_name": "Madison",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-3": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/IMG_1235_cb60f8df-6cc5-4564-bcc3-3c5539fe4b52.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "The Comfiest!",
+            "text_size": 125,
+            "customer_name": "Carly",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-6": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "",
+            "text_size": 125,
+            "text": "<p>I ordered a 2X\/3X & it fits perfectly! Not to mention how soft it is! I had shipping issues, but a quick email & we both figured out the problem & it got here in a week! (International shipping to Canada!)<\/p>",
+            "customer_name": "Haley",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-5": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/IMG_6238.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "No more lip-slips!",
+            "text_size": 125,
+            "customer_name": "Colleen",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-4": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Worth it",
+            "text_size": 125,
+            "text": "<p>I was hesitant buying this style, since I usually don't do the full coverage type. But now I never want to take them off!  Plus I wear them under high waisted jeans no problem.<\/p>",
+            "customer_name": "Ella",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-7": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/IMG_4642.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "Coochie Heaven",
+            "text_size": 125,
+            "customer_name": "Nash",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Obsessed",
+            "text_size": 125,
+            "text": "<p>By far my favorite pair of underwear now. Seriously so comfortable and cute, you will NOT regret getting these!!<\/p>",
+            "customer_name": "Shannon",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "section-testimonials-with-images-0-block-1",
+        "section-testimonials-with-images-0-block-0",
+        "section-testimonials-with-images-0-block-3",
+        "section-testimonials-with-images-0-block-6",
+        "section-testimonials-with-images-0-block-5",
+        "section-testimonials-with-images-0-block-4",
+        "section-testimonials-with-images-0-block-7",
+        "section-testimonials-with-images-0-block-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "subheading_size": 100,
+        "title": "We love customer reviews!",
+        "heading_size": 140,
+        "text_alignment": "text-left",
+        "bg_color": "#ffd9e1",
+        "testimonial_block_color": "#ffffff",
+        "star_color": "",
+        "testimonial_text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_XAEUfJ": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "five-fifty-height",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/SXWA_website_2.png",
+        "subheading": "",
+        "title": "<p>Awarded 2024 Body Positivity Pioneer<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 130,
+        "content": "<p>Honored with the Gold Title as the Body Positivity Pioneer by the Sexual Wellness Awards, celebrating those who promote sexual wellness, challenge cultural taboos, and advocate for equality in every aspect of life.<\/p>",
+        "text_alignment": "left",
+        "button_text": "Learn More",
+        "button_link": "https:\/\/www.thesxwa.com\/2024\/hempress",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 82
+      }
+    },
+    "section_products_list_yWT6dJ": {
+      "type": "section-products-list",
+      "blocks": {
+        "product_HzPBmH": {
+          "type": "product",
+          "settings": {
+            "product": "g-string-licorice",
+            "title": "",
+            "product_description": "<p>Meet our best seller: The G-String<\/p>",
+            "button_text": "View Product",
+            "show_second_image": false,
+            "image_1": "shopify:\/\/shop_images\/06.08.23_Faith_Chan17544.jpg",
+            "image_2": "shopify:\/\/shop_images\/IMG_5188.jpg",
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "Best Seller ~ Best Seller ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        }
+      },
+      "block_order": [
+        "product_HzPBmH"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "image_aspect_ratio": 1,
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 22,
+        "padding_bottom": 34
+      }
+    },
+    "section-collection-0": {
+      "type": "section-collection",
+      "blocks": {
+        "promo_PcfRUw": {
+          "type": "promo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/000277240007.png",
+            "position": 1,
+            "width": "auto",
+            "title": "",
+            "heading_highlight_type": "circle-hand-drawn",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "",
+            "heading_size": 100,
+            "content": "",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "center",
+            "layout": "stacked",
+            "overlay_opacity": 0,
+            "bg_color": "#ffd9e1",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "section-collection-0-block-0": {
+          "type": "promo",
+          "disabled": true,
+          "settings": {
+            "position": 1,
+            "width": "half",
+            "title": "<p>Promotion title<\/p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "rgba(0,0,0,0)",
+            "highlight_text_color": "#000000",
+            "heading_size": 100,
+            "content": "Advertise a promotion or a sale",
+            "text_size": 100,
+            "text_color": "text-dark",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f7f7f7",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "promo_PcfRUw",
+        "section-collection-0-block-0"
+      ],
+      "settings": {
+        "collection": "all",
+        "products_layout": "carousel",
+        "number_of_products": 5,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Shop our other fan favorite styles<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "heading_size": 175,
+        "text": "",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "Shop now",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--large",
+        "bg_color_secondary": true,
+        "enable_slider_mobile": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 20,
+        "padding_bottom": 18
+      }
+    },
+    "section_marquee_a39nQK": {
+      "type": "section-marquee",
+      "blocks": {
+        "image_Tj9amX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BF-logo.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_HtEjg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/G-logo_ead9f8d7-333b-4378-8a07-1fd22eb9a5aa.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_GNyPxD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/C-logo.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_mN64DK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/D-logo_8d4ac2c9-cb8e-4143-b535-359bb2ee4eb7.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_mHABwm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WH-logo.png",
+            "link": "",
+            "image_width": 180
+          }
+        }
+      },
+      "block_order": [
+        "image_Tj9amX",
+        "image_HtEjg3",
+        "image_GNyPxD",
+        "image_mN64DK",
+        "image_mHABwm"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 5,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": true,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#000000",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1735280457c88e6375": {
+      "type": "apps",
+      "blocks": {
+        "juniper_tiktok_feed_juniper_autoplay_qezPU8": {
+          "type": "shopify:\/\/apps\/mintt-tiktok-feed\/blocks\/juniper-autoplay\/fa514c33-5475-4484-b270-5f1e7eb87a9a",
+          "settings": {
+            "title": "Follow Us on TikTok!",
+            "autoplay": true,
+            "rows_desktop": 1,
+            "columns_desktop": 4,
+            "rows_mobile": 2,
+            "columns_mobile": 2,
+            "html_area": "",
+            "feed_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "juniper_tiktok_feed_juniper_autoplay_qezPU8"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-icons-row-0": {
+      "type": "section-icons-row",
+      "blocks": {
+        "section-icons-row-0-block-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Free Shipping",
+            "text": "<p>on all orders over $80<\/p>"
+          }
+        },
+        "section-icons-row-0-block-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Free Exchanges",
+            "text": "<p>because you deserve the perfect fit<\/p>"
+          }
+        },
+        "section-icons-row-0-block-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "One-Year Warranty",
+            "text": "<p>because we stand by quality<\/p>"
+          }
+        },
+        "text_NJLxNc": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Donations To Shelters",
+            "text": "<p>with each purchase<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section-icons-row-0-block-0",
+        "section-icons-row-0-block-1",
+        "section-icons-row-0-block-2",
+        "text_NJLxNc"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 4,
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 100,
+        "text_size": 90,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "section_marquee_cdqq4E",
+    "section_text_Ldemrf",
+    "section_banner_image_yKrmhY",
+    "section_video_7GpWhw",
+    "section_promotion_row_6JbC93",
+    "section_text_Mq9nkU",
+    "section-marquee-2",
+    "section_image_with_text_LgrjK4",
+    "section_collection_dLWNn8",
+    "section_video_DQm3ka",
+    "section-testimonials-with-images-0",
+    "section_image_with_text_XAEUfJ",
+    "section_products_list_yWT6dJ",
+    "section-collection-0",
+    "section_marquee_a39nQK",
+    "1735280457c88e6375",
+    "section-icons-row-0"
+  ]
+}

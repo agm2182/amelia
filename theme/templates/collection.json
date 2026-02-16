@@ -1,0 +1,608 @@
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "banner_height": "one-fifty-height",
+        "text_position": "middle-center",
+        "show_image": false,
+        "text_color": "text-dark",
+        "overlay_opacity": 10,
+        "bg_color_secondary": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "8d9a9dcc-b650-4240-8dbe-558bd59ba535": {
+      "type": "section-text",
+      "blocks": {
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Shop By Size<\/p>",
+            "size": 100,
+            "heading_highlight_type": "stroke",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
+          }
+        },
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>{{ collection.title }}<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1",
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "left",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "disabled": true,
+      "settings": {
+        "subcollections": [
+          "q4-2025",
+          "q4-2025-s-m",
+          "q4-2025-m-l",
+          "q4-2025-l-xl",
+          "q4-2025-plus-size",
+          "q4-2025-2x-3x",
+          "q4-2025-3x-4x"
+        ],
+        "limit": 8,
+        "layout": "carousel",
+        "image_source": "collection",
+        "image_aspect_ratio": 1.2,
+        "image_overlay_opacity": 10,
+        "bg_color": "",
+        "text_color": "text-light",
+        "padding_top": 30,
+        "padding_bottom": 14
+      }
+    },
+    "section_text_wrhKPp": {
+      "type": "section-text",
+      "blocks": {
+        "heading_VmtxDQ": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>{{ collection.title }}<\/p>",
+            "size": 100,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
+          }
+        },
+        "text_3xBKb9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>{{ collection.title }}<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_VmtxDQ",
+        "text_3xBKb9"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "section_promotion_row_4R3TD8": {
+      "type": "section-promotion-row",
+      "blocks": {
+        "column_Ei6EDg": {
+          "type": "column",
+          "settings": {
+            "subheading": "<p>For a limited time<\/p>",
+            "subheading_size": 75,
+            "heading": "<p><em>FREE MINI TOTE<\/em><\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "",
+            "heading_size": 205,
+            "description": "with every purchase $75+",
+            "description_size": 80,
+            "disclaimer": "",
+            "disclaimer_size": 75,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/og-logo-mini-tote",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "bg_color": "#ffd9e1",
+            "gradient_background": "",
+            "text_color": "#e90000",
+            "overlay_opacity": 100
+          }
+        },
+        "column_dRKyDJ": {
+          "type": "column",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 135,
+            "heading": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "",
+            "heading_size": 295,
+            "description": "",
+            "description_size": 80,
+            "disclaimer": "",
+            "disclaimer_size": 75,
+            "button_text": "add to cart for discount",
+            "button_link": "https:\/\/shopcherri.com\/collections\/all\/products\/og-logo-mini-tote",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "bg_color": "#ffd9e1",
+            "gradient_background": "",
+            "text_color": "#e90000",
+            "overlay_opacity": 100
+          }
+        }
+      },
+      "block_order": [
+        "column_Ei6EDg",
+        "column_dRKyDJ"
+      ],
+      "disabled": true,
+      "name": "Promotion row",
+      "settings": {
+        "layout": "1",
+        "count_up_enabled": true,
+        "count_up_duration": 100,
+        "height": "150",
+        "enable_mobile_height": false,
+        "mobile_height": "150",
+        "bg_color": "",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "width": "wrapper--full-padded",
+        "padding_top": 0,
+        "padding_bottom": 22
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9": {
+          "type": "promo",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-27_at_11.04.25_PM.png",
+            "position": 15,
+            "width": "half",
+            "title": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#ffd9e1",
+            "highlight_text_color": "#ffffff",
+            "heading_size": 100,
+            "content": "",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f5f4f1",
+            "button_text": "Earn points with purchases",
+            "button_link": "shopify:\/\/pages\/cherri-panty-perks",
+            "button_color": "btn--secondary",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "promo_LhchD8": {
+          "type": "promo",
+          "settings": {
+            "collection": "last-call-1",
+            "image": "shopify:\/\/shop_images\/taffy-pink.png",
+            "position": 1,
+            "width": "full",
+            "title": "<p>🍒THE REBRAND IS COMING ...<\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "heading_size": 150,
+            "content": "We're rebranding—new logo, new price, new era.\nBut not all styles are coming back right away 👀 We're redesigning some of you favorites for a better fit!\nSo this is the last chance to grab the styles and colors you love!",
+            "text_size": 100,
+            "text_color": "text-dark",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#d3d3d3",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "promo_FDpNFc": {
+          "type": "promo",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-07-10_at_10.52.22_PM.png",
+            "position": 1,
+            "width": "auto",
+            "title": "<p>LAST CHANCE!<\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "heading_size": 100,
+            "content": "CHERRI IS REBRANDING! New logo, new price, same Cherries you love.\nBut not all styles are coming back 👀 Grab the OG styles while you can!",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#d3d3d3",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9",
+        "promo_LhchD8",
+        "promo_FDpNFc"
+      ],
+      "settings": {
+        "show_breadcrumbs": false,
+        "enable_sorting": false,
+        "enable_filters": false,
+        "filters_layout": "open",
+        "show_more": true,
+        "filter_mode": "default",
+        "bg_color": "",
+        "padding_top": 30,
+        "padding_bottom": 60
+      }
+    },
+    "section_newsletter_8pCMM4": {
+      "type": "section-newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "flex_align": "align--middle-left",
+        "text_color": "text-dark",
+        "title": "JOIN THE WAITLIST",
+        "text": "<p>To get notified of new releases and restocks, sign up for our email newsletter below.<\/p>",
+        "extra_fields": "",
+        "button_text": "NOTIFY ME",
+        "bg_color": "",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 16
+      }
+    },
+    "section_multicolumn_LM8fMV": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "text_kebi6E": {
+          "type": "text",
+          "settings": {
+            "column_width": 25,
+            "subheading": "The following",
+            "title": "PRE-ORDERS DROP JAN 2026",
+            "heading_size": 140,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--large",
+            "bg_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "image_ewVyUe": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/1_43ff277c-78e9-4bfe-8cbd-17e02476616e.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "G-String",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/g-string-licorice",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_eNbEhr": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/2_0df76314-fe84-4e2b-b2af-fd56b7d56c8a.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "High Waist Hipster",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/high-waist-hipster",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_gcKEJH": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/3_899adbe8-3626-42a3-b1ad-a5922ea9d3f0.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "High Cut Brief",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/logo-high-cut-brief-lavender",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_wnUwhG": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/38.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Cookie Dough 3-Pack",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/3-pack-g-strings-cookie-dough",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_ahyhtQ": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/IMG_8004.jpg",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Neapolitan 3-Pack",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/3-pack-mid-rise-thongs-neapolitan",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_CRBVen": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/4_07d6d145-0d5e-4fb7-9ec5-02b10a2a695e.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Mid-Rise Thong",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/mid-rise-thong-licorice",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_kefjYG": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/5_85d87aa5-b492-4e5c-863a-588dba647641.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "Bikini Brief",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "shopify:\/\/products\/bikini-brief-guava",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "text_kebi6E",
+        "image_ewVyUe",
+        "image_eNbEhr",
+        "image_gcKEJH",
+        "image_wnUwhG",
+        "image_ahyhtQ",
+        "image_CRBVen",
+        "image_kefjYG"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "text_size": 100,
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "bg_color": "",
+        "text_color": "text-dark",
+        "layout_mobile": "grid",
+        "width": "wrapper--full-padded",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "section_multicolumn_Fgb3FL": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "image_wtMgnT": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/1_43ff277c-78e9-4bfe-8cbd-17e02476616e.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "G-String",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_WfrqLX": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/2_0df76314-fe84-4e2b-b2af-fd56b7d56c8a.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "High Waist Hipster",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_Jaw7Yy": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/3_899adbe8-3626-42a3-b1ad-a5922ea9d3f0.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "High Cut Brief",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "image_wrCYKw": {
+          "type": "image",
+          "settings": {
+            "column_width": 25,
+            "image": "shopify:\/\/shop_images\/products.png",
+            "aspect_ratio_desktop": 1,
+            "aspect_ratio_mobile": 1,
+            "title": "3-Packs",
+            "heading_size": 120,
+            "text": "",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "image_wtMgnT",
+        "image_WfrqLX",
+        "image_Jaw7Yy",
+        "image_wrCYKw"
+      ],
+      "disabled": true,
+      "name": "Multicolumn",
+      "settings": {
+        "title": "Waiting for these to restock?",
+        "heading_size": 120,
+        "text": "",
+        "text_size": 100,
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "bg_color": "",
+        "text_color": "text-dark",
+        "layout_mobile": "grid",
+        "width": "wrapper--full-padded",
+        "padding_top": 14,
+        "padding_bottom": 12
+      }
+    },
+    "section_newsletter_kkRW9G": {
+      "type": "section-newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "flex_align": "align--middle-center",
+        "text_color": "text-dark",
+        "title": "",
+        "text": "",
+        "extra_fields": "",
+        "button_text": "JOIN THE WAITLIST",
+        "bg_color": "",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "8d9a9dcc-b650-4240-8dbe-558bd59ba535",
+    "subcollections",
+    "section_text_wrhKPp",
+    "section_promotion_row_4R3TD8",
+    "main",
+    "section_newsletter_8pCMM4",
+    "section_multicolumn_LM8fMV",
+    "section_multicolumn_Fgb3FL",
+    "section_newsletter_kkRW9G"
+  ]
+}

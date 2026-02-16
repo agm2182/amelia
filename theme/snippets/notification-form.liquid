@@ -1,0 +1,51 @@
+{% capture data_html_notification %}
+<div class="product__notification" data-notification>
+  <h2 class="product__notification__title">{{ product_title }}</h2>
+
+  {%- unless product_subtitle == 'Default Title' -%}
+    <p class="product__notification__subtitle">{{ product_subtitle }}</p>
+  {%- endunless -%}
+
+  {%- capture notification_form -%}NotificationForm--{{ section.id }}--{{ product_id }}{%- endcapture -%}
+  {%- form 'customer', id: notification_form, data-notification-form: '' -%}
+    <input type="hidden" name="contact[accepts_marketing]" value="true">
+    <input type="hidden" name="contact[tags]" value="back-in-stock, {{ product_title | handle }}">
+
+    <div class="product__notification__message">
+      <p>{{ 'general.newsletter_form.notification_success' | t }}</p>
+    </div>
+
+    {%- if form.errors -%}
+      {%- if form.errors contains 'email' -%}
+        {%- comment -%}
+          If customer email already exists, show success message anyway.
+          They are already in the system and accept marketing.
+        {%- endcomment -%}
+      {%- else -%}
+        {{- form.errors | default_errors -}}
+      {%- endif -%}
+    {%- endif -%}
+
+    <div class="product__notification__form">
+      <label for="Email--{{ section.id }}">{{ 'general.newsletter_form.email_label' | t }}</label>
+
+      <div class="input-group input-group--inline">
+        <div class="input-group__item">
+          <input type="email" placeholder="{{ 'general.newsletter_form.email' | t }}" name="contact[email]" id="Email--{{ section.id }}" class="input-group__field input-group__field--email" aria-label="{{ 'general.newsletter_form.email' | t }}" autocorrect="off" autocapitalize="off" required data-popup-input>
+        </div>
+        <div class="input-group__item--btn">
+          <button type="submit" name="subscribe" id="SubscribeSubmit--{{ section.id }}" class="btn btn--primary btn--solid">
+            <span data-notification-button-text>{{ 'general.newsletter_form.notify' | t }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  {%- endform -%}
+
+  <button title="{{ 'general.accessibility.close' | t }} (Esc)" class="product__notification__close" data-popup-close>
+    {%- render 'icon-close' -%}
+  </button>
+</div>
+{% endcapture %}
+{% assign data_html_notification =  data_html_notification | replace: '"', "'" %}
+{{ data_html_notification | strip }}

@@ -1,0 +1,631 @@
+{
+  "sections": {
+    "section_text_Mq9nkU": {
+      "type": "section-text",
+      "blocks": {
+        "heading_MEkfXe": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>SHOP THE <em>25% OFF<\/em> HOLIDAY SALE<\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#e90000"
+          }
+        },
+        "button_WBAkp3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_color": "btn--primary",
+            "button_style": "btn--outline",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MEkfXe",
+        "button_WBAkp3"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "section_video_7GpWhw": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "full-height",
+        "enable_mobile_height": true,
+        "mobile_height": "five-fifty-height -mobile",
+        "text_position": "middle-center",
+        "video_link_bg": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e0248747293f4e27b6bb39abe6c3f7f9.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "<p>Undies made with <em>wider gussets<\/em><\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#e90000",
+        "highlight_text_color": "",
+        "text": "to fit even the plumpest of presents.",
+        "heading_size": 100,
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--small"
+      }
+    },
+    "section-marquee-2": {
+      "type": "section-marquee",
+      "blocks": {
+        "section-marquee-2-block-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vulva Approved<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-2-block-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.27_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "section-marquee-2-block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No Lip-Slips<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-2-block-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.40_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_yTwpTE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fits Your Bits<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_3QniNA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.50_PM.png",
+            "link": "",
+            "image_width": 60
+          }
+        },
+        "text_r9jdwi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Soft Supima Cotton<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_QLjFeN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.50.10_PM.png",
+            "link": "",
+            "image_width": 60
+          }
+        }
+      },
+      "block_order": [
+        "section-marquee-2-block-0",
+        "section-marquee-2-block-1",
+        "section-marquee-2-block-2",
+        "section-marquee-2-block-3",
+        "text_yTwpTE",
+        "image_3QniNA",
+        "text_r9jdwi",
+        "image_QLjFeN"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": true,
+        "show_bottom_border": true,
+        "padding": 50,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 200,
+        "letter_spacing": 0,
+        "message_spacing": 5,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_with_text_LgrjK4": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "five-fifty-height",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/CHERRIVSOTHER.png",
+        "subheading": "",
+        "title": "<h1><strong>GOODBYE LIP-SLIPS!<\/strong><\/h1>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 170,
+        "content": "<p>Designed with wider gussets (aka the \"panty pocket\") to fit outies, innies, and everything in between.<\/p>",
+        "text_alignment": "center",
+        "button_text": "because your coochie deserves to be comfy",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "section-testimonials-with-images-0": {
+      "type": "section-testimonials-with-images",
+      "blocks": {
+        "section-testimonials-with-images-0-block-1": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/4925CA2F-B648-4F96-B175-A5D6554C03C6_15902640-1652-4840-9054-4f1073e0ff95.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "Love it!",
+            "text_size": 125,
+            "customer_name": "Anna Kate",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Cooter Cloud",
+            "text_size": 125,
+            "text": "<p>These are the comfiest freaking panties I've ever owned. I'm calling them the \"Cooter Cloud\".<\/p>",
+            "customer_name": "Madison",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-3": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/IMG_1235_cb60f8df-6cc5-4564-bcc3-3c5539fe4b52.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "The Comfiest!",
+            "text_size": 125,
+            "customer_name": "Carly",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-6": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "",
+            "text_size": 125,
+            "text": "<p>I ordered a 2X\/3X & it fits perfectly! Not to mention how soft it is! I had shipping issues, but a quick email & we both figured out the problem & it got here in a week! (International shipping to Canada!)<\/p>",
+            "customer_name": "Haley",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-5": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/IMG_6238.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "No more lip-slips!",
+            "text_size": 125,
+            "customer_name": "Colleen",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-4": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Worth it",
+            "text_size": 125,
+            "text": "<p>I was hesitant buying this style, since I usually don't do the full coverage type. But now I never want to take them off!  Plus I wear them under high waisted jeans no problem.<\/p>",
+            "customer_name": "Ella",
+            "subheading": ""
+          }
+        },
+        "section-testimonials-with-images-0-block-7": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/IMG_4642.jpg",
+            "aspect_ratio": 0.8,
+            "heading": "Coochie Heaven",
+            "text_size": 125,
+            "customer_name": "Nash",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Obsessed",
+            "text_size": 125,
+            "text": "<p>By far my favorite pair of underwear now. Seriously so comfortable and cute, you will NOT regret getting these!!<\/p>",
+            "customer_name": "Shannon",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "section-testimonials-with-images-0-block-1",
+        "section-testimonials-with-images-0-block-0",
+        "section-testimonials-with-images-0-block-3",
+        "section-testimonials-with-images-0-block-6",
+        "section-testimonials-with-images-0-block-5",
+        "section-testimonials-with-images-0-block-4",
+        "section-testimonials-with-images-0-block-7",
+        "section-testimonials-with-images-0-block-2"
+      ],
+      "settings": {
+        "subheading": "",
+        "subheading_size": 100,
+        "title": "We love customer reviews!",
+        "heading_size": 140,
+        "text_alignment": "text-left",
+        "bg_color": "#ffd9e1",
+        "testimonial_block_color": "#ffffff",
+        "star_color": "",
+        "testimonial_text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_products_list_yWT6dJ": {
+      "type": "section-products-list",
+      "blocks": {
+        "product_HzPBmH": {
+          "type": "product",
+          "settings": {
+            "product": "g-string-licorice",
+            "title": "",
+            "product_description": "<p>Meet our best seller: The G-String<\/p>",
+            "button_text": "View Product",
+            "show_second_image": false,
+            "image_1": "shopify:\/\/shop_images\/06.08.23_Faith_Chan17544.jpg",
+            "image_2": "shopify:\/\/shop_images\/IMG_5188.jpg",
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "Best Seller ~ Best Seller ~",
+            "circle_word_spacing": 3,
+            "circle_size": 150
+          }
+        }
+      },
+      "block_order": [
+        "product_HzPBmH"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "image_aspect_ratio": 1,
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 22,
+        "padding_bottom": 34
+      }
+    },
+    "section-collection-0": {
+      "type": "section-collection",
+      "blocks": {
+        "promo_PcfRUw": {
+          "type": "promo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-27_at_11.04.25_PM.png",
+            "position": 1,
+            "width": "auto",
+            "title": "<p><em><strong>Take 25% off <\/strong><\/em><\/p><p><em><strong>everything <\/strong><\/em><\/p>",
+            "heading_highlight_type": "circle-hand-drawn",
+            "highlight_color": "#e90000",
+            "highlight_text_color": "",
+            "heading_size": 100,
+            "content": "for our limited time holiday promotion!",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "center",
+            "layout": "stacked",
+            "overlay_opacity": 15,
+            "bg_color": "#ffd9e1",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "section-collection-0-block-0": {
+          "type": "promo",
+          "disabled": true,
+          "settings": {
+            "position": 1,
+            "width": "half",
+            "title": "<p>Promotion title<\/p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "rgba(0,0,0,0)",
+            "highlight_text_color": "#000000",
+            "heading_size": 100,
+            "content": "Advertise a promotion or a sale",
+            "text_size": 100,
+            "text_color": "text-dark",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f7f7f7",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "promo_PcfRUw",
+        "section-collection-0-block-0"
+      ],
+      "settings": {
+        "collection": "all",
+        "products_layout": "carousel",
+        "number_of_products": 5,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Shop our other fan favorite styles<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "heading_size": 175,
+        "text": "",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "Shop now",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--large",
+        "bg_color_secondary": true,
+        "enable_slider_mobile": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 0,
+        "padding_bottom": 18
+      }
+    },
+    "section_marquee_a39nQK": {
+      "type": "section-marquee",
+      "blocks": {
+        "image_Tj9amX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BF-logo.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_HtEjg3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/G-logo_ead9f8d7-333b-4378-8a07-1fd22eb9a5aa.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_GNyPxD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/C-logo.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_mN64DK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/D-logo_8d4ac2c9-cb8e-4143-b535-359bb2ee4eb7.png",
+            "link": "",
+            "image_width": 180
+          }
+        },
+        "image_mHABwm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WH-logo.png",
+            "link": "",
+            "image_width": 180
+          }
+        }
+      },
+      "block_order": [
+        "image_Tj9amX",
+        "image_HtEjg3",
+        "image_GNyPxD",
+        "image_mN64DK",
+        "image_mHABwm"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 5,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": true,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#000000",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-icons-row-0": {
+      "type": "section-icons-row",
+      "blocks": {
+        "section-icons-row-0-block-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Free Shipping",
+            "text": "<p>on all orders over $80<\/p>"
+          }
+        },
+        "section-icons-row-0-block-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Free Exchanges",
+            "text": "<p>because you deserve the perfect fit<\/p>"
+          }
+        },
+        "section-icons-row-0-block-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "One-Year Warranty",
+            "text": "<p>because we stand by quality<\/p>"
+          }
+        },
+        "text_NJLxNc": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Donations To Shelters",
+            "text": "<p>with each purchase<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section-icons-row-0-block-0",
+        "section-icons-row-0-block-1",
+        "section-icons-row-0-block-2",
+        "text_NJLxNc"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 4,
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 100,
+        "text_size": 90,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "section_text_Mq9nkU",
+    "section_video_7GpWhw",
+    "section-marquee-2",
+    "section_image_with_text_LgrjK4",
+    "section-testimonials-with-images-0",
+    "section_products_list_yWT6dJ",
+    "section-collection-0",
+    "section_marquee_a39nQK",
+    "section-icons-row-0"
+  ]
+}

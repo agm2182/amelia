@@ -1,0 +1,641 @@
+{
+  "sections": {
+    "section_custom_content_7tNqqR": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_jNFWzm": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-08-31_at_11.23.24_AM.png",
+            "overlay_opacity": 15,
+            "text_color": "text-light",
+            "title": "Our Story",
+            "heading_size": 130,
+            "image_text": "<p>Cherri was born from a simple realization:<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "text_TBzwr9": {
+          "type": "text",
+          "settings": {
+            "text_position": "center",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "",
+            "title": "",
+            "heading_size": 100,
+            "text": "<h2>The average gusset on women's underwear (the crotch part) is 1.8 inches wide.<\/h2><h2>But the average vulva is 2.5 inches wide.<\/h2>",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--white",
+            "button_2_style": "btn--solid-border",
+            "button_2_size": "btn--small",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jNFWzm",
+        "text_TBzwr9"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "height": "two-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "six-fifty-height-mobile",
+        "bg_color": "",
+        "reverse_blocks": false,
+        "width": "wrapper",
+        "add_gutter": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_DpUXWf": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_nWMxnb": {
+          "type": "subheading",
+          "settings": {
+            "text": "",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_MwnWkL": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><em>We surveyed nearly 6,000 vulva-owners and discovered that:<\/em><\/p>",
+            "size": 100,
+            "heading_highlight_type": "highlight",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#e90000"
+          }
+        },
+        "text_Ec8PC7": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nWMxnb",
+        "heading_MwnWkL",
+        "text_Ec8PC7"
+      ],
+      "name": "Text",
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 20,
+        "padding_bottom": 14
+      }
+    },
+    "text": {
+      "type": "section-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Our Story<\/p>",
+            "size": 140,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#d43747",
+            "highlight_text_color": ""
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>Cherri was born from a simple realization:<\/p>",
+            "size": 190,
+            "margin_bottom": 16
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>The average gusset on women's underwear (the crotch part) is 1.8 inches wide.<br\/><br\/>But the average vulva? Closer to 2.5 inches.<\/strong><\/h3>",
+            "size": 105
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "subheading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": true,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "cdb3be2a-9d5e-47f0-9431-04f739f3c7cc": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "three-fifty-height",
+        "layout": "overlay",
+        "image_location": "left",
+        "image_width": "extra-narrow",
+        "image": "shopify:\/\/shop_images\/061124_ShopCherri5803.jpg",
+        "subheading": "",
+        "title": "",
+        "heading_highlight_type": "highlight-color",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "#e90000",
+        "heading_size": 130,
+        "content": "<ul><li><strong>94%<\/strong> had experienced discomfort, “lip slips,” or even infections from undies that didn’t fit right<\/li><\/ul><p><\/p><ul><li><strong>96%<\/strong> said underwear gussets on the market were just <em>too small<\/em><\/li><\/ul><p><\/p><ul><li>And <strong>78%<\/strong> admitted it actually made them feel insecure about their labia<br\/><\/li><\/ul><p>Let that sink in.<br\/><br\/>Bad underwear wasn’t just uncomfortable—it was messing with people’s self-worth.<\/p>",
+        "text_alignment": "left",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 4,
+        "padding_bottom": 18
+      }
+    },
+    "section_text_Pt9NJg": {
+      "type": "section-text",
+      "blocks": {
+        "text_JUJc3f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cherri redefines the relationship you have with your body through better fitting underwear. <br\/><br\/>Designed for real bodies. And cool girls. <\/strong><\/p><p><\/p><p><\/p><p>(& anyone who's tired of coochie floss)<\/p><p><\/p><p><\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_JUJc3f"
+      ],
+      "name": "Text",
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 14,
+        "padding_bottom": 16
+      }
+    },
+    "section_custom_content_yJitXL": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_kkRCxj": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/cherri_final_071724-18.jpg",
+            "overlay_opacity": 20,
+            "text_color": "text-light",
+            "title": "Our Values",
+            "heading_size": 130,
+            "image_text": "<p>What we stand for<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        },
+        "text_QrPQWp": {
+          "type": "text",
+          "settings": {
+            "text_position": "left",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "",
+            "title": "Cherri's Core:",
+            "heading_size": 100,
+            "text": "<ul><li>authenticity<\/li><li>inclusivity<\/li><li>humor<\/li><li>empowerment<\/li><li>quality<\/li><li>putting people first (and their private parts)<br\/><\/li><\/ul><p>We’re inclusive by design. Not just marketing. <\/p><p>Vulvas come in all shapes and sizes. And so should underwear. <\/p>",
+            "text_size": 100,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--white",
+            "button_2_style": "btn--solid-border",
+            "button_2_size": "btn--small",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_kkRCxj",
+        "text_QrPQWp"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "height": "two-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "six-fifty-height-mobile",
+        "bg_color": "",
+        "reverse_blocks": false,
+        "width": "wrapper",
+        "add_gutter": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_exQFiJ": {
+      "type": "section-text",
+      "blocks": {
+        "heading_JxhTgf": {
+          "type": "heading",
+          "settings": {
+            "text": "<h1>Our Values<\/h1>",
+            "size": 140,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_JxhTgf"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": true,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 46,
+        "padding_bottom": 42
+      }
+    },
+    "909772ff-e663-4f4f-9da8-7ede957325bf": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "six-fifty-height",
+        "layout": "overlay",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/cherri_final_071724-18.jpg",
+        "subheading": "",
+        "title": "<p>Our Values<\/p>",
+        "heading_highlight_type": "circle",
+        "highlight_color": "#d43747",
+        "highlight_text_color": "",
+        "heading_size": 130,
+        "content": "<h3><strong>Cherri's core:<\/strong><\/h3><ul><li>authenticity<\/li><li>inclusivity<\/li><li>humor<\/li><li>empowerment<\/li><li>quality<\/li><li>putting people first (and their private parts)<br\/><\/li><\/ul><p>We’re inclusive by design. Not just marketing. <\/p><p><br\/><\/p><p>Vulvas come in all shapes and sizes. And so should underwear.<\/p>",
+        "text_alignment": "left",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 32,
+        "padding_bottom": 60
+      }
+    },
+    "f9132c5c-9f15-4676-8086-613d0304f488": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "products_layout": "carousel",
+        "number_of_products": 8,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Ready to wear the difference?<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 100,
+        "text": "<p>Shop our bestsellers, experience the gusset, and see what 6,000 vulvas taught us.<\/p>",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 36,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_ediRiV": {
+      "type": "section-image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "section_height": "four-fifty-height",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "wide",
+        "image": "shopify:\/\/shop_images\/Lavender_Hill_jersey_fabric.webp",
+        "subheading": "",
+        "title": "<p>Our Fabrics<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 130,
+        "content": "<p>Better for your skin, the environment, and your coochie.<\/p>",
+        "text_alignment": "center",
+        "button_text": "learn more",
+        "button_link": "shopify:\/\/pages\/our-fabrics",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_image_with_text_FxBVtG": {
+      "type": "section-image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "section_height": "four-fifty-height",
+        "layout": "inline",
+        "image_location": "left",
+        "image_width": "wide",
+        "image": "shopify:\/\/shop_images\/000217830037.jpg",
+        "subheading": "",
+        "title": "<p>Our Founder<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 130,
+        "content": "<p>Gabriella Scaringe: Meet the woman behind the brand that’s changing how we dress down.<\/p>",
+        "text_alignment": "center",
+        "button_text": "Read her story",
+        "button_link": "https:\/\/shopcherri.com\/pages\/about-our-founder",
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "columns": {
+      "type": "section-columns",
+      "blocks": {
+        "column-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-08-31_at_5.30.04_PM.png",
+            "title": "READ THE RESEARCH",
+            "text": "<p>Thousands of vulvas and years of research. Here’s what the data says and why Cherri does things differently.<\/p>",
+            "button_text": "coming soon",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_RTwVT8": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-08-31_at_5.23.46_PM.png",
+            "title": "SUBMIT YOUR DATA",
+            "text": "<p>The data is ever changing. Submit your measurements to help shape the future of underwear. <\/p>",
+            "button_text": "Learn More",
+            "button_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfRbhRPm5drc1wi8f--DOtWsRSuQ5h2GXnNWVBMoYnWObrNUw\/viewform?usp=sf_link",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_p4FQCL": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/000217830009.jpg",
+            "title": "FOUNDER STORY",
+            "text": "<p>How oversharing on the internet led to better underwear.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "https:\/\/shopcherri.com\/pages\/about-our-founder",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "column-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/000277240038.png",
+            "title": "VISIT FAQ'S",
+            "text": "<p>Will Cherri undies fit my phat coochie? We've got the answer. (it's yes)<\/p>",
+            "button_text": "Learn More",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "column-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/000217830033.jpg",
+            "title": "SHOP UNDIES",
+            "text": "<p>Experience how wider gussets can feel like heaven.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "column-3": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4925CA2F-B648-4F96-B175-A5D6554C03C6_15902640-1652-4840-9054-4f1073e0ff95.jpg",
+            "title": "FOLLOW US ON INSTAGRAM",
+            "text": "<p>Vote on new designs in our stories! @shopcherri<\/p>",
+            "button_text": "Follow Us",
+            "button_link": "https:\/\/www.instagram.com\/shopcherri\/",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "text_block_6ERMMi": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_7182.jpg",
+            "title": "FOLLOW US ON TIKTOK",
+            "text": "<p>Public spirals and pubic hair jokes here. @shopcherri<\/p>",
+            "button_text": "Follow Us",
+            "button_link": "https:\/\/www.tiktok.com\/@shopcherri",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "text_block_RTwVT8",
+        "text_block_p4FQCL",
+        "column-1",
+        "column-2",
+        "column-3",
+        "text_block_6ERMMi"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "columns": 3,
+        "columns_mobile": "1",
+        "show_images": true,
+        "show_borders": false,
+        "equalize_height": true,
+        "desktop_aspect_ratio": 0.8,
+        "mobile_aspect_ratio": 0.8,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color_secondary": false,
+        "color_borders": "#000000",
+        "layout_mobile": "carousel",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5": {
+      "type": "section-icons-row",
+      "blocks": {
+        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "truck",
+            "title": "Free Shipping",
+            "text": "<p>on all orders over $80<\/p>"
+          }
+        },
+        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "check",
+            "title": "Free Exchanges",
+            "text": "<p>because you deserve the perfect fit<\/p>"
+          }
+        },
+        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "title": "Donations To Shelters",
+            "text": "<p>with each purchase<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-0",
+        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-1",
+        "template--18952593965377__51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5-1683134998a2f033f1-2"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 30,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color": "",
+        "text_color": "#000000",
+        "box_color": "",
+        "color_border": "#000000",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section_custom_content_7tNqqR",
+    "section_text_DpUXWf",
+    "text",
+    "cdb3be2a-9d5e-47f0-9431-04f739f3c7cc",
+    "section_text_Pt9NJg",
+    "section_custom_content_yJitXL",
+    "section_text_exQFiJ",
+    "909772ff-e663-4f4f-9da8-7ede957325bf",
+    "f9132c5c-9f15-4676-8086-613d0304f488",
+    "section_image_with_text_FxBVtG",
+    "section_image_with_text_ediRiV",
+    "columns",
+    "51e7d4e9-f6b0-466d-bd09-84d7da4cdcb5",
+    "main"
+  ]
+}

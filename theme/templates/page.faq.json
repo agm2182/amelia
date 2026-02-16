@@ -1,0 +1,507 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 30
+      }
+    },
+    "section_text_QgQjeR": {
+      "type": "section-text",
+      "blocks": {
+        "heading_y6ndrG": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><em>FAQ's<\/em><\/p>",
+            "size": 190,
+            "heading_highlight_type": "squiggle",
+            "highlight_color": "#e90000",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_y6ndrG"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordions_c7KFxc": {
+      "type": "section-accordions",
+      "blocks": {
+        "text_TjBETh": {
+          "type": "text",
+          "settings": {
+            "title": "What size am I?",
+            "text": "<p>Check out our sizing chart to see what size you are! <a href=\"https:\/\/shopcherri.com\/pages\/sizing-chart\" target=\"_blank\">Click here.<\/a> You can also find the size chart and product specs under each individual product listing.<\/p>"
+          }
+        },
+        "text_bk4wCL": {
+          "type": "text",
+          "settings": {
+            "title": "I checked the size chart but I am in between sizes. Which size should I choose?",
+            "text": "<p>While there is no one size fits all approach to clothing, we want to find the best fit for you. Sometimes size charts aren't always accurate, (overall body shape plays a part in it too!) so here are some tips for sizing:<\/p><p>Take a look at the size chart and see what sizes your waist and hip measurements align with. <\/p><p>Choose the size that best fits your waist  for high waisted styles like the High Cut Thong and High Cut Brief. <\/p><p>Choose the size that best fits your hips for lower waist styles like the Bikini Brief and G-String.<\/p><p>Feel free to contact us at hi@shopcherri.com if you need additional assistance with sizing!<\/p>"
+          }
+        },
+        "text_y9n39E": {
+          "type": "text",
+          "settings": {
+            "title": "Will Cherri undies fit my bits? 👀",
+            "text": "<p>Duh! All products are designed with expanded gussets for your comfort in mind. Cherri fits all bits ;)<\/p>"
+          }
+        },
+        "text_JctFaK": {
+          "type": "text",
+          "settings": {
+            "title": "I am plus size. Will Cherri fit me?",
+            "text": "<p>Yes! We sell our undies up to 4X and have designed each style by testing them on a variety of sizes and body types, ensuring a good fit and positive experience for our plus size customers. You deserve to feel comfy in the clothes you wear! <\/p>"
+          }
+        },
+        "text_cBGyMb": {
+          "type": "text",
+          "settings": {
+            "title": "I have long and\/or larger labia and have a hard time finding underwear that fits me. Which products do you recommend?",
+            "text": "<p>All Cherri products are vulva-approved! Feel confident shopping all of our styles without worrying about lip-slips.<\/p>"
+          }
+        },
+        "text_MVJkwW": {
+          "type": "text",
+          "settings": {
+            "title": "What is the length \/ width of the gusset on Cherri undies?",
+            "text": "<p>You can find all of the specific product measurements like the length of the gusset, width of the gusset, waistband circumference, etc. under each product listing. <\/p><p>Above the size selections, click on \"Size Chart + Product Specs\" to see the point of measurements. <\/p>"
+          }
+        },
+        "text_BREeUJ": {
+          "type": "text",
+          "settings": {
+            "title": "What is a gusset?",
+            "text": "<p>The \"pocket\" in women's underwear, aka the gusset, is a piece of fabric layered in the crotch area. Because the crotch is a \"high-wear area\" (lots of friction and moisture), it helps reinforce the structure of the garment and prevent infections by keeping the area dry and ventilated. <\/p><p>However, if the gusset is not wide or long enough to cover the crotch, or isn't made of breathable materials, it pretty much loses it's purpose. <\/p><p>Many women struggle with gussets not being big enough to fit their vulvas which leads to discomfort, irritation, infections, and feelings of insecurities. <\/p><p>That's why Cherri's signature wide-gusset undies are designed with gussets wider, longer, softer, and more breathable than most other brands. <\/p><p>Don't believe us? Check out the <a href=\"\/pages\/about-the-founder\" target=\"_blank\" title=\"About\">research<\/a> Cherri's founder, Gabriella Scaringe, did on women's underwear gussets and try a pair for yourself to experience Cherri's coochie comfort.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_TjBETh",
+        "text_bk4wCL",
+        "text_y9n39E",
+        "text_JctFaK",
+        "text_cBGyMb",
+        "text_MVJkwW",
+        "text_BREeUJ"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Sizing",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_MaDmHe": {
+      "type": "section-text",
+      "blocks": {
+        "heading_Y4PCNV": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Check out these videos about sizing:<\/p>",
+            "size": 95,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Y4PCNV"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1735280581d6b3bf88": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_8HBNtt": {
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup_playlist\/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "rl_pl_12004"
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_8HBNtt"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "accordion-section-2": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_2_0": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "text": "<p>Orders are fulfilled within 2-3 business days. <\/p><p>Domestic shipping can take up to 5 business days to arrive.<br\/><br\/>Foreign shipping could take up to 14 business days to arrive.<br\/><br\/>Due to global supply chain challenges, shipping times could be longer than usual.<\/p>"
+          }
+        },
+        "accordion_block_2_1": {
+          "type": "text",
+          "settings": {
+            "title": "How much does shipping cost?",
+            "text": "<p>Standard domestic shipping on orders under $80 is $8.99. International shipping rates can vary depending on your region and are calculated at checkout. <\/p><p><br\/>Here are the full details of our <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "accordion_block_2_2": {
+          "type": "text",
+          "settings": {
+            "title": "Is there free shipping?",
+            "text": "<p>Free domestic shipping is on all orders $80+ and free international shipping is on all orders $150+<\/p>"
+          }
+        },
+        "accordion_block_2_3": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "text": "<p>Yes! Cherri ships EVERYWHERE. Shipping will be calculated at checkout and includes any duties, taxes, or fees. Free shipping for domestic orders on purchases $80 USD + and free shipping for international orders on purchases $150 USD +. <\/p>"
+          }
+        },
+        "accordion_block_2_4": {
+          "type": "text",
+          "settings": {
+            "title": "What do I do if my tracking number hasn't updated\/my package isn't moving?",
+            "text": "<p>Shipping issues are always frustrating because they're out of our control! That's why we recommend purchasing Order Protection so you can get a refund or replacement. Otherwise, we are not responsible for lost or stolen items. <\/p><p>Please email us at<a href=\"mailto:hi@shopcherri.com\" title=\"mailto:hi@shopcherri.com\"> hi@shopcherri.com<\/a> if you encounter any shipping issues so we can investigate and try our best to make it right.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_2_0",
+        "accordion_block_2_1",
+        "accordion_block_2_2",
+        "accordion_block_2_3",
+        "accordion_block_2_4"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Shipping & Delivery",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": true,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "accordion-section-4": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_4_0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer refunds?",
+            "text": "<p>We do not offer full <a href=\"https:\/\/shopcherri.com\/policies\/refund-policy\" target=\"_blank\">refunds,<\/a> unless the item is damaged. We only accept exchanges or or store credit.  Sale items are final sale, but can be exchanged for a different size if needed. Shipping cost is non-refundable. <\/p><p>We cannot guarantee that we will have the same style\/size in stock if you need to exchange, but will try our best to make you happy with your purchase!<\/p>"
+          }
+        },
+        "accordion_block_4_4": {
+          "type": "text",
+          "settings": {
+            "title": "How do I exchange an item?",
+            "text": "<p>Fill out the contact form on our <a href=\"\/pages\/returns\" target=\"_blank\" title=\"Returns\"><strong>Returns page<\/strong><\/a><strong> <\/strong>to get started! <\/p>"
+          }
+        },
+        "accordion_block_4_2": {
+          "type": "text",
+          "settings": {
+            "title": "Can I exchange an item more than once?",
+            "text": "<p>Yes! We want you to be the happiest in your Cherri's, and if it's not a perfect fit the first (or second) time around, we want to make it right - completely FREE. Exchanges are eligible up to 7 days after your order is received. <\/p>"
+          }
+        },
+        "accordion_block_4_3": {
+          "type": "text",
+          "settings": {
+            "title": "Who pays the shipping costs in the case of an exchange?",
+            "text": "<p>We do! Exchanges are always free for the customer.<\/p>"
+          }
+        },
+        "text_jpU6R7": {
+          "type": "text",
+          "settings": {
+            "title": "What is Order Protection?",
+            "text": "<p><a href=\"https:\/\/orderprotection.com\/\">OrderProtection.com<\/a> is offered as an additional item at checkout. Customers just checkout and are instantly protected against items lost in transit, delivered but not received, wrong, stolen, or damaged. <\/p><p>Learn more about Order Protection here.<\/p>"
+          }
+        },
+        "accordion_block_4_1": {
+          "type": "text",
+          "settings": {
+            "title": "I purchased Order Protection, now what?",
+            "text": "<p>When you add Order Protection to your purchases, you are now eligible to receive a refund or replacement for lost, damaged, or stolen packages. If you need a refund or replacement issued, file a claim <a href=\"https:\/\/claims.orderprotection.com\/submitClaim\" target=\"_blank\">here.<\/a><\/p><p>Order Protection purchases are non-refundable.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_4_0",
+        "accordion_block_4_4",
+        "accordion_block_4_2",
+        "accordion_block_4_3",
+        "text_jpU6R7",
+        "accordion_block_4_1"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Returns, Refunds, & Exchanges",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "accordion-section-3": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_3_0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer warranty for your products?",
+            "text": "<p>Yes! At Cherri, we stand behind the quality and craftsmanship of our products. We are committed to ensuring your satisfaction with every purchase you make from us. As part of our dedication to exceptional customer service, we offer a one-year warranty on all items sold through our website. You can see the warranty details <a href=\"https:\/\/shopcherri.com\/policies\/refund-policy\" target=\"_blank\">here.<\/a><\/p>"
+          }
+        },
+        "accordion_block_3_1": {
+          "type": "text",
+          "settings": {
+            "title": "How do I claim my warranty?",
+            "text": "<p>To initiate a warranty claim, simply contact <a href=\"mailto:hi@shopcherri.com\" target=\"_blank\" title=\"mailto:hi@shopcherri.com\">hi@shopcherri.com <\/a>within the one-year warranty period.<\/p><p>Provide proof of purchase, along with clear photos or descriptions of the damage to expedite the process.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_3_0",
+        "accordion_block_3_1"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Product Warranty",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": true,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_accordions_8JWadi": {
+      "type": "section-accordions",
+      "blocks": {
+        "text_BDMmfQ": {
+          "type": "text",
+          "settings": {
+            "title": "Where are Cherri products made?",
+            "text": "<p>Cherri ethically sources materials from all around the US and makes everything in New York. Even our cotton fibers are grown right here in the USA! <\/p><p>Our swimwear is made in a woman-owned factory in Colombia. They create quality garments in an ethical space for their workers. <\/p><p><strong>Coming Soon: <\/strong>Restocks! Our latest restocks will be made in an OEKO-TEX certified factory in China. As we're growing and expanding, local factories have not been able to keep up. We're looking move some of our production to a small and ethically run factory in China (yes, fair wages!). This not only ensures quality, but also builds upon our clean business practices. You can see our factory certifications <a href=\"\/pages\/our-fabrics\" title=\"Our Fabrics\">here. <\/a><\/p>"
+          }
+        },
+        "text_ERBezF": {
+          "type": "text",
+          "settings": {
+            "title": "How did you discover that tiny gussets were a problem?",
+            "text": "<p>After dealing with lip-slips, tiny thongs and vulva insecurities myself, I knew something had to change - and I didn't want it to be me!<\/p><p>I collected data from over 5,000 people and discovered that the average vulva width was 2.5 inches but the average underwear width was 1.8 inches. The average underwear wasn't fitting the average person in the right places!<\/p><p>Now I'm updating my study and collecting further data to better improve my designs. <a href=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfRbhRPm5drc1wi8f--DOtWsRSuQ5h2GXnNWVBMoYnWObrNUw\/viewform\" target=\"_blank\" title=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfRbhRPm5drc1wi8f--DOtWsRSuQ5h2GXnNWVBMoYnWObrNUw\/viewform\">Fill out the survey here<\/a> and receive a discount on your next purchase + be entered in a raffle for free Cherries! <\/p><p>Check out the <a href=\"https:\/\/shopcherri.com\/pages\/about-the-founder\" target=\"_blank\" title=\"https:\/\/shopcherri.com\/pages\/about-the-founder\">About<\/a> page for more info on Cherri's origin story.<\/p><p><\/p>"
+          }
+        },
+        "text_PfCLiX": {
+          "type": "text",
+          "settings": {
+            "title": "Do you have any discounts?",
+            "text": "<p>Yes! Check out our year round discounts <a href=\"https:\/\/shopcherri.com\/pages\/discounts\" target=\"_blank\">here<\/a>. You can also sign up for our <a href=\"https:\/\/shopcherri.com\/pages\/cherri-panty-perks\">rewards program<\/a> to get discounts and free items with each purchase! <\/p><p>And sign up for our email list to be notified of flash sales and exclusive seasonal sales!<\/p>"
+          }
+        },
+        "text_cyij6E": {
+          "type": "text",
+          "settings": {
+            "title": "What do you do for your community?",
+            "text": "<p>Every person should have the opportunity to feel clean, comfortable, and confident in their own body. That’s why we donate underwear and hygiene products with each Cherri purchase to a shelter in the US. <\/p><p>Have you ever thought about the sanitary conditions unhoused individuals face on a day-to-day basis, especially at the time of their month? Our mission is to help alleviate the struggles and encourage vulva wellness for people everywhere.<\/p>"
+          }
+        },
+        "text_LGDXVk": {
+          "type": "text",
+          "settings": {
+            "title": "Why are Cherries so expensive?",
+            "text": "<p>We totally understand that not everyone can afford a pair of Cherri undies. But Cherri undies are not overpriced when you take into account how much they cost to make! Since we use high quality materials and ethical labor, it is more than your typical 5 or $25 deal. But we promise, it is worth every penny. And if you don't believe us, take a look at our dozens of 5 star reviews!<\/p><p>We value transparency and believe it is an important part of consumer education. Would other brands give you an exact breakdown of how much their product costs so you know we aren't trying to overcharge you? <\/p><p>To see a full transparent product cost breakdown below. <\/p><p>You can also check out more details on our <a href=\"https:\/\/www.tiktok.com\/@gabygabss\/playlist\/Price%20Breakdown-7391630081732528926\" target=\"_blank\" title=\"https:\/\/www.tiktok.com\/@gabygabss\/playlist\/Price%20Breakdown-7391630081732528926\">\"Price Breakdown\" playlist <\/a>on TikTok.<\/p><p><\/p><p>We have actively been working on decreasing our costs to sell Cherries at a more accessible price point, but want to make sure we're still doing it in an ethical way. Thank you so much to those who have seen the value in our products and have given us unwaivering support thus far ❤️<\/p>"
+          }
+        },
+        "text_mnqfnM": {
+          "type": "text",
+          "settings": {
+            "title": "What fabric are Cherri undies made of?",
+            "text": "<p>Cherri's core cotton collection is made from a unique blend of organic Supima Cotton and Lenzing Modal formulated to be the most comfortable and breathable for your intimate areas. <\/p><p><a href=\"\/pages\/our-fabrics\" title=\"Our Fabrics\">Read more about our fabrics here. <\/a><\/p>"
+          }
+        },
+        "text_yzimJr": {
+          "type": "text",
+          "settings": {
+            "title": "Are Cherri undies eco-friendly?",
+            "text": "<p>Ethical business practices are at the core of Cherri's values, including but not limited to low environmental impact. <\/p><p>We focus on eco-conscious initiatives including:<\/p><ul><li>using 100% recycled packaging materials<\/li><li>working with OEKO-TEX® certified factories<\/li><li>using eco-friendly dyes<\/li><li>producing in small batch<\/li><li>using only organic forms of cotton (<a href=\"\/pages\/our-fabrics\" title=\"Our Fabrics\">read more about our fabrics here<\/a>)<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_BDMmfQ",
+        "text_ERBezF",
+        "text_PfCLiX",
+        "text_cyij6E",
+        "text_LGDXVk",
+        "text_mnqfnM",
+        "text_yzimJr"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Ethos & Mission",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_k7Rt7d": {
+      "type": "section-text",
+      "blocks": {
+        "heading_D3kFA8": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Check out our transparent price breakdown: <\/p>",
+            "size": 90,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_D3kFA8"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 26,
+        "padding_bottom": 0
+      }
+    },
+    "1737296161c66b44b7": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_azy33P": {
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-reels\/blocks\/reelup_playlist\/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "rl_pl_12657"
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_azy33P"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_khUPUt": {
+      "type": "section-text",
+      "blocks": {
+        "heading_q4ARBF": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Don't see the answer to your question here?<\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_FyLicT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Email us at <a href=\"mailto:hi@shopcherri.com\" title=\"mailto:hi@shopcherri.com\">hi@shopcherri.com<\/a> and we'll get back to you within a week.<\/p>",
+            "size": 100
+          }
+        },
+        "button_HQw4Nt": {
+          "type": "button",
+          "settings": {
+            "button_text": "CONTACT US",
+            "button_link": "mailto:hi@shopcherri.com",
+            "button_color": "btn--primary",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_q4ARBF",
+        "text_FyLicT",
+        "button_HQw4Nt"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_text_QgQjeR",
+    "section_accordions_c7KFxc",
+    "section_text_MaDmHe",
+    "1735280581d6b3bf88",
+    "accordion-section-2",
+    "accordion-section-4",
+    "accordion-section-3",
+    "section_accordions_8JWadi",
+    "section_text_k7Rt7d",
+    "1737296161c66b44b7",
+    "section_text_khUPUt"
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_HGmcVe": {
+      "type": "section-text",
+      "blocks": {
+        "heading_rUiPzQ": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>What is Order Protection?<\/p>",
+            "size": 140,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_eXGr8N": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https:\/\/orderprotection.com\/\">OrderProtection.com<\/a> is offered as an additional item at checkout. There’s no extra application process or forms to fill out, customers just checkout and are instantly protected against items:<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_rUiPzQ",
+        "text_eXGr8N"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 22,
+        "padding_bottom": 24
+      }
+    },
+    "section_marquee_Wf93Tq": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_WTiHkG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>STOLEN<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "check",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_L8JQgb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>DELIVERED NOT RECIEVED<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "check",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_MWYa7g": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>DAMAGED ITEM<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "check",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_CLpqUe": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LOST IN TRANSIT<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "check",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_tQ8XJH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>WRONG ITEM<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "check",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_WTiHkG",
+        "text_L8JQgb",
+        "text_MWYa7g",
+        "text_CLpqUe",
+        "text_tQ8XJH"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 260,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "section_list_butttons_UwMPG6": {
+      "type": "section-list-butttons",
+      "blocks": {
+        "button_KR9dtm": {
+          "type": "button",
+          "settings": {
+            "heading": "Stolen",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_fb8C94": {
+          "type": "button",
+          "settings": {
+            "heading": "Delivered Not Recieved",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_9P9Uib": {
+          "type": "button",
+          "settings": {
+            "heading": "Damaged Item",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_7bTGnW": {
+          "type": "button",
+          "settings": {
+            "heading": "lost in transit",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        },
+        "button_44iNwt": {
+          "type": "button",
+          "settings": {
+            "heading": "wrong item",
+            "button_link": "",
+            "overlay_opacity": 100,
+            "block_text_color": "",
+            "bg_color": "",
+            "border_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_KR9dtm",
+        "button_fb8C94",
+        "button_9P9Uib",
+        "button_7bTGnW",
+        "button_44iNwt"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": 100,
+        "layout": "grid",
+        "alignment": "center",
+        "collections_per_row": 6,
+        "columns_mobile": "2",
+        "type_style": "button-typography",
+        "button_style": "rounded",
+        "text_size": 115,
+        "letter_spacing": 75,
+        "show_arrow": true,
+        "bg_color": "#ffd9e1",
+        "block_text_color": "#e90000",
+        "border_color": "#e90000",
+        "section_bg_color": "#ffffff",
+        "section_text_color": "",
+        "enable_slider_mobile": true,
+        "animations_enabled": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    },
+    "section_accordions_VC7eEK": {
+      "type": "section-accordions",
+      "blocks": {
+        "text_rDxAky": {
+          "type": "text",
+          "settings": {
+            "title": "What is Order Protection?",
+            "text": "<p>OrderProtection.com covers your order for every major issue that can occur during<br\/>shipping. Your order will be protected against loss, damage, theft, wrong items,<br\/>defective items and missing items.<\/p><p><br\/>If something goes wrong during shipping, you can quickly <a href=\"https:\/\/claims.orderprotection.com\/submitClaim\" target=\"_blank\" title=\"https:\/\/claims.orderprotection.com\/submitClaim\">file a claim<\/a> in a few clicks.<\/p><p><br\/>You'll receive a refund or reshipment if your claim is approved. To protect your order, make sure Order Protection is toggled on in your cart.<\/p>"
+          }
+        },
+        "text_gDXdi6": {
+          "type": "text",
+          "settings": {
+            "title": "How do I purchase Order Protection?",
+            "text": "<p>In your cart, there is a toggle to turn Order Protection on or off. Turn on OrderProtection to purchase protection for your order! If you have protection turned on, you will see it appear as a line item during checkout.<\/p>"
+          }
+        },
+        "text_9HBnTR": {
+          "type": "text",
+          "settings": {
+            "title": "How do I file a claim with Order Protection?",
+            "text": "<p><a href=\"https:\/\/claims.orderprotection.com\/submitClaim\" target=\"_blank\" title=\"https:\/\/claims.orderprotection.com\/submitClaim\">Click here to file a claim.<\/a><\/p><p>Please note that you’ll only be able to file a claim if you purchased Order Protectionwhen placing your order.<\/p>"
+          }
+        },
+        "text_nxnwyF": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take for my claim to get resolved?",
+            "text": "<p>You’ll typically get a response within an hour, and most claims are resolved that same day. OrderProtection.com has 24\/7 support staff so you can expect responses and communication around the clock.<\/p>"
+          }
+        },
+        "text_CVnC38": {
+          "type": "text",
+          "settings": {
+            "title": "I didn’t add Order Protection to my order, but I need to make a claim.",
+            "text": "<p>If you chose not to purchase Order Protection at checkout, and you have an issue with your order, you’ll need to contact us directly at<a href=\"mailto:hi@shopcherri.com\" target=\"_blank\" title=\"mailto:hi@shopcherri.com\"> hi@shopcherri.com.<\/a><\/p>"
+          }
+        },
+        "text_Ka8eNW": {
+          "type": "text",
+          "settings": {
+            "title": "How long do I have to make a claim?",
+            "text": "<p>You can submit a claim 30 - 45 days from the date you placed your order depending on the claim type.<\/p>"
+          }
+        },
+        "text_tPyPVL": {
+          "type": "text",
+          "settings": {
+            "title": "What does Order Protection cover?",
+            "text": "<p>OrderProtection.com covers your order for loss, damage, theft, wrong items, defective items and missing items.<\/p><p>If you need a different size, style, or color for an exchange, please email <a href=\"mailto:hi@shopcherri.com\" target=\"_blank\" title=\"mailto:hi@shopcherri.com\">hi@shopcherri.com<\/a>. Exchanges are always free, even if you don't have Order Protection.<\/p>"
+          }
+        },
+        "text_hNVKBa": {
+          "type": "text",
+          "settings": {
+            "title": "How much does Order Protection cost?",
+            "text": "<p>Order Protection can cost $0.98+ depending on the value of your order.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_rDxAky",
+        "text_gDXdi6",
+        "text_9HBnTR",
+        "text_nxnwyF",
+        "text_CVnC38",
+        "text_Ka8eNW",
+        "text_tPyPVL",
+        "text_hNVKBa"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#f7f6f4",
+        "bg_color_secondary": true,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_products_list_aMBKKP": {
+      "type": "section-products-list",
+      "blocks": {
+        "product_kgmzFL": {
+          "type": "product",
+          "settings": {
+            "product": "order-protection",
+            "title": "",
+            "product_description": "<p>~ price varies depending on your order size ~<\/p>",
+            "button_text": "View Product",
+            "show_second_image": false,
+            "show_circle": true,
+            "hide_on_mobile": false,
+            "circle_text_color": "#000000",
+            "circle_rotate_animation": "rotate-on-scroll",
+            "circle_text": "Protect  ~ Your ~ Package ~",
+            "circle_word_spacing": 0,
+            "circle_size": 143
+          }
+        }
+      },
+      "block_order": [
+        "product_kgmzFL"
+      ],
+      "settings": {
+        "title": "protect your package with",
+        "heading_size": 100,
+        "button_color": "btn--primary",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "image_aspect_ratio": 1,
+        "bg_color_secondary": false,
+        "width": "wrapper",
+        "padding_top": 26,
+        "padding_bottom": 0
+      }
+    },
+    "section_marquee_B7JnT3": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_7W989i": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your coochie deserves to be comfy <\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "heart",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_7W989i"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 5,
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 180,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#e90000",
+        "gradient": "",
+        "color": "#ffffff",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_text_HGmcVe",
+    "section_marquee_Wf93Tq",
+    "section_list_butttons_UwMPG6",
+    "section_accordions_VC7eEK",
+    "section_products_list_aMBKKP",
+    "section_marquee_B7JnT3"
+  ]
+}

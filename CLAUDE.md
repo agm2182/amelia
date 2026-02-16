@@ -2,6 +2,11 @@
 
 SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 
+## Preferences
+
+- Always choose the cleanest solution over the fastest. Fix root causes, don't patch around them.
+- QuickBooks MCP (`quickbooks-online-mcp-server`) doesn't work. Use agent-browser for all QBO interactions.
+
 ## Quick Reference
 
 ### Identifiers
@@ -458,3 +463,11 @@ Contractor and supplier relationships are tracked in `vendors/`. See `vendors/RE
 | Current Debt | $12.6K (Capital $4.3K + Credit $8.3K) |
 | Best Month | Nov 2025: 570 orders, $25K revenue |
 | Worst Month | May 2025: 45 orders, $3K revenue |
+
+### Shopify Theme
+
+The live Shopify theme (Palo Alto) is downloaded to `theme/`. This is a full snapshot of all theme files: Liquid templates, sections, snippets, assets, config, and locales.
+
+**Re-download:** Run `bin/download-theme` to pull a fresh copy from the live theme. Requires a valid Shopify access token (run `bin/refresh-shopify-token` first if expired).
+
+**Structure:** `assets/`, `config/`, `layout/`, `locales/`, `sections/`, `snippets/`, `templates/`

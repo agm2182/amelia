@@ -1,0 +1,619 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "title_size": 100,
+            "price_size": 100,
+            "bold_price": true,
+            "padding_bottom": 0
+          }
+        },
+        "youpay_cart_sharing_youpay_callout_arcjmx": {
+          "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-callout\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+          "settings": {
+            "badgeTheme": "badge",
+            "modalTheme": "dark",
+            "modalIcon": "shirt"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_labels": true,
+            "show_quantity": true,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 0
+          }
+        },
+        "description_CUBCK9": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 10
+          }
+        },
+        "siblings_kdkHVt": {
+          "type": "siblings",
+          "disabled": true,
+          "settings": {
+            "text": "3 Packs",
+            "siblings_product_list": [
+              "3-pack-g-strings-cookie-dough",
+              "copy-of-build-your-bundle-g-string-3-pack"
+            ],
+            "show_siblings_images": true,
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Materials  + Care Instructions",
+            "heading_style": "font-body",
+            "accordion_text": "<h4><strong>Materials<\/strong><\/h4>{{ product.metafields.shopify.fabric | metafield_tag: field: 'label' }}<h4><strong>Care Instructions<\/strong><\/h4><p>Cherri products are made with love. Please handle with care.<\/p>{{ product.metafields.shopify[\"care-instructions\"] | metafield_tag: field: 'label' }}",
+            "accordion_page": "",
+            "padding_bottom": 10
+          }
+        },
+        "9927e90d-2ecb-4104-af67-0dadf75b2a0a": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Product Specs",
+            "heading_style": "font-body",
+            "accordion_text": "",
+            "accordion_page": "",
+            "padding_bottom": 10
+          }
+        },
+        "product_accordion_6y3wyr": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Product Warranty",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Quality matters, and we stand by it. Cherri offers a one-year warranty for replacement. If your Cherries don't meet your expectations, contact us at <a href=\"mailto:hi@shopcherri.com\">hi@shopcherri.com<\/a> for a replacement that's as perfect as you deserve.<\/p><p><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">Read more about the warranty and returns here. <\/a><\/p>",
+            "accordion_page": "",
+            "padding_bottom": 10
+          }
+        },
+        "icon_row_QALTYy": {
+          "type": "icon_row",
+          "settings": {
+            "icon_name_1": "check",
+            "icon_color_1": "#ffae06",
+            "icon_width_1": 20,
+            "icon_text_1": "No More Lip-Slips",
+            "icon_name_2": "recycle-circle",
+            "icon_color_2": "#ff74bc",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Exchanges",
+            "icon_name_3": "shield",
+            "icon_color_3": "#0baef9",
+            "icon_width_3": 20,
+            "icon_text_3": "Quality Guarantee",
+            "icon_name_4": "dollar-sign",
+            "icon_color_4": "#04af28",
+            "icon_width_4": 20,
+            "icon_text_4": "Buy Now, Pay Later",
+            "alignment": "left",
+            "bg_color": "#ffffff",
+            "padding_bottom": 20
+          }
+        },
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_name": "support",
+            "icon_width": 25,
+            "title": "Need help with sizing?",
+            "text": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
+            "bg_color": "#f7f9fa",
+            "text_color": "#000000",
+            "padding_bottom": 20
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "product_list": [],
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "youpay_cart_sharing_youpay_callout_arcjmx",
+        "form",
+        "description_CUBCK9",
+        "siblings_kdkHVt",
+        "product_accordion",
+        "9927e90d-2ecb-4104-af67-0dadf75b2a0a",
+        "product_accordion_6y3wyr",
+        "icon_row_QALTYy",
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
+        "upsell"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "carousel",
+        "image_width": "standard",
+        "product_image_aspect_ratio": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_marquee_idfKeP": {
+      "type": "section-marquee",
+      "blocks": {
+        "text_7YGGzw": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Vulva Approved<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_m9hz3D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.27_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_8iVBeE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>No Lip-Slips<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_wXyFGx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.40_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        },
+        "text_BrLUWN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Fits Your Bits<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_9CXTwJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.44.50_PM.png",
+            "link": "",
+            "image_width": 60
+          }
+        },
+        "text_gjA6RV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>TikTok Viral<\/strong><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "image_DzAx9P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-12-23_at_5.45.34_PM.png",
+            "link": "",
+            "image_width": 50
+          }
+        }
+      },
+      "block_order": [
+        "text_7YGGzw",
+        "image_m9hz3D",
+        "text_8iVBeE",
+        "image_wXyFGx",
+        "text_BrLUWN",
+        "image_9CXTwJ",
+        "text_gjA6RV",
+        "image_DzAx9P"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 190,
+        "letter_spacing": 0,
+        "message_spacing": 0,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_with_text_RRMzWA": {
+      "type": "section-image-with-text",
+      "disabled": true,
+      "settings": {
+        "section_height": "five-fifty-height",
+        "layout": "inline",
+        "image_location": "right",
+        "image_width": "standard",
+        "image": "shopify:\/\/shop_images\/CHERRIVSOTHER.png",
+        "subheading": "",
+        "title": "<p><strong>GOODBYE LIP-SLIPS!<\/strong><\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "heading_size": 150,
+        "content": "<p>Designed with wider gussets (aka the \"panty pocket\") to fit outies, innies, and everything in between.<\/p>",
+        "text_alignment": "left",
+        "button_text": "because your coochie deserves to be comfy",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_link": "",
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "",
+        "section_width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 8
+      }
+    },
+    "overlapping-images-0": {
+      "type": "section-overlapping-images",
+      "disabled": true,
+      "settings": {
+        "text_position": "left",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "title": "<p>Our Story, Our Promise<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "description": "<p>Use this text to describe a product, promotion, or your company.<\/p>",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "bg_color_secondary": false,
+        "gradient": "",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "38ff978b-66eb-4318-9ce0-94db8ff86311": {
+      "type": "section-columns",
+      "blocks": {
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-0": {
+          "type": "text_block",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-1": {
+          "type": "text_block",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-2": {
+          "type": "text_block",
+          "settings": {
+            "title": "Add a title or tagline",
+            "text": "<p>Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-0",
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-1",
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "columns": 3,
+        "columns_mobile": "1",
+        "show_images": true,
+        "show_borders": false,
+        "equalize_height": true,
+        "desktop_aspect_ratio": 0.8,
+        "mobile_aspect_ratio": 0.8,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color_secondary": false,
+        "color_borders": "#000000",
+        "layout_mobile": "carousel",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "tabs": {
+      "type": "section-accordions",
+      "blocks": {
+        "acordion-0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you accept returns or exchanges?",
+            "text": "<p>We only accept exchanges or store credit for your Cherri purchases. We want you to be the happiest in your Cherri's, and if it's not a perfect fit, we want to make it right - completely FREE. Exchanges are eligible up to 7 days after your order is received. <\/p><p>Email hi@<a href=\"https:\/\/shopcherri.com\/\">shopcherri.com<\/a> with your order number, the item you'd like to exchange, and the item you'd like to replace it with. <\/p>"
+          }
+        },
+        "acordion-1": {
+          "type": "text",
+          "settings": {
+            "title": "What size am I?",
+            "text": "<p>Check out our sizing chart to see what size you are! <a href=\"https:\/\/shopcherri.com\/pages\/sizing-chart\" target=\"_blank\">Click here.<\/a> You can also find the size chart and product specs under each individual product listing.<\/p>"
+          }
+        },
+        "acordion-2": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship worldwide?",
+            "text": "<p>Yes! Cherri ships EVERYWHERE. Shipping will be calculated at checkout and includes any duties, taxes, or fees. Free shipping for domestic orders on purchases $80 USD + and free shipping for international orders on purchases $150 USD +. <\/p>"
+          }
+        },
+        "d0defd0d-94c3-403c-bd36-dc2f140a104f": {
+          "type": "text",
+          "settings": {
+            "title": "Do you have any discounts?",
+            "text": "<p>Yes! Check out our year round discounts <a href=\"https:\/\/shopcherri.com\/pages\/discounts\" target=\"_blank\">here<\/a>. You can also sign up for our <a href=\"https:\/\/shopcherri.com\/pages\/cherri-panty-perks\">rewards program<\/a> to get discounts and free items with each purchase! <\/p>"
+          }
+        },
+        "text_cweQyT": {
+          "type": "text",
+          "settings": {
+            "title": "Will Cherri products fit my bits?",
+            "text": "<p>Duh! All products are designed with expanded gussets for your comfort in mind. <\/p>"
+          }
+        },
+        "text_BVzmUn": {
+          "type": "text",
+          "settings": {
+            "title": "I purchased Order Protection, now what?",
+            "text": "<p>When you add Order Protection to your purchases, you are now eligible to receive a refund or replacement for lost, damaged, or stolen packages. If you need a refund or replacement issued, filed a claim <a href=\"https:\/\/claims.orderprotection.com\/submitClaim\" target=\"_blank\">here.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "acordion-0",
+        "acordion-1",
+        "acordion-2",
+        "d0defd0d-94c3-403c-bd36-dc2f140a104f",
+        "text_cweQyT",
+        "text_BVzmUn"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "title": "Frequently Asked Questions",
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#ffffff",
+        "bg_color_secondary": true,
+        "text_color": "text-dark",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "1735013317486a331f": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_a4TwLK": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_a4TwLK"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "title": "You May Also Like",
+            "product_recommendations_limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "title": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "columns_mobile": "1",
+        "type_style": "subheading-text",
+        "tab_heading_size": 120,
+        "bg_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "icons": {
+      "type": "section-icons-row",
+      "blocks": {
+        "icon-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "truck",
+            "title": "Free Shipping",
+            "text": "<p>on all orders $80+<\/p>"
+          }
+        },
+        "icon-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "check",
+            "title": "Free Exchanges",
+            "text": "<p>because you deserve the perfect fit <\/p>"
+          }
+        },
+        "text_dWzJCc": {
+          "type": "text",
+          "settings": {
+            "icon_name": "award",
+            "title": "One-Year Warranty",
+            "text": "<p>because we stand by quality<\/p>"
+          }
+        },
+        "icon-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "title": "Donations to Shelters",
+            "text": "<p>with each purchase<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon-0",
+        "icon-1",
+        "text_dWzJCc",
+        "icon-2"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 4,
+        "icons_width": 30,
+        "show_vertical_borders": true,
+        "show_horizontal_borders": true,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color": "",
+        "text_color": "#333333",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_marquee_idfKeP",
+    "section_image_with_text_RRMzWA",
+    "overlapping-images-0",
+    "38ff978b-66eb-4318-9ce0-94db8ff86311",
+    "tabs",
+    "1735013317486a331f",
+    "related",
+    "icons"
+  ]
+}

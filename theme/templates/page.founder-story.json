@@ -1,0 +1,499 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false,
+        "bg_color_secondary": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_E6C7VY": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_xPVJ7c": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>meet gabriella scaringe<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_NyAbfb": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>The Founder Story<\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "image_XMQNxM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/000217830037.jpg",
+            "image_width": 430,
+            "image_link": ""
+          }
+        },
+        "text_EAmNVk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gabriella Scaringe is a content creator, data-driven designer, and self-proclaimed coochie connoisseur. <\/p>",
+            "size": 100
+          }
+        },
+        "text_BHXi8b": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>So she did what she does best: she overshared on the internet.<\/p>",
+            "size": 100
+          }
+        },
+        "text_NLYnNe": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>She made jokes about her outie vulva, insecurities she had \"down there\" and went viral multiple times. Thousands of women realized they weren't alone in their insecurities and lip-slips!<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xPVJ7c",
+        "heading_NyAbfb",
+        "image_XMQNxM",
+        "text_EAmNVk",
+        "text_BHXi8b",
+        "text_NLYnNe"
+      ],
+      "name": "Text",
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_text_XLabFb": {
+      "type": "section-text",
+      "blocks": {
+        "text_KkHLnD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gabriella blends body data with bold storytelling, turning Cherri into a brand that’s as inclusive and even somewhat irreverent. She’s passionate about empowering women through humor, design, and unapologetic comfort. <\/p>",
+            "size": 100
+          }
+        },
+        "text_DLLG4y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gabriella built Cherri to be a reflection of herself: playful, authentic, welcoming, and a little bit unhinged. <\/p>",
+            "size": 100
+          }
+        },
+        "text_tjMW34": {
+          "type": "text",
+          "settings": {
+            "text": "<p>She’s not afraid to say “labia” on the internet and neither is her brand.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "text_KkHLnD",
+        "text_DLLG4y",
+        "text_tjMW34"
+      ],
+      "name": "Text",
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    },
+    "section_text_YQRpkn": {
+      "type": "section-text",
+      "blocks": {
+        "heading_HEeVEw": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Let's Get Personal...<\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_HEeVEw"
+      ],
+      "disabled": true,
+      "name": "Text",
+      "settings": {
+        "text_position": "center",
+        "bg_color_secondary": false,
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 24,
+        "padding_bottom": 8
+      }
+    },
+    "section_sticky_images_and_text_4FjxkQ": {
+      "type": "section-sticky-images-and-text",
+      "blocks": {
+        "slide_B9VwcN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-08-31_at_7.20.32_PM.png",
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "get to know Gaby",
+            "title": "<p>Let's Get Personal<\/p>",
+            "heading_size": 130,
+            "content": "<p>Cherri is a people-first brand. So here is the person behind it all!<\/p>",
+            "text_size": 125,
+            "button_text": "@gabyscaringe",
+            "button_link": "https:\/\/www.instagram.com\/gabyscaringe\/",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": "Play video"
+          }
+        },
+        "slide_MxgMJY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_3D64F99AEC46-1.jpg",
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "",
+            "title": "<p>She likes to vlog her daily life in NYC.<\/p>",
+            "heading_size": 130,
+            "content": "<p>though she knows no one watches them.<\/p>",
+            "text_size": 125,
+            "button_text": "Watch it if you want to?",
+            "button_link": "https:\/\/www.instagram.com\/p\/DNobZSKJQuH\/",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
+        },
+        "slide_U9M7AQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0660.jpg",
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "",
+            "title": "<p>She's Always Working.<\/p>",
+            "heading_size": 130,
+            "content": "<p>well, she self-funded this business by herself so she kind of has to. <\/p>",
+            "text_size": 125,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
+        },
+        "slide_XKn8ch": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_A5FFF2E20B73-1.jpg",
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "",
+            "title": "<p>She has a super cute cat.<\/p>",
+            "heading_size": 130,
+            "content": "<p>that has millions more views than any of her TikTok videos.<\/p>",
+            "text_size": 130,
+            "button_text": "watch it",
+            "button_link": "https:\/\/www.tiktok.com\/@shopcherri\/video\/7515138492435909919",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
+        },
+        "slide_NnQ7hb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_2098.heic",
+            "truncate_text": true,
+            "title_length": 10,
+            "content_length": 15,
+            "subheading": "",
+            "title": "<p>She's a Pilates Princess.<\/p>",
+            "heading_size": 130,
+            "content": "<p>well, trying to be. <\/p>",
+            "text_size": 130,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "video_link": "",
+            "video_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_B9VwcN",
+        "slide_MxgMJY",
+        "slide_U9M7AQ",
+        "slide_XKn8ch",
+        "slide_NnQ7hb"
+      ],
+      "name": "Sticky images and text: Horizontal",
+      "settings": {
+        "scroll_direction": "vertical",
+        "text_alignment": "left",
+        "image_position": "",
+        "space_around_images": true,
+        "image_width": "standard",
+        "aspect_ratio_desktop": 1.5,
+        "aspect_ratio_mobile": 1.5,
+        "show_single_text": false,
+        "text_color": "text-dark",
+        "bg_color": "",
+        "gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(223, 223, 223, 1) 100%)",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_image_accordions_rpyEEc": {
+      "type": "section-image-accordions",
+      "blocks": {
+        "image_t6mKgh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_3D64F99AEC46-1.jpg",
+            "overlay_opacity": 0,
+            "text_width": "narrow",
+            "text_position": "bottom-right",
+            "text_color": "text-light",
+            "title": "She likes to vlog her daily life in NYC.",
+            "text": "Though she knows nobody watches them.",
+            "button_1_text": "check it out",
+            "button_1_link": "https:\/\/www.instagram.com\/p\/DNobZSKJQuH\/",
+            "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        },
+        "image_6ym6GU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0660.jpg",
+            "overlay_opacity": 20,
+            "text_width": "narrow",
+            "text_position": "bottom-right",
+            "text_color": "text-light",
+            "title": "She's always working.",
+            "text": "Well, she self-funded this entire company so she has to.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        },
+        "image_adKj6n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_A5FFF2E20B73-1.jpg",
+            "overlay_opacity": 10,
+            "text_width": "narrow",
+            "text_position": "bottom-right",
+            "text_color": "text-light",
+            "title": "She has a super cute cat.",
+            "text": "That has millions more views than any of her TikTok videos.",
+            "button_1_text": "check her out",
+            "button_1_link": "https:\/\/www.tiktok.com\/@shopcherri\/video\/7515138492435909919",
+            "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        },
+        "image_x7CRXR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0731.heic",
+            "overlay_opacity": 10,
+            "text_width": "narrow",
+            "text_position": "bottom-right",
+            "text_color": "text-light",
+            "title": "She's a Pilates Princess.",
+            "text": "Well, trying to be.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "image_t6mKgh",
+        "image_6ym6GU",
+        "image_adKj6n",
+        "image_x7CRXR"
+      ],
+      "disabled": true,
+      "name": "Image accordions",
+      "settings": {
+        "accordion_height": "one-half-height",
+        "enable_mobile_height": true,
+        "mobile_section_height": "five-fifty-height-mobile",
+        "heading_size": 100,
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_list_collection_UMKdtx": {
+      "type": "section-list-collection",
+      "blocks": {
+        "collection_kLKGMX": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_QHiCaQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_XEFxnw": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_3C6YMh": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_T6TNhp": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_x98AKT": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "block_text_color": "",
+            "bg_color": "",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_kLKGMX",
+        "collection_QHiCaQ",
+        "collection_XEFxnw",
+        "collection_3C6YMh",
+        "collection_T6TNhp",
+        "collection_x98AKT"
+      ],
+      "disabled": true,
+      "name": "Collection list",
+      "settings": {
+        "title": "Shop Gaby's Favorites",
+        "heading_size": 100,
+        "layout": "carousel",
+        "alignment": "center",
+        "collections_per_row": 4,
+        "columns_mobile": "2",
+        "image_shape": "square",
+        "image_aspect_ratio": 1,
+        "enable_product_count": false,
+        "text_size": 130,
+        "overlay_text": false,
+        "enable_slider_mobile": true,
+        "section_bg_color": "",
+        "section_text_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_text_E6C7VY",
+    "section_text_XLabFb",
+    "section_text_YQRpkn",
+    "section_sticky_images_and_text_4FjxkQ",
+    "section_image_accordions_rpyEEc",
+    "section_list_collection_UMKdtx"
+  ]
+}
