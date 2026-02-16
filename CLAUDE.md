@@ -83,8 +83,6 @@ Run `bin/check-integrations` to verify API credentials are working.
 
 ### Audio Transcription
 
-Transcribe voicemails and audio files using parakeet-mlx (NVIDIA's Parakeet model optimized for Apple Silicon):
-
 ```bash
 parakeet-mlx /path/to/audio.m4a
 ```
@@ -98,17 +96,7 @@ Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
 **Solution:** Use `bin/parse-capital-one-statements` to extract transactions and generate QuickBooks-importable CSV.
 
 ```bash
-# Parse single statement
-./bin/parse-capital-one-statements <pdf_file>
-
-# Parse all statements in directory
-./bin/parse-capital-one-statements financials/expenses/bank-statements/capital-one-checking/
-
-# Output to specific file
-./bin/parse-capital-one-statements <path> --output transactions.csv
-
-# Detailed output with separate deposit/withdrawal/balance columns
-./bin/parse-capital-one-statements <path> --detailed
+./bin/parse-capital-one-statements <pdf_file_or_directory>
 ```
 
 **Output format (QuickBooks):** `Date,Description,Amount` (positive = deposit, negative = withdrawal)
@@ -119,29 +107,7 @@ Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
 - Chase Credit (x0982): `financials/expenses/bank-statements/chase-credit/` (2024 and 2025 subdirs)
 - Shopify Credit (x2450): `financials/expenses/bank-statements/shopify-credit/` (2024 subdir)
 
-**Generated QB imports:**
-- `capital-one-checking/2025_qb_import.csv` (2,614 transactions)
-- `capital-one-checking/2024/2024_checking_q{1-4}_qb_import.csv` (2,118 transactions, split quarterly)
-- `capital-one-credit/2025_qb_import.csv` (45 transactions)
-- `capital-one-credit/2024/2024_credit_qb_import.csv` (39 transactions)
-- `chase-credit/2024/2024_chase_qb_import.csv` (31 transactions)
-- `shopify-credit/2024/2024_shopify_credit_qb_import.csv` (115 transactions)
-
-**Note:** Chase 2025 transactions were synced via bank feed (not imported from CSV).
-
-**How the parser works:**
-- Uses `pdfplumber` (installed via `uv tool install pdfplumber`) to extract text
-- Auto-detects statement type (checking vs credit card) based on content
-- Handles year-spanning billing cycles (e.g., Dec 2024 - Jan 2025) correctly
-- Classifies deposits vs withdrawals using keyword matching (Shopify transfers = deposits, Shopify Capital/Credit = withdrawals, etc.)
-- Deduplicates transactions when parsing multiple overlapping statements
-
-**Raw text extraction (for debugging):**
-```bash
-uvx pdfplumber /path/to/statement.pdf --format text
-```
-
-**Fallback:** If pdfplumber doesn't extract tables cleanly, use [Mistral OCR API](https://docs.mistral.ai/capabilities/document_ai/basic_ocr) ($2/1000 pages) with `table_format="html"` for complex tables.
+**Note:** Chase 2025 transactions were synced via bank feed (not imported from CSV). Generated QB import CSVs are colocated with statements.
 
 ### iMessage Database
 
@@ -152,17 +118,6 @@ Access iMessages via SQLite at `~/Library/Messages/chat.db`. Requires Full Disk 
 **Date conversion:** `date/1000000000 + 978307200` → Unix timestamp
 
 **Text extraction:** The `text` column is often NULL. Use `attributedBody` (NSAttributedString binary). Extract by finding length-prefixed strings in the blob, skipping class names (NS*, IM*, *String, *Attribute).
-
-**Example query:**
-```sql
-SELECT datetime(m.date/1000000000 + 978307200, 'unixepoch', 'localtime') as date,
-       CASE WHEN m.is_from_me = 1 THEN 'Me' ELSE 'Them' END as sender,
-       m.text, m.attributedBody
-FROM message m
-JOIN handle h ON m.handle_id = h.rowid
-WHERE h.id LIKE '%5551234567%'
-ORDER BY m.date DESC;
-```
 
 ### Token Refresh
 
@@ -238,12 +193,6 @@ npx @dguido/google-workspace-mcp auth
 
 **OAuth credentials location:** `~/.config/cherri/google-workspace-oauth.keys.json`
 
-**To create new OAuth credentials (if needed):**
-1. Go to [GCP Credentials](https://console.cloud.google.com/apis/credentials?project=cherri-seo-research)
-2. Click **+ CREATE CREDENTIALS** > **OAuth client ID**
-3. Select **Desktop app**, name it `Google Workspace MCP`
-4. Download JSON and save to `~/.config/cherri/google-workspace-oauth.keys.json`
-
 #### Shopify Access Token
 
 Shopify tokens expire every **24 hours**. To refresh:
@@ -270,24 +219,7 @@ export $(grep META_ACCESS_TOKEN ~/.config/cherri/.env | xargs)
 curl -s "https://graph.facebook.com/v21.0/773863439614388?fields=access_token&access_token=$META_ACCESS_TOKEN" | jq -r .access_token
 ```
 
-**API endpoints (require media ID):**
-```bash
-# List comments on a media post
-GET /{media-id}/comments?fields=id,text,username,timestamp
-
-# Reply to a comment
-POST /{comment-id}/replies?message=Thank+you!
-
-# Delete/hide a comment
-DELETE /{comment-id}
-
-# Like a comment (if supported)
-POST /{comment-id}/likes
-```
-
-**Current limitation:** Cannot list media posts without `instagram_basic` scope. Must know media ID in advance or use Chrome MCP to browse Meta Business Suite.
-
-**Context7 docs:** Use `/websites/developers_facebook_instagram-platform` for API reference.
+**Limitation:** Cannot list media posts without `instagram_basic` scope (requires App Review). Use Context7 (`/websites/developers_facebook_instagram-platform`) for endpoint reference.
 
 ### Browser Automation
 
@@ -320,11 +252,6 @@ agent-browser --headed --state /Users/user/Documents/cc/cherri/.claude/browser-s
 agent-browser --state .claude/browser-states/shopify-admin.json open https://...
 ```
 
-**Verify the state file exists before using:**
-```bash
-ls -la /Users/user/Documents/cc/cherri/.claude/browser-states/shopify-admin.json
-```
-
 #### Saving State After Login
 
 ```bash
@@ -333,39 +260,11 @@ agent-browser state save /Users/user/Documents/cc/cherri/.claude/browser-states/
 
 #### Troubleshooting agent-browser
 
-**Symptom:** `"Browser not launched. Call launch first"` error
-
-**Cause:** This cryptic error usually means one of:
-1. The `--state` file path doesn't exist (most common)
-2. Orphaned daemon processes from a previous failed launch
-3. Stale PID/socket files in `~/.agent-browser/`
-
-**Fix:**
+If agent-browser fails to launch or ignores `--state`, kill orphaned daemons and clean up:
 ```bash
-# 1. Kill any orphaned daemon processes
-pkill -9 -f "daemon.js"
-
-# 2. Clean up stale files
-rm -rf ~/.agent-browser/*
-
-# 3. Verify state file exists (if using --state)
-ls -la /path/to/state.json
-
-# 4. Try again with absolute path
-agent-browser --headed --state /absolute/path/to/state.json open https://...
+pkill -9 -f "daemon.js" && rm -rf ~/.agent-browser/*
 ```
-
-**Symptom:** `"--state ignored: daemon already running"`
-
-**Cause:** The `--state` flag only works on the FIRST command when the daemon starts. If a daemon is already running, it ignores the flag.
-
-**Fix:** Close the browser and kill the daemon first:
-```bash
-agent-browser close
-pkill -9 -f "daemon.js"
-rm -rf ~/.agent-browser/*
-# Now --state will work on next command
-```
+Then retry with an absolute `--state` path on the first command.
 
 ## Skills & Resources
 
@@ -414,29 +313,15 @@ Use these with `use context7` for up-to-date documentation:
 | TikTok Shop Partner Center | `/websites/partner_tiktokshop_docv2` |
 | TikTok Ads Help | `/websites/ads_tiktok_help` |
 
-**Example:**
-```
-"How do I create an Instagram ad campaign? use context7"
-"How do I list products in TikTok Shop? use context7"
-```
-
 ## Development Standards
 
 ### Python
 
-- **Package manager:** Use `uv` exclusively. Never use `pip`, `pip3`, or `pipx`.
-  ```bash
-  uv add <package>           # Add dependency to project
-  uv tool install <package>  # Install CLI tool globally
-  uvx <tool>                 # Run tool without installing
-  ```
-- **Type checking:** All Python code must be strongly typed. Use [ty](https://github.com/astral-sh/ty) (Astral's type checker) for validation.
-- **Linting:** Use `ruff` with pedantic rule sets enabled. Check and fix before committing.
-- **Type hints:** Use `from typing import Optional` for compatibility (not `X | None` union syntax which requires Python 3.10+).
+Use `uv` exclusively (never pip/pipx). Lint with `ruff`, type-check with `ty`. All code must be strongly typed.
 
 ### Scripts
 
-Scripts in `bin/` should be executable with a shebang (`#!/usr/bin/env python3`) and follow the Python standards above.
+Scripts in `bin/` should be executable with a shebang (`#!/usr/bin/env python3`).
 
 ## Project Files
 
