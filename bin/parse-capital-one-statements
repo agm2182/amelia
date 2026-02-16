@@ -343,10 +343,12 @@ def parse_transactions(text: str, year: int) -> list[dict]:
                     if 'shopify capital' not in desc_lower and 'shopify credit' not in desc_lower:
                         is_deposit = True
 
-                # Shopify Capital/Credit payments are withdrawals (loan repayments)
+                # Shopify Capital/Credit are usually withdrawals (loan repayments),
+                # but "ACH deposit" entries are loan fundings (incoming cash)
                 if 'shopify capital' in desc_lower or 'shopify credit' in desc_lower:
-                    is_withdrawal = True
-                    is_deposit = False
+                    if 'ach deposit' not in desc_lower:
+                        is_withdrawal = True
+                        is_deposit = False
 
                 if is_withdrawal and not is_deposit:
                     withdrawal = txn_amount
