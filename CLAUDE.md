@@ -1,6 +1,6 @@
 # Cherri - Project Guide
 
-SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
+Operations, growth, and bookkeeping for Cherri, an underwear e-commerce company on Shopify. See [`company.md`](company.md) for founder info and legal entity details. See [`competitors/`](competitors/) for competitive analysis.
 
 ## Team
 
@@ -10,16 +10,212 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 | Gaby | Founder | Strategy, content, Shopify admin, customer service, social |
 | Amelia | Intern | Social media, research, Shopify admin, Claude operations, production assist (sewing), shadowing Gaby |
 
-## Preferences
+## Principles
 
 - Always choose the cleanest solution over the fastest. Fix root causes, don't patch around them.
-- Use agent-browser for all QuickBooks interactions (no API/MCP available).
 - **Bias toward action** — Research and planning are only valuable when they lead to execution. Set a clear deliverable and scope for every research task. Don't loop.
 - **Finish the job** — When updating SEO metadata, do all the pages. When writing SOPs, include the templates. Don't leave partial work that someone else has to figure out.
 - **Justify new tools** — Every Shopify app, SaaS subscription, or integration is ongoing cost and complexity. Remove what you replace (Mailchimp, Privy). Don't install something to "try it."
 - **No phantom work** — Don't file issues, plan skills, or reference tools that aren't ready to be worked on. If it depends on something that doesn't exist yet, file the prerequisite first.
 
-## Quick Reference
+## Conventions
+
+- **GitHub issues:** Prefix titles with a category: `SEO:`, `Integration:`, `Research:`, `Content:`, `Email:`, `Social:`, `Analytics:`, `Operations:`, `Strategy:`, `Skill:`. Apply the matching label plus `no-code` or `technical` to indicate who can work on it. When an issue mixes technical setup with non-technical work, split it: file a separate technical issue for the prerequisite and keep the `no-code` issue clean with a reference to the blocker.
+- **Audits:** Files in `seo/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
+- **Business documents:** Contracts, invoices, and vendor correspondence should be committed to the repo (in `vendors/documents/`). This is a private repo and these records are important to preserve.
+
+### Project Files
+
+- **Vendors:** Tracked in `vendors/`. See `vendors/README.md` for structure and `vendors/index.yaml` for quick lookup.
+- **Financial data:** 2025 financial records are in `financials/`. See `financials/README.md` for file reference and `financials/DATA_DICTIONARY.md` for schema documentation.
+- **Shopify theme:** The live theme (Palo Alto) is downloaded to `theme/`. Re-download with `bin/download-theme` (requires valid Shopify token — run `bin/refresh-shopify-token` first if expired). Structure: `assets/`, `config/`, `layout/`, `locales/`, `sections/`, `snippets/`, `templates/`
+
+## Tools & Integrations
+
+Run `bin/check-integrations` to verify API credentials (tests via curl, not MCP servers — MCP servers may fail independently).
+
+| Tool | Status | Package | Notes |
+|------|--------|---------|-------|
+| Google Search Console | Ready | `mcp-server-gsc` (npm) | Uses `GOOGLE_APPLICATION_CREDENTIALS` |
+| Google Analytics 4 | Ready | `analytics-mcp` (uvx, official Google) | Uses `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_PROJECT_ID` |
+| Google Workspace | Ready | `@dguido/google-workspace-mcp` (npm) | OAuth client in `~/.config/cherri/google-workspace-oauth.keys.json`, tokens in `~/.config/google-workspace-mcp/tokens.json` |
+| Meta Ads | Ready | `meta-ads-mcp` (npm) | Uses `META_ACCESS_TOKEN` from `.env` |
+| TikTok Ads | Ready | `tiktok-ads-mcp` (uvx) | Uses `TIKTOK_ACCESS_TOKEN`, `TIKTOK_ADVERTISER_IDS` from `.env` |
+| Shopify Admin API | Ready | `@ajackus/shopify-mcp-server` (npm) | Token in `~/.config/cherri/shopify-credentials.json` |
+| Canva | Ready | `mcp-remote` → `https://mcp.canva.com/mcp` | Browser OAuth on first use |
+| Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
+| Claude in Chrome | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
+| Parakeet | Ready | `parakeet-mlx` (uv tool) | Audio transcription. Requires `ffmpeg` (Homebrew). |
+
+**MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
+
+### Audio Transcription
+
+```bash
+parakeet-mlx /path/to/audio.m4a
+```
+
+Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
+
+## QuickBooks & Bookkeeping
+
+Use agent-browser for all QuickBooks interactions (no API/MCP available).
+
+**No journal entries as shortcuts.** When QuickBooks balances are wrong, fix the actual transactions — un-exclude bank feed entries, recategorize, split, or delete duplicates. Journal entries hide problems and make the books unauditable. Only use JEs for true adjusting entries (accruals, depreciation) that have no underlying transaction.
+
+### Bank Connections
+
+Connected bank accounts (synced via Intuit's bank feed):
+
+| Account | Last 4 | Type | Notes |
+|---------|--------|------|-------|
+| Capital One Checking | x2420 | Checking | Primary business checking |
+| Capital One Credit Card | x6284 | Credit | Business credit card |
+| Chase (G. Scaringe) | x0982 | Credit | Personal card used for business |
+
+**Shopify Connector** is also integrated - syncs orders, payouts, and fees directly from Shopify. Check `Integrations > Manage integrations` in QuickBooks to review synced transactions.
+
+### Capital One Statement Parsing
+
+**Problem:** Capital One's CSV/QFX transaction export is broken, and QuickBooks bank feeds only pull 90 days of history (bank-imposed limitation). To get full transaction history, download PDF statements from Capital One's website.
+
+**Solution:** Use `bin/parse-capital-one-statements` to extract transactions and generate QuickBooks-importable CSV.
+
+```bash
+./bin/parse-capital-one-statements <pdf_file_or_directory>
+```
+
+**Output format (QuickBooks):** `Date,Description,Amount` (positive = deposit, negative = withdrawal)
+
+**Statement locations:**
+- Capital One Checking (x2420): `financials/expenses/bank-statements/capital-one-checking/` (2025), `2024/` subdir for 2024
+- Capital One Credit (x6284): `financials/expenses/bank-statements/capital-one-credit/` (2025), `2024/` subdir for 2024
+- Chase Credit (x0982): `financials/expenses/bank-statements/chase-credit/` (2024 and 2025 subdirs)
+- Shopify Credit (x2450): `financials/expenses/bank-statements/shopify-credit/` (2024 subdir)
+
+**Note:** Chase 2025 transactions were synced via bank feed (not imported from CSV). Generated QB import CSVs are colocated with statements.
+
+## Browser Automation
+
+**CRITICAL: Always invoke the `/agent-browser` skill BEFORE every agent-browser session.** The skill documents essential flags and patterns (like `snapshot -i -C` for QuickBooks and other React SPAs where interactive elements render as styled divs instead of standard buttons). Skipping this causes silent failures where elements appear blank or unclickable. Never use agent-browser commands from memory — always load the skill first to get current syntax and patterns.
+
+| Use agent-browser when... | Use Chrome MCP when... |
+|---------------------------|------------------------|
+| Multi-step workflows (faster, scriptable) | Downloading files from authenticated sites |
+| Need parallel sessions or state persistence | User is already logged in and wants to use that session |
+| Repetitive tasks across pages | Collaborative "look at this with me" tasks |
+| Default choice for most browsing | Debugging with console output (`read_console_messages`) |
+
+**Saved browser states:** `.claude/browser-states/`
+
+| Site | State File |
+|------|------------|
+| Shopify Admin | `shopify-admin.json` |
+| QuickBooks | `quickbooks.json` |
+| OnRamp Funds | `onramp.json` |
+| Clearco | `clearco.json` |
+
+### Loading Saved State
+
+**CRITICAL: Use absolute paths with `--state` flag.** The `--state` flag must be on the FIRST command (when daemon launches). Relative paths resolve from current working directory, not project root. Use `git rev-parse --show-toplevel` to get the repo root portably.
+
+```bash
+# CORRECT - portable absolute path
+agent-browser --headed --state "$(git rev-parse --show-toplevel)/.claude/browser-states/shopify-admin.json" open https://admin.shopify.com/store/shop-cherri
+
+# WRONG - relative path (will fail silently if you're in a subdirectory)
+agent-browser --state .claude/browser-states/shopify-admin.json open https://...
+```
+
+### Saving State After Login
+
+```bash
+agent-browser state save "$(git rev-parse --show-toplevel)/.claude/browser-states/<site-name>.json"
+```
+
+### Troubleshooting agent-browser
+
+If agent-browser fails to launch or ignores `--state`, kill orphaned daemons and clean up:
+```bash
+pkill -9 -f "daemon.js" && rm -rf ~/.agent-browser/*
+```
+Then retry with an absolute `--state` path on the first command.
+
+## Development Standards
+
+### Python
+
+Use `uv` exclusively (never pip/pipx). Lint with `ruff`, type-check with `ty`. All code must be strongly typed.
+
+### Scripts
+
+Scripts in `bin/` should be executable with a shebang (`#!/usr/bin/env python3`). Shell scripts must pass `shellcheck` before committing.
+
+## Token Refresh
+
+### TikTok Access Token
+
+TikTok tokens expire periodically. To regenerate:
+
+1. Visit the OAuth URL (replace `REDIRECT_URI` with your app's redirect):
+   ```
+   https://business-api.tiktok.com/portal/auth?app_id=7595068986274938881&redirect_uri=https%3A%2F%2Fshopcherri.com%2Fcallback&state=cherri_auth
+   ```
+
+2. Authorize and copy the `auth_code` from the redirect URL
+
+3. Exchange for access token:
+   ```bash
+   curl -X POST "https://business-api.tiktok.com/open_api/v1.3/oauth2/access_token/" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "app_id": "7595068986274938881",
+       "secret": "'$TIKTOK_SECRET'",
+       "auth_code": "YOUR_AUTH_CODE"
+     }'
+   ```
+
+4. Update `TIKTOK_ACCESS_TOKEN` in `~/.config/cherri/.env`
+
+### Meta Access Token
+
+Generate at https://developers.facebook.com/tools/explorer/
+
+**Scopes:** `ads_management`, `ads_read`, `business_management`, `instagram_manage_comments`, `pages_show_list`, `pages_read_engagement`. Missing: `instagram_basic` (requires App Review, needed to list media posts).
+
+**Token expiry:** ~60 days (check with `mcp__meta-ads__get_token_info`)
+
+**App Dashboard:** https://developers.facebook.com/apps/878302508435072/
+
+### Google Workspace OAuth
+
+Tokens expire after 7 days while the OAuth app is in "Testing" status.
+
+**Re-authenticate if tokens expire:**
+```bash
+rm ~/.config/google-workspace-mcp/tokens.json
+npx @dguido/google-workspace-mcp auth
+```
+
+**OAuth credentials location:** `~/.config/cherri/google-workspace-oauth.keys.json`
+
+### Shopify Access Token
+
+Shopify tokens expire every **24 hours**. To refresh:
+
+```bash
+bin/refresh-shopify-token
+```
+
+This updates `~/.config/cherri/shopify-credentials.json` with a new token.
+
+**Dev Dashboard App Setup (if recreating):**
+- App: "Cherri Admin API" at https://dev.shopify.com/dashboard/13948484/apps/312719212545
+- When creating versions, add scopes to **"Scopes" (required)**, NOT "Optional scopes"
+- Scopes in "Optional scopes" won't be requested during OAuth installation
+- After releasing a new version, reinstall the app to grant the new scopes
+
+## Reference
 
 ### Identifiers
 
@@ -50,198 +246,7 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 - Navigation: https://admin.shopify.com/store/shop-cherri/menus
 - Themes: https://admin.shopify.com/store/shop-cherri/themes
 
-## About Cherri
-
-See [`company.md`](company.md) for founder info and legal entity details.
-
-See [`competitors/`](competitors/) for competitive analysis.
-
-## Tools & Integrations
-
-Run `bin/check-integrations` to verify API credentials (tests via curl, not MCP servers — MCP servers may fail independently).
-
-| Tool | Status | Package | Notes |
-|------|--------|---------|-------|
-| Google Search Console | Ready | `mcp-server-gsc` (npm) | Uses `GOOGLE_APPLICATION_CREDENTIALS` |
-| Google Analytics 4 | Ready | `analytics-mcp` (uvx, official Google) | Uses `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_PROJECT_ID` |
-| Google Workspace | Ready | `@dguido/google-workspace-mcp` (npm) | OAuth client in `~/.config/cherri/google-workspace-oauth.keys.json`, tokens in `~/.config/google-workspace-mcp/tokens.json` |
-| Meta Ads | Ready | `meta-ads-mcp` (npm) | Uses `META_ACCESS_TOKEN` from `.env` |
-| TikTok Ads | Ready | `tiktok-ads-mcp` (uvx) | Uses `TIKTOK_ACCESS_TOKEN`, `TIKTOK_ADVERTISER_IDS` from `.env` |
-| Shopify Dev MCP | Ready | N/A | No auth needed. Use for API docs and GraphQL schema. |
-| Shopify Admin API | Ready | `@ajackus/shopify-mcp-server` (npm) | Token in `~/.config/cherri/shopify-credentials.json` |
-| Canva | Ready | `mcp-remote` → `https://mcp.canva.com/mcp` | Browser OAuth on first use |
-| Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
-| Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
-| Parakeet | Ready | `parakeet-mlx` (uv tool) | Audio transcription. Requires `ffmpeg` (Homebrew). |
-
-**MCP Configuration:** See `.mcp.json` for server definitions. Credentials stored in `~/.config/cherri/`.
-
-### Audio Transcription
-
-```bash
-parakeet-mlx /path/to/audio.m4a
-```
-
-Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
-
-### Capital One Statement Parsing
-
-**Problem:** Capital One's CSV/QFX transaction export is broken, and QuickBooks bank feeds only pull 90 days of history (bank-imposed limitation). To get full transaction history, download PDF statements from Capital One's website.
-
-**Solution:** Use `bin/parse-capital-one-statements` to extract transactions and generate QuickBooks-importable CSV.
-
-```bash
-./bin/parse-capital-one-statements <pdf_file_or_directory>
-```
-
-**Output format (QuickBooks):** `Date,Description,Amount` (positive = deposit, negative = withdrawal)
-
-**Statement locations:**
-- Capital One Checking (x2420): `financials/expenses/bank-statements/capital-one-checking/` (2025), `2024/` subdir for 2024
-- Capital One Credit (x6284): `financials/expenses/bank-statements/capital-one-credit/` (2025), `2024/` subdir for 2024
-- Chase Credit (x0982): `financials/expenses/bank-statements/chase-credit/` (2024 and 2025 subdirs)
-- Shopify Credit (x2450): `financials/expenses/bank-statements/shopify-credit/` (2024 subdir)
-
-**Note:** Chase 2025 transactions were synced via bank feed (not imported from CSV). Generated QB import CSVs are colocated with statements.
-
-### iMessage Database
-
-Access via SQLite: `~/Library/Messages/chat.db` (requires Full Disk Access). Key tables: `message`, `handle`, `chat`. Dates: `date/1000000000 + 978307200` → Unix. The `text` column is often NULL — extract from `attributedBody` (NSAttributedString binary) by finding length-prefixed strings, skipping class names (NS*, IM*, *String, *Attribute).
-
-### Token Refresh
-
-#### TikTok Access Token
-
-TikTok tokens expire periodically. To regenerate:
-
-1. Visit the OAuth URL (replace `REDIRECT_URI` with your app's redirect):
-   ```
-   https://business-api.tiktok.com/portal/auth?app_id=7595068986274938881&redirect_uri=https%3A%2F%2Fshopcherri.com%2Fcallback&state=cherri_auth
-   ```
-
-2. Authorize and copy the `auth_code` from the redirect URL
-
-3. Exchange for access token:
-   ```bash
-   curl -X POST "https://business-api.tiktok.com/open_api/v1.3/oauth2/access_token/" \
-     -H "Content-Type: application/json" \
-     -d '{
-       "app_id": "7595068986274938881",
-       "secret": "'$TIKTOK_SECRET'",
-       "auth_code": "YOUR_AUTH_CODE"
-     }'
-   ```
-
-4. Update `TIKTOK_ACCESS_TOKEN` in `~/.config/cherri/.env`
-
-#### Meta Access Token
-
-Generate at https://developers.facebook.com/tools/explorer/
-
-**Scopes:** `ads_management`, `ads_read`, `business_management`, `instagram_manage_comments`, `pages_show_list`, `pages_read_engagement`. Missing: `instagram_basic` (requires App Review, needed to list media posts).
-
-**Token expiry:** ~60 days (check with `mcp__meta-ads__get_token_info`)
-
-**App Dashboard:** https://developers.facebook.com/apps/878302508435072/
-
-#### QuickBooks Bank Connections
-
-Connected bank accounts (synced via Intuit's bank feed):
-
-| Account | Last 4 | Type | Notes |
-|---------|--------|------|-------|
-| Capital One Checking | x2420 | Checking | Primary business checking |
-| Capital One Credit Card | x6284 | Credit | Business credit card |
-| Chase (G. Scaringe) | x0982 | Credit | Personal card used for business |
-
-**Shopify Connector** is also integrated - syncs orders, payouts, and fees directly from Shopify. Check `Integrations > Manage integrations` in QuickBooks to review synced transactions.
-
-#### Google Workspace OAuth
-
-Tokens expire after 7 days while the OAuth app is in "Testing" status.
-
-**Re-authenticate if tokens expire:**
-```bash
-rm ~/.config/google-workspace-mcp/tokens.json
-npx @dguido/google-workspace-mcp auth
-```
-
-**OAuth credentials location:** `~/.config/cherri/google-workspace-oauth.keys.json`
-
-#### Shopify Access Token
-
-Shopify tokens expire every **24 hours**. To refresh:
-
-```bash
-bin/refresh-shopify-token
-```
-
-This updates `~/.config/cherri/shopify-credentials.json` with a new token.
-
-**Dev Dashboard App Setup (if recreating):**
-- App: "Cherri Admin API" at https://dev.shopify.com/dashboard/13948484/apps/312719212545
-- When creating versions, add scopes to **"Scopes" (required)**, NOT "Optional scopes"
-- Scopes in "Optional scopes" won't be requested during OAuth installation
-- After releasing a new version, reinstall the app to grant the new scopes
-
-### Instagram Graph API (Direct Usage)
-
-The Meta Ads MCP doesn't cover Instagram comment management. Use the Graph API directly with curl.
-
-**Get page access token:**
-```bash
-export $(grep META_ACCESS_TOKEN ~/.config/cherri/.env | xargs)
-curl -s "https://graph.facebook.com/v21.0/773863439614388?fields=access_token&access_token=$META_ACCESS_TOKEN" | jq -r .access_token
-```
-
-**Limitation:** Cannot list media posts without `instagram_basic` scope (requires App Review). Use Context7 (`/websites/developers_facebook_instagram-platform`) for endpoint reference.
-
-### Browser Automation
-
-**CRITICAL: Always invoke the `/agent-browser` skill BEFORE every agent-browser session.** The skill documents essential flags and patterns (like `snapshot -i -C` for QuickBooks and other React SPAs where interactive elements render as styled divs instead of standard buttons). Skipping this causes silent failures where elements appear blank or unclickable. Never use agent-browser commands from memory — always load the skill first to get current syntax and patterns.
-
-| Use agent-browser when... | Use Chrome MCP when... |
-|---------------------------|------------------------|
-| Multi-step workflows (faster, scriptable) | Downloading files from authenticated sites |
-| Need parallel sessions or state persistence | User is already logged in and wants to use that session |
-| Repetitive tasks across pages | Collaborative "look at this with me" tasks |
-| Default choice for most browsing | Debugging with console output (`read_console_messages`) |
-
-**Saved browser states:** `.claude/browser-states/`
-
-| Site | State File |
-|------|------------|
-| Shopify Admin | `shopify-admin.json` |
-| OnRamp Funds | `onramp.json` |
-| Clearco | `clearco.json` |
-
-#### Loading Saved State
-
-**CRITICAL: Use absolute paths with `--state` flag.** The `--state` flag must be on the FIRST command (when daemon launches). Relative paths resolve from current working directory, not project root.
-
-```bash
-# CORRECT - absolute path on first command
-agent-browser --headed --state /Users/user/Documents/cc/cherri/.claude/browser-states/shopify-admin.json open https://admin.shopify.com/store/shop-cherri
-
-# WRONG - relative path (will fail silently if you're in a subdirectory)
-agent-browser --state .claude/browser-states/shopify-admin.json open https://...
-```
-
-#### Saving State After Login
-
-```bash
-agent-browser state save /Users/user/Documents/cc/cherri/.claude/browser-states/<site-name>.json
-```
-
-#### Troubleshooting agent-browser
-
-If agent-browser fails to launch or ignores `--state`, kill orphaned daemons and clean up:
-```bash
-pkill -9 -f "daemon.js" && rm -rf ~/.agent-browser/*
-```
-Then retry with an absolute `--state` path on the first command.
-
-## Context7 Library IDs
+### Context7 Library IDs
 
 Use these with `use context7` for up-to-date documentation:
 
@@ -262,36 +267,18 @@ Use these with `use context7` for up-to-date documentation:
 | TikTok Shop Partner Center | `/websites/partner_tiktokshop_docv2` |
 | TikTok Ads Help | `/websites/ads_tiktok_help` |
 
-## Development Standards
+### Instagram Graph API (Direct Usage)
 
-### Python
+The Meta Ads MCP doesn't cover Instagram comment management. Use the Graph API directly with curl.
 
-Use `uv` exclusively (never pip/pipx). Lint with `ruff`, type-check with `ty`. All code must be strongly typed.
+**Get page access token:**
+```bash
+export $(grep META_ACCESS_TOKEN ~/.config/cherri/.env | xargs)
+curl -s "https://graph.facebook.com/v21.0/773863439614388?fields=access_token&access_token=$META_ACCESS_TOKEN" | jq -r .access_token
+```
 
-### Scripts
+**Limitation:** Cannot list media posts without `instagram_basic` scope (requires App Review). Use Context7 (`/websites/developers_facebook_instagram-platform`) for endpoint reference.
 
-Scripts in `bin/` should be executable with a shebang (`#!/usr/bin/env python3`).
+### iMessage Database
 
-## Project Files
-
-### Conventions
-
-- **Audits:** Files in `seo/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
-- **Business documents:** Contracts, invoices, and vendor correspondence should be committed to the repo (in `vendors/documents/`). This is a private repo and these records are important to preserve.
-- **GitHub issues:** Label `no-code` on issues that don't require coding (research, content, Shopify admin, strategy). These are for Gaby and Amelia. When an issue mixes technical setup with non-technical work, split it: file a separate technical issue for the prerequisite and keep the `no-code` issue clean with a reference to the blocker.
-
-### Vendors
-
-Contractor and supplier relationships are tracked in `vendors/`. See `vendors/README.md` for structure and `vendors/index.yaml` for quick lookup.
-
-### Financial Data
-
-2025 financial records are in `financials/`. See `financials/README.md` for file reference and `financials/DATA_DICTIONARY.md` for schema documentation.
-
-### Shopify Theme
-
-The live Shopify theme (Palo Alto) is downloaded to `theme/`. This is a full snapshot of all theme files: Liquid templates, sections, snippets, assets, config, and locales.
-
-**Re-download:** Run `bin/download-theme` to pull a fresh copy from the live theme. Requires a valid Shopify access token (run `bin/refresh-shopify-token` first if expired).
-
-**Structure:** `assets/`, `config/`, `layout/`, `locales/`, `sections/`, `snippets/`, `templates/`
+Access via SQLite: `~/Library/Messages/chat.db` (requires Full Disk Access). Key tables: `message`, `handle`, `chat`. Dates: `date/1000000000 + 978307200` → Unix. The `text` column is often NULL — extract from `attributedBody` (NSAttributedString binary) by finding length-prefixed strings, skipping class names (NS*, IM*, *String, *Attribute).
