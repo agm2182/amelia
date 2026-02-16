@@ -286,7 +286,7 @@ POST /{comment-id}/likes
 
 ### Browser Automation
 
-**CRITICAL: Read `.claude/skills/agent-browser/SKILL.md` BEFORE every agent-browser session.** The skill documents essential flags and patterns (like `snapshot -i -C` for QuickBooks and other React SPAs where interactive elements render as styled divs instead of standard buttons). Skipping this causes silent failures where elements appear blank or unclickable. Always use `/agent-browser` for web browsing tasks (Semrush, Ahrefs, Google Ads, Shopify Admin, QuickBooks, etc.).
+**CRITICAL: Always invoke the `/agent-browser` skill BEFORE every agent-browser session.** The skill documents essential flags and patterns (like `snapshot -i -C` for QuickBooks and other React SPAs where interactive elements render as styled divs instead of standard buttons). Skipping this causes silent failures where elements appear blank or unclickable. Never use agent-browser commands from memory — always load the skill first to get current syntax and patterns.
 
 | Use agent-browser when... | Use Chrome MCP when... |
 |---------------------------|------------------------|
