@@ -58,9 +58,7 @@ See [`competitors/`](competitors/) for competitive analysis.
 
 ## Tools & Integrations
 
-Run `bin/check-integrations` to verify API credentials are working.
-
-> **Note:** `bin/check-integrations` tests API credentials directly via curl, not MCP servers. MCP servers may fail even if credentials work (e.g., wrong package name).
+Run `bin/check-integrations` to verify API credentials (tests via curl, not MCP servers — MCP servers may fail independently).
 
 | Tool | Status | Package | Notes |
 |------|--------|---------|-------|
@@ -111,13 +109,7 @@ Outputs `.srt` transcript in the same directory. Supports mp3, m4a, wav, etc.
 
 ### iMessage Database
 
-Access iMessages via SQLite at `~/Library/Messages/chat.db`. Requires Full Disk Access for terminal.
-
-**Key tables:** `message`, `handle` (contacts), `chat`
-
-**Date conversion:** `date/1000000000 + 978307200` → Unix timestamp
-
-**Text extraction:** The `text` column is often NULL. Use `attributedBody` (NSAttributedString binary). Extract by finding length-prefixed strings in the blob, skipping class names (NS*, IM*, *String, *Attribute).
+Access via SQLite: `~/Library/Messages/chat.db` (requires Full Disk Access). Key tables: `message`, `handle`, `chat`. Dates: `date/1000000000 + 978307200` → Unix. The `text` column is often NULL — extract from `attributedBody` (NSAttributedString binary) by finding length-prefixed strings, skipping class names (NS*, IM*, *String, *Attribute).
 
 ### Token Refresh
 
@@ -149,14 +141,7 @@ TikTok tokens expire periodically. To regenerate:
 
 Generate at https://developers.facebook.com/tools/explorer/
 
-**Current scopes:**
-- `ads_management`, `ads_read` - Meta Ads API
-- `business_management` - Business account access
-- `instagram_manage_comments` - Read/reply/delete Instagram comments
-- `pages_show_list`, `pages_read_engagement` - Facebook Page access
-
-**Missing scopes (requires App Review):**
-- `instagram_basic` - List Instagram media posts (needed to discover media IDs)
+**Scopes:** `ads_management`, `ads_read`, `business_management`, `instagram_manage_comments`, `pages_show_list`, `pages_read_engagement`. Missing: `instagram_basic` (requires App Review, needed to list media posts).
 
 **Token expiry:** ~60 days (check with `mcp__meta-ads__get_token_info`)
 
@@ -183,7 +168,7 @@ Connected bank accounts (synced via Intuit's bank feed):
 
 #### Google Workspace OAuth
 
-The Google Workspace MCP provides access to Gmail, Drive, Docs, Sheets, Slides, Calendar, and Contacts. Tokens expire after 7 days while the OAuth app is in "Testing" status.
+Tokens expire after 7 days while the OAuth app is in "Testing" status.
 
 **Re-authenticate if tokens expire:**
 ```bash
@@ -266,33 +251,7 @@ pkill -9 -f "daemon.js" && rm -rf ~/.agent-browser/*
 ```
 Then retry with an absolute `--state` path on the first command.
 
-## Skills & Resources
-
-### Custom Skills
-
-Custom Claude skills are installed in `.claude/skills/`:
-
-| Skill | Description |
-|-------|-------------|
-| `agent-browser` | Web browsing automation (preferred for Semrush, Ahrefs, etc.) |
-| `cherri-content-brief` | Generate SEO content briefs with Cherri brand voice |
-| `cherri-returns-exchange` | Handle customer returns/exchanges via Shopify lookup |
-| `cherri-shopify-seo` | Audit Shopify SEO (meta tags, schema, page speed) |
-| `cherri-social-commerce` | Instagram/TikTok Shop optimization, ad performance |
-
-### Third-Party Plugins
-
-This project uses [wshobson/agents](https://github.com/wshobson/agents) for SEO plugins:
-
-```bash
-/plugin marketplace add wshobson/agents
-/plugin install seo-content-creation@claude-code-workflows
-/plugin install seo-technical-optimization@claude-code-workflows
-/plugin install seo-analysis-monitoring@claude-code-workflows
-/plugin install content-marketing@claude-code-workflows
-```
-
-### Context7 Library IDs
+## Context7 Library IDs
 
 Use these with `use context7` for up-to-date documentation:
 
@@ -337,17 +296,6 @@ Contractor and supplier relationships are tracked in `vendors/`. See `vendors/RE
 ### Financial Data
 
 2025 financial records are in `financials/`. See `financials/README.md` for file reference and `financials/DATA_DICTIONARY.md` for schema documentation.
-
-**2025 Key Metrics:**
-
-| Metric | Value |
-|--------|-------|
-| Total Revenue | $205.2K (Shopify $166.6K + TikTok Shop $38.6K) |
-| Total Ad Spend | $85.0K (Meta $77.4K + TikTok $7.7K) |
-| Shopify Orders | 2,993 (avg $55.68/order) |
-| Current Debt | $12.6K (Capital $4.3K + Credit $8.3K) |
-| Best Month | Nov 2025: 570 orders, $25K revenue |
-| Worst Month | May 2025: 45 orders, $3K revenue |
 
 ### Shopify Theme
 
