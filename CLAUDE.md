@@ -5,7 +5,7 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 ## Preferences
 
 - Always choose the cleanest solution over the fastest. Fix root causes, don't patch around them.
-- QuickBooks MCP (`quickbooks-online-mcp-server`) doesn't work. Use agent-browser for all QBO interactions.
+- Use agent-browser for all QuickBooks interactions (no API/MCP available).
 
 ## Quick Reference
 
@@ -25,18 +25,6 @@ SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 | Meta Business ID | 1174640472693824 |
 
 ### Web UI URLs (No API)
-
-**Semrush**
-- Keyword Overview: https://www.semrush.com/analytics/keywordoverview/
-- Domain Overview: https://www.semrush.com/analytics/overview/
-- Keyword Magic Tool: https://www.semrush.com/analytics/keywordmagic/
-- Position Tracking: https://www.semrush.com/position-tracking/
-
-**Ahrefs**
-- Site Explorer: https://app.ahrefs.com/site-explorer
-- Keywords Explorer: https://app.ahrefs.com/keywords-explorer
-- Content Explorer: https://app.ahrefs.com/content-explorer
-- Rank Tracker: https://app.ahrefs.com/rank-tracker
 
 **Google Ads**
 - Keyword Planner: https://ads.google.com/aw/keywordplanner/home
@@ -70,10 +58,7 @@ Run `bin/check-integrations` to verify API credentials (tests via curl, not MCP 
 | Shopify Dev MCP | Ready | N/A | No auth needed. Use for API docs and GraphQL schema. |
 | Shopify Admin API | Ready | `@ajackus/shopify-mcp-server` (npm) | Token in `~/.config/cherri/shopify-credentials.json` |
 | Canva | Ready | `mcp-remote` → `https://mcp.canva.com/mcp` | Browser OAuth on first use |
-| Semrush | No API | N/A | Start plan lacks API. Use `/agent-browser`. |
-| Ahrefs | No API | N/A | Free account. Use `/agent-browser`. |
 | Exa | Ready | `exa-mcp-server` (npm) | Uses `EXA_API_KEY` from `.env`. Web/code search, research. |
-| QuickBooks | Ready | `quickbooks-online-mcp-server` (local) | CRUD for customers, invoices, bills, vendors, etc. |
 | Chrome MCP | Ready | `claude-in-chrome` | Use for web-based research when APIs unavailable |
 | Parakeet | Ready | `parakeet-mlx` (uv tool) | Audio transcription. Requires `ffmpeg` (Homebrew). |
 
@@ -146,13 +131,6 @@ Generate at https://developers.facebook.com/tools/explorer/
 **Token expiry:** ~60 days (check with `mcp__meta-ads__get_token_info`)
 
 **App Dashboard:** https://developers.facebook.com/apps/878302508435072/
-
-#### QuickBooks OAuth
-
-Re-run OAuth if you get authentication errors:
-```bash
-cd ~/.config/cherri/mcp-servers/quickbooks && npm run auth
-```
 
 #### QuickBooks Bank Connections
 

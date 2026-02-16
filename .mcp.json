@@ -49,10 +49,6 @@
     "exa": {
       "command": "bash",
       "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec npx -y exa-mcp-server"]
-    },
-    "quickbooks": {
-      "command": "bash",
-      "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec node ~/.config/cherri/mcp-servers/quickbooks/dist/index.js"]
     }
   }
 }
