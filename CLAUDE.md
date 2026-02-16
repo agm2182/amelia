@@ -2,10 +2,22 @@
 
 SEO and growth research for Cherri, an underwear e-commerce company on Shopify.
 
+## Team
+
+| Person | Role | Handles |
+|--------|------|---------|
+| Dan | Technical | Code, APIs, integrations, MCP setup, theme edits |
+| Gaby | Founder | Strategy, content, Shopify admin, customer service, social |
+| Amelia | Intern | Social media, research, Shopify admin, Claude operations, production assist (sewing), shadowing Gaby |
+
 ## Preferences
 
 - Always choose the cleanest solution over the fastest. Fix root causes, don't patch around them.
 - Use agent-browser for all QuickBooks interactions (no API/MCP available).
+- **Bias toward action** — Research and planning are only valuable when they lead to execution. Set a clear deliverable and scope for every research task. Don't loop.
+- **Finish the job** — When updating SEO metadata, do all the pages. When writing SOPs, include the templates. Don't leave partial work that someone else has to figure out.
+- **Justify new tools** — Every Shopify app, SaaS subscription, or integration is ongoing cost and complexity. Remove what you replace (Mailchimp, Privy). Don't install something to "try it."
+- **No phantom work** — Don't file issues, plan skills, or reference tools that aren't ready to be worked on. If it depends on something that doesn't exist yet, file the prerequisite first.
 
 ## Quick Reference
 
@@ -266,6 +278,7 @@ Scripts in `bin/` should be executable with a shebang (`#!/usr/bin/env python3`)
 
 - **Audits:** Files in `seo/audits/` must be date-prefixed: `YYYY-MM-DD-{topic}-audit.md`
 - **Business documents:** Contracts, invoices, and vendor correspondence should be committed to the repo (in `vendors/documents/`). This is a private repo and these records are important to preserve.
+- **GitHub issues:** Label `no-code` on issues that don't require coding (research, content, Shopify admin, strategy). These are for Gaby and Amelia. When an issue mixes technical setup with non-technical work, split it: file a separate technical issue for the prerequisite and keep the `no-code` issue clean with a reference to the blocker.
 
 ### Vendors
 
