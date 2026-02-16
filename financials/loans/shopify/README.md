@@ -1,6 +1,6 @@
 # Shopify Capital & Credit Data
 
-Data captured: January 27, 2026
+Data captured: February 15, 2026
 
 > **This README covers Shopify debt products only.** For Shopify revenue data (payouts, orders, transaction fees), see [`financials/revenue/shopify/`](../../revenue/shopify/).
 
@@ -16,8 +16,8 @@ Data captured: January 27, 2026
 | Repayment Rate | 17% of daily sales |
 | Agreement Date | February 11, 2025 |
 | Due Date | November 6, 2026 |
-| Outstanding Balance | $4,544.10 |
-| Amount Repaid | $19,185.90 (80%) |
+| Outstanding Balance | $4,276.45 |
+| Amount Repaid | $19,453.55 (81%) |
 | Status | In Progress |
 
 ### Funding History Summary
@@ -55,9 +55,10 @@ Data captured: January 27, 2026
 
 ### New Offer Available
 
-- Up to $8,400 in additional funding
-- Fixed fee: $924 (11%)
-- Repayment: 12% of daily sales
+- Up to $12,000 in additional funding
+- Fixed fee: $1,452
+- Total to repay: $13,452
+- Repayment: 17% of daily sales
 - Repayment starts after current loan ends
 
 ## Shopify Credit
@@ -67,10 +68,10 @@ Data captured: January 27, 2026
 | Field | Value |
 |-------|-------|
 | Card | Shopify Credit •••• 7253 |
-| Credit Limit | **$12,000** |
-| Current Balance | $8,399.98 |
-| Pending | $46 |
-| Available Credit | $3,500 |
+| Credit Limit | **$6,200** (reduced from $12,000) |
+| Current Balance | $8,283.55 |
+| Pending | $42 |
+| Available Credit | $0 (over limit) |
 | Issuer | Celtic Bank (via Stripe Payments Company) |
 
 ### Terms & Fees
@@ -83,24 +84,27 @@ Data captured: January 27, 2026
 | Repayment Period | 10 calendar months |
 | Payment Account | Capital One National Association (2420) |
 
-### December 2025 Statement
+### January 2026 Statement
 
 | Item | Amount |
 |------|--------|
-| Statement Total | $11,187.87 |
-| Payments, credits, & fees | -$2,763.96 |
-| Remaining Statement Balance | $8,399.98 |
+| Statement Total | $8,357.87 |
+| Payments, credits, & fees | -$115.35 |
+| Remaining Statement Balance | $8,283.55 |
 
-### Fee History (Sample)
+### Recent Fee Activity
 
+- Dec 2025 Fee: $41.03
 - Nov 2025 Fee: $226.48
-- Jul 2025 Fee Discount: -$249.09
 - Aug 2025 Fee Discount: -$54.04
+- Jul 2025 Fee Discount: -$249.09
+- Jan 3, 2026 Manual Payment: -$2,000.00
+- Jan 6, 2026 Cashback (Dec 2025): -$11.19
 
 ### Cashback Rewards
 
-- December 2025: $11.19
-- Year to date 2025: $0.00 (resets annually)
+- January 2026: $0.00
+- Year to date 2026: $0.00
 
 ### Credit Card Usage
 

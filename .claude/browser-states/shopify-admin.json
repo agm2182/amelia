@@ -5,17 +5,7 @@
       "value": "200d4649-9c03-4522-8961-8e44c182039a",
       "domain": ".shopify.com",
       "path": "/",
-      "expires": 1801111538.947101,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_shopify_s",
-      "value": "11c680bb-fdf1-438a-b4b0-b7540f7c99fc",
-      "domain": ".shopify.com",
-      "path": "/",
-      "expires": 1769577338.947115,
+      "expires": 1802746495.723552,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -25,20 +15,10 @@
       "value": "36a2dc19-b93c-41e8-a440-51d0f57f7796",
       "domain": ".shopify.com",
       "path": "/",
-      "expires": 1801111538.947063,
+      "expires": 1802746495.723521,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "FgioeusdusRnQj2hn4.PqwHOvP0tG36QkDc6BZflX8w-1769574620-1.0.1.1-_aDtghBfP4KIG1jiSpvaUrtJmELT_LWYvqmQjEy_UzZQtXQq3x89as9je84Befa3TtALwKujqaw1fQ4Q3QTEDAHy3boxyPv_IIUBY4En8Dk",
-      "domain": ".hcaptcha.com",
-      "path": "/",
-      "expires": 1769576420.912829,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
     },
     {
       "name": "hmt_id",
@@ -57,7 +37,7 @@
       "value": "221b9c43107dc75f48d7c55f15d4c325",
       "domain": "accounts.shopify.com",
       "path": "/",
-      "expires": 1804134746.910057,
+      "expires": 1805770468.537743,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -67,49 +47,47 @@
       "value": "221b9c43107dc75f48d7c55f15d4c325",
       "domain": "accounts.shopify.com",
       "path": "/",
-      "expires": 1804134746.910088,
+      "expires": 1805770468.537777,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_s",
+      "value": "643e109c-fb15-49eb-8a70-d6c5313d9e3b",
+      "domain": ".shopify.com",
+      "path": "/",
+      "expires": 1771212295.723568,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_merchant_essential",
+      "value": "%3AAZxkXtcYAAEAK4f-w4X54lEyVGHXLbxEjxI4-DEnY9M-h8YszmydaSs3kjDj0gtT9nmHmMhDSa8LiTAG8HPpqpppH004Jmg06cv3FHV42RiIpISSSVWFCvQS3zKKW9RGLIHVB-ucjEBxtb2yToq2YWPmu9Yx00ZCRmBobI8k0XurakEBcaTBLC00aolUIq8LYTkOXigAwXTCNs4xDCu2S-M6rPD42o_CDiI-Rz0F8q_i8A2efBdON-U-TABNv2nTxYP1br8s7Lhkvwfu9rhU0pyw34qsoRflLuo1StmPC0I1_7rF9fd-4DX-ah0UWzYImEoMPNMCCarRWWe21Lh4v8sjHB7WCMFlvQLla-U45Hu_GY5FLzjfErW60TBm4IKya_NE1HS72yfFPTiot4GGZymziwUGv--URip2d1-mqQwh8fO7jdXDMs7q0sc8yZQTPrgWSbOdJJSSTFQJUjfmNmkjVaqmdjdzKyPRYFaDj-0MI8M5ywqZxIYfoZ9Z86Te_WtQmJ0InfP3P_Si5SmlddZkxqXfPk_fpO9PprFbZkrchTuwtfGcEyKVbSaPlPweqJl0OiGx5Ljov9Z2vBoqQkGgzsmrIGtQNjLas_VXFJxi-AAFVxJex3WmCtQNFPXYdfZOuTM1bI-8aYRqYmFqcXoEello3Bl8sDRbjoEZrhXeIA_Rd6BMZ42ZuoK5tuBj9yWVDJXhcQ%3A",
+      "domain": ".shopify.com",
+      "path": "/",
+      "expires": 1802767420.537691,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "koa.sid",
-      "value": "53KIZoAVLg-jI6VafwXmyTyOnc-RasV_",
+      "value": "nZRSyjRIfsGKZx5sndETH8O9vfFEL_sb",
       "domain": "admin.shopify.com",
       "path": "/",
-      "expires": 1769661147.513153,
+      "expires": 1771296869.316217,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "koa.sid.sig",
-      "value": "k6tIyLEPccXrKv0R4ZgpxacEwcM",
+      "value": "aV1613cfTi8zB0JZJb99XpwauNo",
       "domain": "admin.shopify.com",
       "path": "/",
-      "expires": 1769661147.513197,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "cf_chl_rc_ni",
-      "value": "1",
-      "domain": "admin.shopify.com",
-      "path": "/",
-      "expires": 1769578969,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None",
-      "partitionKey": "https://shopify.com",
-      "_crHasCrossSiteAncestor": false
-    },
-    {
-      "name": "_merchant_essential",
-      "value": "%3AAZwC6VD4AAEA8W1Rt10FQTf4TiiD8nHTxPOv1o5dDeqVsinEYExlbZOlslbP_Q8TERl8LNUsFa2G40mN7BC-qCxD3D-VYTLhm4yGHgIhTlFTSfZ0GNctdOiRze5VCMT_tJQo1-22yzTL1LTSbIBqB7CfaUvcJAIKDxlAvy-5QfMZ4MUIMHO0OocN0FmGe7EN5AWKPVsi9F-E03tICEG8ztNWiTnU49b2kKR7caPyIbaPAHAdpm60Q3rGQvHZ9RXcOgzXyRS1YkBqGK1dC_xXTBH4dp0NYz4O7oavBRDaR1E2KFqQqTZre5Mdg_6BoJYk98u0-Krk14gwywTy5IkPvoehm8mgNrVLkK6EjgtNzlDTVTHnewV1f0yJxR9vWXQpWyuP-mT_a9DQtUHFils5drxRlFqoQw4P_fn0GbE2z4YthsGHzJh0_4m_abE3bo_69Ag7qfFjY6_hq8FegQ88Iw19fic-B1mo3-Mn9NXYbMTHF062t3U_kr4DXdal9Y_ghzOKkja9l3OSGgDikUYHowwXwMBDOEZKLrEbbGrwzV4hlutqKytnl8vrcJPyJO0KF-TVw_NcLgLpLWirIsBxlCEbHfLNESoHjiECtPndDdU7i43VDaMQNjZJK1e7g0ZqOU31pWMcxW-iQIw7oUdJLN6NZUxqWrB0Nt7diFezS0__ZiOXWUVDn2wim79ALg4%3A",
-      "domain": ".shopify.com",
-      "path": "/",
-      "expires": 1801132323.531693,
+      "expires": 1771296869.316269,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -121,7 +99,7 @@
       "localStorage": [
         {
           "name": "shopsAccessedAt",
-          "value": "{\"Z2lkOi8vb3JnYW5pemF0aW9uL1Nob3BpZnlTaG9wLzEwOTg1NTM3NTk1\":1769575528530}"
+          "value": "{\"Z2lkOi8vb3JnYW5pemF0aW9uL1Nob3BpZnlTaG9wLzEwOTg1NTM3NTk1\":1771210473935}"
         },
         {
           "name": "10985537595-sidekick-guide-context",
@@ -140,8 +118,16 @@
           "value": "{\"type\":\"dateRange\",\"range\":{\"since\":\"startOfDay(-30d)\",\"until\":\"today\"}}"
         },
         {
+          "name": "user-scoped-storage:10985537595:27483406395:persistent_guide_session_id",
+          "value": "\"\""
+        },
+        {
           "name": "10985537595--Order--selected-location",
           "value": "{\"id\":\"MULTILOCATION_ALL_LOCATIONS_KEY\",\"name\":\"\"}"
+        },
+        {
+          "name": "user-scoped-storage:10985537595:27483406395:sidekick-conversations:sidekick.shopify.ai",
+          "value": "{\"version\":2,\"conversations\":[{\"id\":\"01KEWJ1Z4QS8TPYZAD3SQE98Y6\",\"title\":\"Adding Dimensions In Analytics View\",\"messageLastSentAt\":\"2026-01-13T20:53:52.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KESSR8JV8XA4KNKQGX974ZR1\",\"title\":\"Scheduling Package Pickup For Orders\",\"messageLastSentAt\":\"2026-01-12T19:10:04.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KEFRH6XNHM57CD6PF6YCEGYQ\",\"title\":\"Shopify Capital And Credit Not CDFI\",\"messageLastSentAt\":\"2026-01-08T21:37:34.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KECTRFZVZVHTJZBFHAANP6T4\",\"title\":\"Viewing Orders With Mystery Bag\",\"messageLastSentAt\":\"2026-01-07T18:16:34.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KECSE4Z5ZTM3DJWG27RDR1F2\",\"title\":\"Understanding Gross Sales And Shipping Charges\",\"messageLastSentAt\":\"2026-01-07T17:53:15.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KDY7W7WDC4J1G1250W293QCT\",\"title\":\"Using Physical Gift Cards In Shopify\",\"messageLastSentAt\":\"2026-01-02T02:19:43.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KDDKRVSR54AKSMB6G2PHEB62\",\"title\":\"Adding Success Message To Contact Form\",\"messageLastSentAt\":\"2025-12-26T15:30:51.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KCVWATJMFNY1RE1KV628T0S6\",\"title\":\"Shopify Store Performance Improvement Advice\",\"messageLastSentAt\":\"2025-12-19T18:02:36.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false},{\"id\":\"01KCKXB8K71A8DHWG27W1PC9R2\",\"title\":\"Creating Shipping Label For Order Issues\",\"messageLastSentAt\":\"2025-12-16T15:51:29.000Z\",\"clientCreatedAt\":\"2026-02-16T02:54:29.970Z\",\"scenario\":\"AdminChat\",\"hasAppArtifacts\":false}],\"updatedAt\":\"2026-02-16T02:54:29.970Z\"}"
         },
         {
           "name": "latest_shop_access",

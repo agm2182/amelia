@@ -455,6 +455,6 @@ Contractor and supplier relationships are tracked in `vendors/`. See `vendors/RE
 | Total Revenue | $205.2K (Shopify $166.6K + TikTok Shop $38.6K) |
 | Total Ad Spend | $85.0K (Meta $77.4K + TikTok $7.7K) |
 | Shopify Orders | 2,993 (avg $55.68/order) |
-| Current Debt | $12.9K (Capital $4.5K + Credit $8.4K) |
+| Current Debt | $12.6K (Capital $4.3K + Credit $8.3K) |
 | Best Month | Nov 2025: 570 orders, $25K revenue |
 | Worst Month | May 2025: 45 orders, $3K revenue |

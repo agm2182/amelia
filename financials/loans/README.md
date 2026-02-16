@@ -2,17 +2,17 @@
 
 Overview of all loan and credit products used by Cherri.
 
-## Quick Scan (Jan 2026)
+## Quick Scan (Feb 2026)
 
 ### Current Debt Snapshot
 
 | Source | Product | Balance | Monthly Cost | Due Date | Status |
 |--------|---------|---------|--------------|----------|--------|
-| Shopify Capital | Loan #12 | **$4,544** | ~$1,500/mo* | Nov 2026 | Active |
-| Shopify Credit | Credit Card | **$8,400** | ~$800/mo* | Rolling | Active |
+| Shopify Capital | Loan #12 | **$4,276** | ~$400/mo* | Nov 2026 | Active |
+| Shopify Credit | Credit Card | **$8,284** | ~$300/mo* | Rolling | Active (over limit) |
 | OnRamp Funds | Revenue Advance | $0 | - | - | Paid Off |
 | Clear.co | Invoice Funding | $0 | - | - | Inactive |
-| **TOTAL** | | **$12,944** | | | |
+| **TOTAL** | | **$12,560** | | | |
 
 *Estimated - actual varies with sales volume (repayment = % of daily sales)
 
@@ -37,16 +37,16 @@ Overview of all loan and credit products used by Cherri.
 
 | Source | Type | Status | Balance | Subfolder |
 |--------|------|--------|---------|-----------|
-| Shopify Capital | Revenue-based loans | Active - $4,544 remaining | Loan #12: $21K | `shopify/` |
-| Shopify Credit | Credit card | Active - $8,400 balance | $12K limit | `shopify/` |
+| Shopify Capital | Revenue-based loans | Active - $4,276 remaining | Loan #12: $21K | `shopify/` |
+| Shopify Credit | Credit card | Active - $8,284 balance (over limit) | $6.2K limit | `shopify/` |
 | OnRamp Funds | Revenue-based | Fully repaid Nov 2025 | $0 | `onramp/` |
 | Clear.co | Invoice funding | Inactive | $6K capacity available | `clearco/` |
 
 ## Summary
 
 ### Active Debt
-- **Shopify Capital Loan #12:** $4,544.10 remaining (of $23,730 total)
-- **Shopify Credit Card:** $8,399.98 balance
+- **Shopify Capital Loan #12:** $4,276.45 remaining (of $23,730 total, 81% repaid)
+- **Shopify Credit Card:** $8,283.55 balance ($6,200 limit — over limit, $0 available)
 
 ### Completed/Inactive
 - **OnRamp Funds:** $6,500 advance fully repaid ($7,605 total with fees)
