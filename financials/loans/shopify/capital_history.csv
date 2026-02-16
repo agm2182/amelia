@@ -1,7 +1,7 @@
 loan_number,type,funding_amount,fixed_fee,fee_rate,total_to_repay,repayment_rate,agreement_date,completion_date,status,shopify_id
 12,Loan,21000,2730,0.13,23730,0.17,2025-02-11,,In Progress,553268
 11,Loan,17000,2210,0.13,19210,0.17,2024-08-25,2025-05-07,Completed,486115
-10,Loan,14000,1820,0.13,15820,0.17,,2024-10-06,Completed,434229
+10,Loan,14000,1820,0.13,15820,0.17,2024-04-09,2024-10-06,Completed,434229
 9,Loan,15000,1950,0.13,16950,0.17,,2024-06-05,Completed,370016
 8,Loan,19000,2470,0.13,21470,0.17,,2024-01-02,Completed,324048
 7,Cash Advance,16000,2080,0.13,18080,0.17,2022-12-30,2023-06-09,Completed,293125
