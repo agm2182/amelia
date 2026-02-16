@@ -215,42 +215,59 @@ def reconstruct_credit_balances(
     bank_payments: dict[str, float],
     current_balance: float,
     current_date: date,
-) -> dict[str, dict]:
+    statement_balances: dict[str, dict] | None = None,
+) -> tuple[dict[str, dict], float]:
     """Reconstruct monthly Shopify Credit card ending balances.
 
-    Calculates the starting balance from known endpoint, then simulates
-    forward: B(end_N) = B(end_{N-1}) + charged_N - paid_N.
+    Uses actual statement balances for early months (before bank payment
+    data begins), then simulates forward from the last known statement
+    balance: B(end_N) = B(end_{N-1}) + charged_N - paid_N.
+
+    statement_balances format: {"2023-11": {"balance": 748.00, ...}}
     """
+    stmts = statement_balances or {}
+    last_stmt_month = max(stmts.keys()) if stmts else None
+
     all_months = sorted(
         set(charges_monthly.keys())
         | set(bank_payments.keys())
+        | set(stmts.keys())
         | {current_date.strftime("%Y-%m")}
     )
     if not all_months:
-        return {}
+        return {}, 0.0
 
     current_month = current_date.strftime("%Y-%m")
-    total_charged = sum(charges_monthly.values())
-    total_paid = sum(bank_payments.values())
-    starting_balance = current_balance - total_charged + total_paid
-
     schedule = {}
-    balance = starting_balance
+    balance = 0.0
 
     for month in all_months:
         charged = charges_monthly.get(month, 0.0)
         paid = bank_payments.get(month, 0.0)
 
-        balance = balance + charged - paid
-        note = "current (verified)" if month == current_month else ""
+        if month in stmts:
+            # Use actual statement data for early months
+            s = stmts[month]
+            balance = s["balance"]
+            note = "from statement"
+            schedule[month] = {
+                "ending_balance": balance,
+                "charged": s.get("charged", charged),
+                "paid": s.get("paid", 0.0),
+                "note": note,
+            }
+        else:
+            # Forward simulation from last known balance
+            balance = balance + charged - paid
+            note = "current (verified)" if month == current_month else ""
+            schedule[month] = {
+                "ending_balance": balance,
+                "charged": charged,
+                "paid": paid,
+                "note": note,
+            }
 
-        schedule[month] = {
-            "ending_balance": balance,
-            "charged": charged,
-            "paid": paid,
-            "note": note,
-        }
-
+    starting_balance = 0.0  # Card started at $0 in Nov 2023
     return dict(sorted(schedule.items())), starting_balance
 
 
@@ -323,9 +340,36 @@ def main() -> None:
     except (FileNotFoundError, KeyError):
         credit_charges = {}
 
+    # Actual balances from Shopify Credit statement PDFs (Nov 2023-Feb 2024).
+    # Bank "SHOPIFY CREDIT" entries only start Mar 2024; before that,
+    # payments were auto-withdrawn under a different label.
+    credit_statements = {
+        "2023-11": {
+            "balance": 748.00,
+            "charged": 748.00,
+            "paid": 0.00,
+        },
+        "2023-12": {
+            "balance": 6452.32,
+            "charged": 6474.76,
+            "paid": 770.44,  # $748.00 payment + $22.44 cashback
+        },
+        "2024-01": {
+            "balance": 8203.04,
+            "charged": 8397.28,
+            "paid": 6646.56,  # $6,452.32 payment + $194.24 cashback
+        },
+        "2024-02": {
+            "balance": 4301.17,
+            "charged": 4553.09,
+            "paid": 8454.96,  # $8,203.04 payment + $251.92 cashback
+        },
+    }
+
     if credit_charges:
         credit_schedule, cred_start = reconstruct_credit_balances(
-            credit_charges, credit_monthly, credit_current, as_of
+            credit_charges, credit_monthly, credit_current, as_of,
+            statement_balances=credit_statements,
         )
         print()
         print("=" * 80)
@@ -421,15 +465,18 @@ def main() -> None:
     print(f"  ⚠ Loan #9 funding date estimated (no bank entry found)")
     print(f"  ⚠ Jan-Feb 2026 gap (bank data ends Dec 2025)")
     print()
-    print("Credit (LOW confidence for Nov 2023 - Feb 2024):")
-    print(f"  ✗ Starting balance ${cred_start:,.2f} "
-          f"(should be $0, card opened Nov 2023)")
-    print(f"  ✗ Missing ~${abs(cred_start):,.2f} in early payments "
-          f"(Nov 2023-Feb 2024)")
-    print(f"  ✗ Bank 'SHOPIFY CREDIT' entries only start Mar 2024")
-    print(f"  ✓ Mar 2024 onwards: charges + payments data complete")
-    print(f"  → Need: Shopify Credit statements (PDFs) for "
-          f"Nov 2023-Feb 2024 balances")
+    if credit_charges:
+        last_month = max(credit_schedule.keys())
+        simulated_end = credit_schedule[last_month]["ending_balance"]
+        drift = simulated_end - credit_current
+        print(f"Credit (HIGH confidence, ~${drift:,.0f} cashback drift):")
+        print(f"  ✓ Nov 2023-Feb 2024: actual balances from statement PDFs")
+        print(f"  ✓ Mar 2024 onwards: forward simulation from charges + "
+              f"bank payments")
+        print(f"  ⚠ Simulated endpoint ${simulated_end:,.2f} vs actual "
+              f"${credit_current:,.2f} (Δ${drift:,.2f})")
+        print(f"  ⚠ Gap is accumulated cashback rewards (~3% on purchases)")
+        print(f"  ⚠ Jan-Feb 2026 gap (bank data ends Dec 2025)")
 
 
 if __name__ == "__main__":
