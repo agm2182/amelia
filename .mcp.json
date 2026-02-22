@@ -44,11 +44,16 @@
     },
     "canva": {
       "command": "npx",
-      "args": ["-y", "mcp-remote@latest", "https://mcp.canva.com/mcp"]
+      "args": ["-y", "mcp-remote@latest", "https://mcp.canva.com/mcp"],
+      "disabled": true
     },
     "exa": {
       "command": "bash",
       "args": ["-c", "set -a && source ~/.config/cherri/.env && set +a && exec npx -y exa-mcp-server"]
+    },
+    "parallel-task": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://task-mcp.parallel.ai/mcp"]
     }
   }
 }
