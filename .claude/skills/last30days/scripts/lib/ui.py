@@ -368,7 +368,7 @@ def show_diagnostic_banner(diag: dict):
             lines.append(f"{Colors.DIM}│{Colors.RESET}  {Colors.GREEN}✅ Reddit{Colors.RESET}    — OPENAI_API_KEY found                {Colors.DIM}│{Colors.RESET}")
         else:
             lines.append(f"{Colors.DIM}│{Colors.RESET}  {Colors.RED}❌ Reddit{Colors.RESET}    — No OPENAI_API_KEY                    {Colors.DIM}│{Colors.RESET}")
-            lines.append(f"{Colors.DIM}│{Colors.RESET}     └─ Add to ~/.config/last30days/.env            {Colors.DIM}│{Colors.RESET}")
+            lines.append(f"{Colors.DIM}│{Colors.RESET}     └─ Add to ~/.config/cherri/.env            {Colors.DIM}│{Colors.RESET}")
 
         # X/Twitter
         if has_x:
@@ -399,7 +399,7 @@ def show_diagnostic_banner(diag: dict):
             lines.append(f"{Colors.DIM}│{Colors.RESET}  {Colors.YELLOW}⚡ Web{Colors.RESET}       — Using assistant's search tool       {Colors.DIM}│{Colors.RESET}")
 
         lines.append(f"{Colors.DIM}│{Colors.RESET}                                                     {Colors.DIM}│{Colors.RESET}")
-        lines.append(f"{Colors.DIM}│{Colors.RESET}  Config: {Colors.BOLD}~/.config/last30days/.env{Colors.RESET}                  {Colors.DIM}│{Colors.RESET}")
+        lines.append(f"{Colors.DIM}│{Colors.RESET}  Config: {Colors.BOLD}~/.config/cherri/.env{Colors.RESET}                  {Colors.DIM}│{Colors.RESET}")
         lines.append(f"{Colors.DIM}└─────────────────────────────────────────────────────┘{Colors.RESET}")
     else:
         # Plain text for non-TTY (Claude Code / Codex)
@@ -411,7 +411,7 @@ def show_diagnostic_banner(diag: dict):
             lines.append("│  ✅ Reddit    — OPENAI_API_KEY found                │")
         else:
             lines.append("│  ❌ Reddit    — No OPENAI_API_KEY                    │")
-            lines.append("│     └─ Add to ~/.config/last30days/.env            │")
+            lines.append("│     └─ Add to ~/.config/cherri/.env            │")
 
         if has_x:
             lines.append("│  ✅ X/Twitter — available                            │")
@@ -434,7 +434,7 @@ def show_diagnostic_banner(diag: dict):
             lines.append("│  ⚡ Web       — Using assistant's search tool       │")
 
         lines.append("│                                                     │")
-        lines.append("│  Config: ~/.config/last30days/.env                  │")
+        lines.append("│  Config: ~/.config/cherri/.env                  │")
         lines.append("└─────────────────────────────────────────────────────┘")
 
     sys.stderr.write("\n".join(lines) + "\n\n")

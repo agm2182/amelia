@@ -1077,7 +1077,7 @@ def main():
     # Build source info for status footer
     source_info = {}
     if not bool(config.get("OPENAI_API_KEY")):
-        source_info["reddit_skip_reason"] = "No OPENAI_API_KEY (add to ~/.config/last30days/.env)"
+        source_info["reddit_skip_reason"] = "No OPENAI_API_KEY (add to ~/.config/cherri/.env)"
     if not x_source:
         if x_source_status["bird_installed"]:
             source_info["x_skip_reason"] = "Bird installed but not authenticated — log into x.com in browser"

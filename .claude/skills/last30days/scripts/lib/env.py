@@ -17,7 +17,7 @@ elif _config_override:
     CONFIG_DIR = Path(_config_override)
     CONFIG_FILE = CONFIG_DIR / ".env"
 else:
-    CONFIG_DIR = Path.home() / ".config" / "last30days"
+    CONFIG_DIR = Path.home() / ".config" / "cherri"
     CONFIG_FILE = CONFIG_DIR / ".env"
 
 
@@ -45,7 +45,7 @@ def load_env_file(path: Path) -> Dict[str, str]:
 
 
 def get_config() -> Dict[str, Any]:
-    """Load configuration from ~/.config/last30days/.env and environment."""
+    """Load configuration from ~/.config/cherri/.env and environment."""
     # Load from config file first (if configured)
     file_env = load_env_file(CONFIG_FILE) if CONFIG_FILE else {}
 
@@ -161,7 +161,7 @@ def validate_sources(requested: str, available: str, include_web: bool = False) 
         elif requested == 'web':
             return 'web', None
         else:
-            return 'web', f"No API keys configured. Add keys to ~/.config/last30days/.env for Reddit/X."
+            return 'web', f"No API keys configured. Add keys to ~/.config/cherri/.env for Reddit/X."
 
     # Web-only mode (only web search API keys)
     if available == 'web':

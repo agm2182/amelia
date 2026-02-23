@@ -71,7 +71,7 @@ uv run python3 "${SKILL_ROOT}/scripts/last30days.py" "$ARGUMENTS" --emit=compact
 Use a **timeout of 300000** (5 minutes) on the Bash call. The script typically takes 1-3 minutes.
 
 The script will automatically:
-- Detect available API keys from `~/.config/last30days/.env`
+- Detect available API keys from `~/.config/cherri/.env`
 - Run Reddit search (via OpenAI Responses API + web_search)
 - Run X search (via xAI Responses API + x_search)
 - Run YouTube search (via yt-dlp)
@@ -83,7 +83,7 @@ The script will automatically:
 
 ### API Key Setup
 
-Keys are stored in `~/.config/last30days/.env`. Both are optional — the script degrades gracefully:
+Keys are stored in `~/.config/cherri/.env`. Both are optional — the script degrades gracefully:
 
 | Key | Source | Powers |
 |-----|--------|--------|
@@ -97,14 +97,11 @@ YouTube search uses `yt-dlp` (no API key needed, must be installed via Homebrew)
 - **One key**: Reddit-only or X-only + YouTube + WebSearch
 - **No keys**: WebSearch + Exa fallback only
 
-If keys are missing, create the config:
+If keys are missing, add them to the shared Cherri config:
 ```bash
-mkdir -p ~/.config/last30days
-cat > ~/.config/last30days/.env << 'ENVEOF'
-OPENAI_API_KEY=
-XAI_API_KEY=
-ENVEOF
-chmod 600 ~/.config/last30days/.env
+# Add to ~/.config/cherri/.env (shared with other Cherri tools)
+OPENAI_API_KEY=sk-...
+XAI_API_KEY=xai-...
 ```
 
 **Options** (passed through from user's command):
