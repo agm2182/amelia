@@ -134,13 +134,16 @@ Each subagent receives a prompt with:
 
 **Subagent prompt template** (adapt per tier):
 
-> Run these yt-dlp searches sequentially. For each query, run:
+> Run these yt-dlp searches sequentially. **Before each query**, write a JSON boundary marker, then run the search:
 >
 > ```bash
+> echo '{"__boundary":true,"query_num":N}' >> /tmp/yt-search-tier-{x}.jsonl
 > timeout 60 yt-dlp "ytsearch15:{query}" \
 >   --dump-json --no-warnings --no-download 2>/dev/null \
 >   >> /tmp/yt-search-tier-{x}.jsonl
 > ```
+>
+> Replace `N` with the query number from the Search Topics table (1-12).
 >
 > After each search, log: "Search {N}/12: {category} — found {count} results"
 >
@@ -186,7 +189,7 @@ After all 3 subagents complete:
 | `duration` | Duration in seconds |
 | `description` | Video description (for brand/content scanning later) |
 
-Tag each result with which topic number found it: `"search_queries": [N]` where N is the topic number from the Search Topics table. To determine N, match the result's source tier file and position within that tier's query sequence.
+Tag each result with which topic number found it: `"search_queries": [N]` where N is the topic number from the Search Topics table. To determine N, parse each tier file line by line — when you encounter a `__boundary` line (`{"__boundary":true,"query_num":N}`), set the current query number to N. All subsequent video JSON objects belong to that query until the next boundary marker.
 
 4. Collect ALL results into a single JSON array. Track the `raw_count` (total results before any dedup).
 
@@ -236,7 +239,15 @@ Remove videos that are clearly off-topic for Cherri:
 
 - **Men's underwear only** — Title or description contains "men's underwear", "boxer briefs", "men's boxers", or "jockstrap" with no women's underwear context
 - **Non-English content** — The `language` field is present and not English (`en`)
-- **Pure entertainment / no review content** — Title and description have no underwear/clothing discussion (e.g., music videos, gaming content that matched a keyword by coincidence)
+- **Pure entertainment / no review content** — If NEITHER the title NOR description (case-insensitive) contains ANY term from this relevance list, remove the video:
+
+  ```
+  underwear, panties, bra, lingerie, knickers, briefs, thong, cotton,
+  comfort, fabric, fit, sizing, clothing, fashion, haul, review, organic,
+  gusset, waistband, sensory, intimate, loungewear, activewear
+  ```
+
+  This catches music videos, gaming content, and other entertainment that matched a search keyword by coincidence but has no actual clothing/underwear discussion.
 
 Keep videos that mention men's and women's underwear together. Only remove when the **entire** video is off-topic.
 
@@ -257,17 +268,9 @@ Also remove videos whose title contains "try on" AND whose channel name or descr
 
 Record count after NSFW filter.
 
-### 3.6: Spam Filter
+### 3.6: Record Pre-Enrichment Funnel Stats
 
-Remove videos from channels with fewer than 500 subscribers (`channel_follower_count < 500`).
-
-If subscriber count is null or missing, **keep** the video.
-
-Record count after spam filter.
-
-### 3.7: Record Funnel Stats
-
-Build a funnel object tracking video counts through each stage:
+Build a funnel object tracking video counts through each stage so far:
 
 ```json
 {
@@ -276,21 +279,19 @@ Build a funnel object tracking video counts through each stage:
   "after_duration_filter": 85,
   "after_age_filter": 72,
   "after_content_filter": 65,
-  "after_nsfw_filter": 62,
-  "after_spam_filter": 60,
-  "final": 60
+  "after_nsfw_filter": 62
 }
 ```
 
-`final` equals `after_spam_filter`. This funnel is included in the final report's Search Stats section.
+This funnel is extended in Step 4 after the spam split and included in the final report's Search Stats section.
 
-## Step 4: Enrich Top Videos
+## Step 4: Enrich Top Videos, Then Split by Subscriber Threshold
 
-Take the filtered video list from Step 3 and select the **top 30** for enrichment with comments and transcripts.
+Enrichment runs **before** the spam filter. This ensures small-creator videos with highly relevant content get transcripts and comments analyzed, instead of being silently discarded.
 
 ### 4.1: Rank and Select Top 30
 
-Rank all filtered videos by `view_count * recency_weight` where:
+Rank all NSFW-filtered videos (from Step 3.5) by `view_count * recency_weight` where:
 
 | Upload age | `recency_weight` |
 |------------|-------------------|
@@ -300,7 +301,7 @@ Rank all filtered videos by `view_count * recency_weight` where:
 
 Compute `upload_age_days` from `upload_date` relative to today. Sort descending by `view_count * recency_weight`. Select the top 30.
 
-If fewer than 30 videos remain after filtering, enrich all of them.
+If fewer than 30 videos remain after NSFW filtering, enrich all of them.
 
 ### 4.2: Fetch Comments
 
@@ -359,24 +360,78 @@ If no auto-captions are available for a video, set `transcript_snippet` to null.
   ```
 - If a video is age-restricted or private, skip enrichment entirely and note why
 
-### 4.5: Write Enriched Results
+### 4.5: Spam Split — Main Set vs. Sub-Threshold Set
 
-After enriching all videos, write the full enriched data to `/tmp/youtube-monitor-enriched.json` using the Write tool. Each video now includes:
+After enrichment, split the enriched videos into two buckets based on subscriber count:
+
+**Threshold:** 100 subscribers (`channel_follower_count < 100`)
+
+**Relevance rescue:** Before assigning a video to the sub-threshold set, check if its title (case-insensitive) contains ANY of these underwear-review keywords:
+
+```
+underwear review, cotton underwear, organic underwear, panties review,
+knickers review, gusset, sensory friendly underwear
+```
+
+If it matches, keep the video in the **main set** regardless of subscriber count. These are exactly the niche creators Cherri wants to find.
+
+**Bucket assignment:**
+
+| Condition | Bucket |
+|-----------|--------|
+| `channel_follower_count >= 100` OR null/missing | **Main set** |
+| `channel_follower_count < 100` AND title matches a rescue keyword | **Main set** (rescued) |
+| `channel_follower_count < 100` AND no rescue keyword match | **Sub-threshold set** |
+
+Record counts: `main_set_count`, `sub_threshold_count`, `rescued_count`.
+
+Update the funnel stats:
+
+```json
+{
+  "raw_total": 150,
+  "after_url_dedup": 98,
+  "after_duration_filter": 85,
+  "after_age_filter": 72,
+  "after_content_filter": 65,
+  "after_nsfw_filter": 62,
+  "enriched": 30,
+  "main_set": 25,
+  "sub_threshold": 5,
+  "rescued": 1
+}
+```
+
+### 4.6: Write Enriched Results
+
+Write the full enriched data to `/tmp/youtube-monitor-enriched.json` using the Write tool. The JSON should contain:
+
+```json
+{
+  "main_set": [...],
+  "sub_threshold": [...],
+  "funnel": { ... }
+}
+```
+
+Each video object includes:
 
 - All fields from Step 2 (metadata from search)
 - `top_comments` array (from 4.2)
 - `transcript_snippet` string (from 4.3)
+- `bucket` — `"main"` or `"sub_threshold"`
 - Error flags if applicable (`comments_disabled`, `comments_error`)
 
 Track and report enrichment stats:
 
 ```
 Enrichment: {attempted} videos, {comments_ok} comments OK, {transcripts_ok} transcripts OK
+Spam split: {main_set_count} main, {sub_threshold_count} sub-threshold, {rescued_count} rescued
 ```
 
 ## Step 5: Cherri Analysis
 
-Analyze the enriched video data from `/tmp/youtube-monitor-enriched.json` for competitive intelligence, engagement opportunities, and content ideas.
+Analyze ALL enriched video data from `/tmp/youtube-monitor-enriched.json` — both the main set and sub-threshold set — for competitive intelligence, engagement opportunities, and content ideas.
 
 ### 5.1: Normalize to Common Video Schema
 
@@ -387,6 +442,8 @@ For each enriched video, build a **Common Video Schema** object (see Reference D
 - `key_quote` — Most relevant quote (max 200 chars, no newlines). Prefer the highest-liked comment that mentions a pain point or brand opinion. Fall back to a relevant transcript excerpt.
 - `pain_points` — Comma-separated list of comfort/fit/health issues discussed (e.g., "wedgies, narrow gusset, rolling waistband, UTI, chafing")
 - `why_relevant` — One sentence on why this video matters for Cherri
+
+After building all schema objects, write the array to `/tmp/youtube-monitor-schemas.json` using the Write tool. This intermediate artifact enables auditable analysis and programmatic week-over-week diffs. Include every enriched video (both main set and sub-threshold set).
 
 ### 5.2: Competitor Cross-Reference
 
@@ -464,12 +521,15 @@ Compare this week's results against the previous report to surface trends and tr
 
 ### 6.1: Find Previous Report
 
-Look for the most recent weekly report, excluding today's:
+Look for the most recent weekly report that is NOT the current output file. The current output file is `marketing/research/youtube/YYYY-MM-DD-weekly-report.md` (today's date). An earlier run on the same day counts as a valid comparison baseline — the new report will overwrite it.
 
 ```bash
 today=$(date +%Y-%m-%d)
-ls -1 marketing/research/youtube/*-weekly-report.md 2>/dev/null | sort | grep -v "$today" | tail -1
+output_file="marketing/research/youtube/${today}-weekly-report.md"
+ls -1 marketing/research/youtube/*-weekly-report.md 2>/dev/null | sort | grep -v "^${output_file}$" | tail -1
 ```
+
+If the result is a file from today, that's fine — it's from an earlier run and should be used as the comparison.
 
 ### 6.2: If No Previous Report Exists
 
@@ -555,8 +615,10 @@ Use this EXACT template. Fill every section from the analysis in Steps 5 and 6. 
 
 ## Competitor Mentions
 
-| Brand | Category | Videos | Sentiment | Key Quote |
-|-------|----------|--------|-----------|-----------|
+| Brand | Category | Videos | Sentiment | Source | Key Quote |
+|-------|----------|--------|-----------|--------|-----------|
+
+Source column values: "Creator" (brand named in title/description/transcript), "Commenter" (brand named in comments only), or "Both".
 
 ## Creator Intelligence
 
@@ -592,8 +654,10 @@ Use this EXACT template. Fill every section from the analysis in Steps 5 and 6. 
 | After age filter | X |
 | After content filter | X |
 | After NSFW filter | X |
-| After spam filter | X |
 | Videos enriched | X |
+| Main set (≥100 subs) | X |
+| Sub-threshold (<100 subs) | X |
+| Rescued by keyword | X |
 | Comments fetched | X/X OK |
 | Transcripts fetched | X/X OK |
 | Wall time | Xs |
@@ -601,10 +665,17 @@ Use this EXACT template. Fill every section from the analysis in Steps 5 and 6. 
 
 ## Raw Video Index
 
-| # | Title | Channel | Views | Comments | Date | URL |
-|---|-------|---------|-------|----------|------|-----|
+| # | Title | Channel | Views | Comments | Date | Priority | URL |
+|---|-------|---------|-------|----------|------|----------|-----|
 
 Sort by priority tier (High first), then by date (newest first).
+
+## Notable Sub-Threshold
+
+Small-creator videos (<100 subs) that were enriched with transcripts and comments. These often contain the most authentic, niche underwear reviews.
+
+| # | Title | Channel | Subs | Views | Date | Priority | Why Notable |
+|---|-------|---------|------|-------|------|----------|-------------|
 ````
 
 Only include the "What Changed" section if a previous report exists. If this is the first report, replace with:
@@ -623,7 +694,8 @@ Remove intermediate files written during the sweep:
 
 ```bash
 rm -f /tmp/youtube-monitor-search.json \
-      /tmp/youtube-monitor-enriched.json
+      /tmp/youtube-monitor-enriched.json \
+      /tmp/youtube-monitor-schemas.json
 rm -rf /tmp/yt-subs/
 ```
 

@@ -2,156 +2,156 @@
 
 ## What Changed This Week
 
-First report — no comparison available.
-
-This is the first weekly Reddit intelligence report generated using Parallel AI. It found **35 unique threads** across niche subreddits (r/BurnBootCamp, r/pelotoncycle, r/SFbitcheswithtaste, r/IndianBeautyTalks, r/BuyCanadian) that keyword-based searches miss.
-
-Key findings:
-- **Cherri mentioned by name in 2 new threads** — r/AuDHDWomen (sensory issues) and r/TwoXChromosomes (thong insecurity). Both positive/aspirational.
-- **Huha gets a full positive thread** in r/BuyCanadian — first substantial Huha praise captured across any sweep.
-- **Workout underwear is a surging category** — 4 threads (r/BurnBootCamp, r/XXRunning, r/pelotoncycle, r/questions) all about underwear failing during exercise. Active, recent conversations.
-- **Sustainable/ethical underwear shoppers are frustrated** — r/ethicalfashion has people who "looked at over 30 websites" and still can't find what they want. Supply gap is real.
-- **AuDHDWomen thread (68 comments)** is a gold mine — one of the most detailed sensory underwear discussions ever captured, with 30+ brands evaluated.
+> **Week-over-Week:** First report — no previous comparison available. This establishes the baseline for future trend tracking.
 
 ## Executive Summary
 
-- **Cherri is being recommended in sensory and body-positive communities.** The r/AuDHDWomen thread (Feb 7) mentions "cherri (Cherri)" as a recommendation, and the r/TwoXChromosomes thread (Jan 28) references "Cherry (Cherri) Underwear" alongside a viral quote: *"Underwear are tiny today, with short narrow gussets — not based on bodies, but on profit margins."* Cherri is organically earning mindshare.
-- **The workout underwear gap is wide open.** Four threads this week — women doing Peloton, running, and boot camp — all asking the same question: what underwear won't ride up, wedgie, or show lines during exercise? No brand owns this space. Lululemon gets mentioned but at premium price; Commando and Under Armour get mixed reviews.
-- **Sustainable underwear shoppers can't find stock.** An r/ethicalfashion thread opens with *"Everything is sold out... What do you all do when you need underwear and need a reliable, sustainable source?"* Another user looked at 30+ websites for natural fiber underwear. Cherri's organic cotton is an answer to a question being asked right now.
-- **Aerie decline confirmed again from yet another angle.** A fresh r/americaneagle thread (today, Feb 22) with negative sentiment about aesthetic and comfort decline. This is now a trend across 5+ subreddits in the last month.
-- **Health-related threads are the most emotionally intense.** Women describing rashes, tearing, chronic sweat, and UTI symptoms — all linking back to underwear material and fit. Cotton and breathability are consistently recommended by commenters.
+- **Gusset frustration is universal and unsolved.** The highest-engagement thread this period (1,277 upvotes) is a viral rant about gussets sitting too far back — Cherri's wide gusset is a direct answer to this #1 complaint.
+- **Aerie quality collapse is driving brand-switchers.** Multiple threads (841+ upvotes) document Aerie's declining quality — holes, ruined elastic, stretched fabric. These are active shoppers looking for alternatives.
+- **Sensory-friendly underwear has dedicated demand.** Neurodivergent communities (r/autism, r/AuDHDWomen, r/AutismInWomen) regularly discuss underwear sensory issues — elastic, seams, fabric grip — with few solutions mentioned.
+- **Plus-size fit frustration centers on waistband rolling and narrow gussets.** Parade, Torrid, and Snag all criticized for durability and fit issues at larger sizes.
+- **Someone is actively looking for a Cherri dupe** — a r/Midsizefashion thread asks for wide-gusset cotton thongs "like Cherri" but cheaper, confirming brand awareness and price sensitivity.
 
 ## Sentiment Snapshot
 
 ### What People Love
-- **Huha** gets genuine praise in r/BuyCanadian — *"I bought one in almost every style… absolutely fell in love… fabric is infused with minerals that help with odour control"* ([Huha Underwear!](https://www.reddit.com/r/BuyCanadian/comments/1qdtuai/huha_underwear/) (2026-02-22))
-- **Thunderpants** praised for durability and wide waistband comfort in r/SustainableFashion — *"the cotton still feels really nice on the skin. Waistband doesn't dig... hold their shape well"* ([ARQ undies!](https://www.reddit.com/r/SustainableFashion/comments/1qq2q6a/arq_undies/) (2026-01-29))
-- **Duluth Trading Company** recommended across multiple threads (r/AskWomenOver30, r/pelotoncycle) for organic cotton high-cuts and durability
-- **Pact** gaining traction as affordable organic option in r/AskWomenOver30 and r/TwoXChromosomes
-- **Lululemon thongs** described as "obsessed" in r/AskReddit, though price is a barrier
-- **Athleta** noted for having wider gussets in r/SFbitcheswithtaste — *"so far, I noticed they have a wider gusset"*
-- **Cherri** recommended in sensory communities (r/AuDHDWomen) and referenced as a standard in body-positive discussions (r/TwoXChromosomes)
+
+- **Wide gussets when they find them** — Modibodi period underwear praised for finally providing adequate coverage, users literally cried trying them on
+- **100% cotton for health** — consistent medical advice across health subreddits: cotton prevents UTIs and yeast infections
+- **Jockey Elance** — repeatedly cited as the only mainstream brand with a semi-wide gusset, despite being "frumpy"
+- **Bamboo fabric** for breathability and sustainability — growing positive sentiment in r/SustainableFashion
 
 ### What People Hate
-- **Aerie quality decline continues** — r/americaneagle (Feb 22): *"significant decline in aesthetic quality... design and comfort [were better] in 2020"* ([Aerie underwear](https://www.reddit.com/r/americaneagle/comments/1ok52bv/aerie_underwear/) (2026-02-22))
-- **Tight underwear causing physical harm** — multiple r/Healthyhooha threads about rashes, tearing, and dryness caused by tight non-cotton underwear ([Vaginal rash on pantry line crease](https://www.reddit.com/r/Healthyhooha/comments/1r3h6zw/vaginal_rash_on_pantry_line_crease/) (2026-02-13))
-- **Cotton doesn't dry fast enough** — r/WomensHealth user wears 100% organic cotton but is still "completely soaked" by midday ([Ladies, what are we doing for crotch sweat??](https://www.reddit.com/r/WomensHealth/comments/1qpvcja/ladies_what_are_we_doing_for_crotch_sweat/) (2026-01-29))
-- **Thong wedgie vs. bunching tradeoff** — women feel forced to choose between two bad options ([Best underwear? Or do I accept the toe?](https://www.reddit.com/r/BurnBootCamp/comments/1r7b46y/best_underwear_or_do_i_accept_the_toe/) (2026-02-17))
-- **FIGS scrub jumpsuit thong** universally mocked in r/nursing — impractical design for healthcare workers ([Is anyone actually buying / wearing that god awful scrub jumpsuit thong thing on Figs?](https://www.reddit.com/r/nursing/comments/1qw8q0r/is_anyone_actually_buying_wearing_that_god_awful/) (2026-02-05))
-- **All underwear feels like "being strangled"** — extreme sensory distress from an AuDHD user ([Underwear for someone with extreme sensory issues](https://www.reddit.com/r/AuDHDWomen/comments/1qylc2b/underwear_for_someone_with_extreme_sensory_issues/) (2026-02-07))
+
+- **Narrow gussets** — "tiny gussets are bullshit, convinced they were designed by men" (786 upvotes)
+- **Aerie quality decline** — "I have pairs from 5-6 years ago still in good shape; my recent ones are in shambles" (196 upvotes)
+- **Parade durability** — elastic breaking, inconsistent sizing, stretching out quickly
+- **Rolling waistbands** on plus-size underwear — constant pulling/adjusting throughout the day
+- **Cotton's moisture limitation** — cotton praised for health but criticized for slow drying during active wear
 
 ### What People Wish Existed
-- **Workout underwear that doesn't wedgie, show lines, or bunch** — asked in 4 separate fitness subreddits this month
-- **Sustainable underwear that's actually in stock** — r/ethicalfashion users desperate for reliable supply
-- **Natural fiber underwear in fun colors/patterns** — r/ethicalfashion user evaluated 30+ brands and found only neutrals available
-- **Cotton underwear that dries faster** — multiple users love cotton for health but hate moisture retention
-- **Underwear designed for sensory sensitivity** that doesn't cost $25+ per pair — TomboyX is the closest but expensive
-- **Plus-size underwear that's cute AND functional** — *"I'm STRUGGLING to find good underwear that's functional but also cute... I have a fupa that needs the coverage"* ([Underwear recommendations](https://www.reddit.com/r/PlusSize/comments/1qs4i5z/underwear_recommendations/) (2026-01-31))
+
+- **Wide gusset thongs** that cover both labia — universal demand, virtually no options
+- **Gusset width in size charts** — "Size charts should include gusset specs" (96 upvotes)
+- **Sensory-friendly underwear** that doesn't grip outer clothing — specific AuDHD need
+- **Affordable organic cotton** with good fit — people want sustainable but balk at premium pricing
+- **Plus-size underwear** that doesn't roll, with extended gusset width to match body proportions
 
 ## Competitor Mentions
 
-| Brand | Thread | Date | Sentiment | Key Quote |
-|-------|--------|------|-----------|-----------|
-| **Huha** | [Huha Underwear!](https://www.reddit.com/r/BuyCanadian/comments/1qdtuai/huha_underwear/) | 2026-02-22 | Positive | "bought one in almost every style… absolutely fell in love" |
-| **Aerie** | [Aerie underwear](https://www.reddit.com/r/americaneagle/comments/1ok52bv/aerie_underwear/) | 2026-02-22 | Negative | "significant decline in aesthetic quality... design and comfort [were better] in 2020" |
-| **Aerie** | [Best underwear? Or do I accept the toe?](https://www.reddit.com/r/BurnBootCamp/comments/1r7b46y/best_underwear_or_do_i_accept_the_toe/) | 2026-02-17 | Negative | "My normal aerie thongs have been cutting me in half!" |
-| **Cherri** | [Underwear for someone with extreme sensory issues](https://www.reddit.com/r/AuDHDWomen/comments/1qylc2b/underwear_for_someone_with_extreme_sensory_issues/) | 2026-02-07 | Positive | Mentioned as recommendation for sensory-friendly underwear |
-| **FIGS** | [Is anyone actually buying / wearing that god awful scrub jumpsuit thong thing on Figs?](https://www.reddit.com/r/nursing/comments/1qw8q0r/is_anyone_actually_buying_wearing_that_god_awful/) | 2026-02-05 | Negative | "god awful scrub jumpsuit thong thing" |
-| **MeUndies** | [Underwear recommendations](https://www.reddit.com/r/PlusSize/comments/1qs4i5z/underwear_recommendations/) | 2026-01-31 | Mixed | Mentioned in plus-size rec thread without strong sentiment |
-| **Torrid** | [Underwear recommendations](https://www.reddit.com/r/PlusSize/comments/1qs4i5z/underwear_recommendations/) | 2026-01-31 | Mixed | Listed as option but not strongly endorsed |
-| **Victoria's Secret** | [Where do you buy your underwear that isn't V.S?](https://www.reddit.com/r/AskWomenOver30/comments/1qrfuju/where_do_you_buy_your_underwear_that_isnt_vs/) | 2026-01-30 | Negative | Thread title says it all — VS is what people are leaving |
-| **Cherri** | [Wore a thong for the first time and feeling incredibly insecure](https://www.reddit.com/r/TwoXChromosomes/comments/1qp6f2s/wore_a_thong_for_the_first_time_and_feeling/) | 2026-01-28 | Positive | Referenced alongside critique: "Underwear are tiny today, with short narrow gussets — not based on bodies, but on profit margins" |
-| **Parade** | [Underwear Sensory Issues](https://www.reddit.com/r/AuDHDWomen/comments/1qd58yz/underwear_sensory_issues/) | 2026-01-15 | Mixed | Evaluated by sensory-sensitive users among 30+ brands |
-| **TomboyX** | [Underwear Sensory Issues](https://www.reddit.com/r/AuDHDWomen/comments/1qd58yz/underwear_sensory_issues/) | 2026-01-15 | Mixed | Praised for style range but expensive and waistbands described as chunky |
-| **Parade** | [Underwear with wide gusset](https://www.reddit.com/r/PlusSize/comments/1i3ric5/underwear_with_wide_gusset/) | 2025-01-17 | Negative | Mentioned with Auden (Target) as having insufficient gussets |
-| **Lane Bryant** | [Desperate for new underwear with wide gusset!](https://www.reddit.com/r/PlusSizeFashion/comments/1busyi0/desperate_for_new_underwear_with_wide_gusset/) | 2024-04-03 | Negative | "Lane Bryant gussets are a joke… barely 2 inches wide" |
-| **Lively** | — | — | Not mentioned | No Lively mentions in this sweep |
-| **La Coochie** | — | — | Not mentioned | No La Coochie mentions |
-| **Underdays** | — | — | Not mentioned | No Underdays mentions |
-| **Fruity Booty** | — | — | Not mentioned | No Fruity Booty mentions |
-| **SpicyWear** | — | — | Not mentioned | No SpicyWear mentions |
-| **Panty Drop** | — | — | Not mentioned | No Panty Drop mentions |
+| Brand | Category | Threads | Sentiment | Key Quote |
+|-------|----------|---------|-----------|-----------|
+| Aerie | Mainstream declining | 4 | Negative | Quality has been disappointing lately. Holes in the lace, ruined elastic after 6 months |
+| Boody | Other | 4 | Mixed | Quality may have dropped over the years — used to be #1 recommendation |
+| Lane Bryant | Mainstream declining | 3 | Mixed | Full briefs never ride up and last forever — but gusset still too narrow |
+| Parade | Closed | 3 | Negative | Stretched out and elastic started breaking quickly; sizing very inconsistent |
+| Victoria's Secret | Mainstream declining | 2 | Negative | Sick of buying cheap VS underwear; doctor said VS synthetics caused UTIs |
+| Torrid | Mainstream declining | 2 | Negative | Last batch falling apart and rolls; used to like them |
+| Pact | Other | 2 | Mixed | Most normal gusset placement but getting loose and diaper-y |
+| TomboyX | Other | 2 | Positive | 5-year-old pairs just now starting to wear out; wide style range |
+| Huha | Adjacent | 2 | Mixed | Mentioned in brand comparison threads; limited discussion |
+| Bombas | Other | 2 | Mixed | Mentioned alongside other premium comfort brands |
 
 ## Engagement Opportunities
 
 | Thread | Subreddit | Date | Why It's Relevant | Suggested Angle |
 |--------|-----------|------|-------------------|-----------------|
-| [where are we getting good quality underwear / thongs](https://www.reddit.com/r/SFbitcheswithtaste/comments/1qmxhgn/where_are_we_getting_good_quality_underwear_thongs/) | r/SFbitcheswithtaste | 2026-02-19 | Very recent, niche luxury-minded community asking for quality thong recs. Wide gusset specifically mentioned | Position as quality option with specific gusset design details |
-| [Best underwear? Or do I accept the toe?](https://www.reddit.com/r/BurnBootCamp/comments/1r7b46y/best_underwear_or_do_i_accept_the_toe/) | r/BurnBootCamp | 2026-02-17 | 22 comments, active workout community frustrated with Aerie thongs. No clear winner yet | Highlight cotton breathability and wide gusset for workout comfort |
-| [Underwear for someone with extreme sensory issues](https://www.reddit.com/r/AuDHDWomen/comments/1qylc2b/underwear_for_someone_with_extreme_sensory_issues/) | r/AuDHDWomen | 2026-02-07 | **Cherri already mentioned by name.** User describes "being strangled" by all underwear. Active thread, targeted community | Confirm recommendation, share specific sensory-friendly features (tag-free, organic cotton, elastic type). Authentic founder voice |
-| [Desperately need underwear -- all websites sold out?](https://www.reddit.com/r/ethicalfashion/comments/1q1fcnv/desperately_need_underwear_all_websites_sold_out/) | r/ethicalfashion | 2026-02-01 | Sustainable shopper who can't find stock anywhere. Athletic build (small waist/wide hips) — Cherri's inclusive sizing | Direct recommendation with organic cotton credentials and size range |
-| [Recommendations for Natural Fiber Underwear? (Women's)](https://www.reddit.com/r/ethicalfashion/comments/1r8nod0/recommendations_for_natural_fiber_underwear_womens/) | r/ethicalfashion | 2026-02-01 | User evaluated 30+ websites seeking natural fiber underwear. Found only neutrals. Doesn't want thongs | Recommend Cherri's organic cotton options (if bikini/hipster styles exist) |
-| [Underwear recommendations](https://www.reddit.com/r/PlusSize/comments/1qs4i5z/underwear_recommendations/) | r/PlusSize | 2026-01-31 | Plus-size user wants "functional but also cute" with fupa coverage. Mentions 15+ brands, no clear winner | Highlight size range (XS-4X), wide gusset, organic cotton |
-| [Where do you buy your underwear that isn't V.S?](https://www.reddit.com/r/AskWomenOver30/comments/1qrfuju/where_do_you_buy_your_underwear_that_isnt_vs/) | r/AskWomenOver30 | 2026-01-30 | 129 comments, massive brand-switching thread. Pact and Duluth mentioned — organic cotton space. Cherri not yet mentioned | Join as organic cotton alternative; founder story resonates with 30+ demographic |
-| [Wore a thong for the first time and feeling incredibly insecure](https://www.reddit.com/r/TwoXChromosomes/comments/1qp6f2s/wore_a_thong_for_the_first_time_and_feeling/) | r/TwoXChromosomes | 2026-01-28 | **Cherri referenced** in discussion about narrow gussets being profit-driven. Viral-potential thread about body insecurity and underwear design | Share Cherri's design philosophy — gussets designed for bodies, not cost-cutting |
-| [Underwear Sensory Issues](https://www.reddit.com/r/AuDHDWomen/comments/1qd58yz/underwear_sensory_issues/) | r/AuDHDWomen | 2026-01-15 | 68 comments — most detailed sensory underwear evaluation thread ever captured. 30+ brands discussed | Provide detailed sensory specs (seam type, elastic, fabric weight, tag-free) |
+| [Can someone explain to me what has happened with the gusset ](https://www.reddit.com/r/AskWomenOver30/comments/1igvlgs/can_someone_explain_to_me_what_has_happened_with) | r/AskWomenOver30 | 2025-02-03 | Gusset frustration | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [What underwear are we ladies buying? Good quality and cute? ](https://www.reddit.com/r/beauty/comments/1htrfl6/what_underwear_are_we_ladies_buying_good_quality) | r/beauty | 2025-01-04 | Recommendation request, Competitor dissatisfaction | Genuine helpfulness — share what makes underwear last (construction, not marketing) |
+| [Wide Gusset Thongs](https://www.reddit.com/r/femalefashionadvice/comments/si6c6f/wide_gusset_thongs) | r/femalefashionadvice | 2022-02-01 | Gusset frustration, Competitor dissatisfaction | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [What normal underwear company do you buy from frequently?](https://www.reddit.com/r/womensfashion/comments/1isbvqv/what_normal_underwear_company_do_you_buy_from) | r/womensfashion | 2025-02-18 | Competitor dissatisfaction | Genuine helpfulness — share what makes underwear last (construction, not marketing) |
+| [Size Charts Should Include Gusset Specs for Underwear](https://www.reddit.com/r/AusFemaleFashion/comments/1gizn2c/size_charts_should_include_gusset_specs_for) | r/AusFemaleFashion | 2024-11-03 | Gusset frustration | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [Recommendations for comfortable, cotton women's underwear?](https://www.reddit.com/r/BuyItForLife/comments/1l2pdpf/recommendations_for_comfortable_cotton_womens) | r/BuyItForLife | 2025-06-03 | Recommendation request | Contribute to discussion with focus on fit/gusset rather than brand promotion |
+| [Desperate for new underwear with wide gusset!](https://www.reddit.com/r/PlusSizeFashion/comments/1busyi0/desperate_for_new_underwear_with_wide_gusset) | r/PlusSizeFashion | 2024-04-03 | Gusset frustration, Competitor dissatisfaction | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [Best panties for plus size?](https://www.reddit.com/r/PlusSizeFashion/comments/1aculd6/best_panties_for_plus_size) | r/PlusSizeFashion | 2024-01-28 | Plus size fit problems | Discuss how gusset width scales with size; no rolling waistband |
+| [Full gusset period underwear suggestions](https://www.reddit.com/r/PeriodUnderwear/comments/1d8sh7r/full_gusset_period_underwear_suggestions) | r/PeriodUnderwear | 2024-06-05 | Recommendation request, Gusset frustration | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [Underwear Suggestions for Running](https://www.reddit.com/r/XXRunning/comments/1r0hvvq/underwear_suggestions_for_running) | r/XXRunning | 2026-02-09 | Recommendation request, Competitor dissatisfaction | Genuine helpfulness — share what makes underwear last (construction, not marketing) |
+| [So where are we buying good quality underwear?](https://www.reddit.com/r/AskWomenOver40/comments/1r2twdx/so_where_are_we_buying_good_quality_underwear) | r/AskWomenOver40 | 2026-02-12 | Gusset frustration | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [Non-chafe underwear for running](https://www.reddit.com/r/UKRunners/comments/1r1vd8a/nonchafe_underwear_for_running) | r/UKRunners | 2026-02-11 | Plus size fit problems | Discuss how gusset width scales with size; no rolling waistband |
+| [Anyone know of Cherri dupe cotton thongs with a wide gusset?](https://www.reddit.com/r/Midsizefashion/comments/1p4tnlg/anyone_know_of_cherri_dupe_cotton_thongs_with_a) | r/Midsizefashion | 2025-11-23 | Gusset frustration | Share gusset width comparison; explain why Cherri measures gusset by size |
+| [Underwear Recommendation, a "Master" list](https://www.reddit.com/r/AusFemaleFashion/comments/1ayofs4/underwear_recommendation_a_master_list) | r/AusFemaleFashion | 2024-02-24 | Recommendation request | Contribute to discussion with focus on fit/gusset rather than brand promotion |
+| [Do you choose underwear type based on sensory concerns?](https://www.reddit.com/r/autism/comments/1iy4dwq/do_you_choose_underwear_type_based_on_sensory) | r/autism | 2025-02-25 | Neurodivergent seeking sensory-friendly | Highlight tagless design, flat seams, and organic cotton softness |
 
 ## Content Ideas
 
 | Question/Topic | Source Thread | Date | Content Type |
 |----------------|--------------|------|--------------|
-| "The best underwear for working out — why most workout underwear fails" | [Best underwear? Or do I accept the toe?](https://www.reddit.com/r/BurnBootCamp/comments/1r7b46y/) (r/BurnBootCamp), [Suggestions for Underwear?](https://www.reddit.com/r/XXRunning/comments/1r64i1c/) (r/XXRunning), [Underwear recs](https://www.reddit.com/r/pelotoncycle/comments/1qnkj90/) (r/pelotoncycle) | 2026-02-17 | Blog post + TikTok |
-| "Your underwear might be causing your rashes — how fabric and fit affect vulvar health" | [Vaginal rash on pantry line crease](https://www.reddit.com/r/Healthyhooha/comments/1r3h6zw/) (r/Healthyhooha), [Could tight underwear have caused this?](https://www.reddit.com/r/Healthyhooha/comments/1ql8jx8/) (r/Healthyhooha) | 2026-02-13 | Blog post + Instagram carousel |
-| "Underwear that doesn't feel like being strangled: a sensory-friendly guide" | [Underwear for someone with extreme sensory issues](https://www.reddit.com/r/AuDHDWomen/comments/1qylc2b/) (r/AuDHDWomen), [Underwear Sensory Issues](https://www.reddit.com/r/AuDHDWomen/comments/1qd58yz/) (r/AuDHDWomen) | 2026-02-07 | Blog post + TikTok + product page copy |
-| "30+ brands and still looking: why sustainable underwear is so hard to find" | [Desperately need underwear -- all websites sold out?](https://www.reddit.com/r/ethicalfashion/comments/1q1fcnv/) (r/ethicalfashion), [Recommendations for Natural Fiber Underwear?](https://www.reddit.com/r/ethicalfashion/comments/1r8nod0/) (r/ethicalfashion) | 2026-02-01 | Blog post |
-| "Leaving VS: where women over 30 are buying underwear now" | [Where do you buy your underwear that isn't V.S?](https://www.reddit.com/r/AskWomenOver30/comments/1qrfuju/) (r/AskWomenOver30) | 2026-01-30 | TikTok + blog post |
-| "Why your cotton underwear is soaked by noon (and what to do about it)" | [Ladies, what are we doing for crotch sweat??](https://www.reddit.com/r/WomensHealth/comments/1qpvcja/) (r/WomensHealth) | 2026-01-29 | Blog post + Instagram carousel |
+| How fabric choice affects vaginal health — cotton vs synthetic for UTI/yeast prevention | [Best Thongs / g-stings for exercising](https://www.reddit.com/r/womensfashion/comments/1r88rz5/best_thongs_gstings_for_exercising) | 2026-02-18 | Blog post |
+| Use community language: 'actually sustainable, not just marketing' — emphasize GOTS certification | [Let’s create a master list of Eco-Friendly, natural and](https://www.reddit.com/r/moderatelygranolamoms/comments/1r544e6/lets_create_a_master_list_of_ecofriendly_natural) | 2026-02-15 | Product page copy |
+| Explainer on how gusset width affects fit — most brands use a one-size gusset regardless of underwear size | [So where are we buying good quality underwear?](https://www.reddit.com/r/AskWomenOver40/comments/1r2twdx/so_where_are_we_buying_good_quality_underwear) | 2026-02-12 | TikTok |
+| Why underwear rides up — cut, gusset placement, and sizing explained | [Looking for wedgie-proof undies.](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/2izqja/looking_for_wedgieproof_undies) | 2014-10-12 | TikTok |
 
 ## Sensory & Neurodivergent Discussions
 
-**r/AuDHDWomen** — [Underwear for someone with extreme sensory issues](https://www.reddit.com/r/AuDHDWomen/comments/1qylc2b/underwear_for_someone_with_extreme_sensory_issues/) (2026-02-07): User describes *"All underwear feels extremely tight and it feels like my whole lower half is being strangled."* Global constriction, not just waistband. Elastic leg openings and synthetic fabrics are the worst triggers. **Cherri is mentioned by name as a recommendation.** Other brands discussed: TomboyX, Hanes, Calvin Klein, Veeamon, Culprit, Innersy, Paradis Sport. Key insight: the user wants 100% cotton with zero elastic visible/felt — a demanding spec that few brands meet.
-
-**r/AuDHDWomen** — [Underwear Sensory Issues](https://www.reddit.com/r/AuDHDWomen/comments/1qd58yz/underwear_sensory_issues/) (2026-01-15, 9 upvotes, **68 comments**): The most comprehensive sensory underwear evaluation thread found to date. User systematically lists issues: *"riding up, rough seams, heavy synthetics, high-rise pressing on stomach, boxer styles riding up thighs, thongs/cheeky intolerable."* **Over 30 brands discussed** including Hanes, Aerie, Boody, Natori, Calvin Klein, Bombas, Tommy John, Soma, Felina, Parade, MeUndies, Pact, Woxer, Duluth, Jockey Elance, and more. No single brand satisfies all sensory needs. Key insight: sensory users need personalized fit because their triggers vary wildly — what works for one is intolerable for another.
-
-**Common themes across sensory threads this week:**
-1. **Global constriction** — not just elastic but the overall "tightness" of the garment compressing the body
-2. **Fabric-on-fabric interaction** — underwear gripping outerwear is as bad as fabric-on-skin irritation
-3. **Seam placement** is critical — crotch seams cause persistent irritation; leg-opening seams dig in
-4. **100% cotton demanded** but most "cotton" underwear is cotton/spandex blends
-5. **Cherri is earning organic mentions** in these communities — brand awareness building without paid promotion
+- [Do you choose underwear type based on sensory concerns?](https://www.reddit.com/r/autism/comments/1iy4dwq/do_you_choose_underwear_type_based_on_sensory) (2025-02-25) — r/autism, 109 comments
+  - Pain points: sensory overwhelm, social stigma around underwear choices, ignoring sensory needs
+- [Sensory friendly underwear](https://www.reddit.com/r/AuDHDWomen/comments/1kac8jv/sensory_friendly_underwear) (2025-04-29) — r/AuDHDWomen, 40 comments
+  - Pain points: fabric gripping clothes, feeling underwear under clothes, thickness
+- [How to find sensory-friendly underwear?](https://www.reddit.com/r/autism/comments/x0ecui/how_to_find_sensoryfriendly_underwear) (2022-08-29) — r/autism, 39 comments
+  - Pain points: seam on crotch, lace, shapewear aspects, ride up, gender-neutral needs
 
 ## Search Stats
 
-8 parallel tasks (pro processor) → 41 raw threads → 39 after URL dedup → 38 after junk filter → 36 after content filter → 35 after zero-comment filter → **35 unique threads**
+| Source | Threads Found | Searches | Wall Time | Cost |
+|--------|--------------|----------|-----------|------|
+| Exa | 80 | 10 | 288s | ~$0 |
+| Parallel AI | 81 | 4 tasks | 480s | ~$0.04 |
+| OpenAI | 39 | 126 web searches (8/8 tasks) | 360s | ~$2-4 |
+| **Merged** | **49 unique** | — | — | **~$2-4** |
 
-Task Group ID: `tgrp_c4918b2093da4aafa1c3097990a8120a` | Wall time: ~3m | Cost: ~$0.07
+Dedup funnel: 164 raw → 124 URL dedup → 115 title dedup → 115 junk filter → 115 content filter → **49 final**
+Cross-source overlap: 4 threads found by 2+ sources
 
 ## Raw Thread Index
 
-| Title | Subreddit | Score | Comments | Date | URL |
-|-------|-----------|-------|----------|------|-----|
-| Aerie underwear | r/americaneagle | — | — | 2026-02-22 | [Link](https://www.reddit.com/r/americaneagle/comments/1ok52bv/aerie_underwear/) |
-| Huha Underwear! | r/BuyCanadian | — | — | 2026-02-22 | [Link](https://www.reddit.com/r/BuyCanadian/comments/1qdtuai/huha_underwear/) |
-| How to get this look but without the camel toe?? | r/IndianBeautyTalks | — | — | 2026-02-20 | [Link](https://www.reddit.com/r/IndianBeautyTalks/comments/1r97hkd/how_to_get_this_look_but_without_the_camel_toe/) |
-| where are we getting good quality underwear / thongs | r/SFbitcheswithtaste | — | — | 2026-02-19 | [Link](https://www.reddit.com/r/SFbitcheswithtaste/comments/1qmxhgn/where_are_we_getting_good_quality_underwear_thongs/) |
-| Need underwear recs!! | r/TheGirlSurvivalGuide | 2 | 3 | 2026-02-18 | [Link](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/1r7rko2/need_underwear_recs/) |
-| Best underwear? Or do I accept the toe? | r/BurnBootCamp | 4 | 22 | 2026-02-17 | [Link](https://www.reddit.com/r/BurnBootCamp/comments/1r7b46y/best_underwear_or_do_i_accept_the_toe/) |
-| Suggestions for Underwear? | r/XXRunning | — | — | 2026-02-16 | [Link](https://www.reddit.com/r/XXRunning/comments/1r64i1c/suggestions_for_underwear/) |
-| Constant groin chafing and having trouble staying dry down there. Help | r/WomensHealth | — | — | 2026-02-15 | [Link](https://www.reddit.com/r/WomensHealth/comments/1r5a2nj/constant_groin_chafing_and_having_trouble_staying/) |
-| girlies, what is the most comfy brand of thong (panties)? | r/AskReddit | 0 | 6 | 2026-02-14 | [Link](https://www.reddit.com/r/AskReddit/comments/1r470q6/girlies_what_is_the_most_comfy_brand_of_thong/) |
-| Vaginal rash on pantry line crease | r/Healthyhooha | — | — | 2026-02-13 | [Link](https://www.reddit.com/r/Healthyhooha/comments/1r3h6zw/vaginal_rash_on_pantry_line_crease/) |
-| can you save stained underwear? | r/TheGirlSurvivalGuide | 0 | 4 | 2026-02-12 | [Link](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/1r2n8i8/can_you_save_stained_underwear/) |
-| Yeast infection and tearing? | r/Healthyhooha | 1 | 3 | 2026-02-12 | [Link](https://www.reddit.com/r/Healthygooha/comments/1qxx9r_/yeast_infection_and_tearing/) |
-| Are you comfortable to shop for sexy underwear for your partner? | r/AskMenAdvice | 18 | 67 | 2026-02-08 | [Link](https://www.reddit.com/r/AskMenAdvice/comments/1qzhks6/are_you_comfortable_to_shop_for_sexy_underwear/) |
-| Underwear for someone with extreme sensory issues. | r/AuDHDWomen | — | — | 2026-02-07 | [Link](https://www.reddit.com/r/AuDHDWomen/comments/1qylc2b/underwear_for_someone_with_extreme_sensory_issues/) |
-| Reoccurring Yeast Infection Help | r/Healthyhooha | 2 | 4 | 2026-02-06 | [Link](https://www.reddit.com/r/Healthyhooha/comments/1qz9z3u/reoccurring_yeast_infection_help/) |
-| Is anyone actually buying / wearing that god awful scrub jumpsuit thong thing on Figs? | r/nursing | — | — | 2026-02-05 | [Link](https://www.reddit.com/r/nursing/comments/1qw8q0r/is_anyone_actually_buying_wearing_that_god_awful/) |
-| Always Pads vs Period Panties | r/TheGirlSurvivalGuide | 3 | 1 | 2026-02-02 | [Link](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/1qtwypz/always_pads_vs_period_panties/) |
-| Ladies underwear and bras for super HOT weather? | r/Healthyhooha | 3 | 4 | 2026-02-01 | [Link](https://www.reddit.com/r/Healthyhooha/comments/1qt9jsr/ladies_underwear_and_bras_for_super_hot_weather/) |
-| Desperately need underwear -- all websites sold out? | r/ethicalfashion | — | — | 2026-02-01 | [Link](https://www.reddit.com/r/ethicalfashion/comments/1q1fcnv/desperately_need_underwear_all_websites_sold_out/) |
-| Recommendations for Natural Fiber Underwear? (Women's) | r/ethicalfashion | — | — | 2026-02-01 | [Link](https://www.reddit.com/r/ethicalfashion/comments/1r8nod0/recommendations_for_natural_fiber_underwear_womens/) |
-| Underwear recommendations | r/PlusSize | — | — | 2026-01-31 | [Link](https://www.reddit.com/r/PlusSize/comments/1qs4i5z/underwear_recommendations/) |
-| Where do you buy your underwear that isn't V.S? | r/AskWomenOver30 | 28 | 129 | 2026-01-30 | [Link](https://www.reddit.com/r/AskWomenOver30/comments/1qrfuju/where_do_you_buy_your_underwear_that_isnt_vs/) |
-| Ladies, what are we doing for crotch sweat?? | r/WomensHealth | 6 | 2 | 2026-01-29 | [Link](https://www.reddit.com/r/WomensHealth/comments/1qpvcja/ladies_what_are_we_doing_for_crotch_sweat/) |
-| ARQ undies! | r/SustainableFashion | 6 | 12 | 2026-01-29 | [Link](https://www.reddit.com/r/SustainableFashion/comments/1qq2q6a/arq_undies/) |
-| Wore a thong for the first time and feeling incredibly insecure | r/TwoXChromosomes | — | — | 2026-01-28 | [Link](https://www.reddit.com/r/TwoXChromosomes/comments/1qp6f2s/wore_a_thong_for_the_first_time_and_feeling/) |
-| UTI symptoms with 'no infection' | r/Healthyhooha | 4 | 8 | 2026-01-27 | [Link](https://www.reddit.com/r/Healthyhooha/comments/1qtcsvy/uti_symptoms_with_no_infection/) |
-| Most affordable underwear and leggings brand for sensitive skin ladies? | r/BuyItForLife | 0 | 36 | 2026-01-26 | [Link](https://www.reddit.com/r/BuyItForLife/comments/1qn3fy2/most_affordable_underwear_and_leggings_brand_for/) |
-| Underwear recs (women) | r/pelotoncycle | 10 | 44 | 2026-01-26 | [Link](https://www.reddit.com/r/pelotoncycle/comments/1qnkj90/underwear_recs_women/) |
-| Could tight underwear have caused this? | r/Healthyhooha | 3 | 8 | 2026-01-24 | [Link](https://www.reddit.com/r/Healthyhooha/comments/1ql8jx8/could_tight_underwear_have_caused_this/) |
-| Good, reliable underwear for a lady | r/BuyItForLife | 36 | 64 | 2026-01-24 | [Link](https://www.reddit.com/r/BuyItForLife/comments/1qkxmit/good_reliable_underwear_for_a_lady/) |
-| Why do girls wear such revealing outfits in the gym ... | r/questions | — | — | 2026-01-23 | [Link](https://www.reddit.com/r/questions/comments/1qkvmvb/why_do_girls_wear_such_revealing_outfits_in_the/) |
-| Underwear Sensory Issues | r/AuDHDWomen | 9 | 68 | 2026-01-15 | [Link](https://www.reddit.com/r/AuDHDWomen/comments/1qd58yz/underwear_sensory_issues/) |
-| Have you noticed any recent change in your underwear design? | r/TwoXChromosomes | — | — | 2025-01-01 | [Link](https://www.reddit.com/r/TwoXChromosomes/comments/1hwtf9r/have_you_noticed_any_recent_change_in_your/) |
-| Underwear with wide gusset | r/PlusSize | 6 | 12 | 2025-01-01 | [Link](https://www.reddit.com/r/PlusSize/comments/1i3ric5/underwear_with_wide_gusset/) |
-| Desperate for new underwear with wide gusset! | r/PlusSizeFashion | — | — | 2024-04-03 | [Link](https://www.reddit.com/r/PlusSizeFashion/comments/1busyi0/desperate_for_new_underwear_with_wide_gusset/) |
+| # | Title | Subreddit | Score | Comments | Date | Sources | URL |
+|---|-------|-----------|-------|----------|------|---------|-----|
+| 1 | [Better exercise underwear for AFAB folks?](https://www.reddit.com/r/XXRunning/comments/1r7pa7l/better_exercise_underwear_for_afab_folks) ⭐ | r/XXRunning | 5 | 41 | 2026-02-18 | exa | [link](https://www.reddit.com/r/XXRunning/comments/1r7pa7l/better_exercise_underwear_for_afab_folks) |
+| 2 | [Best Thongs / g-stings for exercising](https://www.reddit.com/r/womensfashion/comments/1r88rz5/best_thongs_gstings_for_exercising) ⭐ | r/womensfashion | 0 | 32 | 2026-02-18 | exa | [link](https://www.reddit.com/r/womensfashion/comments/1r88rz5/best_thongs_gstings_for_exercising) |
+| 3 | [Let’s create a master list of Eco-Friendly, natural and organic c](https://www.reddit.com/r/moderatelygranolamoms/comments/1r544e6/lets_create_a_master_list_of_ecofriendly_natural) ⭐ | r/moderatelygranolamoms | 95 | 114 | 2026-02-15 | exa | [link](https://www.reddit.com/r/moderatelygranolamoms/comments/1r544e6/lets_create_a_master_list_of_ecofriendly_natural) |
+| 4 | [So where are we buying good quality underwear?](https://www.reddit.com/r/AskWomenOver40/comments/1r2twdx/so_where_are_we_buying_good_quality_underwear) ⭐ | r/AskWomenOver40 | 9 | 20 | 2026-02-12 | openai | [link](https://www.reddit.com/r/AskWomenOver40/comments/1r2twdx/so_where_are_we_buying_good_quality_underwear) |
+| 5 | [Non-chafe underwear for running](https://www.reddit.com/r/UKRunners/comments/1r1vd8a/nonchafe_underwear_for_running) ⭐ | r/UKRunners | 5 | 32 | 2026-02-11 | parallel | [link](https://www.reddit.com/r/UKRunners/comments/1r1vd8a/nonchafe_underwear_for_running) |
+| 6 | [Underwear Suggestions for Running](https://www.reddit.com/r/XXRunning/comments/1r0hvvq/underwear_suggestions_for_running) ⭐ | r/XXRunning | 12 | 50 | 2026-02-09 | parallel | [link](https://www.reddit.com/r/XXRunning/comments/1r0hvvq/underwear_suggestions_for_running) |
+| 7 | [Anyone know of Cherri dupe cotton thongs with a wide gusset?](https://www.reddit.com/r/Midsizefashion/comments/1p4tnlg/anyone_know_of_cherri_dupe_cotton_thongs_with_a) ⭐ | r/Midsizefashion | 4 | 8 | 2025-11-23 | exa | [link](https://www.reddit.com/r/Midsizefashion/comments/1p4tnlg/anyone_know_of_cherri_dupe_cotton_thongs_with_a) |
+| 8 | [Durable, breathable AND sustainable/natural underwear — does it e](https://www.reddit.com/r/BuyItForLife/comments/1lnbfr1/durable_breathable_and_sustainablenatural) ⭐ | r/BuyItForLife | 99 | 92 | 2025-06-29 | exa | [link](https://www.reddit.com/r/BuyItForLife/comments/1lnbfr1/durable_breathable_and_sustainablenatural) |
+| 9 | [Recommendations for comfortable, cotton women's underwear?](https://www.reddit.com/r/BuyItForLife/comments/1l2pdpf/recommendations_for_comfortable_cotton_womens) ⭐ | r/BuyItForLife | 75 | 75 | 2025-06-03 | exa | [link](https://www.reddit.com/r/BuyItForLife/comments/1l2pdpf/recommendations_for_comfortable_cotton_womens) |
+| 10 | [What normal underwear company do you buy from frequently?](https://www.reddit.com/r/womensfashion/comments/1isbvqv/what_normal_underwear_company_do_you_buy_from) ⭐ | r/womensfashion | 426 | 1125 | 2025-02-18 | exa | [link](https://www.reddit.com/r/womensfashion/comments/1isbvqv/what_normal_underwear_company_do_you_buy_from) |
+| 11 | [Can someone explain to me what has happened with the gusset insid](https://www.reddit.com/r/AskWomenOver30/comments/1igvlgs/can_someone_explain_to_me_what_has_happened_with) ⭐ | r/AskWomenOver30 | 1308 | 323 | 2025-02-03 | exa | [link](https://www.reddit.com/r/AskWomenOver30/comments/1igvlgs/can_someone_explain_to_me_what_has_happened_with) |
+| 12 | [What underwear are we ladies buying? Good quality and cute? ](https://www.reddit.com/r/beauty/comments/1htrfl6/what_underwear_are_we_ladies_buying_good_quality) ⭐ | r/beauty | 1096 | 872 | 2025-01-04 | exa | [link](https://www.reddit.com/r/beauty/comments/1htrfl6/what_underwear_are_we_ladies_buying_good_quality) |
+| 13 | [Size Charts Should Include Gusset Specs for Underwear](https://www.reddit.com/r/AusFemaleFashion/comments/1gizn2c/size_charts_should_include_gusset_specs_for) ⭐ | r/AusFemaleFashion | 103 | 60 | 2024-11-03 | exa | [link](https://www.reddit.com/r/AusFemaleFashion/comments/1gizn2c/size_charts_should_include_gusset_specs_for) |
+| 14 | [Full gusset period underwear suggestions](https://www.reddit.com/r/PeriodUnderwear/comments/1d8sh7r/full_gusset_period_underwear_suggestions) ⭐ | r/PeriodUnderwear | 28 | 22 | 2024-06-05 | exa | [link](https://www.reddit.com/r/PeriodUnderwear/comments/1d8sh7r/full_gusset_period_underwear_suggestions) |
+| 15 | [Desperate for new underwear with wide gusset!](https://www.reddit.com/r/PlusSizeFashion/comments/1busyi0/desperate_for_new_underwear_with_wide_gusset) ⭐ | r/PlusSizeFashion | 36 | 35 | 2024-04-03 | exa | [link](https://www.reddit.com/r/PlusSizeFashion/comments/1busyi0/desperate_for_new_underwear_with_wide_gusset) |
+| 16 | [Best panties for plus size?](https://www.reddit.com/r/PlusSizeFashion/comments/1aculd6/best_panties_for_plus_size) ⭐ | r/PlusSizeFashion | 35 | 109 | 2024-01-28 | exa | [link](https://www.reddit.com/r/PlusSizeFashion/comments/1aculd6/best_panties_for_plus_size) |
+| 17 | [Wide Gusset Thongs](https://www.reddit.com/r/femalefashionadvice/comments/si6c6f/wide_gusset_thongs) ⭐ | r/femalefashionadvice | 851 | 312 | 2022-02-01 | exa | [link](https://www.reddit.com/r/femalefashionadvice/comments/si6c6f/wide_gusset_thongs) |
+| 18 | [Looking for wedgie-proof undies.](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/2izqja/looking_for_wedgieproof_undies) ⭐ | r/TheGirlSurvivalGuide | 65 | 54 | 2014-10-12 | exa | [link](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/2izqja/looking_for_wedgieproof_undies) |
+| 19 | [Recommendations for Undies](https://www.reddit.com/r/PlusSize/comments/1qyj77t/recommendations_for_undies) | r/PlusSize | 9 | 10 | 2026-02-07 | openai | [link](https://www.reddit.com/r/PlusSize/comments/1qyj77t/recommendations_for_undies) |
+| 20 | [Ruined Period Underwear](https://www.reddit.com/r/PeriodUnderwear/comments/1quyn5h/ruined_period_underwear) | r/PeriodUnderwear | 17 | 12 | 2026-02-03 | openai | [link](https://www.reddit.com/r/PeriodUnderwear/comments/1quyn5h/ruined_period_underwear) |
+| 21 | [Recommends on period underwear?](https://www.reddit.com/r/Periods/comments/1qt8s8n/recommends_on_period_underwear) | r/Periods | 2 | 6 | 2026-02-01 | openai | [link](https://www.reddit.com/r/Periods/comments/1qt8s8n/recommends_on_period_underwear) |
+| 22 | [Slow fashion and sustainable feminine lingerie brands in Europe?](https://www.reddit.com/r/findfashion/comments/1qr4bzb/slow_fashion_and_sustainable_feminine_lingerie) | r/findfashion | 11 | 8 | 2026-01-30 | exa | [link](https://www.reddit.com/r/findfashion/comments/1qr4bzb/slow_fashion_and_sustainable_feminine_lingerie) |
+| 23 | [Durable, breathable and sustainable underwear instead of low qual](https://www.reddit.com/r/SustainableFashion/comments/1nz04te/durable_breathable_and_sustainable_underwear) | r/SustainableFashion | 0 | 6 | 2025-10-05 | exa | [link](https://www.reddit.com/r/SustainableFashion/comments/1nz04te/durable_breathable_and_sustainable_underwear) |
+| 24 | [trying to find underwear that doesnt give me a wedgie AT ALLLL](https://www.reddit.com/r/PlusSizeFashion/comments/1ntf8q9/trying_to_find_underwear_that_doesnt_give_me_a) | r/PlusSizeFashion | 7 | 31 | 2025-09-29 | exa | [link](https://www.reddit.com/r/PlusSizeFashion/comments/1ntf8q9/trying_to_find_underwear_that_doesnt_give_me_a) |
+| 25 | [Most sustainable/ethical underwear material to purchase in the uk](https://www.reddit.com/r/ethicalfashion/comments/1n1yslc/most_sustainableethical_underwear_material_to) | r/ethicalfashion | 10 | 22 | 2025-08-28 | exa | [link](https://www.reddit.com/r/ethicalfashion/comments/1n1yslc/most_sustainableethical_underwear_material_to) |
+| 26 | [What undies brands are we loving these days?](https://www.reddit.com/r/AskWomenOver40/comments/1ln716s/what_undies_brands_are_we_loving_these_days) | r/AskWomenOver40 | 51 | 222 | 2025-06-29 | exa | [link](https://www.reddit.com/r/AskWomenOver40/comments/1ln716s/what_undies_brands_are_we_loving_these_days) |
+| 27 | [Undies that last??](https://www.reddit.com/r/PlusSize/comments/1l9wp76/undies_that_last) | r/PlusSize | 34 | 93 | 2025-06-12 | exa | [link](https://www.reddit.com/r/PlusSize/comments/1l9wp76/undies_that_last) |
+| 28 | [Underwear with long gussets and fabric that lasts?](https://www.reddit.com/r/AusFemaleFashion/comments/1kg0lhr/underwear_with_long_gussets_and_fabric_that_lasts) | r/AusFemaleFashion | 10 | 9 | 2025-05-06 | exa | [link](https://www.reddit.com/r/AusFemaleFashion/comments/1kg0lhr/underwear_with_long_gussets_and_fabric_that_lasts) |
+| 29 | [Underwear!?](https://www.reddit.com/r/PlusSize/comments/1je1jfk/underwear) | r/PlusSize | 20 | 74 | 2025-03-18 | exa | [link](https://www.reddit.com/r/PlusSize/comments/1je1jfk/underwear) |
+| 30 | [Do you choose underwear type based on sensory concerns?](https://www.reddit.com/r/autism/comments/1iy4dwq/do_you_choose_underwear_type_based_on_sensory) | r/autism | 101 | 109 | 2025-02-25 | exa | [link](https://www.reddit.com/r/autism/comments/1iy4dwq/do_you_choose_underwear_type_based_on_sensory) |
+| 31 | [Underwear that doesn't ride up?!](https://www.reddit.com/r/TwoXChromosomes/comments/1iqrole/underwear_that_doesnt_ride_up) | r/TwoXChromosomes | 25 | 54 | 2025-02-16 | exa, parallel | [link](https://www.reddit.com/r/TwoXChromosomes/comments/1iqrole/underwear_that_doesnt_ride_up) |
+| 32 | [Cotton underwear recommendations](https://www.reddit.com/r/BuyItForLife/comments/1htqj4d/cotton_underwear_recommendations) | r/BuyItForLife | 67 | 90 | 2025-01-04 | exa, openai | [link](https://www.reddit.com/r/BuyItForLife/comments/1htqj4d/cotton_underwear_recommendations) |
+| 33 | [Underwear Recommendation, a "Master" list](https://www.reddit.com/r/AusFemaleFashion/comments/1ayofs4/underwear_recommendation_a_master_list) | r/AusFemaleFashion | 158 | 62 | 2024-02-24 | exa, parallel, openai | [link](https://www.reddit.com/r/AusFemaleFashion/comments/1ayofs4/underwear_recommendation_a_master_list) |
+| 34 | [Travel underwear recommendations for hot and rainy places](https://www.reddit.com/r/HerOneBag/comments/1916pav/travel_underwear_recommendations_for_hot_and) | r/HerOneBag | 40 | 66 | 2024-01-07 | exa | [link](https://www.reddit.com/r/HerOneBag/comments/1916pav/travel_underwear_recommendations_for_hot_and) |
+| 35 | [What's the best underwear that are good for someone with a large ](https://www.reddit.com/r/PlusSize/comments/12tgxvw/whats_the_best_underwear_that_are_good_for) | r/PlusSize | 40 | 69 | 2023-04-20 | exa | [link](https://www.reddit.com/r/PlusSize/comments/12tgxvw/whats_the_best_underwear_that_are_good_for) |
+| 36 | [Women: Do you get chafing with briefs?](https://www.reddit.com/r/Ultralight/comments/w0yyev/women_do_you_get_chafing_with_briefs) | r/Ultralight | 48 | 117 | 2022-07-17 | exa | [link](https://www.reddit.com/r/Ultralight/comments/w0yyev/women_do_you_get_chafing_with_briefs) |
+| 37 | [Help a sister out. What underwear do you find best for long busy ](https://www.reddit.com/r/nursing/comments/pn1vjh/help_a_sister_out_what_underwear_do_you_find_best) | r/nursing | 99 | 103 | 2021-09-12 | exa | [link](https://www.reddit.com/r/nursing/comments/pn1vjh/help_a_sister_out_what_underwear_do_you_find_best) |
+| 38 | [What is the most comfortable, breathable underwear that is not to](https://www.reddit.com/r/PlusSize/comments/kequ8u/what_is_the_most_comfortable_breathable_underwear) | r/PlusSize | 9 | 16 | 2020-12-17 | exa | [link](https://www.reddit.com/r/PlusSize/comments/kequ8u/what_is_the_most_comfortable_breathable_underwear) |
+| 39 | [Breathable underwear recommendations please!](https://www.reddit.com/r/xxfitness/comments/3z64lw/breathable_underwear_recommendations_please) | r/xxfitness | 29 | 18 | 2016-01-02 | exa | [link](https://www.reddit.com/r/xxfitness/comments/3z64lw/breathable_underwear_recommendations_please) |
+| 40 | [[Embarrassing Question] Underwear for sweaty ladybits?](https://www.reddit.com/r/xxfitness/comments/3l5qi4/embarrassing_question_underwear_for_sweaty) | r/xxfitness | 57 | 52 | 2015-09-16 | exa | [link](https://www.reddit.com/r/xxfitness/comments/3l5qi4/embarrassing_question_underwear_for_sweaty) |
+| 41 | [I tried Aisle and i'm so disappointed](https://www.reddit.com/r/PeriodUnderwear/comments/1qyf1br/i_tried_aisle_and_im_so_disappointed) | r/PeriodUnderwear | 6 | 8 | 2026-02-07 | openai | [link](https://www.reddit.com/r/PeriodUnderwear/comments/1qyf1br/i_tried_aisle_and_im_so_disappointed) |
+| 42 | [Suggestions please!](https://www.reddit.com/r/PeriodUnderwear/comments/1qou4ef/suggestions_please) | r/PeriodUnderwear | 6 | 8 | 2026-01-27 | openai | [link](https://www.reddit.com/r/PeriodUnderwear/comments/1qou4ef/suggestions_please) |
+| 43 | [Best thongs and underwear for the girly’s that are prone to UTIs](https://www.reddit.com/r/Healthyhooha/comments/1mhnz7v/best_thongs_and_underwear_for_the_girlys_that_are) | r/Healthyhooha | 11 | 48 | 2025-08-04 | exa | [link](https://www.reddit.com/r/Healthyhooha/comments/1mhnz7v/best_thongs_and_underwear_for_the_girlys_that_are) |
+| 44 | [Sensory friendly underwear](https://www.reddit.com/r/AuDHDWomen/comments/1kac8jv/sensory_friendly_underwear) | r/AuDHDWomen | 24 | 40 | 2025-04-29 | exa | [link](https://www.reddit.com/r/AuDHDWomen/comments/1kac8jv/sensory_friendly_underwear) |
+| 45 | [Best underwear options to sink wash with 80% humidity - SEA for a](https://www.reddit.com/r/HerOneBag/comments/1h9t31v/best_underwear_options_to_sink_wash_with_80) | r/HerOneBag | 16 | 49 | 2024-12-08 | exa | [link](https://www.reddit.com/r/HerOneBag/comments/1h9t31v/best_underwear_options_to_sink_wash_with_80) |
+| 46 | [Best underwear for people prone to yeast](https://www.reddit.com/r/Healthyhooha/comments/1exbx08/best_underwear_for_people_prone_to_yeast) | r/Healthyhooha | 28 | 38 | 2024-08-21 | exa, parallel | [link](https://www.reddit.com/r/Healthyhooha/comments/1exbx08/best_underwear_for_people_prone_to_yeast) |
+| 47 | [How to find sensory-friendly underwear?](https://www.reddit.com/r/autism/comments/x0ecui/how_to_find_sensoryfriendly_underwear) | r/autism | 28 | 39 | 2022-08-29 | exa | [link](https://www.reddit.com/r/autism/comments/x0ecui/how_to_find_sensoryfriendly_underwear) |
+| 48 | [Anyone knows a Canadian company that sell 100% organic cotton und](https://www.reddit.com/r/ZeroWaste/comments/g347l1/anyone_knows_a_canadian_company_that_sell_100) | r/ZeroWaste | 4 | 8 | 2020-04-17 | exa | [link](https://www.reddit.com/r/ZeroWaste/comments/g347l1/anyone_knows_a_canadian_company_that_sell_100) |
+| 49 | [Desperately seeking wedgie-proof underwear](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/7pxybp/desperately_seeking_wedgieproof_underwear) | r/TheGirlSurvivalGuide | 12 | 5 | 2018-01-12 | exa | [link](https://www.reddit.com/r/TheGirlSurvivalGuide/comments/7pxybp/desperately_seeking_wedgieproof_underwear) |

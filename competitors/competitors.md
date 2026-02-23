@@ -1,6 +1,6 @@
 # Cherri Competitive Landscape
 
-**Last Updated:** January 24, 2026
+**Last Updated:** February 22, 2026
 **Note:** This document supplements the market-positioning-analysis.md with deeper competitor intelligence.
 
 ## Executive Summary
@@ -269,6 +269,46 @@ Cherri competes in a crowded DTC underwear market, but occupies a specific white
 
 **Threat Assessment:** LOW. Bra-focused, less underwear competition.
 
+### 93 Play Street
+
+| Attribute | Details |
+|-----------|---------|
+| **Website** | 93playstreet.com |
+| **Target Demo** | 25-35, size-inclusive, body-positive |
+| **Price** | $15/panty single, $38/trio (~$12.67/pair) |
+| **Size Range** | XS-4XL (swim), XS-3XL (panties) |
+| **Founder** | Jessica Anderson Tello (Latina, Texas coast) |
+| **Location** | Austin, TX |
+| **Platform** | Shopify |
+| **Origin** | Swimwear brand (founded 2021), expanding into underwear |
+
+**Positioning:** Size-inclusive, body-positive swimwear brand now crossing into everyday underwear. Latina-owned, TikTok-native, slow fashion messaging. Pinterest hashtags place them alongside #skims, #aerie, #fenty.
+
+**Product Features:**
+- THONG-PANTY line (single $15, trio $38)
+- Colors: Almond, Poppy Pink, Peri Blue
+- Swim expertise applied to intimates (body-hugging fit, coverage options)
+- "As Seen on TikTok" collection for swim; panty launch marketed to existing customer base
+
+*Source: [93playstreet.com](https://www.93playstreet.com/), [SalaryGuide job listing](https://salaryguide.com/jobs/marketing-assistant-fashion-93-play-street-7644a3)*
+
+**Key Difference:** Swim-first brand extending into underwear vs underwear-native brand. They're leveraging existing body-trust from bikini customers — "you already let us dress your bikini body, now wear us daily."
+
+**Cherri's Advantages:**
+- Underwear IS the core product, not an extension
+- Wide gusset functional innovation (93PS has no product differentiation story)
+- Irreverent humor/voice vs aspirational body-positive
+- Deeper underwear expertise and fabric messaging (supima cotton)
+- TikTok dominance (760K followers)
+
+**93 Play Street's Advantages:**
+- Lower price ($15 single vs $18)
+- Existing swim customer base with body-trust relationship (near-zero CAC for underwear cross-sell)
+- Latina-owned founder story resonates with overlapping demo
+- Hiring marketing staff in Austin (scaling)
+
+**Threat Assessment:** WATCH. Low threat today — panty line is minimal (thongs only, no briefs/bikinis) with no product differentiation. But the swim→underwear adjacency play is smart and they share Cherri's demo. Monitor for: expanded underwear styles, TikTok underwear content, and pricing that undercuts Cherri.
+
 ## Closed Competitor: Parade
 
 | Attribute | Details |
@@ -359,6 +399,7 @@ No one else combines:
 1. **Huha** - $20M could fund pivot to younger demo
 2. **Underdays** - US expansion underway
 3. **La Coochie** - If they get TikTok traction + Amazon
+4. **93 Play Street** - Swim→underwear adjacency play, same demo, lower price
 
 ### Don't Worry About These
 
@@ -375,3 +416,4 @@ No one else combines:
 - Huha: [Investment](https://www.newswire.ca/news-releases/district-ventures-capital-makes-landmark-investment-in-huha-underwear-890171168.html)
 - Parade: [Marie Claire](https://www.marieclaire.com/fashion/parade-underwear-closing-explained/), [BoF](https://www.businessoffashion.com/articles/direct-to-consumer/unpacking-parade-exit/)
 - MeUndies: [Target Market](https://canvasbusinessmodel.com/blogs/target-market/meundies-target-market)
+- 93 Play Street: [Website](https://www.93playstreet.com/), [About](https://www.93playstreet.com/pages/about)

@@ -132,10 +132,12 @@ Record `exa_start_time` before starting (use `date +%s` or equivalent).
 
 ### 3a.1: Run Exa Searches
 
-Run all 10 queries below **sequentially** using `mcp__exa__web_search_exa` (loaded in Step 2). For each query, pass:
+Run all 10 queries below in **two parallel batches of 5** using `mcp__exa__web_search_exa` (loaded in Step 2). Fire queries 1-5 simultaneously, then queries 6-10 simultaneously. For each query, pass:
 - `numResults: 8`
 - `livecrawl: "preferred"`
 - `includeDomains: ["reddit.com"]`
+
+**Note:** Exa may return non-Reddit URLs despite `includeDomains`. After collecting results, discard any URL that does not contain `reddit.com` before proceeding to dedup.
 
 **Problem-based queries:**
 
@@ -330,7 +332,14 @@ Call `mcp__parallel-task__getResultMarkdown` with the task group ID and `basis: 
 
 ### 3b.4: Normalize to Common Schema
 
-Parse the returned markdown to extract thread objects from each task's JSON output. The results contain JSON blocks with thread data matching the output schema. Build a combined thread list where each thread conforms to the **Common Thread Schema** (see Reference Data above).
+Parse the returned markdown to extract thread objects from each task's JSON output. Parallel AI returns results as markdown tables where JSON arrays are encoded inside table cells using `<br>` as line breaks (not actual newlines). To extract the data:
+
+1. Replace all `<br>` with `\n` in the full result text
+2. Also unescape HTML entities (`&amp;` → `&`, `&lt;` → `<`, `&gt;` → `>`, `&quot;` → `"`)
+3. Use balanced-brace JSON extraction to find arrays (`[...]`) containing thread objects — scan for `[`, track brace/bracket depth, and attempt `json.loads()` on each balanced candidate
+4. The format may vary between runs — sometimes results appear as fenced JSON code blocks instead of tables. Handle both formats.
+
+Build a combined thread list where each thread conforms to the **Common Thread Schema** (see Reference Data above).
 
 Record `parallel_end_time` and compute `wall_time_seconds`.
 
@@ -360,7 +369,7 @@ The script fires 8 background requests to OpenAI's Responses API with `gpt-5-min
 Record `openai_start_time=$(date +%s)` at the beginning of the script.
 
 ```bash
-set -uo pipefail
+set -u
 
 openai_start_time=$(date +%s)
 
@@ -527,7 +536,7 @@ while True:
                 resp = json.loads(resp_http.read())
             statuses[rid] = resp.get('status', 'unknown')
             consecutive_failures[rid] = 0
-        except (urllib.error.URLError, json.JSONDecodeError) as e:
+        except (urllib.error.URLError, json.JSONDecodeError, TimeoutError, OSError) as e:
             consecutive_failures[rid] += 1
             if consecutive_failures[rid] >= 3:
                 statuses[rid] = 'error'
@@ -727,6 +736,18 @@ For each file that exists, parse the JSON and extract the `threads` array. Tag e
 
 Record the **raw total** before any dedup: sum of all threads across all source files.
 
+### 4.1.5: Enrich Missing Metadata (All Sources)
+
+Parallel AI and OpenAI threads often have `num_comments` of `"0"` or empty because those backends don't reliably return comment counts. Before entering the dedup pipeline, enrich these threads with real Reddit metadata.
+
+1. Collect all thread URLs from Parallel AI and OpenAI results where `num_comments` is `"0"`, `""`, or missing
+2. Also collect threads from any source where `score` is `"0"`, `""`, or missing
+3. Batch-fetch their Reddit JSON metadata using the same Python script from Step 3a.3 (the `urllib.request` script that fetches `{url}.json`)
+4. For each successful fetch, update the thread object's `score`, `num_comments`, and `date` with the fetched values
+5. Threads that fail metadata fetch (HTTP errors, rate limits, timeouts) should keep their original values — do NOT set them to `"0"`
+
+This ensures the zero-comment filter in Step E only removes threads **confirmed** to have zero comments, rather than threads where the backend simply didn't return metadata.
+
 ### 4.2: Dedup Pipeline
 
 Apply these dedup/filter steps **in order**. After each step, record how many threads remain for the funnel stats.
@@ -766,7 +787,7 @@ Record count after content filter.
 
 #### Step E — Zero-Comment Filter
 
-Remove threads where `num_comments` is `"0"` (string). These have no community discussion and provide no signal.
+Remove threads where `num_comments` is `"0"` **after metadata enrichment** (Step 4.1.5). Only remove threads confirmed to have zero comments — threads that failed metadata fetch (HTTP errors, rate limits) should be kept rather than filtered, since their `"0"` value may be a backend artifact rather than a true zero.
 
 Record count after zero-comment filter.
 
