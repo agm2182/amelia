@@ -29,6 +29,27 @@ Reference from [brand-voice-positioning.md](../../brand/brand-voice-positioning.
 
 ---
 
+## Signature Series
+
+Recurring content series that should be scheduled every month. When planning each week, check if any of these are due.
+
+| Series | Cadence | Platforms | Mix | What It Is |
+|--------|---------|-----------|-----|------------|
+| **Meme Carousel** | 1-2x/month | IG Feed | FUN | Coochie memes, underwear memes, relatable girl memes. Shareable, brings new followers to the profile. |
+| **Cherri HQ: Behind the Seams** | 1x/month | TikTok + IG Reel | BTS | Behind-the-scenes episode — what's happening at Cherri right now. Production, launches, day-in-the-life, team content. Scripts in `social/behind-the-seams/`. |
+| **Reading My Craziest Customer Reviews** | 1x/month | TikTok + IG Reel | FUN | Gaby reads and reacts to real customer reviews. Pick ones that are funny, unhinged, or unexpectedly sweet. |
+
+### Monthly Series Tracker
+
+Copy this into each month's planning section:
+
+- [ ] Meme carousel #1 posted
+- [ ] Meme carousel #2 posted (optional)
+- [ ] Behind the Seams episode filmed + posted
+- [ ] Craziest Customer Reviews episode filmed + posted
+
+---
+
 ## Weekly Grid
 
 ### Steady-State Cadence
