@@ -113,7 +113,11 @@ Health is a BONUS, not the selling point. Deliver casually, not clinically. "Als
 
 ### The Millennial Body Positivity Trap
 
-Millennial brands did body positivity like this:
+**Cherri IS a body positive brand.** 78% of survey respondents said underwear fit issues made them feel bad about themselves. Cherri's core promise is to make you feel good about your body again — by removing the discomfort, the self-doubt, and the design failures that caused it. The emotional repair is the product. The wide gusset is the mechanism. The voice is the delivery system that keeps it from being preachy.
+
+The difference is *how* Cherri delivers body positivity compared to millennial brands:
+
+Millennial brands did it like this:
 > "Every body is beautiful! We celebrate ALL women! Love yourself, queen!"
 
 GenZ and Elder GenZ are allergic to this. It feels performative, corporate, and preachy.
@@ -122,7 +126,7 @@ Cherri does it like this:
 > [Shows diverse bodies in imagery]
 > "wide gusset. no lip slips."
 
-Show, don't tell. Confidence is assumed, not preached.
+Show, don't tell. Confidence is assumed, not preached. But never mistake the cheeky delivery for a lack of emotional depth — the feeling of finally being understood is the entire point.
 
 ## Segment-Specific Messaging
 
